@@ -1,0 +1,9 @@
+|sumador_medio
+A => Cout.IN0
+A => Suma.IN0
+B => Cout.IN1
+B => Suma.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Suma <= Suma.DB_MAX_OUTPUT_PORT_TYPE
+
+
