@@ -1,5 +1,5 @@
 Flow report for Sumador4bits
-Sun Feb 18 10:59:38 2024
+Sun Feb 18 16:46:44 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,10 +41,10 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------+
 ; Flow Summary                                                              ;
 +-----------------------------+---------------------------------------------+
-; Flow Status                 ; Successful - Sun Feb 18 10:59:38 2024       ;
+; Flow Status                 ; Successful - Sun Feb 18 16:46:44 2024       ;
 ; Quartus Prime Version       ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name               ; Sumador4bits                                ;
-; Top-level Entity Name       ; sumador_medio                               ;
+; Top-level Entity Name       ; sumador4bits                                ;
 ; Family                      ; Cyclone V                                   ;
 ; Device                      ; 5CSEMA5F31C6                                ;
 ; Timing Models               ; Final                                       ;
@@ -63,26 +63,25 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 02/18/2024 10:59:22 ;
+; Start date & time ; 02/18/2024 16:46:16 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Sumador4bits        ;
 +-------------------+---------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                              ;
-+-------------------------------------+----------------------------------------+---------------+---------------+----------------+
-; Assignment Name                     ; Value                                  ; Default Value ; Entity Name   ; Section Id     ;
-+-------------------------------------+----------------------------------------+---------------+---------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 1095765959727.170827556219300          ; --            ; --            ; --             ;
-; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                            ; --            ; --            ; eda_simulation ;
-; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)              ; <None>        ; --            ; --             ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; sumador_medio ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; sumador_medio ; Top            ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; sumador_medio ; Top            ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --            ; --             ;
-; TOP_LEVEL_ENTITY                    ; sumador_medio                          ; Sumador4bits  ; --            ; --             ;
-+-------------------------------------+----------------------------------------+---------------+---------------+----------------+
++------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                             ;
++-------------------------------------+----------------------------------------+---------------+--------------+----------------+
+; Assignment Name                     ; Value                                  ; Default Value ; Entity Name  ; Section Id     ;
++-------------------------------------+----------------------------------------+---------------+--------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 1095765959727.170829637617596          ; --            ; --           ; --             ;
+; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                            ; --            ; --           ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)              ; <None>        ; --           ; --             ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; sumador4bits ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; sumador4bits ; Top            ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; sumador4bits ; Top            ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --           ; --             ;
++-------------------------------------+----------------------------------------+---------------+--------------+----------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------+
@@ -90,8 +89,8 @@ https://fpgasoftware.intel.com/eula.
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Elaboration ; 00:00:16     ; 1.0                     ; 4832 MB             ; 00:00:37                           ;
-; Total                  ; 00:00:16     ; --                      ; --                  ; 00:00:37                           ;
+; Analysis & Elaboration ; 00:00:31     ; 1.0                     ; 4832 MB             ; 00:00:35                           ;
+; Total                  ; 00:00:31     ; --                      ; --                  ; 00:00:35                           ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
