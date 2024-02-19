@@ -7,11 +7,11 @@ Ent2[0] => sumador_medio:Inst_sumador_medio.B
 Ent2[1] => sumador_completo:Inst_sumador_completo1.B
 Ent2[2] => sumador_completo:Inst_sumador_completo2.B
 Ent2[3] => sumador_completo:Inst_sumador_completo3.B
-Carry <= sumador_completo:Inst_sumador_completo3.Cout
-Resultado[0] <= sumador_medio:Inst_sumador_medio.Suma
-Resultado[1] <= sumador_completo:Inst_sumador_completo1.Suma
-Resultado[2] <= sumador_completo:Inst_sumador_completo2.Suma
-Resultado[3] <= sumador_completo:Inst_sumador_completo3.Suma
+Carry << sumador_completo:Inst_sumador_completo3.Cout
+Resultado[0] << sumador_medio:Inst_sumador_medio.Suma
+Resultado[1] << sumador_completo:Inst_sumador_completo1.Suma
+Resultado[2] << sumador_completo:Inst_sumador_completo2.Suma
+Resultado[3] << sumador_completo:Inst_sumador_completo3.Suma
 
 
 |sumador4bits|sumador_medio:Inst_sumador_medio
