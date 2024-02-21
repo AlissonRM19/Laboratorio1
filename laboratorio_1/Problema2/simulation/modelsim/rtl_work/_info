@@ -9,48 +9,117 @@ z2
 !i10f 100
 cModel Technology
 Z0 dC:/Users/Alisson RM/Documents/GitHub/Laboratorio1/Problema2/simulation/modelsim
+Esumador4bits
+w1708378751
+Z1 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z2 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 2
+R0
+8C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/Problema2/sumador4bits.vhd
+FC:/Users/Alisson RM/Documents/GitHub/Laboratorio1/Problema2/sumador4bits.vhd
+l0
+L6 1
+V@W86WdLG>=j@VlQ_<`Pcg0
+!s100 iJMbbliMFlH0?YIEWILi:0
+Z5 OV;C;2020.1;71
+31
+Z6 !s110 1708380872
+!i10b 1
+Z7 !s108 1708380872.000000
+!s90 -reportprogress|300|-93|-work|work|C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/Problema2/sumador4bits.vhd|
+!s107 C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/Problema2/sumador4bits.vhd|
+!i113 1
+Z8 o-93 -work work
+Z9 tExplicit 1 CvgOpt 0
+Esumador_completo
+Z10 w1708275557
+R1
+R2
+R3
+R4
+!i122 1
+R0
+Z11 8C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/Problema2/sumador_completo.vhd
+Z12 FC:/Users/Alisson RM/Documents/GitHub/Laboratorio1/Problema2/sumador_completo.vhd
+l0
+L6 1
+V7Pm?1G1oSW?^L2mdL7Loh2
+!s100 TDHEMgUb^^Jd7JFF?6NBB2
+R5
+31
+R6
+!i10b 1
+R7
+Z13 !s90 -reportprogress|300|-93|-work|work|C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/Problema2/sumador_completo.vhd|
+Z14 !s107 C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/Problema2/sumador_completo.vhd|
+!i113 1
+R8
+R9
+Abehavioral
+R1
+R2
+R3
+R4
+DEx4 work 16 sumador_completo 0 22 7Pm?1G1oSW?^L2mdL7Loh2
+!i122 1
+l15
+L14 7
+VAC@IoSg<lZn9]DCaNGA=X0
+!s100 097kdMCYcL:eV=DLWHkX]1
+R5
+31
+R6
+!i10b 1
+R7
+R13
+R14
+!i113 1
+R8
+R9
 Esumador_medio
-Z1 w1708273179
-Z2 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
-Z3 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
-Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z5 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z15 w1708273179
+R1
+R2
+R3
+R4
 !i122 0
 R0
-Z6 8C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/Problema2/sumador_medio.vhd
-Z7 FC:/Users/Alisson RM/Documents/GitHub/Laboratorio1/Problema2/sumador_medio.vhd
+Z16 8C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/Problema2/sumador_medio.vhd
+Z17 FC:/Users/Alisson RM/Documents/GitHub/Laboratorio1/Problema2/sumador_medio.vhd
 l0
 L6 1
 VE8mLUC^QzJPRPcHP]imhD0
 !s100 kFJ7CbRG>OF@[N[][0B`_0
-Z8 OV;C;2020.1;71
+R5
 31
-Z9 !s110 1708273274
+R6
 !i10b 1
-Z10 !s108 1708273274.000000
-Z11 !s90 -reportprogress|300|-93|-work|work|C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/Problema2/sumador_medio.vhd|
-!s107 C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/Problema2/sumador_medio.vhd|
+R7
+Z18 !s90 -reportprogress|300|-93|-work|work|C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/Problema2/sumador_medio.vhd|
+Z19 !s107 C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/Problema2/sumador_medio.vhd|
 !i113 1
-Z12 o-93 -work work
-Z13 tExplicit 1 CvgOpt 0
+R8
+R9
 Abehavioral
+R1
 R2
 R3
 R4
-R5
 DEx4 work 13 sumador_medio 0 22 E8mLUC^QzJPRPcHP]imhD0
 !i122 0
 l15
 L13 8
 V3KC9mTG5?l7PUfLciL;Y22
 !s100 7AigI2FAIQkMBdTFK9F:f3
-R8
+R5
 31
-R9
+R6
 !i10b 1
-R10
-R11
-Z14 !s107 C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/Problema2/sumador_medio.vhd|
+R7
+R18
+R19
 !i113 1
-R12
-R13
+R8
+R9
