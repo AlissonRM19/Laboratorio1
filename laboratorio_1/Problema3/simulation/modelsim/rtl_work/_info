@@ -11,55 +11,55 @@ cModel Technology
 Z0 dC:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_1/Problema3/simulation/modelsim
 vContador
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1708451474
+Z2 !s110 1708534303
 !i10b 1
-!s100 [gzS2bI1X5H<aLYn?<]W73
+!s100 [o5if81QGOZ]`IT8S6XdW1
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IXgE<z@?Xf42iBG:[34dG50
+I3Sd9JOgzPY[MVQ7kaBQ<P0
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-w1708451392
+w1708533931
 8C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_1/Problema3/Contador.sv
 FC:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_1/Problema3/Contador.sv
 !i122 0
-Z5 L0 1 31
-Z6 OV;L;2020.1;71
+L0 1 104
+Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z7 !s108 1708451474.000000
+Z6 !s108 1708534303.000000
 !s107 C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_1/Problema3/Contador.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_1/Problema3|C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_1/Problema3/Contador.sv|
 !i113 1
-Z8 o-sv -work work
-Z9 !s92 -sv -work work +incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_1/Problema3
-Z10 tCvgOpt 0
+Z7 o-sv -work work
+Z8 !s92 -sv -work work +incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_1/Problema3
+Z9 tCvgOpt 0
 n@contador
 vContador_tb
 R1
 R2
 !i10b 1
-!s100 5;WK1hW=6FTb_<`>N_b?>1
+!s100 nN@Vak42e0ELzbiRiXmz?0
 R3
-I8?==`BcThjZ=>[0J[^BVJ1
+I79CmH6IT2Zhd><`E7ag?Z0
 R4
 S1
 R0
-w1708451436
+w1708534159
 8C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_1/Problema3/Contador_tb.sv
 FC:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_1/Problema3/Contador_tb.sv
 !i122 1
+L0 1 36
 R5
-R6
 r1
 !s85 0
 31
-R7
+R6
 !s107 C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_1/Problema3/Contador_tb.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_1/Problema3|C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_1/Problema3/Contador_tb.sv|
 !i113 1
+R7
 R8
 R9
-R10
 n@contador_tb

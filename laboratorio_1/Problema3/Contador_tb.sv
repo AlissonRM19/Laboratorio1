@@ -1,11 +1,11 @@
 module Contador_tb;
 
-	logic clk;
+	logic clk=0;
 	logic reset;
 	logic mode;
-	logic [1:0] out_2;
-	logic [3:0] out_4;
-	logic [5:0] out_6;
+	logic [1:0] [6:0] out_2;
+	logic [1:0] [6:0] out_4;
+	logic [1:0] [6:0] out_6;
 	
 	Contador #(2) test_2 (
 		.clk(clk),
@@ -27,5 +27,10 @@ module Contador_tb;
 		.mode(mode),
 		.out(out_6)
 	);
+	
+	initial begin
+		reset=0;
+		mode=1;
+	end
 
 endmodule
