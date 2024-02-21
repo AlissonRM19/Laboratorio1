@@ -6,10 +6,7 @@ module DecodificadorBinario_tb;
     integer i;
 
     // Instanciación del módulo 
-    DecodificadorBinario testbench (
-        .bin(bin), 
-        .seg(seg)
-    );
+    DecodificadorBinario testbench (.bin(bin), .seg(seg));
 
     // Aplicación de los estímulos
     initial begin
@@ -18,8 +15,6 @@ module DecodificadorBinario_tb;
             bin = i;
             #40; 
         end
-        
-        //$finish;
 		  
     end
 	 
