@@ -1,5 +1,5 @@
 Analysis & Elaboration report for DecodificadorBinario
-Mon Feb 19 20:31:46 2024
+Wed Feb 21 10:25:27 2024
 Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 
 
@@ -37,7 +37,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                                 ;
 +-------------------------------+------------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Mon Feb 19 20:31:45 2024          ;
+; Analysis & Elaboration Status ; Successful - Wed Feb 21 10:25:27 2024          ;
 ; Quartus Prime Version         ; 22.1std.2 Build 922 07/20/2023 SC Lite Edition ;
 ; Revision Name                 ; DecodificadorBinario                           ;
 ; Top-level Entity Name         ; DecodificadorBinario                           ;
@@ -161,7 +161,7 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
-    Info: Processing started: Mon Feb 19 20:31:39 2024
+    Info: Processing started: Wed Feb 21 10:25:21 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DecodificadorBinario -c DecodificadorBinario --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -189,8 +189,8 @@ Warning (10230): Verilog HDL assignment warning at DecodificadorBinario.sv(25): 
 Warning (10230): Verilog HDL assignment warning at DecodificadorBinario.sv(26): truncated value with size 8 to match size of target (7) File: C:/Users/Mata/Documents/GitHub/Laboratorio1/Problema1/DecodificadorBinario.sv Line: 26
 Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 18 warnings
     Info: Peak virtual memory: 4773 megabytes
-    Info: Processing ended: Mon Feb 19 20:31:46 2024
-    Info: Elapsed time: 00:00:07
+    Info: Processing ended: Wed Feb 21 10:25:27 2024
+    Info: Elapsed time: 00:00:06
     Info: Total CPU time (on all processors): 00:00:14
 
 

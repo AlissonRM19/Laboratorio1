@@ -1,5 +1,5 @@
 Flow report for DecodificadorBinario
-Mon Feb 19 20:31:46 2024
+Wed Feb 21 10:25:27 2024
 Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------------------+
 ; Flow Summary                                                                 ;
 +-----------------------------+------------------------------------------------+
-; Flow Status                 ; Successful - Mon Feb 19 20:31:45 2024          ;
+; Flow Status                 ; Successful - Wed Feb 21 10:25:27 2024          ;
 ; Quartus Prime Version       ; 22.1std.2 Build 922 07/20/2023 SC Lite Edition ;
 ; Revision Name               ; DecodificadorBinario                           ;
 ; Top-level Entity Name       ; DecodificadorBinario                           ;
@@ -63,7 +63,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+----------------------+
 ; Option            ; Setting              ;
 +-------------------+----------------------+
-; Start date & time ; 02/19/2024 20:31:40  ;
+; Start date & time ; 02/21/2024 10:25:22  ;
 ; Main task         ; Compilation          ;
 ; Revision Name     ; DecodificadorBinario ;
 +-------------------+----------------------+
@@ -74,7 +74,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+----------------------------------------+---------------+-------------+-------------------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id              ;
 +--------------------------------------+----------------------------------------+---------------+-------------+-------------------------+
-; COMPILER_SIGNATURE_ID                ; 27214216694504.170839629906764         ; --            ; --          ; --                      ;
+; COMPILER_SIGNATURE_ID                ; 27214216694504.170853272100852         ; --            ; --          ; --                      ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; DecodificadorBinario_tb ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; DecodificadorBinario_tb                ; --            ; --          ; eda_simulation          ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                            ; --            ; --          ; eda_simulation          ;
