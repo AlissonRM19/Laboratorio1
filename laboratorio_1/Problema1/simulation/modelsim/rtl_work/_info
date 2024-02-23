@@ -11,24 +11,24 @@ cModel Technology
 Z0 dC:/Users/Mata/Documents/GitHub/Laboratorio1/Problema1/simulation/modelsim
 vDecodificadorBinario
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1708279280
+Z2 !s110 1708532747
 !i10b 1
-!s100 zVg6AS_[Y[;o=16T9A@a32
+!s100 =W;XP`H6NWVi2AZ7;[;dk0
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-I3NN2j^7L7[kc3]b7Hh`6`1
+IbMNJjHELbic=GSK>cMGLJ2
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-w1708278958
+w1708369295
 8C:/Users/Mata/Documents/GitHub/Laboratorio1/Problema1/DecodificadorBinario.sv
 FC:/Users/Mata/Documents/GitHub/Laboratorio1/Problema1/DecodificadorBinario.sv
 !i122 0
-L0 1 23
+L0 1 32
 Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1708279280.000000
+Z6 !s108 1708532747.000000
 !s107 C:/Users/Mata/Documents/GitHub/Laboratorio1/Problema1/DecodificadorBinario.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Mata/Documents/GitHub/Laboratorio1/Problema1|C:/Users/Mata/Documents/GitHub/Laboratorio1/Problema1/DecodificadorBinario.sv|
 !i113 1
@@ -40,13 +40,13 @@ vDecodificadorBinario_tb
 R1
 R2
 !i10b 1
-!s100 Dfn]?oH2L4^k;DJI>fLGl3
+!s100 >_bKRB=JQW`jdo25>H`@K3
 R3
-Il_=SN0]BfM0<RZzl5Ge@:0
+IY]BPgBGa155LhBn=V]IoB0
 R4
 S1
 R0
-w1708279233
+w1708528310
 8C:/Users/Mata/Documents/GitHub/Laboratorio1/Problema1/DecodificadorBinario_tb.sv
 FC:/Users/Mata/Documents/GitHub/Laboratorio1/Problema1/DecodificadorBinario_tb.sv
 !i122 1
