@@ -1,7 +1,7 @@
 module sumadornbits #(parameter n = 4)
 		(input logic [n-1:0]Ent1,
 		input logic [n-1:0]Ent2,
-		output logic Cout;
+		output logic Cout,
 		output logic [n:0]Resultado,
 		output logic [6:0]salida7seg0,
 		output logic [6:0]salida7seg1
@@ -18,7 +18,7 @@ Sumador_medio U1(
 	.Suma(temporal2[0])
 	);
 
-for (i=1; i<n; i= i+1) begin: for loop
+for (i=1; i<n; i= i+1) begin: for_loop
 
 Sumador_completo U2(
 	.Cin(temporal1[i-1]),
