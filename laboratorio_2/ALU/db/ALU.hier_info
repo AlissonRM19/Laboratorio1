@@ -1,40 +1,24 @@
 |ALU
-in1[0] => num.IN0
-in1[0] => num.IN0
-in1[0] => num.IN0
-in1[1] => num.IN0
-in1[1] => num.IN0
-in1[1] => num.IN0
-in1[2] => num.IN0
-in1[2] => num.IN0
-in1[2] => num.IN0
-in1[3] => num.IN0
-in1[3] => num.IN0
-in1[3] => num.IN0
-in2[0] => num.IN1
-in2[0] => num.IN1
-in2[0] => num.IN1
-in2[1] => num.IN1
-in2[1] => num.IN1
-in2[1] => num.IN1
-in2[2] => num.IN1
-in2[2] => num.IN1
-in2[2] => num.IN1
-in2[3] => num.IN1
-in2[3] => num.IN1
-in2[3] => num.IN1
+in1[0] => in1[0].IN1
+in1[1] => in1[1].IN1
+in1[2] => in1[2].IN1
+in1[3] => in1[3].IN1
+in2[0] => in2[0].IN1
+in2[1] => in2[1].IN1
+in2[2] => in2[2].IN1
+in2[3] => in2[3].IN1
 click => mode[0].LATCH_ENABLE
 click => mode[1].LATCH_ENABLE
 click => mode[2].LATCH_ENABLE
 neg <= <GND>
-cero <= <GND>
-carry <= <GND>
+cero <= Equal1.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry$latch.DB_MAX_OUTPUT_PORT_TYPE
 des <= <GND>
 num[0] <= num[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
 num[1] <= num[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
 num[2] <= num[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
 num[3] <= num[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
-num[4] <= <GND>
+num[4] <= num[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
 num[5] <= <GND>
 num[6] <= <GND>
 num[7] <= <GND>
@@ -52,5 +36,78 @@ out[1][3] <= <GND>
 out[1][4] <= <GND>
 out[1][5] <= <GND>
 out[1][6] <= <VCC>
+
+
+|ALU|sumadornbits:UUT
+Ent1[0] => Ent1[0].IN1
+Ent1[1] => Ent1[1].IN1
+Ent1[2] => Ent1[2].IN1
+Ent1[3] => Ent1[3].IN1
+Ent2[0] => Ent2[0].IN1
+Ent2[1] => Ent2[1].IN1
+Ent2[2] => Ent2[2].IN1
+Ent2[3] => Ent2[3].IN1
+Cout <= Sumador_completo:for_loop[3].U2.Cout
+Resultado[0] <= Sumador_medio:U1.Suma
+Resultado[1] <= Sumador_completo:for_loop[1].U2.Suma
+Resultado[2] <= Sumador_completo:for_loop[2].U2.Suma
+Resultado[3] <= Sumador_completo:for_loop[3].U2.Suma
+Resultado[4] <= <GND>
+salida7seg0[0] <= <GND>
+salida7seg0[1] <= <GND>
+salida7seg0[2] <= <GND>
+salida7seg0[3] <= <GND>
+salida7seg0[4] <= <GND>
+salida7seg0[5] <= <GND>
+salida7seg0[6] <= <GND>
+salida7seg1[0] <= <GND>
+salida7seg1[1] <= <GND>
+salida7seg1[2] <= <GND>
+salida7seg1[3] <= <GND>
+salida7seg1[4] <= <GND>
+salida7seg1[5] <= <GND>
+salida7seg1[6] <= <GND>
+
+
+|ALU|sumadornbits:UUT|Sumador_medio:U1
+A => Cout.IN0
+A => Suma.IN0
+B => Cout.IN1
+B => Suma.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Suma <= Suma.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|sumadornbits:UUT|Sumador_completo:for_loop[1].U2
+A => Cout.IN0
+A => Cout.IN0
+B => Cout.IN1
+B => Cout.IN1
+Cin => Cout.IN1
+Cin => Suma.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Suma <= Suma.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|sumadornbits:UUT|Sumador_completo:for_loop[2].U2
+A => Cout.IN0
+A => Cout.IN0
+B => Cout.IN1
+B => Cout.IN1
+Cin => Cout.IN1
+Cin => Suma.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Suma <= Suma.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|sumadornbits:UUT|Sumador_completo:for_loop[3].U2
+A => Cout.IN0
+A => Cout.IN0
+B => Cout.IN1
+B => Cout.IN1
+Cin => Cout.IN1
+Cin => Suma.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Suma <= Suma.DB_MAX_OUTPUT_PORT_TYPE
 
 

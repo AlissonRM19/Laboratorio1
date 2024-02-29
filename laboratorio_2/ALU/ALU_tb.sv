@@ -24,6 +24,14 @@ module ALU_tb;
 		
 		// Suma test
 		#5;
+		in1 = 4;
+		in2 = 5;
+		#10;
+		in1 = 6;
+		in2 = 10;
+		#10;
+		
+		#5;
 		click=1;
 		#5;
 		click=0;
