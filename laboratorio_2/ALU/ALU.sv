@@ -40,7 +40,7 @@ module ALU #(parameter n = 4) (input logic [n - 1:0] in1,
 	always @ (*)
 	begin
 		if (click == 1 && x == 0) begin
-			if (mode == 3'b111) begin
+			if (mode == 4'b1001) begin
 				mode = 0;
 			end else begin
 				mode = mode + 1;
@@ -51,38 +51,48 @@ module ALU #(parameter n = 4) (input logic [n - 1:0] in1,
 			x = 0;
 		end
 		case (mode)
-			3'b000: begin // Suma
+			4'b0000: begin // Suma
 							mode_seg = 7'b1000000;
 							num[0] = Resultado_sum;
 							num[1] = Cout_sum;
 							carry = Cout_sum;
 					  end
-			3'b001: begin // Resta
+			4'b0001: begin // Resta
 							mode_seg = 7'b1111001;
 					  end
-			3'b010: begin // Multiplicacion
+			4'b0010: begin // Multiplicacion
 							mode_seg = 7'b0100100;
 							neg = 1;
 					  end
-			3'b011: begin // AND
+			4'b0011: begin // AND
 							mode_seg = 7'b0110000;
 							carry = 0;
 							num = in1 & in2;
 					  end
-			3'b100: begin	// OR
+			4'b0100: begin	// OR
 							mode_seg = 7'b0011001;
 							num = in1 | in2;
 					  end
-			3'b101: begin // XOR
+			4'b0101: begin // XOR
 							mode_seg = 7'b0010010;
 							num = in1 ^ in2;
 					  end
-			3'b110: begin // Shift Left
+			4'b0110: begin // Shift Left
 							mode_seg = 7'b0000010;
 					  end
-			3'b111: begin // Shift Right 
+			4'b0111: begin // Shift Right 
 							mode_seg = 7'b1111000;
 					  end
+			4'b1000 : begin // División
+							mode_seg = 7'b0000000;
+							num = in1 / in2;
+						end
+			4'b1001 : begin // Módulo
+							mode_seg = 7'b0010000;
+							num = in1 % in2;
+						end
+			
+			
 		endcase
 		if (num == 0) begin
 			cero = 1;

@@ -1,5 +1,5 @@
 EDA Netlist Writer report for ALU
-Thu Feb 29 22:39:06 2024
+Fri Mar 01 09:12:04 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Thu Feb 29 22:39:06 2024 ;
+; EDA Netlist Writer Status ; Successful - Fri Mar 01 09:12:04 2024 ;
 ; Revision Name             ; ALU                                   ;
 ; Top-level Entity Name     ; ALU                                   ;
 ; Family                    ; Cyclone V                             ;
@@ -81,35 +81,35 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Thu Feb 29 22:39:04 2024
+    Info: Processing started: Fri Mar 01 09:12:02 2024
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off ALU -c ALU
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204001): Port "num[0][0]" is changed into "num_0_0" because it's a member of 2-D array port "num" File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 39
-Info (204001): Port "num[0][1]" is changed into "num_0_1" because it's a member of 2-D array port "num" File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 39
-Info (204001): Port "num[0][2]" is changed into "num_0_2" because it's a member of 2-D array port "num" File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 39
-Info (204001): Port "num[0][3]" is changed into "num_0_3" because it's a member of 2-D array port "num" File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 39
-Info (204001): Port "num[1][0]" is changed into "num_1_0" because it's a member of 2-D array port "num" File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 39
-Info (204001): Port "num[1][1]" is changed into "num_1_1" because it's a member of 2-D array port "num" File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 39
-Info (204001): Port "num[1][2]" is changed into "num_1_2" because it's a member of 2-D array port "num" File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 39
-Info (204001): Port "num[1][3]" is changed into "num_1_3" because it's a member of 2-D array port "num" File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 39
-Info (204001): Port "out[0][0]" is changed into "out_0_0" because it's a member of 2-D array port "out" File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 9
-Info (204001): Port "out[0][1]" is changed into "out_0_1" because it's a member of 2-D array port "out" File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 9
-Info (204001): Port "out[0][2]" is changed into "out_0_2" because it's a member of 2-D array port "out" File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 9
-Info (204001): Port "out[0][3]" is changed into "out_0_3" because it's a member of 2-D array port "out" File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 9
-Info (204001): Port "out[0][4]" is changed into "out_0_4" because it's a member of 2-D array port "out" File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 9
-Info (204001): Port "out[0][5]" is changed into "out_0_5" because it's a member of 2-D array port "out" File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 9
-Info (204001): Port "out[0][6]" is changed into "out_0_6" because it's a member of 2-D array port "out" File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 9
-Info (204001): Port "out[1][0]" is changed into "out_1_0" because it's a member of 2-D array port "out" File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 9
-Info (204001): Port "out[1][1]" is changed into "out_1_1" because it's a member of 2-D array port "out" File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 9
-Info (204001): Port "out[1][2]" is changed into "out_1_2" because it's a member of 2-D array port "out" File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 9
-Info (204001): Port "out[1][3]" is changed into "out_1_3" because it's a member of 2-D array port "out" File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 9
-Info (204001): Port "out[1][4]" is changed into "out_1_4" because it's a member of 2-D array port "out" File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 9
-Info (204001): Port "out[1][5]" is changed into "out_1_5" because it's a member of 2-D array port "out" File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 9
-Info (204001): Port "out[1][6]" is changed into "out_1_6" because it's a member of 2-D array port "out" File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 9
+Info (204001): Port "num[0][0]" is changed into "num_0_0" because it's a member of 2-D array port "num" File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 42
+Info (204001): Port "num[0][1]" is changed into "num_0_1" because it's a member of 2-D array port "num" File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 42
+Info (204001): Port "num[0][2]" is changed into "num_0_2" because it's a member of 2-D array port "num" File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 42
+Info (204001): Port "num[0][3]" is changed into "num_0_3" because it's a member of 2-D array port "num" File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 42
+Info (204001): Port "num[1][0]" is changed into "num_1_0" because it's a member of 2-D array port "num" File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 42
+Info (204001): Port "num[1][1]" is changed into "num_1_1" because it's a member of 2-D array port "num" File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 42
+Info (204001): Port "num[1][2]" is changed into "num_1_2" because it's a member of 2-D array port "num" File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 42
+Info (204001): Port "num[1][3]" is changed into "num_1_3" because it's a member of 2-D array port "num" File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 42
+Info (204001): Port "out[0][0]" is changed into "out_0_0" because it's a member of 2-D array port "out" File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 10
+Info (204001): Port "out[0][1]" is changed into "out_0_1" because it's a member of 2-D array port "out" File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 10
+Info (204001): Port "out[0][2]" is changed into "out_0_2" because it's a member of 2-D array port "out" File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 10
+Info (204001): Port "out[0][3]" is changed into "out_0_3" because it's a member of 2-D array port "out" File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 10
+Info (204001): Port "out[0][4]" is changed into "out_0_4" because it's a member of 2-D array port "out" File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 10
+Info (204001): Port "out[0][5]" is changed into "out_0_5" because it's a member of 2-D array port "out" File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 10
+Info (204001): Port "out[0][6]" is changed into "out_0_6" because it's a member of 2-D array port "out" File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 10
+Info (204001): Port "out[1][0]" is changed into "out_1_0" because it's a member of 2-D array port "out" File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 10
+Info (204001): Port "out[1][1]" is changed into "out_1_1" because it's a member of 2-D array port "out" File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 10
+Info (204001): Port "out[1][2]" is changed into "out_1_2" because it's a member of 2-D array port "out" File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 10
+Info (204001): Port "out[1][3]" is changed into "out_1_3" because it's a member of 2-D array port "out" File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 10
+Info (204001): Port "out[1][4]" is changed into "out_1_4" because it's a member of 2-D array port "out" File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 10
+Info (204001): Port "out[1][5]" is changed into "out_1_5" because it's a member of 2-D array port "out" File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 10
+Info (204001): Port "out[1][6]" is changed into "out_1_6" because it's a member of 2-D array port "out" File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 10
 Info (204019): Generated file ALU.vo in folder "C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/simulation/modelsim/" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4723 megabytes
-    Info: Processing ended: Thu Feb 29 22:39:06 2024
+    Info: Peak virtual memory: 4722 megabytes
+    Info: Processing ended: Fri Mar 01 09:12:04 2024
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 

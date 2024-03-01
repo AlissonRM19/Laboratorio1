@@ -8,192 +8,192 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/simulation/modelsim
+Z0 dC:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/simulation/modelsim
 vALU
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1709303606
+!s110 1709323657
 !i10b 1
-!s100 bYaSe`0k6M5N=9QW9cJK71
-Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IM3Q2IAJ^Ucc:jGRCI7[>`3
-Z4 VDg1SIo80bB@j0V0VzS_@n1
+!s100 <<:fCKn6MGRzKDNRehJ[k2
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I;SB8fQ5]RzMJ>5W<ibj?N3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-w1709303218
-8C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv
-FC:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv
+w1709323556
+8C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv
+FC:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv
 !i122 0
-L0 1 98
-Z5 OV;L;2020.1;71
+L0 1 108
+Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-!s108 1709303605.000000
-!s107 C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU|C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv|
+!s108 1709323657.000000
+!s107 C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU|C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv|
 !i113 1
-Z6 o-sv -work work
-Z7 !s92 -sv -work work +incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU
-Z8 tCvgOpt 0
+Z5 o-sv -work work
+Z6 !s92 -sv -work work {+incdir+C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU}
+Z7 tCvgOpt 0
 n@a@l@u
 vALU_tb
 R1
-R2
+Z8 !s110 1709323659
 !i10b 1
 !s100 :cQAdSQ42j>BX9fom6Ue?2
+R2
+I9ahohjkEUE^^<l]lVP]FT0
 R3
-I^>W@>>Hh9TJa[Wk^o_8:_1
-R4
 S1
 R0
-w1709302877
-8C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU_tb.sv
-FC:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU_tb.sv
+w1709272118
+8C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU_tb.sv
+FC:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU_tb.sv
 !i122 6
 L0 1 156
-R5
+R4
 r1
 !s85 0
 31
-Z9 !s108 1709303606.000000
-!s107 C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU_tb.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU|C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU_tb.sv|
+Z9 !s108 1709323659.000000
+!s107 C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU|C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU_tb.sv|
 !i113 1
+R5
 R6
 R7
-R8
 n@a@l@u_tb
 vDecodificadorBinario
 R1
-R2
+R8
 !i10b 1
 !s100 D@iZKS63f;7006`Ah;JIW0
+R2
+IofNz^NHCVBJ4GL^>;TD940
 R3
-I`NlTkg9N^=z]U6?5O9=QM0
-R4
 S1
 R0
-w1709265919
-8C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/DecodificadorBinario.sv
-FC:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/DecodificadorBinario.sv
+Z10 w1709267634
+8C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/DecodificadorBinario.sv
+FC:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/DecodificadorBinario.sv
 !i122 4
 L0 1 30
-R5
+R4
 r1
 !s85 0
 31
-R9
-!s107 C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/DecodificadorBinario.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU|C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/DecodificadorBinario.sv|
+Z11 !s108 1709323658.000000
+!s107 C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/DecodificadorBinario.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU|C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/DecodificadorBinario.sv|
 !i113 1
+R5
 R6
 R7
-R8
 n@decodificador@binario
 vDecodificadorN
 R1
-R2
+R8
 !i10b 1
 !s100 zKjLDRXmc2ehdI?lR0EV=1
-R3
-I`=2dG>OJ2YS6ON2jaQ3jM1
-R4
-S1
-R0
-w1709265248
-8C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/DecodificadorN.sv
-FC:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/DecodificadorN.sv
-!i122 5
-L0 1 21
-R5
-r1
-!s85 0
-31
-R9
-!s107 C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/DecodificadorN.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU|C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/DecodificadorN.sv|
-!i113 1
-R6
-R7
-R8
-n@decodificador@n
-vSumador_completo
-R1
 R2
-!i10b 1
-!s100 WhZ:A5Qij6K4MR^R[`B9[2
+IH0RI?RD`l6=nSUk1SBmAR3
 R3
-I4SA<MELK2E@Zigbj[0f>S3
-R4
-S1
-R0
-Z10 w1709233869
-8C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/Sumador_completo.sv
-FC:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/Sumador_completo.sv
-!i122 2
-L0 1 11
-R5
-r1
-!s85 0
-31
-R9
-!s107 C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/Sumador_completo.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU|C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/Sumador_completo.sv|
-!i113 1
-R6
-R7
-R8
-n@sumador_completo
-vSumador_medio
-R1
-R2
-!i10b 1
-!s100 _BDhM_?Zej[2h=KX9kX123
-R3
-I>kF18lZKZ9jPd9cSR27<L1
-R4
 S1
 R0
 R10
-8C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/Sumador_medio.sv
-FC:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/Sumador_medio.sv
-!i122 1
-L0 1 10
-R5
+8C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/DecodificadorN.sv
+FC:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/DecodificadorN.sv
+!i122 5
+L0 1 21
+R4
 r1
 !s85 0
 31
 R9
-!s107 C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/Sumador_medio.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU|C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/Sumador_medio.sv|
+!s107 C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/DecodificadorN.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU|C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/DecodificadorN.sv|
 !i113 1
+R5
 R6
 R7
-R8
+n@decodificador@n
+vSumador_completo
+R1
+Z12 !s110 1709323658
+!i10b 1
+!s100 WhZ:A5Qij6K4MR^R[`B9[2
+R2
+IDJk7oO8@dbec=^iVCPKTD3
+R3
+S1
+R0
+w1709218693
+8C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/Sumador_completo.sv
+FC:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/Sumador_completo.sv
+!i122 2
+L0 1 11
+R4
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/Sumador_completo.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU|C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/Sumador_completo.sv|
+!i113 1
+R5
+R6
+R7
+n@sumador_completo
+vSumador_medio
+R1
+R12
+!i10b 1
+!s100 _BDhM_?Zej[2h=KX9kX123
+R2
+Iemf^[7e>JCJ@TmzPgPX2Z2
+R3
+S1
+R0
+w1709218535
+8C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/Sumador_medio.sv
+FC:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/Sumador_medio.sv
+!i122 1
+L0 1 10
+R4
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/Sumador_medio.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU|C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/Sumador_medio.sv|
+!i113 1
+R5
+R6
+R7
 n@sumador_medio
 vsumadornbits
 R1
-R2
+R12
 !i10b 1
 !s100 IVj;4T[U0K?^Z;;4FE;1_0
+R2
+IOQ@^zm@DH4RbaLNM:e3<Q3
 R3
-I422lo;P^aTGb`EDI:W`i:3
-R4
 S1
 R0
-w1709261498
-8C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/sumadornbits.sv
-FC:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/sumadornbits.sv
+w1709267637
+8C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/sumadornbits.sv
+FC:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/sumadornbits.sv
 !i122 3
 L0 1 36
-R5
+R4
 r1
 !s85 0
 31
-R9
-!s107 C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/sumadornbits.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU|C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/sumadornbits.sv|
+R11
+!s107 C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/sumadornbits.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU|C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/sumadornbits.sv|
 !i113 1
+R5
 R6
 R7
-R8
