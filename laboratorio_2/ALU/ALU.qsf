@@ -38,7 +38,7 @@
 
 
 set_global_assignment -name FAMILY "Cyclone V"
-set_global_assignment -name DEVICE 5CGXFC7C7F23C8
+set_global_assignment -name DEVICE 5CSEMA5F31C6
 set_global_assignment -name TOP_LEVEL_ENTITY ALU
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 22.1STD.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "07:44:20  FEBRUARY 28, 2024"
@@ -70,4 +70,34 @@ set_global_assignment -name EDA_TEST_BENCH_FILE ALU_tb.sv -section_id ALU_tb
 set_global_assignment -name SYSTEMVERILOG_FILE Sumador_medio.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Sumador_completo.sv
 set_global_assignment -name SYSTEMVERILOG_FILE sumadornbits.sv
+set_global_assignment -name SYSTEMVERILOG_FILE DecodificadorBinario.sv
+set_global_assignment -name SYSTEMVERILOG_FILE DecodificadorN.sv
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name BOARD "DE1-SoC Board"
+set_location_assignment PIN_AF10 -to in1[3]
+set_location_assignment PIN_AF9 -to in1[2]
+set_location_assignment PIN_AC12 -to in1[1]
+set_location_assignment PIN_AB12 -to in1[0]
+set_location_assignment PIN_AC9 -to in2[3]
+set_location_assignment PIN_AE11 -to in2[2]
+set_location_assignment PIN_AD12 -to in2[1]
+set_location_assignment PIN_AD11 -to in2[0]
+set_location_assignment PIN_AH28 -to out[0][6]
+set_location_assignment PIN_AG28 -to out[0][5]
+set_location_assignment PIN_AF28 -to out[0][4]
+set_location_assignment PIN_AG27 -to out[0][3]
+set_location_assignment PIN_AE28 -to out[0][2]
+set_location_assignment PIN_AE27 -to out[0][1]
+set_location_assignment PIN_AE26 -to out[0][0]
+set_location_assignment PIN_AD27 -to out[1][6]
+set_location_assignment PIN_AF30 -to out[1][5]
+set_location_assignment PIN_AF29 -to out[1][4]
+set_location_assignment PIN_AG30 -to out[1][3]
+set_location_assignment PIN_AH30 -to out[1][2]
+set_location_assignment PIN_AH29 -to out[1][1]
+set_location_assignment PIN_AJ29 -to out[1][0]
+set_location_assignment PIN_AA14 -to click
+set_location_assignment PIN_V16 -to neg
+set_location_assignment PIN_W16 -to cero
+set_location_assignment PIN_V17 -to carry
+set_location_assignment PIN_V18 -to des
