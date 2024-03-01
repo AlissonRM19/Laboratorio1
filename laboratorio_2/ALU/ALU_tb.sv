@@ -115,5 +115,42 @@ module sumador4bits_tb;
 end
 endmodule*/
 
+//testbench para la resta
+/*
+module restadornbits_tb;
+
+	logic [3:0] Ent1_tb,Ent2_tb;
+	logic [3:0] Resultado_tb;
+	logic Cout_tb;
+	logic [6:0] salida7seg0_tb, salida7seg1_tb;
+
+	restadorwnbits UUT(
+		.Ent1(Ent1_tb),
+		.Ent2(Ent2_tb),
+		.Resultado(Resultado_tb),
+		.Cout(Cout_tb),
+		.salida7seg0(salida7seg0_tb),
+		.salida7seg1(salida7seg1_tb),
+	);
+	
+	//Proceso de estimulo 
+	initial begin
+
+	//Ejemplo 1
+	Ent1_tb <= 4'b0110;
+	Ent2_tb <= 4'b1010;
+	#10;
+
+
+	//Ejemplo 2
+	Ent1_tb <= 4'b0101;
+	Ent2_tb <= 4'b0100;
+	#10;
+
+	//Detener la simulación
+
+	$stop;
+	end
+endmodule*/
 	
 endmodule

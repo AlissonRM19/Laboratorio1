@@ -1,28 +1,36 @@
-Analysis & Elaboration report for ALU
-Thu Feb 29 22:10:04 2024
-Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
+Analysis & Synthesis report for ALU
+Thu Feb 29 22:37:11 2024
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
 ---------------------
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Elaboration Summary
-  3. Parallel Compilation
-  4. Parameter Settings for User Entity Instance: Top-level Entity: |ALU
-  5. Parameter Settings for User Entity Instance: sumadornbits:UUT
-  6. Parameter Settings for User Entity Instance: DecodificadorN:deco
-  7. Analysis & Elaboration Settings
-  8. Port Connectivity Checks: "DecodificadorN:deco"
-  9. Port Connectivity Checks: "sumadornbits:UUT"
- 10. Analysis & Elaboration Messages
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. User-Specified and Inferred Latches
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Parameter Settings for User Entity Instance: Top-level Entity: |ALU
+ 12. Parameter Settings for User Entity Instance: sumadornbits:UUT
+ 13. Parameter Settings for User Entity Instance: DecodificadorN:deco
+ 14. Port Connectivity Checks: "DecodificadorN:deco"
+ 15. Port Connectivity Checks: "sumadornbits:UUT"
+ 16. Post-Synthesis Netlist Statistics for Top Partition
+ 17. Elapsed Time Per Partition
+ 18. Analysis & Synthesis Messages
 
 
 
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2022  Intel Corporation. All rights reserved.
+Copyright (C) 2020  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -39,76 +47,35 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+--------------------------------------------------------------------------------+
-; Analysis & Elaboration Summary                                                 ;
-+-------------------------------+------------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Thu Feb 29 22:10:04 2024          ;
-; Quartus Prime Version         ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
-; Revision Name                 ; ALU                                            ;
-; Top-level Entity Name         ; ALU                                            ;
-; Family                        ; Cyclone V                                      ;
-; Logic utilization (in ALMs)   ; N/A until Partition Merge                      ;
-; Total registers               ; N/A until Partition Merge                      ;
-; Total pins                    ; N/A until Partition Merge                      ;
-; Total virtual pins            ; N/A until Partition Merge                      ;
-; Total block memory bits       ; N/A until Partition Merge                      ;
-; Total PLLs                    ; N/A until Partition Merge                      ;
-; Total DLLs                    ; N/A until Partition Merge                      ;
-+-------------------------------+------------------------------------------------+
-
-
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-+----------------------------+-------------+
-
-
-+---------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |ALU ;
-+----------------+-------+--------------------------------------------+
-; Parameter Name ; Value ; Type                                       ;
-+----------------+-------+--------------------------------------------+
-; n              ; 4     ; Signed Integer                             ;
-+----------------+-------+--------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: sumadornbits:UUT ;
-+----------------+-------+--------------------------------------+
-; Parameter Name ; Value ; Type                                 ;
-+----------------+-------+--------------------------------------+
-; n              ; 4     ; Signed Integer                       ;
-+----------------+-------+--------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: DecodificadorN:deco ;
-+----------------+-------+-----------------------------------------+
-; Parameter Name ; Value ; Type                                    ;
-+----------------+-------+-----------------------------------------+
-; n              ; 4     ; Signed Integer                          ;
-+----------------+-------+-----------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Thu Feb 29 22:37:11 2024       ;
+; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Revision Name                   ; ALU                                         ;
+; Top-level Entity Name           ; ALU                                         ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 0                                           ;
+; Total pins                      ; 35                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Elaboration Settings                                                                                           ;
+; Analysis & Synthesis Settings                                                                                             ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
-; Device                                                                          ; 5CGXFC7C7F23C8     ;                    ;
+; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
 ; Top-level entity name                                                           ; ALU                ; ALU                ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
@@ -190,6 +157,154 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 2           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
++----------------------------+-------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                    ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                ; Library ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------+---------+
+; ALU.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv                  ;         ;
+; Sumador_medio.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/Sumador_medio.sv        ;         ;
+; Sumador_completo.sv              ; yes             ; User SystemVerilog HDL File  ; C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/Sumador_completo.sv     ;         ;
+; sumadornbits.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/sumadornbits.sv         ;         ;
+; DecodificadorBinario.sv          ; yes             ; User SystemVerilog HDL File  ; C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/DecodificadorBinario.sv ;         ;
+; DecodificadorN.sv                ; yes             ; User SystemVerilog HDL File  ; C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/DecodificadorN.sv       ;         ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimate of Logic utilization (ALMs needed) ; 36        ;
+;                                             ;           ;
+; Combinational ALUT usage for logic          ; 53        ;
+;     -- 7 input functions                    ; 0         ;
+;     -- 6 input functions                    ; 19        ;
+;     -- 5 input functions                    ; 2         ;
+;     -- 4 input functions                    ; 9         ;
+;     -- <=3 input functions                  ; 23        ;
+;                                             ;           ;
+; Dedicated logic registers                   ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 35        ;
+;                                             ;           ;
+; Total DSP Blocks                            ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; mode[0]~0 ;
+; Maximum fan-out                             ; 18        ;
+; Total fan-out                               ; 277       ;
+; Average fan-out                             ; 2.25      ;
++---------------------------------------------+-----------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                       ;
++---------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------+----------------------+--------------+
+; Compilation Hierarchy Node                  ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                          ; Entity Name          ; Library Name ;
++---------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------+----------------------+--------------+
+; |ALU                                        ; 53 (31)             ; 0 (0)                     ; 0                 ; 0          ; 35   ; 0            ; |ALU                                                         ; ALU                  ; work         ;
+;    |DecodificadorN:deco|                    ; 14 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|DecodificadorN:deco                                     ; DecodificadorN       ; work         ;
+;       |DecodificadorBinario:for_loop[0].U1| ; 14 (14)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|DecodificadorN:deco|DecodificadorBinario:for_loop[0].U1 ; DecodificadorBinario ; work         ;
+;    |sumadornbits:UUT|                       ; 8 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|sumadornbits:UUT                                        ; sumadornbits         ; work         ;
+;       |Sumador_completo:for_loop[1].U2|     ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|sumadornbits:UUT|Sumador_completo:for_loop[1].U2        ; Sumador_completo     ; work         ;
+;       |Sumador_completo:for_loop[2].U2|     ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|sumadornbits:UUT|Sumador_completo:for_loop[2].U2        ; Sumador_completo     ; work         ;
+;       |Sumador_completo:for_loop[3].U2|     ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|sumadornbits:UUT|Sumador_completo:for_loop[3].U2        ; Sumador_completo     ; work         ;
++---------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------+----------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++---------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                               ;
++----------------------------------------------------+---------------------+------------------------+
+; Latch Name                                         ; Latch Enable Signal ; Free of Timing Hazards ;
++----------------------------------------------------+---------------------+------------------------+
+; num[0][3]$latch                                    ; Mux10               ; yes                    ;
+; mode[0]                                            ; click               ; yes                    ;
+; mode[2]                                            ; click               ; yes                    ;
+; mode[1]                                            ; click               ; yes                    ;
+; num[0][2]$latch                                    ; Mux10               ; yes                    ;
+; num[0][1]$latch                                    ; Mux10               ; yes                    ;
+; num[0][0]$latch                                    ; Mux10               ; yes                    ;
+; num[1][0]$latch                                    ; Mux10               ; yes                    ;
+; carry$latch                                        ; Decoder0            ; yes                    ;
+; Number of user-specified and inferred latches = 9  ;                     ;                        ;
++----------------------------------------------------+---------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; 6:1                ; 4 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; No         ; |ALU|Mux2                  ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |ALU|Mux8                  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |ALU ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; n              ; 4     ; Signed Integer                             ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sumadornbits:UUT ;
++----------------+-------+--------------------------------------+
+; Parameter Name ; Value ; Type                                 ;
++----------------+-------+--------------------------------------+
+; n              ; 4     ; Signed Integer                       ;
++----------------+-------+--------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DecodificadorN:deco ;
++----------------+-------+-----------------------------------------+
+; Parameter Name ; Value ; Type                                    ;
++----------------+-------+-----------------------------------------+
+; n              ; 4     ; Signed Integer                          ;
++----------------+-------+-----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +----------------------------------------------------+
 ; Port Connectivity Checks: "DecodificadorN:deco"    ;
 +------------------+-------+----------+--------------+
@@ -210,59 +325,114 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------+
 
 
-+---------------------------------+
-; Analysis & Elaboration Messages ;
-+---------------------------------+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_lcell_comb     ; 55                          ;
+;     normal            ; 55                          ;
+;         0 data inputs ; 2                           ;
+;         2 data inputs ; 5                           ;
+;         3 data inputs ; 18                          ;
+;         4 data inputs ; 9                           ;
+;         5 data inputs ; 2                           ;
+;         6 data inputs ; 19                          ;
+; boundary_port         ; 35                          ;
+;                       ;                             ;
+; Max LUT depth         ; 4.00                        ;
+; Average LUT depth     ; 2.81                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Elaboration
-    Info: Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
-    Info: Processing started: Thu Feb 29 22:09:55 2024
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ALU -c ALU --analysis_and_elaboration
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+    Info: Processing started: Thu Feb 29 22:36:45 2024
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ALU -c ALU
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file alu.sv
-    Info (12023): Found entity 1: ALU File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 1
+    Info (12023): Found entity 1: ALU File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu_tb.sv
-    Info (12023): Found entity 1: ALU_tb File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU_tb.sv Line: 1
+    Info (12023): Found entity 1: ALU_tb File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file sumador_medio.sv
-    Info (12023): Found entity 1: Sumador_medio File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/Sumador_medio.sv Line: 1
+    Info (12023): Found entity 1: Sumador_medio File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/Sumador_medio.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file sumador_completo.sv
-    Info (12023): Found entity 1: Sumador_completo File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/Sumador_completo.sv Line: 1
+    Info (12023): Found entity 1: Sumador_completo File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/Sumador_completo.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file sumadornbits.sv
-    Info (12023): Found entity 1: sumadornbits File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/sumadornbits.sv Line: 1
+    Info (12023): Found entity 1: sumadornbits File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/sumadornbits.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file decodificadorbinario.sv
-    Info (12023): Found entity 1: DecodificadorBinario File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/DecodificadorBinario.sv Line: 1
+    Info (12023): Found entity 1: DecodificadorBinario File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/DecodificadorBinario.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file decodificadorn.sv
-    Info (12023): Found entity 1: DecodificadorN File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/DecodificadorN.sv Line: 1
+    Info (12023): Found entity 1: DecodificadorN File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/DecodificadorN.sv Line: 1
 Info (12127): Elaborating entity "ALU" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at ALU.sv(43): truncated value with size 32 to match size of target (3) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 43
-Warning (10240): Verilog HDL Always Construct warning at ALU.sv(39): inferring latch(es) for variable "mode", which holds its previous value in one or more paths through the always construct File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 39
-Warning (10240): Verilog HDL Always Construct warning at ALU.sv(39): inferring latch(es) for variable "carry", which holds its previous value in one or more paths through the always construct File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 39
-Info (10041): Inferred latch for "carry" at ALU.sv(39) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 39
-Info (10041): Inferred latch for "num[0][0]" at ALU.sv(39) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 39
-Info (10041): Inferred latch for "num[0][1]" at ALU.sv(39) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 39
-Info (10041): Inferred latch for "num[0][2]" at ALU.sv(39) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 39
-Info (10041): Inferred latch for "num[0][3]" at ALU.sv(39) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 39
-Info (10041): Inferred latch for "num[1][0]" at ALU.sv(39) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 39
-Info (10041): Inferred latch for "num[1][1]" at ALU.sv(39) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 39
-Info (10041): Inferred latch for "num[1][2]" at ALU.sv(39) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 39
-Info (10041): Inferred latch for "num[1][3]" at ALU.sv(39) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 39
-Info (10041): Inferred latch for "mode[0]" at ALU.sv(39) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 39
-Info (10041): Inferred latch for "mode[1]" at ALU.sv(39) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 39
-Info (10041): Inferred latch for "mode[2]" at ALU.sv(39) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 39
-Info (12128): Elaborating entity "sumadornbits" for hierarchy "sumadornbits:UUT" File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 20
-Warning (10030): Net "temporal2[4]" at sumadornbits.sv(12) has no driver or initial value, using a default initial value '0' File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/sumadornbits.sv Line: 12
-Warning (10034): Output port "salida7seg0" at sumadornbits.sv(6) has no driver File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/sumadornbits.sv Line: 6
-Warning (10034): Output port "salida7seg1" at sumadornbits.sv(8) has no driver File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/sumadornbits.sv Line: 8
-Info (12128): Elaborating entity "Sumador_medio" for hierarchy "sumadornbits:UUT|Sumador_medio:U1" File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/sumadornbits.sv Line: 20
-Info (12128): Elaborating entity "Sumador_completo" for hierarchy "sumadornbits:UUT|Sumador_completo:for_loop[1].U2" File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/sumadornbits.sv Line: 29
-Info (12128): Elaborating entity "DecodificadorN" for hierarchy "DecodificadorN:deco" File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 24
-Info (12128): Elaborating entity "DecodificadorBinario" for hierarchy "DecodificadorN:deco|DecodificadorBinario:for_loop[0].U1" File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/DecodificadorN.sv Line: 15
+Warning (10230): Verilog HDL assignment warning at ALU.sv(43): truncated value with size 32 to match size of target (3) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 43
+Warning (10240): Verilog HDL Always Construct warning at ALU.sv(39): inferring latch(es) for variable "mode", which holds its previous value in one or more paths through the always construct File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 39
+Warning (10240): Verilog HDL Always Construct warning at ALU.sv(39): inferring latch(es) for variable "carry", which holds its previous value in one or more paths through the always construct File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 39
+Info (10041): Inferred latch for "carry" at ALU.sv(39) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 39
+Info (10041): Inferred latch for "num[0][0]" at ALU.sv(39) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 39
+Info (10041): Inferred latch for "num[0][1]" at ALU.sv(39) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 39
+Info (10041): Inferred latch for "num[0][2]" at ALU.sv(39) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 39
+Info (10041): Inferred latch for "num[0][3]" at ALU.sv(39) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 39
+Info (10041): Inferred latch for "num[1][0]" at ALU.sv(39) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 39
+Info (10041): Inferred latch for "num[1][1]" at ALU.sv(39) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 39
+Info (10041): Inferred latch for "num[1][2]" at ALU.sv(39) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 39
+Info (10041): Inferred latch for "num[1][3]" at ALU.sv(39) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 39
+Info (10041): Inferred latch for "mode[0]" at ALU.sv(39) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 39
+Info (10041): Inferred latch for "mode[1]" at ALU.sv(39) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 39
+Info (10041): Inferred latch for "mode[2]" at ALU.sv(39) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 39
+Info (12128): Elaborating entity "sumadornbits" for hierarchy "sumadornbits:UUT" File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 20
+Warning (10030): Net "temporal2[4]" at sumadornbits.sv(12) has no driver or initial value, using a default initial value '0' File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/sumadornbits.sv Line: 12
+Warning (10034): Output port "salida7seg0" at sumadornbits.sv(6) has no driver File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/sumadornbits.sv Line: 6
+Warning (10034): Output port "salida7seg1" at sumadornbits.sv(8) has no driver File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/sumadornbits.sv Line: 8
+Info (12128): Elaborating entity "Sumador_medio" for hierarchy "sumadornbits:UUT|Sumador_medio:U1" File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/sumadornbits.sv Line: 20
+Info (12128): Elaborating entity "Sumador_completo" for hierarchy "sumadornbits:UUT|Sumador_completo:for_loop[1].U2" File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/sumadornbits.sv Line: 29
+Info (12128): Elaborating entity "DecodificadorN" for hierarchy "DecodificadorN:deco" File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 24
+Info (12128): Elaborating entity "DecodificadorBinario" for hierarchy "DecodificadorN:deco|DecodificadorBinario:for_loop[0].U1" File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/DecodificadorN.sv Line: 15
 Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 8 warnings
-    Info: Peak virtual memory: 4777 megabytes
-    Info: Processing ended: Thu Feb 29 22:10:04 2024
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:23
+Warning (13012): Latch num[0][3]$latch has unsafe behavior File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 39
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal mode[2] File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 39
+Warning (13012): Latch num[0][2]$latch has unsafe behavior File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 39
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal mode[2] File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 39
+Warning (13012): Latch num[0][1]$latch has unsafe behavior File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 39
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal mode[2] File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 39
+Warning (13012): Latch num[0][0]$latch has unsafe behavior File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 39
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal mode[2] File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 39
+Warning (13012): Latch num[1][0]$latch has unsafe behavior File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 39
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal mode[1] File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 39
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "neg" is stuck at GND File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 4
+    Warning (13410): Pin "des" is stuck at GND File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 7
+    Warning (13410): Pin "num[1][1]" is stuck at GND File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 39
+    Warning (13410): Pin "num[1][2]" is stuck at GND File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 39
+    Warning (13410): Pin "num[1][3]" is stuck at GND File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 39
+    Warning (13410): Pin "out[1][1]" is stuck at GND File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 9
+    Warning (13410): Pin "out[1][2]" is stuck at GND File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 9
+    Warning (13410): Pin "out[1][6]" is stuck at VCC File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 9
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 88 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 9 input pins
+    Info (21059): Implemented 26 output pins
+    Info (21061): Implemented 53 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 27 warnings
+    Info: Peak virtual memory: 4798 megabytes
+    Info: Processing ended: Thu Feb 29 22:37:11 2024
+    Info: Elapsed time: 00:00:26
+    Info: Total CPU time (on all processors): 00:00:45
 
 
