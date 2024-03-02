@@ -2,7 +2,7 @@ module ALU_tb;
 	
 	logic [3:0] in1 = 0;
 	logic [3:0] in2 = 0;
-	logic click = 0;
+	logic [3:0] mode = 0;
 	logic neg;
 	logic cero;
 	logic carry;
@@ -12,7 +12,7 @@ module ALU_tb;
 	
 	ALU #(4) alu_test (.in1(in1),
 							 .in2(in2),
-							 .click(click),
+							 .mode(mode),
 							 .num(num),
 							 .neg(neg),
 							 .cero(cero),
@@ -32,19 +32,13 @@ module ALU_tb;
 		#10;
 		
 		#5;
-		click=1;
-		#5;
-		click=0;
+		mode = 1;
 		// Resta test
 		#5;
-		click=1;
-		#5;
-		click=0;
+		mode = 2;
 		// Multiplicacion test
 		#5;
-		click=1;
-		#5;
-		click=0;
+		mode = 3;
 		// AND test
 		#5;
 		in1 = 5;
@@ -55,29 +49,29 @@ module ALU_tb;
 		#10;
 		
 		#5;
-		click=1;
-		#5;
-		click=0;
+		mode = 4;
 		// Or  test
 		#5;
-		click=1;
-		#5;
-		click=0;
+		mode = 5;
 		// Xor test
 		#5;
-		click=1;
-		#5;
-		click=0;
+		mode = 6;
 		// Shift left test
 		#5;
-		click=1;
-		#5;
-		click=0;
+		mode = 7;
 		// Shift right test
 		#5;
-		click=1;
+		mode = 8;
+		// Division test
 		#5;
-		click=0;
+		mode = 9;
+		// Modulo test
+		#5;
+		mode = 10; // Error
+		#5;
+		// Regreso
+		mode = 0;
+		#5;
 	end
 	
 /*

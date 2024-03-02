@@ -1,6 +1,6 @@
 module ALU #(parameter n = 4) (input logic [n - 1:0] in1,
 										 input logic [n - 1:0] in2,
-										 input logic click,
+										 input logic [3:0] mode,
 										output logic neg,
 										output logic cero,
 										output logic carry,
@@ -9,7 +9,6 @@ module ALU #(parameter n = 4) (input logic [n - 1:0] in1,
 										output logic [6:0] mode_seg,
 										output logic [1:0] [6:0] out);
 
-	logic [2:0] mode;
 	logic [3:0] Resultado_sum;
 	logic Cout_sum;
 	logic [1:0] [6:0] seg7_1;
@@ -28,7 +27,6 @@ module ALU #(parameter n = 4) (input logic [n - 1:0] in1,
 		out[0] = 7'b1000000;
 		out[1] = 7'b1000000;
 		num = 0;
-		mode = 0;
 		neg = 1;
 		cero = 1;
 		carry = 0;
@@ -39,17 +37,6 @@ module ALU #(parameter n = 4) (input logic [n - 1:0] in1,
 	
 	always @ (*)
 	begin
-		if (click == 1 && x == 0) begin
-			if (mode == 4'b1001) begin
-				mode = 0;
-			end else begin
-				mode = mode + 1;
-			end
-			x = 1;
-		end
-		if (click == 0 && x == 1)begin
-			x = 0;
-		end
 		case (mode)
 			4'b0000: begin // Suma
 							mode_seg = 7'b1000000;
@@ -83,15 +70,18 @@ module ALU #(parameter n = 4) (input logic [n - 1:0] in1,
 			4'b0111: begin // Shift Right 
 							mode_seg = 7'b1111000;
 					  end
-			4'b1000 : begin // División
+			4'b1000: begin // División
 							mode_seg = 7'b0000000;
 							num = in1 / in2;
 						end
-			4'b1001 : begin // Módulo
+			4'b1001: begin // Módulo
 							mode_seg = 7'b0010000;
 							num = in1 % in2;
 						end
-			
+			default: begin // Error
+							num = 1;
+							x = 1;
+						end
 			
 		endcase
 		if (num == 0) begin
@@ -100,7 +90,13 @@ module ALU #(parameter n = 4) (input logic [n - 1:0] in1,
 			out[1] = 7'b1000000;
 		end else begin
 			cero = 0;
-			out = seg7_1;
+			if (x) begin
+				x = 0;
+				out[0] = 7'b0000110;
+				out[1] = 7'b0101111;
+			end else begin
+				out = seg7_1;
+			end
 		end
 	end
 	
