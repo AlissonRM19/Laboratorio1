@@ -24,10 +24,10 @@ module ALU #(parameter n = 4) (input logic [n - 1:0] in1,
 		.seg(seg7_1)
 	);
 	initial begin
-		out[0] = 7'b1000000;
-		out[1] = 7'b1000000;
+		out[0] = 7'b0000000;
+		out[1] = 7'b0000000;
 		num = 0;
-		neg = 1;
+		neg = 0;
 		cero = 1;
 		carry = 0;
 		des = 0;
@@ -49,7 +49,7 @@ module ALU #(parameter n = 4) (input logic [n - 1:0] in1,
 					  end
 			4'b0010: begin // Multiplicacion
 							mode_seg = 7'b0100100;
-							neg = 1;
+							neg = 0;
 					  end
 			4'b0011: begin // AND
 							mode_seg = 7'b0110000;
@@ -80,6 +80,7 @@ module ALU #(parameter n = 4) (input logic [n - 1:0] in1,
 						end
 			default: begin // Error
 							num = 1;
+							mode_seg = 7'b0001001;
 							x = 1;
 						end
 			
@@ -92,8 +93,8 @@ module ALU #(parameter n = 4) (input logic [n - 1:0] in1,
 			cero = 0;
 			if (x) begin
 				x = 0;
-				out[0] = 7'b0000110;
-				out[1] = 7'b0101111;
+				out[0] = 7'b0000000;
+				out[1] = 7'b0000000;
 			end else begin
 				out = seg7_1;
 			end
