@@ -146,5 +146,60 @@ module restadornbits_tb;
 	$stop;
 	end
 endmodule*/
+
+
+//testbench para la multiplicacion
+/*
+module multiplier_tb;
+
+    // Parámetros del testbench
+    parameter n = 4;
+
+    // Señales de entrada y salida
+    logic [n-1:0] A, B;
+    logic [n-1:0] Result;
+
+    // Instancia del módulo de multiplicación
+    multiplier #(n) dut (
+        .A(A),
+        .B(B),
+        .Result(Result)
+    );
+
+    // Proceso de estimulación
+    initial begin
+        // Caso de prueba 1
+        A = 4'b1111;
+        B = 4'b1111;
+        #60;
+        $display("Caso de prueba 1:");
+        $display("Operando A: %b", A);
+        $display("Operando B: %b", B);
+        $display("Resultado: %b", Result);
+
+        // Caso de prueba 2
+        A = 4'b0010;
+        B = 4'b0010;
+        #60;
+        $display("Caso de prueba 2:");
+        $display("Operando A: %b", A);
+        $display("Operando B: %b", B);
+        $display("Resultado: %b", Result);
+
+        // Caso de prueba 3
+        A = 4'b0011;
+        B = 4'b0011;
+        #60;
+        $display("Caso de prueba 3:");
+        $display("Operando A: %b", A);
+        $display("Operando B: %b", B);
+        $display("Resultado: %b", Result);
+        
+        // Finaliza la simulación
+        $stop;
+    end
+
+endmodule
+*/
 	
 endmodule
