@@ -24,8 +24,8 @@ module ALU #(parameter n = 4) (input logic [n - 1:0] in1,
 		.seg(seg7_1)
 	);
 	initial begin
-		out[0] = 7'b0000000;
-		out[1] = 7'b0000000;
+		out[0] = 7'b1000000;
+		out[1] = 7'b1000000;
 		num = 0;
 		neg = 0;
 		cero = 1;
@@ -93,8 +93,8 @@ module ALU #(parameter n = 4) (input logic [n - 1:0] in1,
 			cero = 0;
 			if (x) begin
 				x = 0;
-				out[0] = 7'b0000000;
-				out[1] = 7'b0000000;
+				out[0] = 7'b1000000;
+				out[1] = 7'b1000000;
 			end else begin
 				out = seg7_1;
 			end
