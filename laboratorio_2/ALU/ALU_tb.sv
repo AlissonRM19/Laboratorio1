@@ -205,54 +205,42 @@ module restadornbits_tb;
 endmodule*/
 
 
+
+
+
+
 //testbench para la multiplicacion
 /*
-module multiplier_tb;
+module multiplicador_tb;
 
-    // Parámetros del testbench
-    parameter n = 4;
+    logic [3:0] Inp1, Inp2;
 
-    // Señales de entrada y salida
-    logic [n-1:0] A, B;
-    logic [n-1:0] Result;
+    logic [7:0] Product;
 
-    // Instancia del módulo de multiplicación
-    multiplier #(n) dut (
-        .A(A),
-        .B(B),
-        .Result(Result)
+    multiplicador MNB (
+        .Inp1(Inp1),
+        .Inp2(Inp2),
+        .Product(Product)
     );
 
-    // Proceso de estimulación
+
     initial begin
-        // Caso de prueba 1
-        A = 4'b1111;
-        B = 4'b1111;
-        #60;
-        $display("Caso de prueba 1:");
-        $display("Operando A: %b", A);
-        $display("Operando B: %b", B);
-        $display("Resultado: %b", Result);
+	 
+        Inp1 = 4'b1111;
+        Inp2 = 4'b1111;
+        #100;
+		  $display("Inp1 = %b, Inp2 = %b, Product = %b", Inp1, Inp2, Product);
+		  
+        Inp1 = 4'b0011;
+        Inp2 = 4'b1100;  
+        #100;
+		  $display("Inp1 = %b, Inp2 = %b, Product = %b", Inp1, Inp2, Product);
+   
+        Inp1 = 4'b0101;
+        Inp2 = 4'b0011;
+        #100;
+		  $display("Inp1 = %b, Inp2 = %b, Product = %b", Inp1, Inp2, Product);
 
-        // Caso de prueba 2
-        A = 4'b0010;
-        B = 4'b0010;
-        #60;
-        $display("Caso de prueba 2:");
-        $display("Operando A: %b", A);
-        $display("Operando B: %b", B);
-        $display("Resultado: %b", Result);
-
-        // Caso de prueba 3
-        A = 4'b0011;
-        B = 4'b0011;
-        #60;
-        $display("Caso de prueba 3:");
-        $display("Operando A: %b", A);
-        $display("Operando B: %b", B);
-        $display("Resultado: %b", Result);
-        
-        // Finaliza la simulación
         $stop;
     end
 
