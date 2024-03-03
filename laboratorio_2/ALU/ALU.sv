@@ -10,7 +10,9 @@ module ALU #(parameter n = 4) (input logic [n - 1:0] in1,
 										output logic [1:0] [6:0] out);
 
 	logic [3:0] Resultado_sum;
+	logic [3:0] Resultado_res;
 	logic Cout_sum;
+	logic Cout_res;
 	logic [1:0] [6:0] seg7_1;
 	integer x;
 	sumadornbits UUT(
@@ -19,13 +21,19 @@ module ALU #(parameter n = 4) (input logic [n - 1:0] in1,
 		.Resultado(Resultado_sum),
 		.Cout(Cout_sum)
 	);
+	restadornbits UUT_r (
+		.Ent1(in1),
+		.Ent2(in2),
+		.Resultado(Resultado_res),
+		.Cout(Cout_res)
+	);
 	DecodificadorN deco (
 		.num_all(num),
 		.seg(seg7_1)
 	);
 	initial begin
-		out[0] = 7'b1000000;
-		out[1] = 7'b1000000;
+		out[0] = 7'b1111111;
+		out[1] = 7'b1111111;
 		num = 0;
 		neg = 0;
 		cero = 1;
@@ -46,6 +54,14 @@ module ALU #(parameter n = 4) (input logic [n - 1:0] in1,
 					  end
 			4'b0001: begin // Resta
 							mode_seg = 7'b1111001;
+							if (Cout_res) begin
+								num[0] = ~Resultado_res + 1;
+							end else begin
+								num[0] = Resultado_res;
+							end
+							num[1] = 0;
+							carry = 0;
+							neg = Cout_res;
 					  end
 			4'b0010: begin // Multiplicacion
 							mode_seg = 7'b0100100;
@@ -53,7 +69,6 @@ module ALU #(parameter n = 4) (input logic [n - 1:0] in1,
 					  end
 			4'b0011: begin // AND
 							mode_seg = 7'b0110000;
-							carry = 0;
 							num = in1 & in2;
 					  end
 			4'b0100: begin	// OR
@@ -66,9 +81,11 @@ module ALU #(parameter n = 4) (input logic [n - 1:0] in1,
 					  end
 			4'b0110: begin // Shift Left
 							mode_seg = 7'b0000010;
+							num = in1 << in2;
 					  end
 			4'b0111: begin // Shift Right 
 							mode_seg = 7'b1111000;
+							num = in1 >> in2;
 					  end
 			4'b1000: begin // División
 							mode_seg = 7'b0000000;
@@ -93,8 +110,8 @@ module ALU #(parameter n = 4) (input logic [n - 1:0] in1,
 			cero = 0;
 			if (x) begin
 				x = 0;
-				out[0] = 7'b1000000;
-				out[1] = 7'b1000000;
+				out[0] = 7'b1111111;
+				out[1] = 7'b1111111;
 			end else begin
 				out = seg7_1;
 			end

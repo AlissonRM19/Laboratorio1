@@ -16,7 +16,7 @@ Restador_medio U1 (
 	.A(Ent1[0]),
 	.B(Ent2[0]),
 	.Cout(temporal1[0]),
-	.Suma(temporal2[0])
+	.Resta(temporal2[0])
 );
 
 for (i=1; i<n; i= i+1) begin: for_loop
@@ -25,7 +25,7 @@ for (i=1; i<n; i= i+1) begin: for_loop
 		.A(Ent1[i]),
 		.B(Ent2[i]),
 		.Cout(temporal1[i]),
-		.Suma(temporal2[i])
+		.Resta(temporal2[i])
 	);
 end
 
