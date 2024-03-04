@@ -1,44 +1,90 @@
-module multiplicador (input logic [3:0]Inp1, Inp2, output logic [7:0]Product);
+module multiplicador #(parameter n = 4) (
+	input logic [n-1:0] Inp1, Inp2, 
+	output logic [2*n-1:0] Product, 
+	output logic CarryOut	       
+);
 
-	  logic [3:0] patials[3:0]; 
-	  logic [4:0] bitcarry[2:0];
-	  logic [3:0] merge_vector[1:0];
-	  logic varr;
+	// Matrices para cálculos intermedios
+	logic [n-1:0] suma_array[n-1:0];
+	logic [n-1:0] carry_array[n-1:0];
+	
+	// Matrices para E/S intermedias
 
-	  genvar i, j;
+	logic [n-1:0] elem1[n-1:0];
+	logic [n-1:0] elem2[n-1:0];
+	logic [n-1:0] Carry_calc[n-1:0]; // Almacena bits de acarreo calculados durante la multiplicación
+	logic [n-1:0] Carry_in[n-1:0]; 	// Almacena bits de acarreo de entrada para cada celda
+	logic [n-1:0] SumaResult[n-1:0]; // Almacena resultados de las sumas parciales
+	logic [n-1:0] Carry_out[n-1:0]; 	// Almacena bits de acarreo de salida de cada celda
 
-	  //Productos parciales
-	  generate
-		  for (i = 0; i < 4; i = i + 1) begin : Gen_Partial_F
-			 for (j = 0; j < 4; j = j + 1) begin : Gen_Partial_C
-				  assign  patials[i][j] = Inp1[i] & Inp2[j];
-			 end
-		  end
-		endgenerate
-
-		//Matriz de resultados
-		assign Product[0] = patials[0][0];
-
+	integer i, j;
+	
+	
+	// Generación de productos parciales
+	generate 
+	
+	genvar x, y;
+		for (x = 0; x < n; x = x+1) begin : gen_row
 		
-		Sumador_medio SM0L1(patials[0][1], patials[1][0], bitcarry[0][0], Product[1]);
-		Sumador_medio SM1L1(patials[0][2], patials[1][1], bitcarry[0][1], merge_vector[0][0]);
-		Sumador_medio SM2L1(patials[0][3], patials[1][2], bitcarry[0][2], merge_vector[0][1]);
-		Sumador_medio SM3L1(patials[1][3], patials[2][2], bitcarry[0][3], merge_vector[0][2]);
-		Sumador_medio SM4L1(patials[2][3], patials[3][2], bitcarry[0][4], merge_vector[0][3]);
-
+			for (y = 0; y < n; y = y+1) begin : gen_column
+			
+				// Instancia del generador de producto parcial.
+				Productos_Parciales PPX(
+					elem1[x][y],
+					elem2[x][y],
+					Carry_calc[x][y],
+					Carry_in[x][y],
+					SumaResult[x][y],
+					Carry_out[x][y]
+				);
+				
+			end 
+			
+		end
 		
-		Sumador_completo SC0L2(merge_vector[0][0], patials[2][0], bitcarry[0][0], bitcarry[1][0], Product[2]);
-		Sumador_completo SC1L2(merge_vector[0][1], patials[2][1], bitcarry[0][1], bitcarry[1][1], merge_vector[1][0]);
-		Sumador_completo SC2L2(merge_vector[0][2], patials[3][1], bitcarry[0][2], bitcarry[1][2], merge_vector[1][1]);
-		
-		Sumador_medio SM5L2(merge_vector[0][3], bitcarry[0][3], bitcarry[1][3], merge_vector[1][2]);
-		Sumador_medio SM6L2(patials[3][3], bitcarry[0][4], bitcarry[1][4], merge_vector[1][3]);
+	endgenerate
+	
+	// Calculos mediante asignaciones
+	always@* begin 
+		for(i = 0; i < n; i = i + 1) begin
+          for(j =  0; j < n; j = j + 1) begin
+			 
+              elem1[i][j] = Inp1[i];
+              elem2[i][j] = Inp2[j];
+				  
+				  
+              Carry_calc[i][j] = (i == 0) ? 1'b0 :  	 // Si i es igual a 0, el bit de acarreo para la primera fila es 0, porque no hay acarreo desde la fila anterior
+				  
+					  (j == (n-1)) ? carry_array[i-1][j] :  // Si j es igual a n-1, se asigna el bit de acarreo de la columna anterior para la misma fila
+					  
+					  suma_array[i-1][j+1];						 // Si las condiciones no se cumplen, se considera el bit de acarreo proveniente de la operación realizada en j+1
+																	    // y en i-1.
+				  
+				  
+              Carry_in[i][j] = (j == 0) ? 1'b0 : 		 // Si j es igual a 0, el bit de acarreo de entrada es 0, entonces no hay acarreo de entrada desde la columna anterior
+				  
+					  carry_array[i][j-1];				 		 // Si j no es igual a 0, el bit de acarreo de entrada se toma del bit de acarreo en la I pero en la columna anterior j-1
+					  
 
-		Sumador_completo SC3L3(merge_vector[1][0], patials[3][0], bitcarry[1][0], bitcarry[2][0], Product[3]);
-		Sumador_completo SC4L3(merge_vector[1][1], bitcarry[2][0], bitcarry[1][1], bitcarry[2][1], Product[4]);
-		Sumador_completo SC5L3(merge_vector[1][2], bitcarry[2][1], bitcarry[1][2], bitcarry[2][2], Product[5]);
-		Sumador_completo SC6L3(merge_vector[1][3], bitcarry[2][2], bitcarry[1][3], bitcarry[2][3], Product[6]);
+				  // Asignación de matrices de suma y acarreo
+              suma_array[i][j] = SumaResult[i][j];
+              carry_array[i][j] = Carry_out[i][j];
+			
+          end
+      end
+      
+		// Asignar los valores de salida
+      for(i = 0; i < n; i = i + 1) begin
+			Product[i] = suma_array[i][0];
+      end
 		
-		Sumador_medio SM7L3(bitcarry[1][4], bitcarry[2][3], varr, Product[7]);
-
+      for(i = 1; i < n; i = i + 1) begin
+			Product[n+i-1] = suma_array[n-1][i];
+		end
+		
+      Product[2*n-1] = carry_array[n-1][n-1];
+		CarryOut = carry_array[n-1][n-1];
+		
+    end
+	
 endmodule

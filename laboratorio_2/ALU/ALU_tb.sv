@@ -211,36 +211,59 @@ endmodule*/
 
 //testbench para la multiplicacion
 /*
-module multiplicador_tb;
+module multiplier_tb;
 
-    logic [3:0] Inp1, Inp2;
+	 // Parámetros
+    parameter n = 4;
 
-    logic [7:0] Product;
+    // Definición de señales
+    logic [n-1:0] Inp1, Inp2;
+    logic [2*n-1:0] Product;
+    logic CarryOut;
 
-    multiplicador MNB (
+    // Instanciación del módulo a probar
+    multiplicador #(n) dut (
         .Inp1(Inp1),
         .Inp2(Inp2),
-        .Product(Product)
+        .Product(Product),
+        .CarryOut(CarryOut)
     );
 
 
     initial begin
 	 
+        // Inicialización de entradas
         Inp1 = 4'b1111;
         Inp2 = 4'b1111;
-        #100;
-		  $display("Inp1 = %b, Inp2 = %b, Product = %b", Inp1, Inp2, Product);
 		  
-        Inp1 = 4'b0011;
-        Inp2 = 4'b1100;  
         #100;
-		  $display("Inp1 = %b, Inp2 = %b, Product = %b", Inp1, Inp2, Product);
-   
+		  
+		  $display("Input1: %b", Inp1);
+        $display("Input2: %b", Inp2);
+        $display("Product: %b", Product);
+        $display("CarryOut: %b", CarryOut);
+
+        // Test case 1: 0 x 0
+        Inp1 = 4'b0011;
+        Inp2 = 4'b1100;
+		  
+        #100;
+		  
+		  $display("Input1: %b", Inp1);
+        $display("Input2: %b", Inp2);
+        $display("Product: %b", Product);
+        $display("CarryOut: %b", CarryOut);
+        // Test case 2: 5 x 3
         Inp1 = 4'b0101;
         Inp2 = 4'b0011;
+		  
         #100;
-		  $display("Inp1 = %b, Inp2 = %b, Product = %b", Inp1, Inp2, Product);
+		  $display("Input1: %b", Inp1);
+        $display("Input2: %b", Inp2);
+        $display("Product: %b", Product);
+        $display("CarryOut: %b", CarryOut);
 
+        // Finalización de la simulación
         $stop;
     end
 
