@@ -1,5 +1,5 @@
 Analysis & Elaboration report for ALU
-Sat Mar  2 23:58:29 2024
+Tue Mar  5 09:30:50 2024
 Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
@@ -12,11 +12,19 @@ Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
   4. Parameter Settings for User Entity Instance: Top-level Entity: |ALU
   5. Parameter Settings for User Entity Instance: sumadornbits:UUT
   6. Parameter Settings for User Entity Instance: restadornbits:UUT_r
-  7. Parameter Settings for User Entity Instance: DecodificadorN:deco
-  8. Analysis & Elaboration Settings
-  9. Port Connectivity Checks: "restadornbits:UUT_r"
- 10. Port Connectivity Checks: "sumadornbits:UUT"
- 11. Analysis & Elaboration Messages
+  7. Parameter Settings for User Entity Instance: multiplicador:dut
+  8. Parameter Settings for User Entity Instance: DecodificadorN:deco
+  9. Analysis & Elaboration Settings
+ 10. Port Connectivity Checks: "multiplicador:dut|Productos_Parciales:gen_row[3].gen_column[0].PPX"
+ 11. Port Connectivity Checks: "multiplicador:dut|Productos_Parciales:gen_row[2].gen_column[0].PPX"
+ 12. Port Connectivity Checks: "multiplicador:dut|Productos_Parciales:gen_row[1].gen_column[0].PPX"
+ 13. Port Connectivity Checks: "multiplicador:dut|Productos_Parciales:gen_row[0].gen_column[3].PPX"
+ 14. Port Connectivity Checks: "multiplicador:dut|Productos_Parciales:gen_row[0].gen_column[2].PPX"
+ 15. Port Connectivity Checks: "multiplicador:dut|Productos_Parciales:gen_row[0].gen_column[1].PPX"
+ 16. Port Connectivity Checks: "multiplicador:dut|Productos_Parciales:gen_row[0].gen_column[0].PPX"
+ 17. Port Connectivity Checks: "restadornbits:UUT_r"
+ 18. Port Connectivity Checks: "sumadornbits:UUT"
+ 19. Analysis & Elaboration Messages
 
 
 
@@ -43,7 +51,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                                 ;
 +-------------------------------+------------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Sat Mar  2 23:58:29 2024          ;
+; Analysis & Elaboration Status ; Successful - Tue Mar  5 09:30:50 2024          ;
 ; Quartus Prime Version         ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
 ; Revision Name                 ; ALU                                            ;
 ; Top-level Entity Name         ; ALU                                            ;
@@ -101,6 +109,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+-----------------------------------------+
 ; n              ; 4     ; Signed Integer                          ;
 +----------------+-------+-----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: multiplicador:dut ;
++----------------+-------+---------------------------------------+
+; Parameter Name ; Value ; Type                                  ;
++----------------+-------+---------------------------------------+
+; n              ; 4     ; Signed Integer                        ;
++----------------+-------+---------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -201,6 +219,70 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
++------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "multiplicador:dut|Productos_Parciales:gen_row[3].gen_column[0].PPX" ;
++----------+-------+----------+------------------------------------------------------------------+
+; Port     ; Type  ; Severity ; Details                                                          ;
++----------+-------+----------+------------------------------------------------------------------+
+; Carry_in ; Input ; Info     ; Stuck at GND                                                     ;
++----------+-------+----------+------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "multiplicador:dut|Productos_Parciales:gen_row[2].gen_column[0].PPX" ;
++----------+-------+----------+------------------------------------------------------------------+
+; Port     ; Type  ; Severity ; Details                                                          ;
++----------+-------+----------+------------------------------------------------------------------+
+; Carry_in ; Input ; Info     ; Stuck at GND                                                     ;
++----------+-------+----------+------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "multiplicador:dut|Productos_Parciales:gen_row[1].gen_column[0].PPX" ;
++----------+-------+----------+------------------------------------------------------------------+
+; Port     ; Type  ; Severity ; Details                                                          ;
++----------+-------+----------+------------------------------------------------------------------+
+; Carry_in ; Input ; Info     ; Stuck at GND                                                     ;
++----------+-------+----------+------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "multiplicador:dut|Productos_Parciales:gen_row[0].gen_column[3].PPX" ;
++------+-------+----------+----------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                              ;
++------+-------+----------+----------------------------------------------------------------------+
+; fac  ; Input ; Info     ; Stuck at GND                                                         ;
++------+-------+----------+----------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "multiplicador:dut|Productos_Parciales:gen_row[0].gen_column[2].PPX" ;
++------+-------+----------+----------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                              ;
++------+-------+----------+----------------------------------------------------------------------+
+; fac  ; Input ; Info     ; Stuck at GND                                                         ;
++------+-------+----------+----------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "multiplicador:dut|Productos_Parciales:gen_row[0].gen_column[1].PPX" ;
++------+-------+----------+----------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                              ;
++------+-------+----------+----------------------------------------------------------------------+
+; fac  ; Input ; Info     ; Stuck at GND                                                         ;
++------+-------+----------+----------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "multiplicador:dut|Productos_Parciales:gen_row[0].gen_column[0].PPX" ;
++----------+-------+----------+------------------------------------------------------------------+
+; Port     ; Type  ; Severity ; Details                                                          ;
++----------+-------+----------+------------------------------------------------------------------+
+; fac      ; Input ; Info     ; Stuck at GND                                                     ;
+; Carry_in ; Input ; Info     ; Stuck at GND                                                     ;
++----------+-------+----------+------------------------------------------------------------------+
+
+
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "restadornbits:UUT_r"                                                                                                                ;
 +-------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------+
@@ -229,7 +311,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
-    Info: Processing started: Sat Mar  2 23:58:22 2024
+    Info: Processing started: Tue Mar  5 09:30:43 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ALU -c ALU --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -255,72 +337,68 @@ Info (12021): Found 1 design units, including 1 entities, in source file restado
     Info (12023): Found entity 1: restadornbits File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/restadornbits.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file multiplicador.sv
     Info (12023): Found entity 1: multiplicador File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/multiplicador.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file productos_parciales.sv
+    Info (12023): Found entity 1: Productos_Parciales File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/Productos_Parciales.sv Line: 1
 Info (12127): Elaborating entity "ALU" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at ALU.sv(58): truncated value with size 32 to match size of target (4) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 58
-Warning (10240): Verilog HDL Always Construct warning at ALU.sv(48): inferring latch(es) for variable "x", which holds its previous value in one or more paths through the always construct File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 48
-Warning (10240): Verilog HDL Always Construct warning at ALU.sv(48): inferring latch(es) for variable "neg", which holds its previous value in one or more paths through the always construct File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 48
-Warning (10240): Verilog HDL Always Construct warning at ALU.sv(48): inferring latch(es) for variable "carry", which holds its previous value in one or more paths through the always construct File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 48
-Info (10041): Inferred latch for "carry" at ALU.sv(48) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 48
-Info (10041): Inferred latch for "neg" at ALU.sv(48) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 48
-Info (10041): Inferred latch for "num[0][0]" at ALU.sv(48) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 48
-Info (10041): Inferred latch for "num[0][1]" at ALU.sv(48) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 48
-Info (10041): Inferred latch for "num[0][2]" at ALU.sv(48) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 48
-Info (10041): Inferred latch for "num[0][3]" at ALU.sv(48) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 48
-Info (10041): Inferred latch for "num[1][0]" at ALU.sv(48) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 48
-Info (10041): Inferred latch for "num[1][1]" at ALU.sv(48) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 48
-Info (10041): Inferred latch for "num[1][2]" at ALU.sv(48) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 48
-Info (10041): Inferred latch for "num[1][3]" at ALU.sv(48) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 48
-Info (10041): Inferred latch for "x[0]" at ALU.sv(110) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 110
-Info (10041): Inferred latch for "x[1]" at ALU.sv(110) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 110
-Info (10041): Inferred latch for "x[2]" at ALU.sv(110) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 110
-Info (10041): Inferred latch for "x[3]" at ALU.sv(110) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 110
-Info (10041): Inferred latch for "x[4]" at ALU.sv(110) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 110
-Info (10041): Inferred latch for "x[5]" at ALU.sv(110) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 110
-Info (10041): Inferred latch for "x[6]" at ALU.sv(110) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 110
-Info (10041): Inferred latch for "x[7]" at ALU.sv(110) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 110
-Info (10041): Inferred latch for "x[8]" at ALU.sv(110) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 110
-Info (10041): Inferred latch for "x[9]" at ALU.sv(110) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 110
-Info (10041): Inferred latch for "x[10]" at ALU.sv(110) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 110
-Info (10041): Inferred latch for "x[11]" at ALU.sv(110) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 110
-Info (10041): Inferred latch for "x[12]" at ALU.sv(110) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 110
-Info (10041): Inferred latch for "x[13]" at ALU.sv(110) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 110
-Info (10041): Inferred latch for "x[14]" at ALU.sv(110) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 110
-Info (10041): Inferred latch for "x[15]" at ALU.sv(110) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 110
-Info (10041): Inferred latch for "x[16]" at ALU.sv(110) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 110
-Info (10041): Inferred latch for "x[17]" at ALU.sv(110) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 110
-Info (10041): Inferred latch for "x[18]" at ALU.sv(110) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 110
-Info (10041): Inferred latch for "x[19]" at ALU.sv(110) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 110
-Info (10041): Inferred latch for "x[20]" at ALU.sv(110) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 110
-Info (10041): Inferred latch for "x[21]" at ALU.sv(110) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 110
-Info (10041): Inferred latch for "x[22]" at ALU.sv(110) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 110
-Info (10041): Inferred latch for "x[23]" at ALU.sv(110) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 110
-Info (10041): Inferred latch for "x[24]" at ALU.sv(110) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 110
-Info (10041): Inferred latch for "x[25]" at ALU.sv(110) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 110
-Info (10041): Inferred latch for "x[26]" at ALU.sv(110) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 110
-Info (10041): Inferred latch for "x[27]" at ALU.sv(110) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 110
-Info (10041): Inferred latch for "x[28]" at ALU.sv(110) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 110
-Info (10041): Inferred latch for "x[29]" at ALU.sv(110) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 110
-Info (10041): Inferred latch for "x[30]" at ALU.sv(110) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 110
-Info (10041): Inferred latch for "x[31]" at ALU.sv(110) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 110
-Info (12128): Elaborating entity "sumadornbits" for hierarchy "sumadornbits:UUT" File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 23
+Warning (10230): Verilog HDL assignment warning at ALU.sv(66): truncated value with size 32 to match size of target (4) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 66
+Warning (10240): Verilog HDL Always Construct warning at ALU.sv(56): inferring latch(es) for variable "x", which holds its previous value in one or more paths through the always construct File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 56
+Warning (10240): Verilog HDL Always Construct warning at ALU.sv(56): inferring latch(es) for variable "neg", which holds its previous value in one or more paths through the always construct File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 56
+Warning (10240): Verilog HDL Always Construct warning at ALU.sv(56): inferring latch(es) for variable "carry", which holds its previous value in one or more paths through the always construct File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 56
+Info (10041): Inferred latch for "carry" at ALU.sv(56) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 56
+Info (10041): Inferred latch for "neg" at ALU.sv(56) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 56
+Info (10041): Inferred latch for "x[0]" at ALU.sv(122) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 122
+Info (10041): Inferred latch for "x[1]" at ALU.sv(122) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 122
+Info (10041): Inferred latch for "x[2]" at ALU.sv(122) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 122
+Info (10041): Inferred latch for "x[3]" at ALU.sv(122) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 122
+Info (10041): Inferred latch for "x[4]" at ALU.sv(122) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 122
+Info (10041): Inferred latch for "x[5]" at ALU.sv(122) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 122
+Info (10041): Inferred latch for "x[6]" at ALU.sv(122) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 122
+Info (10041): Inferred latch for "x[7]" at ALU.sv(122) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 122
+Info (10041): Inferred latch for "x[8]" at ALU.sv(122) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 122
+Info (10041): Inferred latch for "x[9]" at ALU.sv(122) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 122
+Info (10041): Inferred latch for "x[10]" at ALU.sv(122) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 122
+Info (10041): Inferred latch for "x[11]" at ALU.sv(122) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 122
+Info (10041): Inferred latch for "x[12]" at ALU.sv(122) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 122
+Info (10041): Inferred latch for "x[13]" at ALU.sv(122) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 122
+Info (10041): Inferred latch for "x[14]" at ALU.sv(122) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 122
+Info (10041): Inferred latch for "x[15]" at ALU.sv(122) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 122
+Info (10041): Inferred latch for "x[16]" at ALU.sv(122) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 122
+Info (10041): Inferred latch for "x[17]" at ALU.sv(122) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 122
+Info (10041): Inferred latch for "x[18]" at ALU.sv(122) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 122
+Info (10041): Inferred latch for "x[19]" at ALU.sv(122) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 122
+Info (10041): Inferred latch for "x[20]" at ALU.sv(122) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 122
+Info (10041): Inferred latch for "x[21]" at ALU.sv(122) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 122
+Info (10041): Inferred latch for "x[22]" at ALU.sv(122) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 122
+Info (10041): Inferred latch for "x[23]" at ALU.sv(122) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 122
+Info (10041): Inferred latch for "x[24]" at ALU.sv(122) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 122
+Info (10041): Inferred latch for "x[25]" at ALU.sv(122) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 122
+Info (10041): Inferred latch for "x[26]" at ALU.sv(122) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 122
+Info (10041): Inferred latch for "x[27]" at ALU.sv(122) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 122
+Info (10041): Inferred latch for "x[28]" at ALU.sv(122) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 122
+Info (10041): Inferred latch for "x[29]" at ALU.sv(122) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 122
+Info (10041): Inferred latch for "x[30]" at ALU.sv(122) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 122
+Info (10041): Inferred latch for "x[31]" at ALU.sv(122) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 122
+Info (12128): Elaborating entity "sumadornbits" for hierarchy "sumadornbits:UUT" File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 25
 Warning (10030): Net "temporal2[4]" at sumadornbits.sv(12) has no driver or initial value, using a default initial value '0' File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/sumadornbits.sv Line: 12
 Warning (10034): Output port "salida7seg0" at sumadornbits.sv(6) has no driver File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/sumadornbits.sv Line: 6
 Warning (10034): Output port "salida7seg1" at sumadornbits.sv(8) has no driver File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/sumadornbits.sv Line: 8
 Info (12128): Elaborating entity "Sumador_medio" for hierarchy "sumadornbits:UUT|Sumador_medio:U1" File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/sumadornbits.sv Line: 20
 Info (12128): Elaborating entity "Sumador_completo" for hierarchy "sumadornbits:UUT|Sumador_completo:for_loop[1].U2" File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/sumadornbits.sv Line: 29
-Info (12128): Elaborating entity "restadornbits" for hierarchy "restadornbits:UUT_r" File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 29
+Info (12128): Elaborating entity "restadornbits" for hierarchy "restadornbits:UUT_r" File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 31
 Warning (10030): Net "temporal2[4]" at restadornbits.sv(12) has no driver or initial value, using a default initial value '0' File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/restadornbits.sv Line: 12
 Warning (10034): Output port "salida7seg0" at restadornbits.sv(6) has no driver File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/restadornbits.sv Line: 6
 Warning (10034): Output port "salida7seg1" at restadornbits.sv(8) has no driver File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/restadornbits.sv Line: 8
 Info (12128): Elaborating entity "Restador_medio" for hierarchy "restadornbits:UUT_r|Restador_medio:U1" File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/restadornbits.sv Line: 20
 Info (12128): Elaborating entity "Restador_completo" for hierarchy "restadornbits:UUT_r|Restador_completo:for_loop[1].U2" File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/restadornbits.sv Line: 29
-Info (12128): Elaborating entity "DecodificadorN" for hierarchy "DecodificadorN:deco" File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 33
+Info (12128): Elaborating entity "multiplicador" for hierarchy "multiplicador:dut" File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 37
+Info (12128): Elaborating entity "Productos_Parciales" for hierarchy "multiplicador:dut|Productos_Parciales:gen_row[0].gen_column[0].PPX" File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/multiplicador.sv Line: 39
+Info (12128): Elaborating entity "DecodificadorN" for hierarchy "DecodificadorN:deco" File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 41
 Info (12128): Elaborating entity "DecodificadorBinario" for hierarchy "DecodificadorN:deco|DecodificadorBinario:for_loop[0].U1" File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/DecodificadorN.sv Line: 15
 Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 12 warnings
-    Info: Peak virtual memory: 4781 megabytes
-    Info: Processing ended: Sat Mar  2 23:58:29 2024
+    Info: Peak virtual memory: 4777 megabytes
+    Info: Processing ended: Tue Mar  5 09:30:50 2024
     Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:17
+    Info: Total CPU time (on all processors): 00:00:18
 
 

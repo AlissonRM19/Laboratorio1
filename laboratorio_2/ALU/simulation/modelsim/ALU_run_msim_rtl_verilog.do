@@ -54,6 +54,8 @@ vlog -sv -work work +incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laborator
 vlog -sv -work work +incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU {C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/Restador_medio.sv}
 vlog -sv -work work +incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU {C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/Restador_completo.sv}
 vlog -sv -work work +incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU {C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/restadornbits.sv}
+vlog -sv -work work +incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU {C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/multiplicador.sv}
+vlog -sv -work work +incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU {C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/Productos_Parciales.sv}
 
 vlog -sv -work work +incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU {C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU_tb.sv}
 

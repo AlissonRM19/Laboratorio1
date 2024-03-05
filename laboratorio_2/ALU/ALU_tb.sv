@@ -46,6 +46,14 @@ module ALU_tb;
 		mode = 2;
 		// Multiplicacion test
 		#5;
+		in1 = 15;
+		in2 = 15;
+		#10;
+		in1 = 9;
+		in2 = 0;
+		#10;
+		
+		#5;
 		mode = 3;
 		// AND test
 		#5;

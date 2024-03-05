@@ -83,7 +83,11 @@ module multiplicador #(parameter n = 4) (
 		end
 		
       Product[2*n-1] = carry_array[n-1][n-1];
-		CarryOut = carry_array[n-1][n-1];
+		if (Product > 15) begin
+			CarryOut = 1;
+		end else begin
+			CarryOut = 0;
+		end
 		
     end
 	
