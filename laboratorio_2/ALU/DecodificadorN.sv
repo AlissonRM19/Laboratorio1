@@ -1,5 +1,5 @@
 module DecodificadorN #(parameter n = 4)(
-													input logic [1:0] [3:0]  num_all,
+													input logic [1:0] [n-1:0]  num_all,
 													output logic [1:0] [6:0] seg
 													);
 

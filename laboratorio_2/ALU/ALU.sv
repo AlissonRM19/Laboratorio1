@@ -17,25 +17,25 @@ module ALU #(parameter n = 4) (input logic [n - 1:0] in1,
 	logic Cout_mul;
 	logic [1:0] [6:0] seg7_1;
 	integer x;
-	sumadornbits UUT(
+	sumadornbits #(n) UUT(
 		.Ent1(in1),
 		.Ent2(in2),
 		.Resultado(Resultado_sum),
 		.Cout(Cout_sum)
 	);
-	restadornbits UUT_r (
+	restadornbits #(n) UUT_r (
 		.Ent1(in1),
 		.Ent2(in2),
 		.Resultado(Resultado_res),
 		.Cout(Cout_res)
 	);
-	 multiplicador dut (
+	 multiplicador #(n) dut (
 		.Inp1(in1),
 		.Inp2(in2),
       .Product(Resultado_mul),
       .CarryOut(Cout_mul)
     );
-	DecodificadorN deco (
+	DecodificadorN #(n) deco (
 		.num_all(num),
 		.seg(seg7_1)
 	);
@@ -59,6 +59,7 @@ module ALU #(parameter n = 4) (input logic [n - 1:0] in1,
 							num[0] = Resultado_sum;
 							num[1] = Cout_sum;
 							carry = Cout_sum;
+							neg = 0;
 					  end
 			4'b0001: begin // Resta
 							mode_seg = 7'b1111001;
@@ -81,30 +82,37 @@ module ALU #(parameter n = 4) (input logic [n - 1:0] in1,
 							mode_seg = 7'b0110000;
 							carry = 0;
 							num = in1 & in2;
+							neg = 0;
 					  end
 			4'b0100: begin	// OR
 							mode_seg = 7'b0011001;
 							num = in1 | in2;
+							neg = 0;
 					  end
 			4'b0101: begin // XOR
 							mode_seg = 7'b0010010;
 							num = in1 ^ in2;
+							neg = 0;
 					  end
 			4'b0110: begin // Shift Left
 							mode_seg = 7'b0000010;
 							num = in1 << in2;
+							neg = 0;
 					  end
 			4'b0111: begin // Shift Right 
 							mode_seg = 7'b1111000;
 							num = in1 >> in2;
+							neg = 0;
 					  end
 			4'b1000: begin // División
 							mode_seg = 7'b0000000;
 							num = in1 / in2;
+							neg = 0;
 						end
 			4'b1001: begin // Módulo
 							mode_seg = 7'b0010000;
 							num = in1 % in2;
+							neg = 0;
 						end
 			default: begin // Error
 							num = 1;
