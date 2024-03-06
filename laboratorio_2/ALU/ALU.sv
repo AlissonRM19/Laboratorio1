@@ -16,7 +16,7 @@ module ALU #(parameter n = 4) (input logic [n - 1:0] in1,
 	logic Cout_res;
 	logic Cout_mul;
 	logic [1:0] [6:0] seg7_1;
-	integer x;
+	integer x, y;
 	sumadornbits #(n) UUT(
 		.Ent1(in1),
 		.Ent2(in2),
@@ -44,11 +44,12 @@ module ALU #(parameter n = 4) (input logic [n - 1:0] in1,
 		out[1] = 7'b1111111;
 		num = 0;
 		neg = 0;
-		cero = 1;
+		cero = 0;
 		carry = 0;
 		des = 0;
 		seg7_1 = 0;
 		x = 0;
+		y=0;
 	end
 	
 	always @ (*)
@@ -98,6 +99,11 @@ module ALU #(parameter n = 4) (input logic [n - 1:0] in1,
 							mode_seg = 7'b0000010;
 							num = in1 << in2;
 							neg = 0;
+							if (num > 15) begin
+								carry = 1;
+							end else begin
+								carry = 0;
+							end
 					  end
 			4'b0111: begin // Shift Right 
 							mode_seg = 7'b1111000;
@@ -106,9 +112,15 @@ module ALU #(parameter n = 4) (input logic [n - 1:0] in1,
 					  end
 			4'b1000: begin // División
 							mode_seg = 7'b0000000;
-							num = in1 / in2;
+							if (in2 == 0) begin
+								num =1;
+								y=1;
+							end else begin
+								num = in1 / in2;
+							end
 							neg = 0;
 						end
+						
 			4'b1001: begin // Módulo
 							mode_seg = 7'b0010000;
 							num = in1 % in2;
@@ -132,6 +144,10 @@ module ALU #(parameter n = 4) (input logic [n - 1:0] in1,
 				x = 0;
 				out[0] = 7'b1111111;
 				out[1] = 7'b1111111;
+			end else if (y) begin
+				y = 0;
+				out[0]= 7'b0101111;
+				out[1]= 7'b0000110;				
 			end else begin
 				out = seg7_1;
 			end
