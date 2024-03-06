@@ -1,0 +1,20 @@
+module alu_tb;
+	
+	logic [n - 1:0] in1 = 0;
+	logic [n - 1:0] in2 = 0;
+	logic [3:0] mode = 0;
+	
+	alu #(4) alu_test (.in1(in1), .in2(in2), .mode(mode));
+
+	initial begin
+		
+		mode = 5;
+		#40;
+		in1 = 1;
+		#40;
+		in2 = 1;
+		#40 $stop;
+		
+	end
+	
+endmodule
