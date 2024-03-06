@@ -1,0 +1,26 @@
+module DecodificadorN #(parameter n = 4)(
+													input logic [n*2-1:0] num_all,
+													output logic [1:0] [6:0] seg
+													);
+
+	genvar i;
+	genvar x = 0;
+	logic [1:0] [6:0] temporal1;
+
+	generate 
+
+		for (i = 0; i < n*2 - 1; i = i + 4) begin: for_loop
+			DecodificadorBinario U1 (
+				.Ent1(num_all[i]),
+				.Ent2(num_all[i+1]),
+				.Ent3(num_all[i+2]),
+				.Ent4(num_all[i+3]),
+				.seg(temporal1[x])
+			);
+			x = x + 1;
+		end
+
+	endgenerate
+	assign seg = temporal1;
+
+endmodule

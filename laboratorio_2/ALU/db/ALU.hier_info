@@ -1,0 +1,636 @@
+|ALU
+in1[0] => in1[0].IN3
+in1[1] => in1[1].IN3
+in1[2] => in1[2].IN3
+in1[3] => in1[3].IN3
+in2[0] => in2[0].IN3
+in2[1] => in2[1].IN3
+in2[2] => in2[2].IN3
+in2[3] => in2[3].IN3
+mode[0] => Mux0.IN18
+mode[0] => Mux1.IN18
+mode[0] => Mux2.IN18
+mode[0] => Mux3.IN17
+mode[0] => Mux4.IN17
+mode[0] => Mux5.IN17
+mode[0] => Mux6.IN17
+mode[0] => Mux7.IN17
+mode[0] => Decoder0.IN3
+mode[0] => Mux9.IN17
+mode[0] => Mux8.IN19
+mode[1] => Mux0.IN17
+mode[1] => Mux1.IN17
+mode[1] => Mux2.IN17
+mode[1] => Mux3.IN16
+mode[1] => Mux4.IN16
+mode[1] => Mux5.IN16
+mode[1] => Mux6.IN16
+mode[1] => Mux7.IN16
+mode[1] => Decoder0.IN2
+mode[1] => Mux9.IN16
+mode[1] => Mux8.IN18
+mode[2] => Mux0.IN16
+mode[2] => Mux1.IN16
+mode[2] => Mux2.IN16
+mode[2] => Mux3.IN15
+mode[2] => Mux4.IN15
+mode[2] => Mux5.IN15
+mode[2] => Mux6.IN15
+mode[2] => Mux7.IN15
+mode[2] => Decoder0.IN1
+mode[2] => Mux9.IN15
+mode[2] => Mux8.IN17
+mode[3] => Mux0.IN15
+mode[3] => Mux1.IN15
+mode[3] => Mux2.IN15
+mode[3] => Mux3.IN14
+mode[3] => Mux4.IN14
+mode[3] => Mux5.IN14
+mode[3] => Mux6.IN14
+mode[3] => Mux7.IN14
+mode[3] => Decoder0.IN0
+mode[3] => Mux9.IN14
+mode[3] => Mux8.IN16
+neg <= neg.DB_MAX_OUTPUT_PORT_TYPE
+cero <= Equal1.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry$latch.DB_MAX_OUTPUT_PORT_TYPE
+des <= <GND>
+num[0][0] <= Mux7.DB_MAX_OUTPUT_PORT_TYPE
+num[0][1] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+num[0][2] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+num[0][3] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+num[1][0] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+num[1][1] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+num[1][2] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+num[1][3] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+mode_seg[0] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+mode_seg[1] <= mode_seg.DB_MAX_OUTPUT_PORT_TYPE
+mode_seg[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+mode_seg[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+mode_seg[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+mode_seg[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+mode_seg[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+out[0][0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[0][1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[0][2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[0][3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[0][4] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[0][5] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[0][6] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1][0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1][1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1][2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1][3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1][4] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1][5] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1][6] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|sumadornbits:UUT
+Ent1[0] => Ent1[0].IN1
+Ent1[1] => Ent1[1].IN1
+Ent1[2] => Ent1[2].IN1
+Ent1[3] => Ent1[3].IN1
+Ent2[0] => Ent2[0].IN1
+Ent2[1] => Ent2[1].IN1
+Ent2[2] => Ent2[2].IN1
+Ent2[3] => Ent2[3].IN1
+Cout <= Sumador_completo:for_loop[3].U2.Cout
+Resultado[0] <= Sumador_medio:U1.Suma
+Resultado[1] <= Sumador_completo:for_loop[1].U2.Suma
+Resultado[2] <= Sumador_completo:for_loop[2].U2.Suma
+Resultado[3] <= Sumador_completo:for_loop[3].U2.Suma
+Resultado[4] <= <GND>
+salida7seg0[0] <= <GND>
+salida7seg0[1] <= <GND>
+salida7seg0[2] <= <GND>
+salida7seg0[3] <= <GND>
+salida7seg0[4] <= <GND>
+salida7seg0[5] <= <GND>
+salida7seg0[6] <= <GND>
+salida7seg1[0] <= <GND>
+salida7seg1[1] <= <GND>
+salida7seg1[2] <= <GND>
+salida7seg1[3] <= <GND>
+salida7seg1[4] <= <GND>
+salida7seg1[5] <= <GND>
+salida7seg1[6] <= <GND>
+
+
+|ALU|sumadornbits:UUT|Sumador_medio:U1
+A => Cout.IN0
+A => Suma.IN0
+B => Cout.IN1
+B => Suma.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Suma <= Suma.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|sumadornbits:UUT|Sumador_completo:for_loop[1].U2
+A => Cout.IN0
+A => Cout.IN0
+B => Cout.IN1
+B => Cout.IN1
+Cin => Cout.IN1
+Cin => Suma.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Suma <= Suma.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|sumadornbits:UUT|Sumador_completo:for_loop[2].U2
+A => Cout.IN0
+A => Cout.IN0
+B => Cout.IN1
+B => Cout.IN1
+Cin => Cout.IN1
+Cin => Suma.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Suma <= Suma.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|sumadornbits:UUT|Sumador_completo:for_loop[3].U2
+A => Cout.IN0
+A => Cout.IN0
+B => Cout.IN1
+B => Cout.IN1
+Cin => Cout.IN1
+Cin => Suma.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Suma <= Suma.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|restadornbits:UUT_r
+Ent1[0] => Ent1[0].IN1
+Ent1[1] => Ent1[1].IN1
+Ent1[2] => Ent1[2].IN1
+Ent1[3] => Ent1[3].IN1
+Ent2[0] => Ent2[0].IN1
+Ent2[1] => Ent2[1].IN1
+Ent2[2] => Ent2[2].IN1
+Ent2[3] => Ent2[3].IN1
+Cout <= Restador_completo:for_loop[3].U2.Cout
+Resultado[0] <= Restador_medio:U1.Resta
+Resultado[1] <= Restador_completo:for_loop[1].U2.Resta
+Resultado[2] <= Restador_completo:for_loop[2].U2.Resta
+Resultado[3] <= Restador_completo:for_loop[3].U2.Resta
+Resultado[4] <= <GND>
+salida7seg0[0] <= <GND>
+salida7seg0[1] <= <GND>
+salida7seg0[2] <= <GND>
+salida7seg0[3] <= <GND>
+salida7seg0[4] <= <GND>
+salida7seg0[5] <= <GND>
+salida7seg0[6] <= <GND>
+salida7seg1[0] <= <GND>
+salida7seg1[1] <= <GND>
+salida7seg1[2] <= <GND>
+salida7seg1[3] <= <GND>
+salida7seg1[4] <= <GND>
+salida7seg1[5] <= <GND>
+salida7seg1[6] <= <GND>
+
+
+|ALU|restadornbits:UUT_r|Restador_medio:U1
+A => Resta.IN0
+A => Cout.IN0
+B => Cout.IN1
+B => Resta.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Resta <= Resta.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|restadornbits:UUT_r|Restador_completo:for_loop[1].U2
+A => Resta.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => Cout.IN1
+B => Cout.IN0
+B => Resta.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cin => Resta.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Resta <= Resta.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|restadornbits:UUT_r|Restador_completo:for_loop[2].U2
+A => Resta.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => Cout.IN1
+B => Cout.IN0
+B => Resta.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cin => Resta.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Resta <= Resta.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|restadornbits:UUT_r|Restador_completo:for_loop[3].U2
+A => Resta.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => Cout.IN1
+B => Cout.IN0
+B => Resta.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cin => Resta.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Resta <= Resta.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiplicador:dut
+Inp1[0] => elem1[0][0].IN4
+Inp1[1] => elem1[1][0].IN4
+Inp1[2] => elem1[2][0].IN4
+Inp1[3] => elem1[3][0].IN4
+Inp2[0] => elem2[0][0].IN4
+Inp2[1] => elem2[0][1].IN4
+Inp2[2] => elem2[0][2].IN4
+Inp2[3] => elem2[0][3].IN4
+Product[0] <= Productos_Parciales:gen_row[0].gen_column[0].PPX.port4
+Product[1] <= Productos_Parciales:gen_row[1].gen_column[0].PPX.port4
+Product[2] <= Productos_Parciales:gen_row[2].gen_column[0].PPX.port4
+Product[3] <= Productos_Parciales:gen_row[3].gen_column[0].PPX.port4
+Product[4] <= Productos_Parciales:gen_row[3].gen_column[1].PPX.port4
+Product[5] <= Productos_Parciales:gen_row[3].gen_column[2].PPX.port4
+Product[6] <= Productos_Parciales:gen_row[3].gen_column[3].PPX.port4
+Product[7] <= Productos_Parciales:gen_row[3].gen_column[3].PPX.port5
+CarryOut <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiplicador:dut|Productos_Parciales:gen_row[0].gen_column[0].PPX
+elem1 => partialprod.IN0
+elem2 => partialprod.IN1
+fac => fac.IN1
+Carry_in => Carry_in.IN1
+SumResult <= Sumador_completo:SCX.Suma
+Carry_out <= Sumador_completo:SCX.Cout
+
+
+|ALU|multiplicador:dut|Productos_Parciales:gen_row[0].gen_column[0].PPX|Sumador_completo:SCX
+A => Cout.IN0
+A => Cout.IN0
+B => Cout.IN1
+B => Cout.IN1
+Cin => Cout.IN1
+Cin => Suma.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Suma <= Suma.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiplicador:dut|Productos_Parciales:gen_row[0].gen_column[1].PPX
+elem1 => partialprod.IN0
+elem2 => partialprod.IN1
+fac => fac.IN1
+Carry_in => Carry_in.IN1
+SumResult <= Sumador_completo:SCX.Suma
+Carry_out <= Sumador_completo:SCX.Cout
+
+
+|ALU|multiplicador:dut|Productos_Parciales:gen_row[0].gen_column[1].PPX|Sumador_completo:SCX
+A => Cout.IN0
+A => Cout.IN0
+B => Cout.IN1
+B => Cout.IN1
+Cin => Cout.IN1
+Cin => Suma.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Suma <= Suma.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiplicador:dut|Productos_Parciales:gen_row[0].gen_column[2].PPX
+elem1 => partialprod.IN0
+elem2 => partialprod.IN1
+fac => fac.IN1
+Carry_in => Carry_in.IN1
+SumResult <= Sumador_completo:SCX.Suma
+Carry_out <= Sumador_completo:SCX.Cout
+
+
+|ALU|multiplicador:dut|Productos_Parciales:gen_row[0].gen_column[2].PPX|Sumador_completo:SCX
+A => Cout.IN0
+A => Cout.IN0
+B => Cout.IN1
+B => Cout.IN1
+Cin => Cout.IN1
+Cin => Suma.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Suma <= Suma.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiplicador:dut|Productos_Parciales:gen_row[0].gen_column[3].PPX
+elem1 => partialprod.IN0
+elem2 => partialprod.IN1
+fac => fac.IN1
+Carry_in => Carry_in.IN1
+SumResult <= Sumador_completo:SCX.Suma
+Carry_out <= Sumador_completo:SCX.Cout
+
+
+|ALU|multiplicador:dut|Productos_Parciales:gen_row[0].gen_column[3].PPX|Sumador_completo:SCX
+A => Cout.IN0
+A => Cout.IN0
+B => Cout.IN1
+B => Cout.IN1
+Cin => Cout.IN1
+Cin => Suma.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Suma <= Suma.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiplicador:dut|Productos_Parciales:gen_row[1].gen_column[0].PPX
+elem1 => partialprod.IN0
+elem2 => partialprod.IN1
+fac => fac.IN1
+Carry_in => Carry_in.IN1
+SumResult <= Sumador_completo:SCX.Suma
+Carry_out <= Sumador_completo:SCX.Cout
+
+
+|ALU|multiplicador:dut|Productos_Parciales:gen_row[1].gen_column[0].PPX|Sumador_completo:SCX
+A => Cout.IN0
+A => Cout.IN0
+B => Cout.IN1
+B => Cout.IN1
+Cin => Cout.IN1
+Cin => Suma.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Suma <= Suma.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiplicador:dut|Productos_Parciales:gen_row[1].gen_column[1].PPX
+elem1 => partialprod.IN0
+elem2 => partialprod.IN1
+fac => fac.IN1
+Carry_in => Carry_in.IN1
+SumResult <= Sumador_completo:SCX.Suma
+Carry_out <= Sumador_completo:SCX.Cout
+
+
+|ALU|multiplicador:dut|Productos_Parciales:gen_row[1].gen_column[1].PPX|Sumador_completo:SCX
+A => Cout.IN0
+A => Cout.IN0
+B => Cout.IN1
+B => Cout.IN1
+Cin => Cout.IN1
+Cin => Suma.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Suma <= Suma.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiplicador:dut|Productos_Parciales:gen_row[1].gen_column[2].PPX
+elem1 => partialprod.IN0
+elem2 => partialprod.IN1
+fac => fac.IN1
+Carry_in => Carry_in.IN1
+SumResult <= Sumador_completo:SCX.Suma
+Carry_out <= Sumador_completo:SCX.Cout
+
+
+|ALU|multiplicador:dut|Productos_Parciales:gen_row[1].gen_column[2].PPX|Sumador_completo:SCX
+A => Cout.IN0
+A => Cout.IN0
+B => Cout.IN1
+B => Cout.IN1
+Cin => Cout.IN1
+Cin => Suma.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Suma <= Suma.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiplicador:dut|Productos_Parciales:gen_row[1].gen_column[3].PPX
+elem1 => partialprod.IN0
+elem2 => partialprod.IN1
+fac => fac.IN1
+Carry_in => Carry_in.IN1
+SumResult <= Sumador_completo:SCX.Suma
+Carry_out <= Sumador_completo:SCX.Cout
+
+
+|ALU|multiplicador:dut|Productos_Parciales:gen_row[1].gen_column[3].PPX|Sumador_completo:SCX
+A => Cout.IN0
+A => Cout.IN0
+B => Cout.IN1
+B => Cout.IN1
+Cin => Cout.IN1
+Cin => Suma.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Suma <= Suma.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiplicador:dut|Productos_Parciales:gen_row[2].gen_column[0].PPX
+elem1 => partialprod.IN0
+elem2 => partialprod.IN1
+fac => fac.IN1
+Carry_in => Carry_in.IN1
+SumResult <= Sumador_completo:SCX.Suma
+Carry_out <= Sumador_completo:SCX.Cout
+
+
+|ALU|multiplicador:dut|Productos_Parciales:gen_row[2].gen_column[0].PPX|Sumador_completo:SCX
+A => Cout.IN0
+A => Cout.IN0
+B => Cout.IN1
+B => Cout.IN1
+Cin => Cout.IN1
+Cin => Suma.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Suma <= Suma.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiplicador:dut|Productos_Parciales:gen_row[2].gen_column[1].PPX
+elem1 => partialprod.IN0
+elem2 => partialprod.IN1
+fac => fac.IN1
+Carry_in => Carry_in.IN1
+SumResult <= Sumador_completo:SCX.Suma
+Carry_out <= Sumador_completo:SCX.Cout
+
+
+|ALU|multiplicador:dut|Productos_Parciales:gen_row[2].gen_column[1].PPX|Sumador_completo:SCX
+A => Cout.IN0
+A => Cout.IN0
+B => Cout.IN1
+B => Cout.IN1
+Cin => Cout.IN1
+Cin => Suma.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Suma <= Suma.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiplicador:dut|Productos_Parciales:gen_row[2].gen_column[2].PPX
+elem1 => partialprod.IN0
+elem2 => partialprod.IN1
+fac => fac.IN1
+Carry_in => Carry_in.IN1
+SumResult <= Sumador_completo:SCX.Suma
+Carry_out <= Sumador_completo:SCX.Cout
+
+
+|ALU|multiplicador:dut|Productos_Parciales:gen_row[2].gen_column[2].PPX|Sumador_completo:SCX
+A => Cout.IN0
+A => Cout.IN0
+B => Cout.IN1
+B => Cout.IN1
+Cin => Cout.IN1
+Cin => Suma.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Suma <= Suma.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiplicador:dut|Productos_Parciales:gen_row[2].gen_column[3].PPX
+elem1 => partialprod.IN0
+elem2 => partialprod.IN1
+fac => fac.IN1
+Carry_in => Carry_in.IN1
+SumResult <= Sumador_completo:SCX.Suma
+Carry_out <= Sumador_completo:SCX.Cout
+
+
+|ALU|multiplicador:dut|Productos_Parciales:gen_row[2].gen_column[3].PPX|Sumador_completo:SCX
+A => Cout.IN0
+A => Cout.IN0
+B => Cout.IN1
+B => Cout.IN1
+Cin => Cout.IN1
+Cin => Suma.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Suma <= Suma.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiplicador:dut|Productos_Parciales:gen_row[3].gen_column[0].PPX
+elem1 => partialprod.IN0
+elem2 => partialprod.IN1
+fac => fac.IN1
+Carry_in => Carry_in.IN1
+SumResult <= Sumador_completo:SCX.Suma
+Carry_out <= Sumador_completo:SCX.Cout
+
+
+|ALU|multiplicador:dut|Productos_Parciales:gen_row[3].gen_column[0].PPX|Sumador_completo:SCX
+A => Cout.IN0
+A => Cout.IN0
+B => Cout.IN1
+B => Cout.IN1
+Cin => Cout.IN1
+Cin => Suma.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Suma <= Suma.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiplicador:dut|Productos_Parciales:gen_row[3].gen_column[1].PPX
+elem1 => partialprod.IN0
+elem2 => partialprod.IN1
+fac => fac.IN1
+Carry_in => Carry_in.IN1
+SumResult <= Sumador_completo:SCX.Suma
+Carry_out <= Sumador_completo:SCX.Cout
+
+
+|ALU|multiplicador:dut|Productos_Parciales:gen_row[3].gen_column[1].PPX|Sumador_completo:SCX
+A => Cout.IN0
+A => Cout.IN0
+B => Cout.IN1
+B => Cout.IN1
+Cin => Cout.IN1
+Cin => Suma.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Suma <= Suma.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiplicador:dut|Productos_Parciales:gen_row[3].gen_column[2].PPX
+elem1 => partialprod.IN0
+elem2 => partialprod.IN1
+fac => fac.IN1
+Carry_in => Carry_in.IN1
+SumResult <= Sumador_completo:SCX.Suma
+Carry_out <= Sumador_completo:SCX.Cout
+
+
+|ALU|multiplicador:dut|Productos_Parciales:gen_row[3].gen_column[2].PPX|Sumador_completo:SCX
+A => Cout.IN0
+A => Cout.IN0
+B => Cout.IN1
+B => Cout.IN1
+Cin => Cout.IN1
+Cin => Suma.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Suma <= Suma.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiplicador:dut|Productos_Parciales:gen_row[3].gen_column[3].PPX
+elem1 => partialprod.IN0
+elem2 => partialprod.IN1
+fac => fac.IN1
+Carry_in => Carry_in.IN1
+SumResult <= Sumador_completo:SCX.Suma
+Carry_out <= Sumador_completo:SCX.Cout
+
+
+|ALU|multiplicador:dut|Productos_Parciales:gen_row[3].gen_column[3].PPX|Sumador_completo:SCX
+A => Cout.IN0
+A => Cout.IN0
+B => Cout.IN1
+B => Cout.IN1
+Cin => Cout.IN1
+Cin => Suma.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Suma <= Suma.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|DecodificadorN:deco
+num_all[0][0] => num_all[0][0].IN1
+num_all[0][1] => num_all[0][1].IN1
+num_all[0][2] => num_all[0][2].IN1
+num_all[0][3] => num_all[0][3].IN1
+num_all[1][0] => num_all[1][0].IN1
+num_all[1][1] => num_all[1][1].IN1
+num_all[1][2] => num_all[1][2].IN1
+num_all[1][3] => num_all[1][3].IN1
+seg[0][0] <= DecodificadorBinario:for_loop[0].U1.seg
+seg[0][1] <= DecodificadorBinario:for_loop[0].U1.seg
+seg[0][2] <= DecodificadorBinario:for_loop[0].U1.seg
+seg[0][3] <= DecodificadorBinario:for_loop[0].U1.seg
+seg[0][4] <= DecodificadorBinario:for_loop[0].U1.seg
+seg[0][5] <= DecodificadorBinario:for_loop[0].U1.seg
+seg[0][6] <= DecodificadorBinario:for_loop[0].U1.seg
+seg[1][0] <= DecodificadorBinario:for_loop[4].U1.seg
+seg[1][1] <= DecodificadorBinario:for_loop[4].U1.seg
+seg[1][2] <= DecodificadorBinario:for_loop[4].U1.seg
+seg[1][3] <= DecodificadorBinario:for_loop[4].U1.seg
+seg[1][4] <= DecodificadorBinario:for_loop[4].U1.seg
+seg[1][5] <= DecodificadorBinario:for_loop[4].U1.seg
+seg[1][6] <= DecodificadorBinario:for_loop[4].U1.seg
+
+
+|ALU|DecodificadorN:deco|DecodificadorBinario:for_loop[0].U1
+bin[0] => Decoder0.IN3
+bin[1] => Decoder0.IN2
+bin[2] => Decoder0.IN1
+bin[3] => Decoder0.IN0
+seg[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|DecodificadorN:deco|DecodificadorBinario:for_loop[4].U1
+bin[0] => Decoder0.IN3
+bin[1] => Decoder0.IN2
+bin[2] => Decoder0.IN1
+bin[3] => Decoder0.IN0
+seg[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
