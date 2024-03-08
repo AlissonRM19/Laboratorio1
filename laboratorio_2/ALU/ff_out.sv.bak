@@ -1,0 +1,25 @@
+module ff_in (	input logic neg,
+					input logic cero,
+					input logic carry,
+					input logic des,
+					input logic num,
+					input logic mode_seg,
+					input logic out,
+					input logic clk,
+					input logic reset,
+					output logic out1,
+					output logic out2,
+					output logic out_mode);
+						
+	always @(posedge clk or posedge reset) begin
+		if (reset)  begin
+			out1 <= 1'b0;
+			out2 <= 1'b0;
+			out_mode <= 1'b0;
+		end else begin
+			out1 <= in1;
+			out2 <= in2;
+			out_mode <= mode;
+		end
+	end
+endmodule

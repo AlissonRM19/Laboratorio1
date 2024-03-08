@@ -1,0 +1,33 @@
+module ff_out_n #(parameter n = 4) (input logic neg,
+												input logic cero,
+												input logic carry,
+												input logic des,
+												input logic num,
+												input logic mode_seg,
+												input logic out,
+												input logic clk,
+												input logic reset,
+												output logic out_neg,
+												output logic out_cero,
+												output logic out_carry,
+												output logic out_des,
+												output logic out_num,
+												output logic out_mode_seg,
+												output logic out_out);
+						
+	genvar i;
+	generate
+		for (i = 0; i < n; i = i + 1) begin:bit_
+			ff_in register_in_(	.in1(in1[i]),
+										.in2(in2[i]),
+										.mode(mode[i]),
+										.reset(reset),
+										.clk(clk),
+										.out1(out1[i]),
+										.out2(out2[i]),
+										.out_mode(out_mode[i]));
+		end
+	endgenerate
+	
+	
+endmodule
