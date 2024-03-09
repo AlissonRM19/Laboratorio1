@@ -1,11 +1,11 @@
 module ff_in_n #(parameter n = 4) (	input logic [n - 1:0] in1,
 												input logic [n - 1:0] in2,
-												input logic [3:0] mode,
+												input logic [n - 1:0] mode,
 												input logic clk,
 												input logic reset,
 												output logic [n - 1:0] out1,
 												output logic [n - 1:0] out2,
-												output logic [3:0] out_mode);
+												output logic [n - 1:0] out_mode);
 
 	genvar i;
 	generate

@@ -1,6 +1,6 @@
 Analysis & Synthesis report for ALU
-Fri Mar 08 21:40:38 2024
-Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Fri Mar  8 22:53:35 2024
+Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
 ---------------------
@@ -10,33 +10,39 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Parameter Settings for User Entity Instance: Top-level Entity: |mfrecuencia
-  6. Parameter Settings for User Entity Instance: ff_in_n:mfrecuencia_in
-  7. Parameter Settings for User Entity Instance: ALU:mfrecuencia_ALU
-  8. Parameter Settings for User Entity Instance: ALU:mfrecuencia_ALU|sumadornbits:UUT
-  9. Parameter Settings for User Entity Instance: ALU:mfrecuencia_ALU|restadornbits:UUT_r
- 10. Parameter Settings for User Entity Instance: ALU:mfrecuencia_ALU|multiplicador:dut
- 11. Parameter Settings for User Entity Instance: ALU:mfrecuencia_ALU|DecodificadorN:deco
- 12. Parameter Settings for User Entity Instance: ff_out_n:mfrecuencia_out
- 13. Port Connectivity Checks: "ff_out_n:mfrecuencia_out"
- 14. Port Connectivity Checks: "ALU:mfrecuencia_ALU|multiplicador:dut|Productos_Parciales:gen_row[3].gen_column[0].PPX"
- 15. Port Connectivity Checks: "ALU:mfrecuencia_ALU|multiplicador:dut|Productos_Parciales:gen_row[2].gen_column[0].PPX"
- 16. Port Connectivity Checks: "ALU:mfrecuencia_ALU|multiplicador:dut|Productos_Parciales:gen_row[1].gen_column[0].PPX"
- 17. Port Connectivity Checks: "ALU:mfrecuencia_ALU|multiplicador:dut|Productos_Parciales:gen_row[0].gen_column[3].PPX"
- 18. Port Connectivity Checks: "ALU:mfrecuencia_ALU|multiplicador:dut|Productos_Parciales:gen_row[0].gen_column[2].PPX"
- 19. Port Connectivity Checks: "ALU:mfrecuencia_ALU|multiplicador:dut|Productos_Parciales:gen_row[0].gen_column[1].PPX"
- 20. Port Connectivity Checks: "ALU:mfrecuencia_ALU|multiplicador:dut|Productos_Parciales:gen_row[0].gen_column[0].PPX"
- 21. Port Connectivity Checks: "ALU:mfrecuencia_ALU|restadornbits:UUT_r"
- 22. Port Connectivity Checks: "ALU:mfrecuencia_ALU|sumadornbits:UUT"
- 23. Elapsed Time Per Partition
- 24. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Parameter Settings for User Entity Instance: Top-level Entity: |mfrecuencia
+ 11. Parameter Settings for User Entity Instance: ff_in_n:mfrecuencia_in
+ 12. Parameter Settings for User Entity Instance: ALU:mfrecuencia_ALU
+ 13. Parameter Settings for User Entity Instance: ALU:mfrecuencia_ALU|sumadornbits:UUT
+ 14. Parameter Settings for User Entity Instance: ALU:mfrecuencia_ALU|restadornbits:UUT_r
+ 15. Parameter Settings for User Entity Instance: ALU:mfrecuencia_ALU|multiplicador:dut
+ 16. Parameter Settings for User Entity Instance: ALU:mfrecuencia_ALU|DecodificadorN:deco
+ 17. Parameter Settings for User Entity Instance: ff_out_n:mfrecuencia_out
+ 18. Port Connectivity Checks: "ff_out_n:mfrecuencia_out|ff_out:bits_[1].register_out_"
+ 19. Port Connectivity Checks: "ff_out_n:mfrecuencia_out|ff_out:bits_[0].register_out_"
+ 20. Port Connectivity Checks: "ff_out_n:mfrecuencia_out"
+ 21. Port Connectivity Checks: "ALU:mfrecuencia_ALU|DecodificadorN:deco|DecodificadorBinario:for_loop[0].U1"
+ 22. Port Connectivity Checks: "ALU:mfrecuencia_ALU|multiplicador:dut|Productos_Parciales:gen_row[1].gen_column[0].PPX"
+ 23. Port Connectivity Checks: "ALU:mfrecuencia_ALU|multiplicador:dut|Productos_Parciales:gen_row[0].gen_column[1].PPX"
+ 24. Port Connectivity Checks: "ALU:mfrecuencia_ALU|multiplicador:dut|Productos_Parciales:gen_row[0].gen_column[0].PPX"
+ 25. Port Connectivity Checks: "ALU:mfrecuencia_ALU|restadornbits:UUT_r"
+ 26. Port Connectivity Checks: "ALU:mfrecuencia_ALU|sumadornbits:UUT"
+ 27. Port Connectivity Checks: "ff_in_n:mfrecuencia_in"
+ 28. Post-Synthesis Netlist Statistics for Top Partition
+ 29. Elapsed Time Per Partition
+ 30. Analysis & Synthesis Messages
 
 
 
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2020  Intel Corporation. All rights reserved.
+Copyright (C) 2022  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -53,22 +59,27 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+---------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                              ;
-+-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Failed - Fri Mar 08 21:40:38 2024           ;
-; Quartus Prime Version       ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
-; Revision Name               ; ALU                                         ;
-; Top-level Entity Name       ; mfrecuencia                                 ;
-; Family                      ; Cyclone V                                   ;
-; Logic utilization (in ALMs) ; N/A until Partition Merge                   ;
-; Total registers             ; N/A until Partition Merge                   ;
-; Total pins                  ; N/A until Partition Merge                   ;
-; Total virtual pins          ; N/A until Partition Merge                   ;
-; Total block memory bits     ; N/A until Partition Merge                   ;
-; Total PLLs                  ; N/A until Partition Merge                   ;
-; Total DLLs                  ; N/A until Partition Merge                   ;
-+-----------------------------+---------------------------------------------+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++---------------------------------+------------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Fri Mar  8 22:53:35 2024          ;
+; Quartus Prime Version           ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
+; Revision Name                   ; ALU                                            ;
+; Top-level Entity Name           ; mfrecuencia                                    ;
+; Family                          ; Cyclone V                                      ;
+; Logic utilization (in ALMs)     ; N/A                                            ;
+; Total registers                 ; 6                                              ;
+; Total pins                      ; 43                                             ;
+; Total virtual pins              ; 0                                              ;
+; Total block memory bits         ; 0                                              ;
+; Total DSP Blocks                ; 0                                              ;
+; Total HSSI RX PCSs              ; 0                                              ;
+; Total HSSI PMA RX Deserializers ; 0                                              ;
+; Total HSSI TX PCSs              ; 0                                              ;
+; Total HSSI PMA TX Serializers   ; 0                                              ;
+; Total PLLs                      ; 0                                              ;
+; Total DLLs                      ; 0                                              ;
++---------------------------------+------------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
@@ -163,8 +174,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 2           ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -174,12 +185,103 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                          ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                      ; Library ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------------+---------+
+; ALU.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv                  ;         ;
+; Sumador_medio.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/Sumador_medio.sv        ;         ;
+; Sumador_completo.sv              ; yes             ; User SystemVerilog HDL File  ; C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/Sumador_completo.sv     ;         ;
+; sumadornbits.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/sumadornbits.sv         ;         ;
+; DecodificadorBinario.sv          ; yes             ; User SystemVerilog HDL File  ; C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/DecodificadorBinario.sv ;         ;
+; DecodificadorN.sv                ; yes             ; User SystemVerilog HDL File  ; C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/DecodificadorN.sv       ;         ;
+; Restador_medio.sv                ; yes             ; User SystemVerilog HDL File  ; C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/Restador_medio.sv       ;         ;
+; Restador_completo.sv             ; yes             ; User SystemVerilog HDL File  ; C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/Restador_completo.sv    ;         ;
+; restadornbits.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/restadornbits.sv        ;         ;
+; multiplicador.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/multiplicador.sv        ;         ;
+; Productos_Parciales.sv           ; yes             ; User SystemVerilog HDL File  ; C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/Productos_Parciales.sv  ;         ;
+; ff_in.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ff_in.sv                ;         ;
+; ff_in_n.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ff_in_n.sv              ;         ;
+; ff_out.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ff_out.sv               ;         ;
+; ff_out_n.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ff_out_n.sv             ;         ;
+; mfrecuencia.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/mfrecuencia.sv          ;         ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------------+---------+
+
+
++----------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                                              ;
++---------------------------------------------+------------------------------------------------------------+
+; Resource                                    ; Usage                                                      ;
++---------------------------------------------+------------------------------------------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 10                                                         ;
+;                                             ;                                                            ;
+; Combinational ALUT usage for logic          ; 13                                                         ;
+;     -- 7 input functions                    ; 0                                                          ;
+;     -- 6 input functions                    ; 5                                                          ;
+;     -- 5 input functions                    ; 1                                                          ;
+;     -- 4 input functions                    ; 0                                                          ;
+;     -- <=3 input functions                  ; 7                                                          ;
+;                                             ;                                                            ;
+; Dedicated logic registers                   ; 6                                                          ;
+;                                             ;                                                            ;
+; I/O pins                                    ; 43                                                         ;
+;                                             ;                                                            ;
+; Total DSP Blocks                            ; 0                                                          ;
+;                                             ;                                                            ;
+; Maximum fan-out node                        ; ff_in_n:mfrecuencia_in|ff_in:bit_[1].register_in_|out_mode ;
+; Maximum fan-out                             ; 10                                                         ;
+; Total fan-out                               ; 132                                                        ;
+; Average fan-out                             ; 1.26                                                       ;
++---------------------------------------------+------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                       ;
++------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------+-------------+--------------+
+; Compilation Hierarchy Node         ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                            ; Entity Name ; Library Name ;
++------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------+-------------+--------------+
+; |mfrecuencia                       ; 13 (0)              ; 6 (0)                     ; 0                 ; 0          ; 43   ; 0            ; |mfrecuencia                                                   ; mfrecuencia ; work         ;
+;    |ALU:mfrecuencia_ALU|           ; 13 (13)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |mfrecuencia|ALU:mfrecuencia_ALU                               ; ALU         ; work         ;
+;    |ff_in_n:mfrecuencia_in|        ; 0 (0)               ; 6 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |mfrecuencia|ff_in_n:mfrecuencia_in                            ; ff_in_n     ; work         ;
+;       |ff_in:bit_[0].register_in_| ; 0 (0)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |mfrecuencia|ff_in_n:mfrecuencia_in|ff_in:bit_[0].register_in_ ; ff_in       ; work         ;
+;       |ff_in:bit_[1].register_in_| ; 0 (0)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |mfrecuencia|ff_in_n:mfrecuencia_in|ff_in:bit_[1].register_in_ ; ff_in       ; work         ;
++------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 6     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 6     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------+
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |mfrecuencia|ALU:mfrecuencia_ALU|Mux4      ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |mfrecuencia|ALU:mfrecuencia_ALU|out[0][1] ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |mfrecuencia|ALU:mfrecuencia_ALU|out[0][0] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------+
+
+
 +-----------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: Top-level Entity: |mfrecuencia ;
 +----------------+-------+----------------------------------------------------+
 ; Parameter Name ; Value ; Type                                               ;
 +----------------+-------+----------------------------------------------------+
-; n              ; 4     ; Signed Integer                                     ;
+; n              ; 2     ; Signed Integer                                     ;
 +----------------+-------+----------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -189,7 +291,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+--------------------------------------------+
 ; Parameter Name ; Value ; Type                                       ;
 +----------------+-------+--------------------------------------------+
-; n              ; 4     ; Signed Integer                             ;
+; n              ; 2     ; Signed Integer                             ;
 +----------------+-------+--------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -199,7 +301,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+-----------------------------------------+
 ; Parameter Name ; Value ; Type                                    ;
 +----------------+-------+-----------------------------------------+
-; n              ; 4     ; Signed Integer                          ;
+; n              ; 2     ; Signed Integer                          ;
 +----------------+-------+-----------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -209,7 +311,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+----------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                     ;
 +----------------+-------+----------------------------------------------------------+
-; n              ; 4     ; Signed Integer                                           ;
+; n              ; 2     ; Signed Integer                                           ;
 +----------------+-------+----------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -219,7 +321,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+-------------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                        ;
 +----------------+-------+-------------------------------------------------------------+
-; n              ; 4     ; Signed Integer                                              ;
+; n              ; 2     ; Signed Integer                                              ;
 +----------------+-------+-------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -229,7 +331,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+-----------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                      ;
 +----------------+-------+-----------------------------------------------------------+
-; n              ; 4     ; Signed Integer                                            ;
+; n              ; 2     ; Signed Integer                                            ;
 +----------------+-------+-----------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -239,7 +341,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+-------------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                        ;
 +----------------+-------+-------------------------------------------------------------+
-; n              ; 4     ; Signed Integer                                              ;
+; n              ; 2     ; Signed Integer                                              ;
 +----------------+-------+-------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -249,9 +351,31 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+----------------------------------------------+
 ; Parameter Name ; Value ; Type                                         ;
 +----------------+-------+----------------------------------------------+
-; n              ; 4     ; Signed Integer                               ;
+; n              ; 2     ; Signed Integer                               ;
 +----------------+-------+----------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ff_out_n:mfrecuencia_out|ff_out:bits_[1].register_out_"                                                                                                                       ;
++--------------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port         ; Type   ; Severity ; Details                                                                                                                                                               ;
++--------------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; out_num      ; Output ; Warning  ; Output or bidir port (1 bits) is smaller than the port expression (4 bits) it drives.  The 3 most-significant bit(s) in the port expression will be connected to GND. ;
+; out_mode_seg ; Output ; Warning  ; Output or bidir port (1 bits) is smaller than the port expression (2 bits) it drives.  The 1 most-significant bit(s) in the port expression will be connected to GND. ;
+; out_out      ; Output ; Warning  ; Output or bidir port (1 bits) is smaller than the port expression (4 bits) it drives.  The 3 most-significant bit(s) in the port expression will be connected to GND. ;
++--------------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ff_out_n:mfrecuencia_out|ff_out:bits_[0].register_out_"                                                                                                                       ;
++--------------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port         ; Type   ; Severity ; Details                                                                                                                                                               ;
++--------------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; out_num      ; Output ; Warning  ; Output or bidir port (1 bits) is smaller than the port expression (4 bits) it drives.  The 3 most-significant bit(s) in the port expression will be connected to GND. ;
+; out_mode_seg ; Output ; Warning  ; Output or bidir port (1 bits) is smaller than the port expression (2 bits) it drives.  The 1 most-significant bit(s) in the port expression will be connected to GND. ;
+; out_out      ; Output ; Warning  ; Output or bidir port (1 bits) is smaller than the port expression (4 bits) it drives.  The 3 most-significant bit(s) in the port expression will be connected to GND. ;
++--------------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------+
@@ -269,22 +393,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 +--------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ALU:mfrecuencia_ALU|multiplicador:dut|Productos_Parciales:gen_row[3].gen_column[0].PPX" ;
-+----------+-------+----------+--------------------------------------------------------------------------------------+
-; Port     ; Type  ; Severity ; Details                                                                              ;
-+----------+-------+----------+--------------------------------------------------------------------------------------+
-; Carry_in ; Input ; Info     ; Stuck at GND                                                                         ;
-+----------+-------+----------+--------------------------------------------------------------------------------------+
-
-
-+--------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ALU:mfrecuencia_ALU|multiplicador:dut|Productos_Parciales:gen_row[2].gen_column[0].PPX" ;
-+----------+-------+----------+--------------------------------------------------------------------------------------+
-; Port     ; Type  ; Severity ; Details                                                                              ;
-+----------+-------+----------+--------------------------------------------------------------------------------------+
-; Carry_in ; Input ; Info     ; Stuck at GND                                                                         ;
-+----------+-------+----------+--------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALU:mfrecuencia_ALU|DecodificadorN:deco|DecodificadorBinario:for_loop[0].U1"                                                               ;
++------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                     ;
++------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------+
+; bin  ; Input ; Warning  ; Input port expression (2 bits) is smaller than the input port (4 bits) it drives.  Extra input bit(s) "bin[3..2]" will be connected to GND. ;
++------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------+
@@ -294,24 +409,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------+-------+----------+--------------------------------------------------------------------------------------+
 ; Carry_in ; Input ; Info     ; Stuck at GND                                                                         ;
 +----------+-------+----------+--------------------------------------------------------------------------------------+
-
-
-+--------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ALU:mfrecuencia_ALU|multiplicador:dut|Productos_Parciales:gen_row[0].gen_column[3].PPX" ;
-+------+-------+----------+------------------------------------------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                                                  ;
-+------+-------+----------+------------------------------------------------------------------------------------------+
-; fac  ; Input ; Info     ; Stuck at GND                                                                             ;
-+------+-------+----------+------------------------------------------------------------------------------------------+
-
-
-+--------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ALU:mfrecuencia_ALU|multiplicador:dut|Productos_Parciales:gen_row[0].gen_column[2].PPX" ;
-+------+-------+----------+------------------------------------------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                                                  ;
-+------+-------+----------+------------------------------------------------------------------------------------------+
-; fac  ; Input ; Info     ; Stuck at GND                                                                             ;
-+------+-------+----------+------------------------------------------------------------------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------+
@@ -338,7 +435,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------+
 ; Port        ; Type   ; Severity ; Details                                                                                                                      ;
 +-------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------+
-; Resultado   ; Output ; Warning  ; Output or bidir port (5 bits) is wider than the port expression (4 bits) it drives; bit(s) "Resultado[4..4]" have no fanouts ;
+; Resultado   ; Output ; Warning  ; Output or bidir port (3 bits) is wider than the port expression (2 bits) it drives; bit(s) "Resultado[2..2]" have no fanouts ;
 ; salida7seg0 ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                     ;
 ; salida7seg1 ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                     ;
 +-------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------+
@@ -349,10 +446,42 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------+
 ; Port        ; Type   ; Severity ; Details                                                                                                                      ;
 +-------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------+
-; Resultado   ; Output ; Warning  ; Output or bidir port (5 bits) is wider than the port expression (4 bits) it drives; bit(s) "Resultado[4..4]" have no fanouts ;
+; Resultado   ; Output ; Warning  ; Output or bidir port (3 bits) is wider than the port expression (2 bits) it drives; bit(s) "Resultado[2..2]" have no fanouts ;
 ; salida7seg0 ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                     ;
 ; salida7seg1 ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                     ;
 +-------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ff_in_n:mfrecuencia_in"                                                                                                                                                              ;
++----------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                                                                                                          ;
++----------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; mode     ; Input  ; Warning  ; Input port expression (4 bits) is wider than the input port (2 bits) it drives.  The 2 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; out_mode ; Output ; Warning  ; Output or bidir port (2 bits) is smaller than the port expression (4 bits) it drives.  The 2 most-significant bit(s) in the port expression will be connected to GND.            ;
++----------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 6                           ;
+;     CLR               ; 6                           ;
+; arriav_lcell_comb     ; 17                          ;
+;     normal            ; 17                          ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 3                           ;
+;         2 data inputs ; 6                           ;
+;         3 data inputs ; 1                           ;
+;         5 data inputs ; 1                           ;
+;         6 data inputs ; 5                           ;
+; boundary_port         ; 43                          ;
+;                       ;                             ;
+; Max LUT depth         ; 3.00                        ;
+; Average LUT depth     ; 1.58                        ;
++-----------------------+-----------------------------+
 
 
 +-------------------------------+
@@ -369,144 +498,174 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Fri Mar 08 21:40:16 2024
+    Info: Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
+    Info: Processing started: Fri Mar  8 22:53:27 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ALU -c ALU
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file alu.sv
-    Info (12023): Found entity 1: ALU File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 1
+    Info (12023): Found entity 1: ALU File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu_tb.sv
-    Info (12023): Found entity 1: ALU_tb File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU_tb.sv Line: 1
+    Info (12023): Found entity 1: ALU_tb File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file sumador_medio.sv
-    Info (12023): Found entity 1: Sumador_medio File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/Sumador_medio.sv Line: 1
+    Info (12023): Found entity 1: Sumador_medio File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/Sumador_medio.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file sumador_completo.sv
-    Info (12023): Found entity 1: Sumador_completo File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/Sumador_completo.sv Line: 1
+    Info (12023): Found entity 1: Sumador_completo File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/Sumador_completo.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file sumadornbits.sv
-    Info (12023): Found entity 1: sumadornbits File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/sumadornbits.sv Line: 1
+    Info (12023): Found entity 1: sumadornbits File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/sumadornbits.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file decodificadorbinario.sv
-    Info (12023): Found entity 1: DecodificadorBinario File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/DecodificadorBinario.sv Line: 1
+    Info (12023): Found entity 1: DecodificadorBinario File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/DecodificadorBinario.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file decodificadorn.sv
-    Info (12023): Found entity 1: DecodificadorN File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/DecodificadorN.sv Line: 1
+    Info (12023): Found entity 1: DecodificadorN File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/DecodificadorN.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file restador_medio.sv
-    Info (12023): Found entity 1: Restador_medio File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/Restador_medio.sv Line: 1
+    Info (12023): Found entity 1: Restador_medio File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/Restador_medio.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file restador_completo.sv
-    Info (12023): Found entity 1: Restador_completo File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/Restador_completo.sv Line: 1
+    Info (12023): Found entity 1: Restador_completo File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/Restador_completo.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file restadornbits.sv
-    Info (12023): Found entity 1: restadornbits File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/restadornbits.sv Line: 1
+    Info (12023): Found entity 1: restadornbits File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/restadornbits.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file multiplicador.sv
-    Info (12023): Found entity 1: multiplicador File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/multiplicador.sv Line: 1
+    Info (12023): Found entity 1: multiplicador File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/multiplicador.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file productos_parciales.sv
-    Info (12023): Found entity 1: Productos_Parciales File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/Productos_Parciales.sv Line: 1
+    Info (12023): Found entity 1: Productos_Parciales File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/Productos_Parciales.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file ff_in.sv
-    Info (12023): Found entity 1: ff_in File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ff_in.sv Line: 1
+    Info (12023): Found entity 1: ff_in File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ff_in.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file ff_in_n.sv
-    Info (12023): Found entity 1: ff_in_n File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ff_in_n.sv Line: 1
+    Info (12023): Found entity 1: ff_in_n File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ff_in_n.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file ff_out.sv
-    Info (12023): Found entity 1: ff_out File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ff_out.sv Line: 1
+    Info (12023): Found entity 1: ff_out File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ff_out.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file ff_out_n.sv
-    Info (12023): Found entity 1: ff_out_n File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ff_out_n.sv Line: 1
+    Info (12023): Found entity 1: ff_out_n File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ff_out_n.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mfrecuencia.sv
-    Info (12023): Found entity 1: mfrecuencia File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/mfrecuencia.sv Line: 1
+    Info (12023): Found entity 1: mfrecuencia File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/mfrecuencia.sv Line: 1
 Info (12127): Elaborating entity "mfrecuencia" for the top level hierarchy
-Info (12128): Elaborating entity "ff_in_n" for hierarchy "ff_in_n:mfrecuencia_in" File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/mfrecuencia.sv Line: 41
-Info (12128): Elaborating entity "ff_in" for hierarchy "ff_in_n:mfrecuencia_in|ff_in:bit_[0].register_in_" File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ff_in_n.sv Line: 20
-Info (12128): Elaborating entity "ALU" for hierarchy "ALU:mfrecuencia_ALU" File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/mfrecuencia.sv Line: 52
-Warning (10230): Verilog HDL assignment warning at ALU.sv(68): truncated value with size 32 to match size of target (4) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 68
-Warning (10240): Verilog HDL Always Construct warning at ALU.sv(57): inferring latch(es) for variable "x", which holds its previous value in one or more paths through the always construct File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 57
-Warning (10240): Verilog HDL Always Construct warning at ALU.sv(57): inferring latch(es) for variable "y", which holds its previous value in one or more paths through the always construct File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 57
-Warning (10240): Verilog HDL Always Construct warning at ALU.sv(57): inferring latch(es) for variable "carry", which holds its previous value in one or more paths through the always construct File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 57
-Info (10041): Inferred latch for "carry" at ALU.sv(57) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 57
-Info (10041): Inferred latch for "y[0]" at ALU.sv(142) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
-Info (10041): Inferred latch for "y[1]" at ALU.sv(142) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
-Info (10041): Inferred latch for "y[2]" at ALU.sv(142) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
-Info (10041): Inferred latch for "y[3]" at ALU.sv(142) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
-Info (10041): Inferred latch for "y[4]" at ALU.sv(142) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
-Info (10041): Inferred latch for "y[5]" at ALU.sv(142) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
-Info (10041): Inferred latch for "y[6]" at ALU.sv(142) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
-Info (10041): Inferred latch for "y[7]" at ALU.sv(142) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
-Info (10041): Inferred latch for "y[8]" at ALU.sv(142) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
-Info (10041): Inferred latch for "y[9]" at ALU.sv(142) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
-Info (10041): Inferred latch for "y[10]" at ALU.sv(142) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
-Info (10041): Inferred latch for "y[11]" at ALU.sv(142) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
-Info (10041): Inferred latch for "y[12]" at ALU.sv(142) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
-Info (10041): Inferred latch for "y[13]" at ALU.sv(142) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
-Info (10041): Inferred latch for "y[14]" at ALU.sv(142) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
-Info (10041): Inferred latch for "y[15]" at ALU.sv(142) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
-Info (10041): Inferred latch for "y[16]" at ALU.sv(142) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
-Info (10041): Inferred latch for "y[17]" at ALU.sv(142) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
-Info (10041): Inferred latch for "y[18]" at ALU.sv(142) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
-Info (10041): Inferred latch for "y[19]" at ALU.sv(142) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
-Info (10041): Inferred latch for "y[20]" at ALU.sv(142) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
-Info (10041): Inferred latch for "y[21]" at ALU.sv(142) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
-Info (10041): Inferred latch for "y[22]" at ALU.sv(142) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
-Info (10041): Inferred latch for "y[23]" at ALU.sv(142) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
-Info (10041): Inferred latch for "y[24]" at ALU.sv(142) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
-Info (10041): Inferred latch for "y[25]" at ALU.sv(142) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
-Info (10041): Inferred latch for "y[26]" at ALU.sv(142) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
-Info (10041): Inferred latch for "y[27]" at ALU.sv(142) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
-Info (10041): Inferred latch for "y[28]" at ALU.sv(142) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
-Info (10041): Inferred latch for "y[29]" at ALU.sv(142) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
-Info (10041): Inferred latch for "y[30]" at ALU.sv(142) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
-Info (10041): Inferred latch for "y[31]" at ALU.sv(142) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
-Info (10041): Inferred latch for "x[0]" at ALU.sv(142) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
-Info (10041): Inferred latch for "x[1]" at ALU.sv(142) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
-Info (10041): Inferred latch for "x[2]" at ALU.sv(142) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
-Info (10041): Inferred latch for "x[3]" at ALU.sv(142) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
-Info (10041): Inferred latch for "x[4]" at ALU.sv(142) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
-Info (10041): Inferred latch for "x[5]" at ALU.sv(142) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
-Info (10041): Inferred latch for "x[6]" at ALU.sv(142) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
-Info (10041): Inferred latch for "x[7]" at ALU.sv(142) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
-Info (10041): Inferred latch for "x[8]" at ALU.sv(142) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
-Info (10041): Inferred latch for "x[9]" at ALU.sv(142) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
-Info (10041): Inferred latch for "x[10]" at ALU.sv(142) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
-Info (10041): Inferred latch for "x[11]" at ALU.sv(142) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
-Info (10041): Inferred latch for "x[12]" at ALU.sv(142) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
-Info (10041): Inferred latch for "x[13]" at ALU.sv(142) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
-Info (10041): Inferred latch for "x[14]" at ALU.sv(142) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
-Info (10041): Inferred latch for "x[15]" at ALU.sv(142) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
-Info (10041): Inferred latch for "x[16]" at ALU.sv(142) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
-Info (10041): Inferred latch for "x[17]" at ALU.sv(142) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
-Info (10041): Inferred latch for "x[18]" at ALU.sv(142) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
-Info (10041): Inferred latch for "x[19]" at ALU.sv(142) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
-Info (10041): Inferred latch for "x[20]" at ALU.sv(142) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
-Info (10041): Inferred latch for "x[21]" at ALU.sv(142) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
-Info (10041): Inferred latch for "x[22]" at ALU.sv(142) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
-Info (10041): Inferred latch for "x[23]" at ALU.sv(142) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
-Info (10041): Inferred latch for "x[24]" at ALU.sv(142) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
-Info (10041): Inferred latch for "x[25]" at ALU.sv(142) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
-Info (10041): Inferred latch for "x[26]" at ALU.sv(142) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
-Info (10041): Inferred latch for "x[27]" at ALU.sv(142) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
-Info (10041): Inferred latch for "x[28]" at ALU.sv(142) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
-Info (10041): Inferred latch for "x[29]" at ALU.sv(142) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
-Info (10041): Inferred latch for "x[30]" at ALU.sv(142) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
-Info (10041): Inferred latch for "x[31]" at ALU.sv(142) File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
-Info (12128): Elaborating entity "sumadornbits" for hierarchy "ALU:mfrecuencia_ALU|sumadornbits:UUT" File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 25
-Warning (10030): Net "temporal2[4]" at sumadornbits.sv(12) has no driver or initial value, using a default initial value '0' File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/sumadornbits.sv Line: 12
-Warning (10034): Output port "salida7seg0" at sumadornbits.sv(6) has no driver File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/sumadornbits.sv Line: 6
-Warning (10034): Output port "salida7seg1" at sumadornbits.sv(8) has no driver File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/sumadornbits.sv Line: 8
-Info (12128): Elaborating entity "Sumador_medio" for hierarchy "ALU:mfrecuencia_ALU|sumadornbits:UUT|Sumador_medio:U1" File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/sumadornbits.sv Line: 20
-Info (12128): Elaborating entity "Sumador_completo" for hierarchy "ALU:mfrecuencia_ALU|sumadornbits:UUT|Sumador_completo:for_loop[1].U2" File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/sumadornbits.sv Line: 29
-Info (12128): Elaborating entity "restadornbits" for hierarchy "ALU:mfrecuencia_ALU|restadornbits:UUT_r" File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 31
-Warning (10030): Net "temporal2[4]" at restadornbits.sv(12) has no driver or initial value, using a default initial value '0' File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/restadornbits.sv Line: 12
-Warning (10034): Output port "salida7seg0" at restadornbits.sv(6) has no driver File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/restadornbits.sv Line: 6
-Warning (10034): Output port "salida7seg1" at restadornbits.sv(8) has no driver File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/restadornbits.sv Line: 8
-Info (12128): Elaborating entity "Restador_medio" for hierarchy "ALU:mfrecuencia_ALU|restadornbits:UUT_r|Restador_medio:U1" File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/restadornbits.sv Line: 20
-Info (12128): Elaborating entity "Restador_completo" for hierarchy "ALU:mfrecuencia_ALU|restadornbits:UUT_r|Restador_completo:for_loop[1].U2" File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/restadornbits.sv Line: 29
-Info (12128): Elaborating entity "multiplicador" for hierarchy "ALU:mfrecuencia_ALU|multiplicador:dut" File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 37
-Info (12128): Elaborating entity "Productos_Parciales" for hierarchy "ALU:mfrecuencia_ALU|multiplicador:dut|Productos_Parciales:gen_row[0].gen_column[0].PPX" File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/multiplicador.sv Line: 39
-Info (12128): Elaborating entity "DecodificadorN" for hierarchy "ALU:mfrecuencia_ALU|DecodificadorN:deco" File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 41
-Info (12128): Elaborating entity "DecodificadorBinario" for hierarchy "ALU:mfrecuencia_ALU|DecodificadorN:deco|DecodificadorBinario:for_loop[0].U1" File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/DecodificadorN.sv Line: 15
-Info (12128): Elaborating entity "ff_out_n" for hierarchy "ff_out_n:mfrecuencia_out" File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/mfrecuencia.sv Line: 69
-Warning (10034): Output port "out_num[1][0]" at ff_out_n.sv(14) has no driver File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ff_out_n.sv Line: 14
-Warning (10034): Output port "out_out[1][5..0]" at ff_out_n.sv(16) has no driver File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ff_out_n.sv Line: 16
-Info (12128): Elaborating entity "ff_out" for hierarchy "ff_out_n:mfrecuencia_out|ff_out:bit_[0].register_out_" File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_2/ALU/ff_out_n.sv Line: 72
-Error (12061): Can't synthesize current design -- Top partition does not contain any logic
-Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 1 error, 14 warnings
-    Error: Peak virtual memory: 4769 megabytes
-    Error: Processing ended: Fri Mar 08 21:40:38 2024
-    Error: Elapsed time: 00:00:22
-    Error: Total CPU time (on all processors): 00:00:42
+Info (12128): Elaborating entity "ff_in_n" for hierarchy "ff_in_n:mfrecuencia_in" File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/mfrecuencia.sv Line: 54
+Info (12128): Elaborating entity "ff_in" for hierarchy "ff_in_n:mfrecuencia_in|ff_in:bit_[0].register_in_" File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ff_in_n.sv Line: 20
+Info (12128): Elaborating entity "ALU" for hierarchy "ALU:mfrecuencia_ALU" File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/mfrecuencia.sv Line: 65
+Warning (10230): Verilog HDL assignment warning at ALU.sv(68): truncated value with size 32 to match size of target (4) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 68
+Warning (10240): Verilog HDL Always Construct warning at ALU.sv(57): inferring latch(es) for variable "x", which holds its previous value in one or more paths through the always construct File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 57
+Warning (10240): Verilog HDL Always Construct warning at ALU.sv(57): inferring latch(es) for variable "y", which holds its previous value in one or more paths through the always construct File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 57
+Warning (10240): Verilog HDL Always Construct warning at ALU.sv(57): inferring latch(es) for variable "carry", which holds its previous value in one or more paths through the always construct File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 57
+Info (10041): Inferred latch for "carry" at ALU.sv(57) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 57
+Info (10041): Inferred latch for "y[0]" at ALU.sv(142) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
+Info (10041): Inferred latch for "y[1]" at ALU.sv(142) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
+Info (10041): Inferred latch for "y[2]" at ALU.sv(142) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
+Info (10041): Inferred latch for "y[3]" at ALU.sv(142) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
+Info (10041): Inferred latch for "y[4]" at ALU.sv(142) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
+Info (10041): Inferred latch for "y[5]" at ALU.sv(142) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
+Info (10041): Inferred latch for "y[6]" at ALU.sv(142) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
+Info (10041): Inferred latch for "y[7]" at ALU.sv(142) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
+Info (10041): Inferred latch for "y[8]" at ALU.sv(142) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
+Info (10041): Inferred latch for "y[9]" at ALU.sv(142) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
+Info (10041): Inferred latch for "y[10]" at ALU.sv(142) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
+Info (10041): Inferred latch for "y[11]" at ALU.sv(142) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
+Info (10041): Inferred latch for "y[12]" at ALU.sv(142) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
+Info (10041): Inferred latch for "y[13]" at ALU.sv(142) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
+Info (10041): Inferred latch for "y[14]" at ALU.sv(142) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
+Info (10041): Inferred latch for "y[15]" at ALU.sv(142) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
+Info (10041): Inferred latch for "y[16]" at ALU.sv(142) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
+Info (10041): Inferred latch for "y[17]" at ALU.sv(142) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
+Info (10041): Inferred latch for "y[18]" at ALU.sv(142) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
+Info (10041): Inferred latch for "y[19]" at ALU.sv(142) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
+Info (10041): Inferred latch for "y[20]" at ALU.sv(142) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
+Info (10041): Inferred latch for "y[21]" at ALU.sv(142) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
+Info (10041): Inferred latch for "y[22]" at ALU.sv(142) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
+Info (10041): Inferred latch for "y[23]" at ALU.sv(142) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
+Info (10041): Inferred latch for "y[24]" at ALU.sv(142) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
+Info (10041): Inferred latch for "y[25]" at ALU.sv(142) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
+Info (10041): Inferred latch for "y[26]" at ALU.sv(142) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
+Info (10041): Inferred latch for "y[27]" at ALU.sv(142) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
+Info (10041): Inferred latch for "y[28]" at ALU.sv(142) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
+Info (10041): Inferred latch for "y[29]" at ALU.sv(142) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
+Info (10041): Inferred latch for "y[30]" at ALU.sv(142) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
+Info (10041): Inferred latch for "y[31]" at ALU.sv(142) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
+Info (10041): Inferred latch for "x[0]" at ALU.sv(142) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
+Info (10041): Inferred latch for "x[1]" at ALU.sv(142) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
+Info (10041): Inferred latch for "x[2]" at ALU.sv(142) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
+Info (10041): Inferred latch for "x[3]" at ALU.sv(142) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
+Info (10041): Inferred latch for "x[4]" at ALU.sv(142) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
+Info (10041): Inferred latch for "x[5]" at ALU.sv(142) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
+Info (10041): Inferred latch for "x[6]" at ALU.sv(142) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
+Info (10041): Inferred latch for "x[7]" at ALU.sv(142) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
+Info (10041): Inferred latch for "x[8]" at ALU.sv(142) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
+Info (10041): Inferred latch for "x[9]" at ALU.sv(142) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
+Info (10041): Inferred latch for "x[10]" at ALU.sv(142) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
+Info (10041): Inferred latch for "x[11]" at ALU.sv(142) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
+Info (10041): Inferred latch for "x[12]" at ALU.sv(142) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
+Info (10041): Inferred latch for "x[13]" at ALU.sv(142) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
+Info (10041): Inferred latch for "x[14]" at ALU.sv(142) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
+Info (10041): Inferred latch for "x[15]" at ALU.sv(142) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
+Info (10041): Inferred latch for "x[16]" at ALU.sv(142) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
+Info (10041): Inferred latch for "x[17]" at ALU.sv(142) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
+Info (10041): Inferred latch for "x[18]" at ALU.sv(142) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
+Info (10041): Inferred latch for "x[19]" at ALU.sv(142) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
+Info (10041): Inferred latch for "x[20]" at ALU.sv(142) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
+Info (10041): Inferred latch for "x[21]" at ALU.sv(142) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
+Info (10041): Inferred latch for "x[22]" at ALU.sv(142) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
+Info (10041): Inferred latch for "x[23]" at ALU.sv(142) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
+Info (10041): Inferred latch for "x[24]" at ALU.sv(142) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
+Info (10041): Inferred latch for "x[25]" at ALU.sv(142) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
+Info (10041): Inferred latch for "x[26]" at ALU.sv(142) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
+Info (10041): Inferred latch for "x[27]" at ALU.sv(142) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
+Info (10041): Inferred latch for "x[28]" at ALU.sv(142) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
+Info (10041): Inferred latch for "x[29]" at ALU.sv(142) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
+Info (10041): Inferred latch for "x[30]" at ALU.sv(142) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
+Info (10041): Inferred latch for "x[31]" at ALU.sv(142) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 142
+Info (12128): Elaborating entity "sumadornbits" for hierarchy "ALU:mfrecuencia_ALU|sumadornbits:UUT" File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 25
+Warning (10030): Net "temporal2[2]" at sumadornbits.sv(12) has no driver or initial value, using a default initial value '0' File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/sumadornbits.sv Line: 12
+Warning (10034): Output port "salida7seg0" at sumadornbits.sv(6) has no driver File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/sumadornbits.sv Line: 6
+Warning (10034): Output port "salida7seg1" at sumadornbits.sv(8) has no driver File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/sumadornbits.sv Line: 8
+Info (12128): Elaborating entity "Sumador_medio" for hierarchy "ALU:mfrecuencia_ALU|sumadornbits:UUT|Sumador_medio:U1" File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/sumadornbits.sv Line: 20
+Info (12128): Elaborating entity "Sumador_completo" for hierarchy "ALU:mfrecuencia_ALU|sumadornbits:UUT|Sumador_completo:for_loop[1].U2" File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/sumadornbits.sv Line: 29
+Info (12128): Elaborating entity "restadornbits" for hierarchy "ALU:mfrecuencia_ALU|restadornbits:UUT_r" File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 31
+Warning (10030): Net "temporal2[2]" at restadornbits.sv(12) has no driver or initial value, using a default initial value '0' File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/restadornbits.sv Line: 12
+Warning (10034): Output port "salida7seg0" at restadornbits.sv(6) has no driver File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/restadornbits.sv Line: 6
+Warning (10034): Output port "salida7seg1" at restadornbits.sv(8) has no driver File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/restadornbits.sv Line: 8
+Info (12128): Elaborating entity "Restador_medio" for hierarchy "ALU:mfrecuencia_ALU|restadornbits:UUT_r|Restador_medio:U1" File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/restadornbits.sv Line: 20
+Info (12128): Elaborating entity "Restador_completo" for hierarchy "ALU:mfrecuencia_ALU|restadornbits:UUT_r|Restador_completo:for_loop[1].U2" File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/restadornbits.sv Line: 29
+Info (12128): Elaborating entity "multiplicador" for hierarchy "ALU:mfrecuencia_ALU|multiplicador:dut" File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 37
+Info (12128): Elaborating entity "Productos_Parciales" for hierarchy "ALU:mfrecuencia_ALU|multiplicador:dut|Productos_Parciales:gen_row[0].gen_column[0].PPX" File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/multiplicador.sv Line: 39
+Info (12128): Elaborating entity "DecodificadorN" for hierarchy "ALU:mfrecuencia_ALU|DecodificadorN:deco" File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 41
+Warning (10030): Net "temporal1[1]" at DecodificadorN.sv(7) has no driver or initial value, using a default initial value '0' File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/DecodificadorN.sv Line: 7
+Info (12128): Elaborating entity "DecodificadorBinario" for hierarchy "ALU:mfrecuencia_ALU|DecodificadorN:deco|DecodificadorBinario:for_loop[0].U1" File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/DecodificadorN.sv Line: 15
+Info (12128): Elaborating entity "ff_out_n" for hierarchy "ff_out_n:mfrecuencia_out" File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/mfrecuencia.sv Line: 82
+Info (12128): Elaborating entity "ff_out" for hierarchy "ff_out_n:mfrecuencia_out|ff_out:bits_[0].register_out_" File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ff_out_n.sv Line: 37
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "ff_out_n:mfrecuencia_out|out_num[1][1]" is missing source, defaulting to GND File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ff_out_n.sv Line: 14
+    Warning (12110): Net "ff_out_n:mfrecuencia_out|out_num[1][0]" is missing source, defaulting to GND File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ff_out_n.sv Line: 14
+    Warning (12110): Net "ff_out_n:mfrecuencia_out|out_num[0][1]" is missing source, defaulting to GND File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ff_out_n.sv Line: 14
+    Warning (12110): Net "ff_out_n:mfrecuencia_out|out_mode_seg[1]" is missing source, defaulting to GND File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ff_out_n.sv Line: 15
+    Warning (12110): Net "ff_out_n:mfrecuencia_out|out_out[1][1]" is missing source, defaulting to GND File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ff_out_n.sv Line: 16
+    Warning (12110): Net "ff_out_n:mfrecuencia_out|out_out[1][0]" is missing source, defaulting to GND File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ff_out_n.sv Line: 16
+    Warning (12110): Net "ff_out_n:mfrecuencia_out|out_out[0][1]" is missing source, defaulting to GND File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ff_out_n.sv Line: 16
+Warning (14026): LATCH primitive "ALU:mfrecuencia_ALU|carry" is permanently enabled File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/ALU.sv Line: 6
+Warning (12241): 6 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "out_des" is stuck at GND File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/mfrecuencia.sv Line: 13
+    Warning (13410): Pin "out_num[1][1]" is stuck at GND File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/mfrecuencia.sv Line: 14
+    Warning (13410): Pin "out_num[1][2]" is stuck at GND File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/mfrecuencia.sv Line: 14
+    Warning (13410): Pin "out_num[1][3]" is stuck at GND File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/mfrecuencia.sv Line: 14
+    Warning (13410): Pin "out_out[0][1]" is stuck at GND File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/mfrecuencia.sv Line: 15
+    Warning (13410): Pin "out_out[1][0]" is stuck at GND File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/mfrecuencia.sv Line: 15
+    Warning (13410): Pin "out_out[1][1]" is stuck at GND File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/mfrecuencia.sv Line: 15
+    Warning (13410): Pin "out_out[1][2]" is stuck at GND File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/mfrecuencia.sv Line: 15
+    Warning (13410): Pin "out_out[1][3]" is stuck at GND File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/mfrecuencia.sv Line: 15
+    Warning (13410): Pin "out_out[1][4]" is stuck at GND File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/mfrecuencia.sv Line: 15
+    Warning (13410): Pin "out_out[1][5]" is stuck at GND File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/mfrecuencia.sv Line: 15
+    Warning (13410): Pin "out_mode_seg[1]" is stuck at GND File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/mfrecuencia.sv Line: 17
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 2 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "mode[2]" File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/mfrecuencia.sv Line: 8
+    Warning (15610): No output dependent on input pin "mode[3]" File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_2/ALU/mfrecuencia.sv Line: 8
+Info (21057): Implemented 62 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 10 input pins
+    Info (21059): Implemented 33 output pins
+    Info (21061): Implemented 19 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 38 warnings
+    Info: Peak virtual memory: 4840 megabytes
+    Info: Processing ended: Fri Mar  8 22:53:35 2024
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:20
 
 

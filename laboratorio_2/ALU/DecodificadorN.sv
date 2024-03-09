@@ -1,10 +1,10 @@
 module DecodificadorN #(parameter n = 4)(
-													input logic [1:0] [n-1:0]  num_all,
-													output logic [1:0] [6:0] seg
+													input logic [n-1:0] [n-1:0]  num_all,
+													output logic [n-1:0] [6:0] seg
 													);
 
 	genvar i;
-	logic [1:0] [6:0] temporal1;
+	logic [n-1:0] [6:0] temporal1;
 
 	generate 
 
