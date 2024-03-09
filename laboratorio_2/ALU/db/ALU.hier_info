@@ -1,4 +1,96 @@
-|ALU
+|mfrecuencia
+
+
+|mfrecuencia|ff_in_n:mfrecuencia_in
+in1[0] => in1[0].IN1
+in1[1] => in1[1].IN1
+in1[2] => in1[2].IN1
+in1[3] => in1[3].IN1
+in2[0] => in2[0].IN1
+in2[1] => in2[1].IN1
+in2[2] => in2[2].IN1
+in2[3] => in2[3].IN1
+mode[0] => mode[0].IN1
+mode[1] => mode[1].IN1
+mode[2] => mode[2].IN1
+mode[3] => mode[3].IN1
+clk => clk.IN4
+reset => reset.IN4
+out1[0] <= ff_in:bit_[0].register_in_.out1
+out1[1] <= ff_in:bit_[1].register_in_.out1
+out1[2] <= ff_in:bit_[2].register_in_.out1
+out1[3] <= ff_in:bit_[3].register_in_.out1
+out2[0] <= ff_in:bit_[0].register_in_.out2
+out2[1] <= ff_in:bit_[1].register_in_.out2
+out2[2] <= ff_in:bit_[2].register_in_.out2
+out2[3] <= ff_in:bit_[3].register_in_.out2
+out_mode[0] <= ff_in:bit_[0].register_in_.out_mode
+out_mode[1] <= ff_in:bit_[1].register_in_.out_mode
+out_mode[2] <= ff_in:bit_[2].register_in_.out_mode
+out_mode[3] <= ff_in:bit_[3].register_in_.out_mode
+
+
+|mfrecuencia|ff_in_n:mfrecuencia_in|ff_in:bit_[0].register_in_
+in1 => out1~reg0.DATAIN
+in2 => out2~reg0.DATAIN
+mode => out_mode~reg0.DATAIN
+clk => out_mode~reg0.CLK
+clk => out2~reg0.CLK
+clk => out1~reg0.CLK
+reset => out_mode~reg0.ACLR
+reset => out2~reg0.ACLR
+reset => out1~reg0.ACLR
+out1 <= out1~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out2 <= out2~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_mode <= out_mode~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mfrecuencia|ff_in_n:mfrecuencia_in|ff_in:bit_[1].register_in_
+in1 => out1~reg0.DATAIN
+in2 => out2~reg0.DATAIN
+mode => out_mode~reg0.DATAIN
+clk => out_mode~reg0.CLK
+clk => out2~reg0.CLK
+clk => out1~reg0.CLK
+reset => out_mode~reg0.ACLR
+reset => out2~reg0.ACLR
+reset => out1~reg0.ACLR
+out1 <= out1~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out2 <= out2~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_mode <= out_mode~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mfrecuencia|ff_in_n:mfrecuencia_in|ff_in:bit_[2].register_in_
+in1 => out1~reg0.DATAIN
+in2 => out2~reg0.DATAIN
+mode => out_mode~reg0.DATAIN
+clk => out_mode~reg0.CLK
+clk => out2~reg0.CLK
+clk => out1~reg0.CLK
+reset => out_mode~reg0.ACLR
+reset => out2~reg0.ACLR
+reset => out1~reg0.ACLR
+out1 <= out1~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out2 <= out2~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_mode <= out_mode~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mfrecuencia|ff_in_n:mfrecuencia_in|ff_in:bit_[3].register_in_
+in1 => out1~reg0.DATAIN
+in2 => out2~reg0.DATAIN
+mode => out_mode~reg0.DATAIN
+clk => out_mode~reg0.CLK
+clk => out2~reg0.CLK
+clk => out1~reg0.CLK
+reset => out_mode~reg0.ACLR
+reset => out2~reg0.ACLR
+reset => out1~reg0.ACLR
+out1 <= out1~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out2 <= out2~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_mode <= out_mode~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mfrecuencia|ALU:mfrecuencia_ALU
 in1[0] => in1[0].IN3
 in1[1] => in1[1].IN3
 in1[2] => in1[2].IN3
@@ -51,42 +143,42 @@ mode[3] => Mux7.IN14
 mode[3] => Decoder0.IN0
 mode[3] => Mux9.IN14
 mode[3] => Mux8.IN16
-neg << neg.DB_MAX_OUTPUT_PORT_TYPE
-cero << Equal1.DB_MAX_OUTPUT_PORT_TYPE
-carry << carry$latch.DB_MAX_OUTPUT_PORT_TYPE
-des << <GND>
-num[0][0] << Mux7.DB_MAX_OUTPUT_PORT_TYPE
-num[0][1] << Mux6.DB_MAX_OUTPUT_PORT_TYPE
-num[0][2] << Mux5.DB_MAX_OUTPUT_PORT_TYPE
-num[0][3] << Mux4.DB_MAX_OUTPUT_PORT_TYPE
-num[1][0] << Mux3.DB_MAX_OUTPUT_PORT_TYPE
-num[1][1] << Mux2.DB_MAX_OUTPUT_PORT_TYPE
-num[1][2] << Mux1.DB_MAX_OUTPUT_PORT_TYPE
-num[1][3] << Mux0.DB_MAX_OUTPUT_PORT_TYPE
-mode_seg[0] << WideOr4.DB_MAX_OUTPUT_PORT_TYPE
-mode_seg[1] << mode_seg.DB_MAX_OUTPUT_PORT_TYPE
-mode_seg[2] << Decoder0.DB_MAX_OUTPUT_PORT_TYPE
-mode_seg[3] << WideOr3.DB_MAX_OUTPUT_PORT_TYPE
-mode_seg[4] << WideOr2.DB_MAX_OUTPUT_PORT_TYPE
-mode_seg[5] << WideOr1.DB_MAX_OUTPUT_PORT_TYPE
-mode_seg[6] << WideOr0.DB_MAX_OUTPUT_PORT_TYPE
-out[0][0] << out.DB_MAX_OUTPUT_PORT_TYPE
-out[0][1] << out.DB_MAX_OUTPUT_PORT_TYPE
-out[0][2] << out.DB_MAX_OUTPUT_PORT_TYPE
-out[0][3] << out.DB_MAX_OUTPUT_PORT_TYPE
-out[0][4] << out.DB_MAX_OUTPUT_PORT_TYPE
-out[0][5] << out.DB_MAX_OUTPUT_PORT_TYPE
-out[0][6] << out.DB_MAX_OUTPUT_PORT_TYPE
-out[1][0] << out.DB_MAX_OUTPUT_PORT_TYPE
-out[1][1] << out.DB_MAX_OUTPUT_PORT_TYPE
-out[1][2] << out.DB_MAX_OUTPUT_PORT_TYPE
-out[1][3] << out.DB_MAX_OUTPUT_PORT_TYPE
-out[1][4] << out.DB_MAX_OUTPUT_PORT_TYPE
-out[1][5] << out.DB_MAX_OUTPUT_PORT_TYPE
-out[1][6] << out.DB_MAX_OUTPUT_PORT_TYPE
+neg <= neg.DB_MAX_OUTPUT_PORT_TYPE
+cero <= Equal1.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry$latch.DB_MAX_OUTPUT_PORT_TYPE
+des <= <GND>
+num[0][0] <= Mux7.DB_MAX_OUTPUT_PORT_TYPE
+num[0][1] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+num[0][2] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+num[0][3] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+num[1][0] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+num[1][1] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+num[1][2] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+num[1][3] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+mode_seg[0] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+mode_seg[1] <= mode_seg.DB_MAX_OUTPUT_PORT_TYPE
+mode_seg[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+mode_seg[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+mode_seg[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+mode_seg[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+mode_seg[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+out[0][0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[0][1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[0][2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[0][3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[0][4] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[0][5] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[0][6] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1][0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1][1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1][2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1][3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1][4] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1][5] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1][6] <= out.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|sumadornbits:UUT
+|mfrecuencia|ALU:mfrecuencia_ALU|sumadornbits:UUT
 Ent1[0] => Ent1[0].IN1
 Ent1[1] => Ent1[1].IN1
 Ent1[2] => Ent1[2].IN1
@@ -117,7 +209,7 @@ salida7seg1[5] <= <GND>
 salida7seg1[6] <= <GND>
 
 
-|ALU|sumadornbits:UUT|Sumador_medio:U1
+|mfrecuencia|ALU:mfrecuencia_ALU|sumadornbits:UUT|Sumador_medio:U1
 A => Cout.IN0
 A => Suma.IN0
 B => Cout.IN1
@@ -126,7 +218,7 @@ Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 Suma <= Suma.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|sumadornbits:UUT|Sumador_completo:for_loop[1].U2
+|mfrecuencia|ALU:mfrecuencia_ALU|sumadornbits:UUT|Sumador_completo:for_loop[1].U2
 A => Cout.IN0
 A => Cout.IN0
 B => Cout.IN1
@@ -137,7 +229,7 @@ Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 Suma <= Suma.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|sumadornbits:UUT|Sumador_completo:for_loop[2].U2
+|mfrecuencia|ALU:mfrecuencia_ALU|sumadornbits:UUT|Sumador_completo:for_loop[2].U2
 A => Cout.IN0
 A => Cout.IN0
 B => Cout.IN1
@@ -148,7 +240,7 @@ Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 Suma <= Suma.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|sumadornbits:UUT|Sumador_completo:for_loop[3].U2
+|mfrecuencia|ALU:mfrecuencia_ALU|sumadornbits:UUT|Sumador_completo:for_loop[3].U2
 A => Cout.IN0
 A => Cout.IN0
 B => Cout.IN1
@@ -159,7 +251,7 @@ Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 Suma <= Suma.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|restadornbits:UUT_r
+|mfrecuencia|ALU:mfrecuencia_ALU|restadornbits:UUT_r
 Ent1[0] => Ent1[0].IN1
 Ent1[1] => Ent1[1].IN1
 Ent1[2] => Ent1[2].IN1
@@ -190,7 +282,7 @@ salida7seg1[5] <= <GND>
 salida7seg1[6] <= <GND>
 
 
-|ALU|restadornbits:UUT_r|Restador_medio:U1
+|mfrecuencia|ALU:mfrecuencia_ALU|restadornbits:UUT_r|Restador_medio:U1
 A => Resta.IN0
 A => Cout.IN0
 B => Cout.IN1
@@ -199,21 +291,7 @@ Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 Resta <= Resta.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|restadornbits:UUT_r|Restador_completo:for_loop[1].U2
-A => Resta.IN0
-A => Cout.IN0
-A => Cout.IN0
-B => Cout.IN1
-B => Cout.IN0
-B => Resta.IN1
-Cin => Cout.IN1
-Cin => Cout.IN1
-Cin => Resta.IN1
-Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
-Resta <= Resta.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|restadornbits:UUT_r|Restador_completo:for_loop[2].U2
+|mfrecuencia|ALU:mfrecuencia_ALU|restadornbits:UUT_r|Restador_completo:for_loop[1].U2
 A => Resta.IN0
 A => Cout.IN0
 A => Cout.IN0
@@ -227,7 +305,7 @@ Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 Resta <= Resta.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|restadornbits:UUT_r|Restador_completo:for_loop[3].U2
+|mfrecuencia|ALU:mfrecuencia_ALU|restadornbits:UUT_r|Restador_completo:for_loop[2].U2
 A => Resta.IN0
 A => Cout.IN0
 A => Cout.IN0
@@ -241,7 +319,21 @@ Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 Resta <= Resta.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|multiplicador:dut
+|mfrecuencia|ALU:mfrecuencia_ALU|restadornbits:UUT_r|Restador_completo:for_loop[3].U2
+A => Resta.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => Cout.IN1
+B => Cout.IN0
+B => Resta.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cin => Resta.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Resta <= Resta.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mfrecuencia|ALU:mfrecuencia_ALU|multiplicador:dut
 Inp1[0] => elem1[0][0].IN4
 Inp1[1] => elem1[1][0].IN4
 Inp1[2] => elem1[2][0].IN4
@@ -261,7 +353,7 @@ Product[7] <= Productos_Parciales:gen_row[3].gen_column[3].PPX.port5
 CarryOut <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|multiplicador:dut|Productos_Parciales:gen_row[0].gen_column[0].PPX
+|mfrecuencia|ALU:mfrecuencia_ALU|multiplicador:dut|Productos_Parciales:gen_row[0].gen_column[0].PPX
 elem1 => partialprod.IN0
 elem2 => partialprod.IN1
 fac => fac.IN1
@@ -270,7 +362,7 @@ SumResult <= Sumador_completo:SCX.Suma
 Carry_out <= Sumador_completo:SCX.Cout
 
 
-|ALU|multiplicador:dut|Productos_Parciales:gen_row[0].gen_column[0].PPX|Sumador_completo:SCX
+|mfrecuencia|ALU:mfrecuencia_ALU|multiplicador:dut|Productos_Parciales:gen_row[0].gen_column[0].PPX|Sumador_completo:SCX
 A => Cout.IN0
 A => Cout.IN0
 B => Cout.IN1
@@ -281,7 +373,7 @@ Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 Suma <= Suma.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|multiplicador:dut|Productos_Parciales:gen_row[0].gen_column[1].PPX
+|mfrecuencia|ALU:mfrecuencia_ALU|multiplicador:dut|Productos_Parciales:gen_row[0].gen_column[1].PPX
 elem1 => partialprod.IN0
 elem2 => partialprod.IN1
 fac => fac.IN1
@@ -290,7 +382,7 @@ SumResult <= Sumador_completo:SCX.Suma
 Carry_out <= Sumador_completo:SCX.Cout
 
 
-|ALU|multiplicador:dut|Productos_Parciales:gen_row[0].gen_column[1].PPX|Sumador_completo:SCX
+|mfrecuencia|ALU:mfrecuencia_ALU|multiplicador:dut|Productos_Parciales:gen_row[0].gen_column[1].PPX|Sumador_completo:SCX
 A => Cout.IN0
 A => Cout.IN0
 B => Cout.IN1
@@ -301,7 +393,7 @@ Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 Suma <= Suma.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|multiplicador:dut|Productos_Parciales:gen_row[0].gen_column[2].PPX
+|mfrecuencia|ALU:mfrecuencia_ALU|multiplicador:dut|Productos_Parciales:gen_row[0].gen_column[2].PPX
 elem1 => partialprod.IN0
 elem2 => partialprod.IN1
 fac => fac.IN1
@@ -310,7 +402,7 @@ SumResult <= Sumador_completo:SCX.Suma
 Carry_out <= Sumador_completo:SCX.Cout
 
 
-|ALU|multiplicador:dut|Productos_Parciales:gen_row[0].gen_column[2].PPX|Sumador_completo:SCX
+|mfrecuencia|ALU:mfrecuencia_ALU|multiplicador:dut|Productos_Parciales:gen_row[0].gen_column[2].PPX|Sumador_completo:SCX
 A => Cout.IN0
 A => Cout.IN0
 B => Cout.IN1
@@ -321,7 +413,7 @@ Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 Suma <= Suma.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|multiplicador:dut|Productos_Parciales:gen_row[0].gen_column[3].PPX
+|mfrecuencia|ALU:mfrecuencia_ALU|multiplicador:dut|Productos_Parciales:gen_row[0].gen_column[3].PPX
 elem1 => partialprod.IN0
 elem2 => partialprod.IN1
 fac => fac.IN1
@@ -330,7 +422,7 @@ SumResult <= Sumador_completo:SCX.Suma
 Carry_out <= Sumador_completo:SCX.Cout
 
 
-|ALU|multiplicador:dut|Productos_Parciales:gen_row[0].gen_column[3].PPX|Sumador_completo:SCX
+|mfrecuencia|ALU:mfrecuencia_ALU|multiplicador:dut|Productos_Parciales:gen_row[0].gen_column[3].PPX|Sumador_completo:SCX
 A => Cout.IN0
 A => Cout.IN0
 B => Cout.IN1
@@ -341,7 +433,7 @@ Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 Suma <= Suma.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|multiplicador:dut|Productos_Parciales:gen_row[1].gen_column[0].PPX
+|mfrecuencia|ALU:mfrecuencia_ALU|multiplicador:dut|Productos_Parciales:gen_row[1].gen_column[0].PPX
 elem1 => partialprod.IN0
 elem2 => partialprod.IN1
 fac => fac.IN1
@@ -350,7 +442,7 @@ SumResult <= Sumador_completo:SCX.Suma
 Carry_out <= Sumador_completo:SCX.Cout
 
 
-|ALU|multiplicador:dut|Productos_Parciales:gen_row[1].gen_column[0].PPX|Sumador_completo:SCX
+|mfrecuencia|ALU:mfrecuencia_ALU|multiplicador:dut|Productos_Parciales:gen_row[1].gen_column[0].PPX|Sumador_completo:SCX
 A => Cout.IN0
 A => Cout.IN0
 B => Cout.IN1
@@ -361,7 +453,7 @@ Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 Suma <= Suma.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|multiplicador:dut|Productos_Parciales:gen_row[1].gen_column[1].PPX
+|mfrecuencia|ALU:mfrecuencia_ALU|multiplicador:dut|Productos_Parciales:gen_row[1].gen_column[1].PPX
 elem1 => partialprod.IN0
 elem2 => partialprod.IN1
 fac => fac.IN1
@@ -370,7 +462,7 @@ SumResult <= Sumador_completo:SCX.Suma
 Carry_out <= Sumador_completo:SCX.Cout
 
 
-|ALU|multiplicador:dut|Productos_Parciales:gen_row[1].gen_column[1].PPX|Sumador_completo:SCX
+|mfrecuencia|ALU:mfrecuencia_ALU|multiplicador:dut|Productos_Parciales:gen_row[1].gen_column[1].PPX|Sumador_completo:SCX
 A => Cout.IN0
 A => Cout.IN0
 B => Cout.IN1
@@ -381,7 +473,7 @@ Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 Suma <= Suma.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|multiplicador:dut|Productos_Parciales:gen_row[1].gen_column[2].PPX
+|mfrecuencia|ALU:mfrecuencia_ALU|multiplicador:dut|Productos_Parciales:gen_row[1].gen_column[2].PPX
 elem1 => partialprod.IN0
 elem2 => partialprod.IN1
 fac => fac.IN1
@@ -390,7 +482,7 @@ SumResult <= Sumador_completo:SCX.Suma
 Carry_out <= Sumador_completo:SCX.Cout
 
 
-|ALU|multiplicador:dut|Productos_Parciales:gen_row[1].gen_column[2].PPX|Sumador_completo:SCX
+|mfrecuencia|ALU:mfrecuencia_ALU|multiplicador:dut|Productos_Parciales:gen_row[1].gen_column[2].PPX|Sumador_completo:SCX
 A => Cout.IN0
 A => Cout.IN0
 B => Cout.IN1
@@ -401,7 +493,7 @@ Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 Suma <= Suma.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|multiplicador:dut|Productos_Parciales:gen_row[1].gen_column[3].PPX
+|mfrecuencia|ALU:mfrecuencia_ALU|multiplicador:dut|Productos_Parciales:gen_row[1].gen_column[3].PPX
 elem1 => partialprod.IN0
 elem2 => partialprod.IN1
 fac => fac.IN1
@@ -410,7 +502,7 @@ SumResult <= Sumador_completo:SCX.Suma
 Carry_out <= Sumador_completo:SCX.Cout
 
 
-|ALU|multiplicador:dut|Productos_Parciales:gen_row[1].gen_column[3].PPX|Sumador_completo:SCX
+|mfrecuencia|ALU:mfrecuencia_ALU|multiplicador:dut|Productos_Parciales:gen_row[1].gen_column[3].PPX|Sumador_completo:SCX
 A => Cout.IN0
 A => Cout.IN0
 B => Cout.IN1
@@ -421,7 +513,7 @@ Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 Suma <= Suma.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|multiplicador:dut|Productos_Parciales:gen_row[2].gen_column[0].PPX
+|mfrecuencia|ALU:mfrecuencia_ALU|multiplicador:dut|Productos_Parciales:gen_row[2].gen_column[0].PPX
 elem1 => partialprod.IN0
 elem2 => partialprod.IN1
 fac => fac.IN1
@@ -430,7 +522,7 @@ SumResult <= Sumador_completo:SCX.Suma
 Carry_out <= Sumador_completo:SCX.Cout
 
 
-|ALU|multiplicador:dut|Productos_Parciales:gen_row[2].gen_column[0].PPX|Sumador_completo:SCX
+|mfrecuencia|ALU:mfrecuencia_ALU|multiplicador:dut|Productos_Parciales:gen_row[2].gen_column[0].PPX|Sumador_completo:SCX
 A => Cout.IN0
 A => Cout.IN0
 B => Cout.IN1
@@ -441,7 +533,7 @@ Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 Suma <= Suma.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|multiplicador:dut|Productos_Parciales:gen_row[2].gen_column[1].PPX
+|mfrecuencia|ALU:mfrecuencia_ALU|multiplicador:dut|Productos_Parciales:gen_row[2].gen_column[1].PPX
 elem1 => partialprod.IN0
 elem2 => partialprod.IN1
 fac => fac.IN1
@@ -450,7 +542,7 @@ SumResult <= Sumador_completo:SCX.Suma
 Carry_out <= Sumador_completo:SCX.Cout
 
 
-|ALU|multiplicador:dut|Productos_Parciales:gen_row[2].gen_column[1].PPX|Sumador_completo:SCX
+|mfrecuencia|ALU:mfrecuencia_ALU|multiplicador:dut|Productos_Parciales:gen_row[2].gen_column[1].PPX|Sumador_completo:SCX
 A => Cout.IN0
 A => Cout.IN0
 B => Cout.IN1
@@ -461,7 +553,7 @@ Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 Suma <= Suma.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|multiplicador:dut|Productos_Parciales:gen_row[2].gen_column[2].PPX
+|mfrecuencia|ALU:mfrecuencia_ALU|multiplicador:dut|Productos_Parciales:gen_row[2].gen_column[2].PPX
 elem1 => partialprod.IN0
 elem2 => partialprod.IN1
 fac => fac.IN1
@@ -470,7 +562,7 @@ SumResult <= Sumador_completo:SCX.Suma
 Carry_out <= Sumador_completo:SCX.Cout
 
 
-|ALU|multiplicador:dut|Productos_Parciales:gen_row[2].gen_column[2].PPX|Sumador_completo:SCX
+|mfrecuencia|ALU:mfrecuencia_ALU|multiplicador:dut|Productos_Parciales:gen_row[2].gen_column[2].PPX|Sumador_completo:SCX
 A => Cout.IN0
 A => Cout.IN0
 B => Cout.IN1
@@ -481,7 +573,7 @@ Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 Suma <= Suma.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|multiplicador:dut|Productos_Parciales:gen_row[2].gen_column[3].PPX
+|mfrecuencia|ALU:mfrecuencia_ALU|multiplicador:dut|Productos_Parciales:gen_row[2].gen_column[3].PPX
 elem1 => partialprod.IN0
 elem2 => partialprod.IN1
 fac => fac.IN1
@@ -490,7 +582,7 @@ SumResult <= Sumador_completo:SCX.Suma
 Carry_out <= Sumador_completo:SCX.Cout
 
 
-|ALU|multiplicador:dut|Productos_Parciales:gen_row[2].gen_column[3].PPX|Sumador_completo:SCX
+|mfrecuencia|ALU:mfrecuencia_ALU|multiplicador:dut|Productos_Parciales:gen_row[2].gen_column[3].PPX|Sumador_completo:SCX
 A => Cout.IN0
 A => Cout.IN0
 B => Cout.IN1
@@ -501,7 +593,7 @@ Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 Suma <= Suma.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|multiplicador:dut|Productos_Parciales:gen_row[3].gen_column[0].PPX
+|mfrecuencia|ALU:mfrecuencia_ALU|multiplicador:dut|Productos_Parciales:gen_row[3].gen_column[0].PPX
 elem1 => partialprod.IN0
 elem2 => partialprod.IN1
 fac => fac.IN1
@@ -510,7 +602,7 @@ SumResult <= Sumador_completo:SCX.Suma
 Carry_out <= Sumador_completo:SCX.Cout
 
 
-|ALU|multiplicador:dut|Productos_Parciales:gen_row[3].gen_column[0].PPX|Sumador_completo:SCX
+|mfrecuencia|ALU:mfrecuencia_ALU|multiplicador:dut|Productos_Parciales:gen_row[3].gen_column[0].PPX|Sumador_completo:SCX
 A => Cout.IN0
 A => Cout.IN0
 B => Cout.IN1
@@ -521,7 +613,7 @@ Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 Suma <= Suma.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|multiplicador:dut|Productos_Parciales:gen_row[3].gen_column[1].PPX
+|mfrecuencia|ALU:mfrecuencia_ALU|multiplicador:dut|Productos_Parciales:gen_row[3].gen_column[1].PPX
 elem1 => partialprod.IN0
 elem2 => partialprod.IN1
 fac => fac.IN1
@@ -530,7 +622,7 @@ SumResult <= Sumador_completo:SCX.Suma
 Carry_out <= Sumador_completo:SCX.Cout
 
 
-|ALU|multiplicador:dut|Productos_Parciales:gen_row[3].gen_column[1].PPX|Sumador_completo:SCX
+|mfrecuencia|ALU:mfrecuencia_ALU|multiplicador:dut|Productos_Parciales:gen_row[3].gen_column[1].PPX|Sumador_completo:SCX
 A => Cout.IN0
 A => Cout.IN0
 B => Cout.IN1
@@ -541,7 +633,7 @@ Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 Suma <= Suma.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|multiplicador:dut|Productos_Parciales:gen_row[3].gen_column[2].PPX
+|mfrecuencia|ALU:mfrecuencia_ALU|multiplicador:dut|Productos_Parciales:gen_row[3].gen_column[2].PPX
 elem1 => partialprod.IN0
 elem2 => partialprod.IN1
 fac => fac.IN1
@@ -550,7 +642,7 @@ SumResult <= Sumador_completo:SCX.Suma
 Carry_out <= Sumador_completo:SCX.Cout
 
 
-|ALU|multiplicador:dut|Productos_Parciales:gen_row[3].gen_column[2].PPX|Sumador_completo:SCX
+|mfrecuencia|ALU:mfrecuencia_ALU|multiplicador:dut|Productos_Parciales:gen_row[3].gen_column[2].PPX|Sumador_completo:SCX
 A => Cout.IN0
 A => Cout.IN0
 B => Cout.IN1
@@ -561,7 +653,7 @@ Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 Suma <= Suma.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|multiplicador:dut|Productos_Parciales:gen_row[3].gen_column[3].PPX
+|mfrecuencia|ALU:mfrecuencia_ALU|multiplicador:dut|Productos_Parciales:gen_row[3].gen_column[3].PPX
 elem1 => partialprod.IN0
 elem2 => partialprod.IN1
 fac => fac.IN1
@@ -570,7 +662,7 @@ SumResult <= Sumador_completo:SCX.Suma
 Carry_out <= Sumador_completo:SCX.Cout
 
 
-|ALU|multiplicador:dut|Productos_Parciales:gen_row[3].gen_column[3].PPX|Sumador_completo:SCX
+|mfrecuencia|ALU:mfrecuencia_ALU|multiplicador:dut|Productos_Parciales:gen_row[3].gen_column[3].PPX|Sumador_completo:SCX
 A => Cout.IN0
 A => Cout.IN0
 B => Cout.IN1
@@ -581,7 +673,7 @@ Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 Suma <= Suma.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|DecodificadorN:deco
+|mfrecuencia|ALU:mfrecuencia_ALU|DecodificadorN:deco
 num_all[0][0] => num_all[0][0].IN1
 num_all[0][1] => num_all[0][1].IN1
 num_all[0][2] => num_all[0][2].IN1
@@ -606,7 +698,7 @@ seg[1][5] <= DecodificadorBinario:for_loop[4].U1.seg
 seg[1][6] <= DecodificadorBinario:for_loop[4].U1.seg
 
 
-|ALU|DecodificadorN:deco|DecodificadorBinario:for_loop[0].U1
+|mfrecuencia|ALU:mfrecuencia_ALU|DecodificadorN:deco|DecodificadorBinario:for_loop[0].U1
 bin[0] => Decoder0.IN3
 bin[1] => Decoder0.IN2
 bin[2] => Decoder0.IN1
@@ -620,7 +712,7 @@ seg[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
 seg[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|DecodificadorN:deco|DecodificadorBinario:for_loop[4].U1
+|mfrecuencia|ALU:mfrecuencia_ALU|DecodificadorN:deco|DecodificadorBinario:for_loop[4].U1
 bin[0] => Decoder0.IN3
 bin[1] => Decoder0.IN2
 bin[2] => Decoder0.IN1
@@ -632,5 +724,479 @@ seg[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
 seg[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
 seg[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
 seg[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mfrecuencia|ff_out_n:mfrecuencia_out
+neg => neg.IN13
+cero => cero.IN13
+carry => carry.IN13
+des => des.IN13
+num[0][0] => num[0][0].IN1
+num[0][1] => num[0][1].IN1
+num[0][2] => num[0][2].IN1
+num[0][3] => num[0][3].IN1
+num[1][0] => ~NO_FANOUT~
+num[1][1] => num[1][1].IN2
+num[1][2] => num[1][2].IN1
+num[1][3] => num[1][3].IN6
+mode_seg[0] => mode_seg[0].IN1
+mode_seg[1] => mode_seg[1].IN1
+mode_seg[2] => mode_seg[2].IN1
+mode_seg[3] => mode_seg[3].IN1
+mode_seg[4] => mode_seg[4].IN1
+mode_seg[5] => mode_seg[5].IN1
+mode_seg[6] => mode_seg[6].IN7
+out[0][0] => out[0][0].IN1
+out[0][1] => out[0][1].IN1
+out[0][2] => out[0][2].IN1
+out[0][3] => out[0][3].IN1
+out[0][4] => out[0][4].IN1
+out[0][5] => out[0][5].IN1
+out[0][6] => out[0][6].IN1
+out[1][0] => ~NO_FANOUT~
+out[1][1] => ~NO_FANOUT~
+out[1][2] => ~NO_FANOUT~
+out[1][3] => ~NO_FANOUT~
+out[1][4] => ~NO_FANOUT~
+out[1][5] => ~NO_FANOUT~
+out[1][6] => out[1][6].IN6
+clk => clk.IN13
+reset => reset.IN13
+out_neg <= out_neg.DB_MAX_OUTPUT_PORT_TYPE
+out_cero <= out_cero.DB_MAX_OUTPUT_PORT_TYPE
+out_carry <= out_carry.DB_MAX_OUTPUT_PORT_TYPE
+out_des <= out_des.DB_MAX_OUTPUT_PORT_TYPE
+out_num[0][0] <= ff_out:bit_[0].register_out_.out_num
+out_num[0][1] <= ff_out:bit_[1].register_out_.out_num
+out_num[0][2] <= ff_out:bit_[2].register_out_.out_num
+out_num[0][3] <= ff_out:bit_[3].register_out_.out_num
+out_num[1][0] <= <GND>
+out_num[1][1] <= out_num[1][1].DB_MAX_OUTPUT_PORT_TYPE
+out_num[1][2] <= ff_out:bit_[6].register_out_.out_num
+out_num[1][3] <= out_num[1][3].DB_MAX_OUTPUT_PORT_TYPE
+out_mode_seg[0] <= ff_out:bit_[0].register_out_.out_mode_seg
+out_mode_seg[1] <= ff_out:bit_[1].register_out_.out_mode_seg
+out_mode_seg[2] <= ff_out:bit_[2].register_out_.out_mode_seg
+out_mode_seg[3] <= ff_out:bit_[3].register_out_.out_mode_seg
+out_mode_seg[4] <= ff_out:bit_[4].register_out_.out_mode_seg
+out_mode_seg[5] <= ff_out:bit_[5].register_out_.out_mode_seg
+out_mode_seg[6] <= out_mode_seg[6].DB_MAX_OUTPUT_PORT_TYPE
+out_out[0][0] <= ff_out:bit_[0].register_out_.out_out
+out_out[0][1] <= ff_out:bit_[1].register_out_.out_out
+out_out[0][2] <= ff_out:bit_[2].register_out_.out_out
+out_out[0][3] <= ff_out:bit_[3].register_out_.out_out
+out_out[0][4] <= ff_out:bit_[4].register_out_.out_out
+out_out[0][5] <= ff_out:bit_[5].register_out_.out_out
+out_out[0][6] <= ff_out:bit_[6].register_out_.out_out
+out_out[1][0] <= <GND>
+out_out[1][1] <= <GND>
+out_out[1][2] <= <GND>
+out_out[1][3] <= <GND>
+out_out[1][4] <= <GND>
+out_out[1][5] <= <GND>
+out_out[1][6] <= out_out[1][6].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mfrecuencia|ff_out_n:mfrecuencia_out|ff_out:bit_[0].register_out_
+neg => out_neg~reg0.DATAIN
+cero => out_cero~reg0.DATAIN
+carry => out_carry~reg0.DATAIN
+des => out_des~reg0.DATAIN
+num => out_num~reg0.DATAIN
+mode_seg => out_mode_seg~reg0.DATAIN
+out => out_out~reg0.DATAIN
+clk => out_out~reg0.CLK
+clk => out_mode_seg~reg0.CLK
+clk => out_num~reg0.CLK
+clk => out_des~reg0.CLK
+clk => out_carry~reg0.CLK
+clk => out_cero~reg0.CLK
+clk => out_neg~reg0.CLK
+reset => out_out~reg0.ACLR
+reset => out_mode_seg~reg0.ACLR
+reset => out_num~reg0.ACLR
+reset => out_des~reg0.ACLR
+reset => out_carry~reg0.ACLR
+reset => out_cero~reg0.ACLR
+reset => out_neg~reg0.ACLR
+out_neg <= out_neg~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_cero <= out_cero~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_carry <= out_carry~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_des <= out_des~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_num <= out_num~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_mode_seg <= out_mode_seg~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_out <= out_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mfrecuencia|ff_out_n:mfrecuencia_out|ff_out:bit_[1].register_out_
+neg => out_neg~reg0.DATAIN
+cero => out_cero~reg0.DATAIN
+carry => out_carry~reg0.DATAIN
+des => out_des~reg0.DATAIN
+num => out_num~reg0.DATAIN
+mode_seg => out_mode_seg~reg0.DATAIN
+out => out_out~reg0.DATAIN
+clk => out_out~reg0.CLK
+clk => out_mode_seg~reg0.CLK
+clk => out_num~reg0.CLK
+clk => out_des~reg0.CLK
+clk => out_carry~reg0.CLK
+clk => out_cero~reg0.CLK
+clk => out_neg~reg0.CLK
+reset => out_out~reg0.ACLR
+reset => out_mode_seg~reg0.ACLR
+reset => out_num~reg0.ACLR
+reset => out_des~reg0.ACLR
+reset => out_carry~reg0.ACLR
+reset => out_cero~reg0.ACLR
+reset => out_neg~reg0.ACLR
+out_neg <= out_neg~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_cero <= out_cero~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_carry <= out_carry~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_des <= out_des~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_num <= out_num~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_mode_seg <= out_mode_seg~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_out <= out_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mfrecuencia|ff_out_n:mfrecuencia_out|ff_out:bit_[2].register_out_
+neg => out_neg~reg0.DATAIN
+cero => out_cero~reg0.DATAIN
+carry => out_carry~reg0.DATAIN
+des => out_des~reg0.DATAIN
+num => out_num~reg0.DATAIN
+mode_seg => out_mode_seg~reg0.DATAIN
+out => out_out~reg0.DATAIN
+clk => out_out~reg0.CLK
+clk => out_mode_seg~reg0.CLK
+clk => out_num~reg0.CLK
+clk => out_des~reg0.CLK
+clk => out_carry~reg0.CLK
+clk => out_cero~reg0.CLK
+clk => out_neg~reg0.CLK
+reset => out_out~reg0.ACLR
+reset => out_mode_seg~reg0.ACLR
+reset => out_num~reg0.ACLR
+reset => out_des~reg0.ACLR
+reset => out_carry~reg0.ACLR
+reset => out_cero~reg0.ACLR
+reset => out_neg~reg0.ACLR
+out_neg <= out_neg~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_cero <= out_cero~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_carry <= out_carry~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_des <= out_des~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_num <= out_num~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_mode_seg <= out_mode_seg~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_out <= out_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mfrecuencia|ff_out_n:mfrecuencia_out|ff_out:bit_[3].register_out_
+neg => out_neg~reg0.DATAIN
+cero => out_cero~reg0.DATAIN
+carry => out_carry~reg0.DATAIN
+des => out_des~reg0.DATAIN
+num => out_num~reg0.DATAIN
+mode_seg => out_mode_seg~reg0.DATAIN
+out => out_out~reg0.DATAIN
+clk => out_out~reg0.CLK
+clk => out_mode_seg~reg0.CLK
+clk => out_num~reg0.CLK
+clk => out_des~reg0.CLK
+clk => out_carry~reg0.CLK
+clk => out_cero~reg0.CLK
+clk => out_neg~reg0.CLK
+reset => out_out~reg0.ACLR
+reset => out_mode_seg~reg0.ACLR
+reset => out_num~reg0.ACLR
+reset => out_des~reg0.ACLR
+reset => out_carry~reg0.ACLR
+reset => out_cero~reg0.ACLR
+reset => out_neg~reg0.ACLR
+out_neg <= out_neg~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_cero <= out_cero~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_carry <= out_carry~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_des <= out_des~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_num <= out_num~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_mode_seg <= out_mode_seg~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_out <= out_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mfrecuencia|ff_out_n:mfrecuencia_out|ff_out:bit_[4].register_out_
+neg => out_neg~reg0.DATAIN
+cero => out_cero~reg0.DATAIN
+carry => out_carry~reg0.DATAIN
+des => out_des~reg0.DATAIN
+num => out_num~reg0.DATAIN
+mode_seg => out_mode_seg~reg0.DATAIN
+out => out_out~reg0.DATAIN
+clk => out_out~reg0.CLK
+clk => out_mode_seg~reg0.CLK
+clk => out_num~reg0.CLK
+clk => out_des~reg0.CLK
+clk => out_carry~reg0.CLK
+clk => out_cero~reg0.CLK
+clk => out_neg~reg0.CLK
+reset => out_out~reg0.ACLR
+reset => out_mode_seg~reg0.ACLR
+reset => out_num~reg0.ACLR
+reset => out_des~reg0.ACLR
+reset => out_carry~reg0.ACLR
+reset => out_cero~reg0.ACLR
+reset => out_neg~reg0.ACLR
+out_neg <= out_neg~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_cero <= out_cero~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_carry <= out_carry~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_des <= out_des~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_num <= out_num~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_mode_seg <= out_mode_seg~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_out <= out_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mfrecuencia|ff_out_n:mfrecuencia_out|ff_out:bit_[5].register_out_
+neg => out_neg~reg0.DATAIN
+cero => out_cero~reg0.DATAIN
+carry => out_carry~reg0.DATAIN
+des => out_des~reg0.DATAIN
+num => out_num~reg0.DATAIN
+mode_seg => out_mode_seg~reg0.DATAIN
+out => out_out~reg0.DATAIN
+clk => out_out~reg0.CLK
+clk => out_mode_seg~reg0.CLK
+clk => out_num~reg0.CLK
+clk => out_des~reg0.CLK
+clk => out_carry~reg0.CLK
+clk => out_cero~reg0.CLK
+clk => out_neg~reg0.CLK
+reset => out_out~reg0.ACLR
+reset => out_mode_seg~reg0.ACLR
+reset => out_num~reg0.ACLR
+reset => out_des~reg0.ACLR
+reset => out_carry~reg0.ACLR
+reset => out_cero~reg0.ACLR
+reset => out_neg~reg0.ACLR
+out_neg <= out_neg~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_cero <= out_cero~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_carry <= out_carry~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_des <= out_des~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_num <= out_num~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_mode_seg <= out_mode_seg~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_out <= out_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mfrecuencia|ff_out_n:mfrecuencia_out|ff_out:bit_[6].register_out_
+neg => out_neg~reg0.DATAIN
+cero => out_cero~reg0.DATAIN
+carry => out_carry~reg0.DATAIN
+des => out_des~reg0.DATAIN
+num => out_num~reg0.DATAIN
+mode_seg => out_mode_seg~reg0.DATAIN
+out => out_out~reg0.DATAIN
+clk => out_out~reg0.CLK
+clk => out_mode_seg~reg0.CLK
+clk => out_num~reg0.CLK
+clk => out_des~reg0.CLK
+clk => out_carry~reg0.CLK
+clk => out_cero~reg0.CLK
+clk => out_neg~reg0.CLK
+reset => out_out~reg0.ACLR
+reset => out_mode_seg~reg0.ACLR
+reset => out_num~reg0.ACLR
+reset => out_des~reg0.ACLR
+reset => out_carry~reg0.ACLR
+reset => out_cero~reg0.ACLR
+reset => out_neg~reg0.ACLR
+out_neg <= out_neg~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_cero <= out_cero~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_carry <= out_carry~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_des <= out_des~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_num <= out_num~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_mode_seg <= out_mode_seg~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_out <= out_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mfrecuencia|ff_out_n:mfrecuencia_out|ff_out:bit_[7].register_out_
+neg => out_neg~reg0.DATAIN
+cero => out_cero~reg0.DATAIN
+carry => out_carry~reg0.DATAIN
+des => out_des~reg0.DATAIN
+num => out_num~reg0.DATAIN
+mode_seg => out_mode_seg~reg0.DATAIN
+out => out_out~reg0.DATAIN
+clk => out_out~reg0.CLK
+clk => out_mode_seg~reg0.CLK
+clk => out_num~reg0.CLK
+clk => out_des~reg0.CLK
+clk => out_carry~reg0.CLK
+clk => out_cero~reg0.CLK
+clk => out_neg~reg0.CLK
+reset => out_out~reg0.ACLR
+reset => out_mode_seg~reg0.ACLR
+reset => out_num~reg0.ACLR
+reset => out_des~reg0.ACLR
+reset => out_carry~reg0.ACLR
+reset => out_cero~reg0.ACLR
+reset => out_neg~reg0.ACLR
+out_neg <= out_neg~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_cero <= out_cero~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_carry <= out_carry~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_des <= out_des~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_num <= out_num~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_mode_seg <= out_mode_seg~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_out <= out_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mfrecuencia|ff_out_n:mfrecuencia_out|ff_out:bit_[8].register_out_
+neg => out_neg~reg0.DATAIN
+cero => out_cero~reg0.DATAIN
+carry => out_carry~reg0.DATAIN
+des => out_des~reg0.DATAIN
+num => out_num~reg0.DATAIN
+mode_seg => out_mode_seg~reg0.DATAIN
+out => out_out~reg0.DATAIN
+clk => out_out~reg0.CLK
+clk => out_mode_seg~reg0.CLK
+clk => out_num~reg0.CLK
+clk => out_des~reg0.CLK
+clk => out_carry~reg0.CLK
+clk => out_cero~reg0.CLK
+clk => out_neg~reg0.CLK
+reset => out_out~reg0.ACLR
+reset => out_mode_seg~reg0.ACLR
+reset => out_num~reg0.ACLR
+reset => out_des~reg0.ACLR
+reset => out_carry~reg0.ACLR
+reset => out_cero~reg0.ACLR
+reset => out_neg~reg0.ACLR
+out_neg <= out_neg~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_cero <= out_cero~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_carry <= out_carry~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_des <= out_des~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_num <= out_num~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_mode_seg <= out_mode_seg~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_out <= out_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mfrecuencia|ff_out_n:mfrecuencia_out|ff_out:bit_[9].register_out_
+neg => out_neg~reg0.DATAIN
+cero => out_cero~reg0.DATAIN
+carry => out_carry~reg0.DATAIN
+des => out_des~reg0.DATAIN
+num => out_num~reg0.DATAIN
+mode_seg => out_mode_seg~reg0.DATAIN
+out => out_out~reg0.DATAIN
+clk => out_out~reg0.CLK
+clk => out_mode_seg~reg0.CLK
+clk => out_num~reg0.CLK
+clk => out_des~reg0.CLK
+clk => out_carry~reg0.CLK
+clk => out_cero~reg0.CLK
+clk => out_neg~reg0.CLK
+reset => out_out~reg0.ACLR
+reset => out_mode_seg~reg0.ACLR
+reset => out_num~reg0.ACLR
+reset => out_des~reg0.ACLR
+reset => out_carry~reg0.ACLR
+reset => out_cero~reg0.ACLR
+reset => out_neg~reg0.ACLR
+out_neg <= out_neg~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_cero <= out_cero~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_carry <= out_carry~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_des <= out_des~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_num <= out_num~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_mode_seg <= out_mode_seg~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_out <= out_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mfrecuencia|ff_out_n:mfrecuencia_out|ff_out:bit_[10].register_out_
+neg => out_neg~reg0.DATAIN
+cero => out_cero~reg0.DATAIN
+carry => out_carry~reg0.DATAIN
+des => out_des~reg0.DATAIN
+num => out_num~reg0.DATAIN
+mode_seg => out_mode_seg~reg0.DATAIN
+out => out_out~reg0.DATAIN
+clk => out_out~reg0.CLK
+clk => out_mode_seg~reg0.CLK
+clk => out_num~reg0.CLK
+clk => out_des~reg0.CLK
+clk => out_carry~reg0.CLK
+clk => out_cero~reg0.CLK
+clk => out_neg~reg0.CLK
+reset => out_out~reg0.ACLR
+reset => out_mode_seg~reg0.ACLR
+reset => out_num~reg0.ACLR
+reset => out_des~reg0.ACLR
+reset => out_carry~reg0.ACLR
+reset => out_cero~reg0.ACLR
+reset => out_neg~reg0.ACLR
+out_neg <= out_neg~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_cero <= out_cero~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_carry <= out_carry~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_des <= out_des~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_num <= out_num~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_mode_seg <= out_mode_seg~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_out <= out_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mfrecuencia|ff_out_n:mfrecuencia_out|ff_out:bit_[11].register_out_
+neg => out_neg~reg0.DATAIN
+cero => out_cero~reg0.DATAIN
+carry => out_carry~reg0.DATAIN
+des => out_des~reg0.DATAIN
+num => out_num~reg0.DATAIN
+mode_seg => out_mode_seg~reg0.DATAIN
+out => out_out~reg0.DATAIN
+clk => out_out~reg0.CLK
+clk => out_mode_seg~reg0.CLK
+clk => out_num~reg0.CLK
+clk => out_des~reg0.CLK
+clk => out_carry~reg0.CLK
+clk => out_cero~reg0.CLK
+clk => out_neg~reg0.CLK
+reset => out_out~reg0.ACLR
+reset => out_mode_seg~reg0.ACLR
+reset => out_num~reg0.ACLR
+reset => out_des~reg0.ACLR
+reset => out_carry~reg0.ACLR
+reset => out_cero~reg0.ACLR
+reset => out_neg~reg0.ACLR
+out_neg <= out_neg~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_cero <= out_cero~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_carry <= out_carry~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_des <= out_des~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_num <= out_num~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_mode_seg <= out_mode_seg~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_out <= out_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mfrecuencia|ff_out_n:mfrecuencia_out|ff_out:bit_[12].register_out_
+neg => out_neg~reg0.DATAIN
+cero => out_cero~reg0.DATAIN
+carry => out_carry~reg0.DATAIN
+des => out_des~reg0.DATAIN
+num => out_num~reg0.DATAIN
+mode_seg => out_mode_seg~reg0.DATAIN
+out => out_out~reg0.DATAIN
+clk => out_out~reg0.CLK
+clk => out_mode_seg~reg0.CLK
+clk => out_num~reg0.CLK
+clk => out_des~reg0.CLK
+clk => out_carry~reg0.CLK
+clk => out_cero~reg0.CLK
+clk => out_neg~reg0.CLK
+reset => out_out~reg0.ACLR
+reset => out_mode_seg~reg0.ACLR
+reset => out_num~reg0.ACLR
+reset => out_des~reg0.ACLR
+reset => out_carry~reg0.ACLR
+reset => out_cero~reg0.ACLR
+reset => out_neg~reg0.ACLR
+out_neg <= out_neg~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_cero <= out_cero~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_carry <= out_carry~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_des <= out_des~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_num <= out_num~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_mode_seg <= out_mode_seg~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_out <= out_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 

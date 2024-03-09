@@ -16,36 +16,32 @@ module ff_out_n #(parameter n = 4) (input logic neg,
 												output logic [1:0] [6:0] out_out);
 						
 	genvar i;
-	logic x, y;
-	initial begin
-		x = 0;
-		y = 0;
-	end
+	
 	generate
 		for (i = 0; i < 13; i = i + 1) begin:bit_
-			if (i > 7) begin
+			if (i >= 7) begin
 				ff_out register_out_(.neg(neg),
 											.cero(cero),
 											.carry(carry),
 											.des(des),
-											.num(num[1][i]),
-											.mode_seg(mode_seg[i]),
-											.out(out[1][i]),
+											.num(num[1][3]),
+											.mode_seg(mode_seg[6]),
+											.out(out[1][6]),
 											.reset(reset),
 											.clk(clk),
 											.out_neg(out_neg),
 											.out_cero(out_cero),
 											.out_carry(out_carry),
 											.out_des(out_des),
-											.out_num(out_out[1][i]),
-											.out_mode_seg(out_mode_seg[i]),
-											.out_out(out_num[1][i]));
+											.out_num(out_num[1][3]),
+											.out_mode_seg(out_mode_seg[6]),
+											.out_out(out_out[1][6]));
 			end else if (i > 3) begin
 				ff_out register_out_(.neg(neg),
 											.cero(cero),
 											.carry(carry),
 											.des(des),
-											.num(num[1][i]),
+											.num(num[1][i/3]),
 											.mode_seg(mode_seg[i]),
 											.out(out[0][i]),
 											.reset(reset),
@@ -54,7 +50,7 @@ module ff_out_n #(parameter n = 4) (input logic neg,
 											.out_cero(out_cero),
 											.out_carry(out_carry),
 											.out_des(out_des),
-											.out_num(out_num[1][i]),
+											.out_num(out_num[1][i/3]),
 											.out_mode_seg(out_mode_seg[i]),
 											.out_out(out_out[0][i]));
 			end else begin
@@ -71,9 +67,9 @@ module ff_out_n #(parameter n = 4) (input logic neg,
 											.out_cero(out_cero),
 											.out_carry(out_carry),
 											.out_des(out_des),
-											.out_num(num[0][i]),
+											.out_num(out_num[0][i]),
 											.out_mode_seg(out_mode_seg[i]),
-											.out_out(out[0][i]));
+											.out_out(out_out[0][i]));
 			end
 		end
 	endgenerate
