@@ -1,0 +1,141 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/mende/Desktop/TEC/QuartusProyects/Battleship/simulation/modelsim
+vbattleship
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1710961029
+!i10b 1
+!s100 Ez8KKoaSFR5JlMLbj:k>z1
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+INoTolkmP08hhT^mFSdcLT0
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1710960088
+8C:/Users/mende/Desktop/TEC/QuartusProyects/Battleship/battleship.sv
+FC:/Users/mende/Desktop/TEC/QuartusProyects/Battleship/battleship.sv
+!i122 0
+L0 1 60
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1710961029.000000
+!s107 C:/Users/mende/Desktop/TEC/QuartusProyects/Battleship/battleship.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Battleship|C:/Users/mende/Desktop/TEC/QuartusProyects/Battleship/battleship.sv|
+!i113 1
+Z7 o-sv -work work
+Z8 !s92 -sv -work work +incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Battleship
+Z9 tCvgOpt 0
+vbattleship_tb
+R1
+R2
+!i10b 1
+!s100 Pg<@Q<THbSJhC?E;YPh@S2
+R3
+IA3CneN4LWO]YU;6YBOio[2
+R4
+S1
+R0
+w1710960792
+8C:/Users/mende/Desktop/TEC/QuartusProyects/Battleship/battleship_tb.sv
+FC:/Users/mende/Desktop/TEC/QuartusProyects/Battleship/battleship_tb.sv
+!i122 4
+L0 1 43
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/mende/Desktop/TEC/QuartusProyects/Battleship/battleship_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Battleship|C:/Users/mende/Desktop/TEC/QuartusProyects/Battleship/battleship_tb.sv|
+!i113 1
+R7
+R8
+R9
+vcomparador
+R1
+R2
+!i10b 1
+!s100 [RVdGZPnomT>A]jjl:;3V0
+R3
+IiRcLnQ1fL^VVBVaZeef:D1
+R4
+S1
+R0
+w1710959706
+8C:/Users/mende/Desktop/TEC/QuartusProyects/Battleship/comparador.sv
+FC:/Users/mende/Desktop/TEC/QuartusProyects/Battleship/comparador.sv
+!i122 3
+L0 1 6
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/mende/Desktop/TEC/QuartusProyects/Battleship/comparador.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Battleship|C:/Users/mende/Desktop/TEC/QuartusProyects/Battleship/comparador.sv|
+!i113 1
+R7
+R8
+R9
+vcontador_seg
+R1
+R2
+!i10b 1
+!s100 m?lG7BQO=EbmkkOoFdJkO0
+R3
+I_[F2oG`5MizjoHE][f[AH1
+R4
+S1
+R0
+w1710960314
+8C:/Users/mende/Desktop/TEC/QuartusProyects/Battleship/contador_seg.sv
+FC:/Users/mende/Desktop/TEC/QuartusProyects/Battleship/contador_seg.sv
+!i122 2
+L0 1 17
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/mende/Desktop/TEC/QuartusProyects/Battleship/contador_seg.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Battleship|C:/Users/mende/Desktop/TEC/QuartusProyects/Battleship/contador_seg.sv|
+!i113 1
+R7
+R8
+R9
+vfsm
+R1
+R2
+!i10b 1
+!s100 oUW@ze?6Ee]NdQ1CMBZ873
+R3
+I`@4HKHDSoDfQZffZgzkk_2
+R4
+S1
+R0
+w1710961000
+8C:/Users/mende/Desktop/TEC/QuartusProyects/Battleship/fsm.sv
+FC:/Users/mende/Desktop/TEC/QuartusProyects/Battleship/fsm.sv
+!i122 1
+L0 1 91
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/mende/Desktop/TEC/QuartusProyects/Battleship/fsm.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Battleship|C:/Users/mende/Desktop/TEC/QuartusProyects/Battleship/fsm.sv|
+!i113 1
+R7
+R8
+R9
