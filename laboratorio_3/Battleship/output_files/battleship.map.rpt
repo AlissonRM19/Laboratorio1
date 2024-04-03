@@ -1,5 +1,5 @@
 Analysis & Elaboration report for battleship
-Wed Mar 20 12:56:50 2024
+Wed Apr  3 10:56:41 2024
 Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
@@ -38,7 +38,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                                 ;
 +-------------------------------+------------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Wed Mar 20 12:56:50 2024          ;
+; Analysis & Elaboration Status ; Successful - Wed Apr  3 10:56:41 2024          ;
 ; Quartus Prime Version         ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
 ; Revision Name                 ; battleship                                     ;
 ; Top-level Entity Name         ; battleship                                     ;
@@ -168,7 +168,6 @@ https://fpgasoftware.intel.com/eula.
 ; hp_player[0]     ; Input  ; Info     ; Stuck at VCC                                                                        ;
 ; en_put_barcos    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; en_player_attack ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; en_move          ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +------------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
@@ -178,28 +177,58 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
-    Info: Processing started: Wed Mar 20 12:56:43 2024
+    Info: Processing started: Wed Apr  3 10:56:35 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off battleship -c battleship --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file battleship.sv
-    Info (12023): Found entity 1: battleship File: C:/Users/mende/Desktop/TEC/QuartusProyects/Battleship/battleship.sv Line: 1
+    Info (12023): Found entity 1: battleship File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/battleship.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file fsm.sv
-    Info (12023): Found entity 1: fsm File: C:/Users/mende/Desktop/TEC/QuartusProyects/Battleship/fsm.sv Line: 1
+    Info (12023): Found entity 1: fsm File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/fsm.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file battleship_tb.sv
-    Info (12023): Found entity 1: battleship_tb File: C:/Users/mende/Desktop/TEC/QuartusProyects/Battleship/battleship_tb.sv Line: 1
+    Info (12023): Found entity 1: battleship_tb File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/battleship_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file contador_seg.sv
-    Info (12023): Found entity 1: contador_seg File: C:/Users/mende/Desktop/TEC/QuartusProyects/Battleship/contador_seg.sv Line: 1
+    Info (12023): Found entity 1: contador_seg File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/contador_seg.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file comparador.sv
-    Info (12023): Found entity 1: comparador File: C:/Users/mende/Desktop/TEC/QuartusProyects/Battleship/comparador.sv Line: 1
+    Info (12023): Found entity 1: comparador File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/comparador.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file movimiento.sv
+    Info (12023): Found entity 1: movimiento File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/movimiento.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file clk_divider.sv
+    Info (12023): Found entity 1: clk_divider File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/clk_divider.sv Line: 1
 Info (12127): Elaborating entity "battleship" for the top level hierarchy
-Info (12128): Elaborating entity "fsm" for hierarchy "fsm:maquina" File: C:/Users/mende/Desktop/TEC/QuartusProyects/Battleship/battleship.sv Line: 45
-Info (12128): Elaborating entity "contador_seg" for hierarchy "contador_seg:contador" File: C:/Users/mende/Desktop/TEC/QuartusProyects/Battleship/battleship.sv Line: 51
-Info (12128): Elaborating entity "comparador" for hierarchy "comparador:comparar" File: C:/Users/mende/Desktop/TEC/QuartusProyects/Battleship/battleship.sv Line: 56
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4781 megabytes
-    Info: Processing ended: Wed Mar 20 12:56:50 2024
-    Info: Elapsed time: 00:00:07
+Warning (10036): Verilog HDL or VHDL warning at battleship.sv(26): object "matriz_pc" assigned a value but never read File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/battleship.sv Line: 26
+Warning (10036): Verilog HDL or VHDL warning at battleship.sv(27): object "matriz_player" assigned a value but never read File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/battleship.sv Line: 27
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "matriz_pc" into its bus
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "matriz_player" into its bus
+Info (12128): Elaborating entity "clk_divider" for hierarchy "clk_divider:new_clk" File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/battleship.sv Line: 56
+Info (12128): Elaborating entity "fsm" for hierarchy "fsm:maquina" File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/battleship.sv Line: 70
+Info (12128): Elaborating entity "contador_seg" for hierarchy "contador_seg:contador" File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/battleship.sv Line: 76
+Info (12128): Elaborating entity "comparador" for hierarchy "comparador:comparar" File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/battleship.sv Line: 81
+Info (12128): Elaborating entity "movimiento" for hierarchy "movimiento:move" File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/battleship.sv Line: 91
+Warning (10235): Verilog HDL Always Construct warning at movimiento.sv(14): variable "temp_x" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/movimiento.sv Line: 14
+Warning (10235): Verilog HDL Always Construct warning at movimiento.sv(15): variable "temp_x" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/movimiento.sv Line: 15
+Warning (10230): Verilog HDL assignment warning at movimiento.sv(15): truncated value with size 32 to match size of target (3) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/movimiento.sv Line: 15
+Warning (10235): Verilog HDL Always Construct warning at movimiento.sv(16): variable "temp_x" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/movimiento.sv Line: 16
+Warning (10235): Verilog HDL Always Construct warning at movimiento.sv(17): variable "temp_x" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/movimiento.sv Line: 17
+Warning (10230): Verilog HDL assignment warning at movimiento.sv(17): truncated value with size 32 to match size of target (3) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/movimiento.sv Line: 17
+Warning (10235): Verilog HDL Always Construct warning at movimiento.sv(18): variable "temp_y" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/movimiento.sv Line: 18
+Warning (10235): Verilog HDL Always Construct warning at movimiento.sv(19): variable "temp_y" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/movimiento.sv Line: 19
+Warning (10230): Verilog HDL assignment warning at movimiento.sv(19): truncated value with size 32 to match size of target (3) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/movimiento.sv Line: 19
+Warning (10235): Verilog HDL Always Construct warning at movimiento.sv(20): variable "temp_y" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/movimiento.sv Line: 20
+Warning (10235): Verilog HDL Always Construct warning at movimiento.sv(21): variable "temp_y" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/movimiento.sv Line: 21
+Warning (10230): Verilog HDL assignment warning at movimiento.sv(21): truncated value with size 32 to match size of target (3) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/movimiento.sv Line: 21
+Warning (10240): Verilog HDL Always Construct warning at movimiento.sv(12): inferring latch(es) for variable "temp_x", which holds its previous value in one or more paths through the always construct File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/movimiento.sv Line: 12
+Warning (10240): Verilog HDL Always Construct warning at movimiento.sv(12): inferring latch(es) for variable "temp_y", which holds its previous value in one or more paths through the always construct File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/movimiento.sv Line: 12
+Info (10041): Inferred latch for "temp_y[0]" at movimiento.sv(24) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/movimiento.sv Line: 24
+Info (10041): Inferred latch for "temp_y[1]" at movimiento.sv(24) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/movimiento.sv Line: 24
+Info (10041): Inferred latch for "temp_y[2]" at movimiento.sv(24) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/movimiento.sv Line: 24
+Info (10041): Inferred latch for "temp_x[0]" at movimiento.sv(24) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/movimiento.sv Line: 24
+Info (10041): Inferred latch for "temp_x[1]" at movimiento.sv(24) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/movimiento.sv Line: 24
+Info (10041): Inferred latch for "temp_x[2]" at movimiento.sv(24) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/movimiento.sv Line: 24
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 17 warnings
+    Info: Peak virtual memory: 4777 megabytes
+    Info: Processing ended: Wed Apr  3 10:56:41 2024
+    Info: Elapsed time: 00:00:06
     Info: Total CPU time (on all processors): 00:00:17
 
 

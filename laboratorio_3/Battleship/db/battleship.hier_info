@@ -1,11 +1,57 @@
 |battleship
-clk => clk.IN2
+clk => clk.IN1
 reset => reset.IN1
-attack => attack.IN1
+attack => _.IN1
+izquierda => _.IN1
+arriba => _.IN1
+abajo => _.IN1
+derecha => _.IN1
 barcos[0] => ~NO_FANOUT~
 barcos[1] => ~NO_FANOUT~
 barcos[2] => ~NO_FANOUT~
-en << <VCC>
+posicion_x[0] << movimiento:move.posicion_x
+posicion_x[1] << movimiento:move.posicion_x
+posicion_x[2] << movimiento:move.posicion_x
+posicion_y[0] << movimiento:move.posicion_y
+posicion_y[1] << movimiento:move.posicion_y
+posicion_y[2] << movimiento:move.posicion_y
+
+
+|battleship|clk_divider:new_clk
+clk => temp.CLK
+clk => count[0].CLK
+clk => count[1].CLK
+clk => count[2].CLK
+clk => count[3].CLK
+clk => count[4].CLK
+clk => count[5].CLK
+clk => count[6].CLK
+clk => count[7].CLK
+clk => count[8].CLK
+clk => count[9].CLK
+clk => count[10].CLK
+clk => count[11].CLK
+clk => count[12].CLK
+clk => count[13].CLK
+clk => count[14].CLK
+clk => count[15].CLK
+clk => count[16].CLK
+clk => count[17].CLK
+clk => count[18].CLK
+clk => count[19].CLK
+clk => count[20].CLK
+clk => count[21].CLK
+clk => count[22].CLK
+clk => count[23].CLK
+clk => count[24].CLK
+clk => count[25].CLK
+clk => count[26].CLK
+clk => count[27].CLK
+clk => count[28].CLK
+clk => count[29].CLK
+clk => count[30].CLK
+clk => count[31].CLK
+clk_delay <= temp.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |battleship|fsm:maquina
@@ -165,5 +211,24 @@ total_seg[29] => LessThan0.IN35
 total_seg[30] => LessThan0.IN34
 total_seg[31] => LessThan0.IN33
 to <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|battleship|movimiento:move
+izquierda => always0.IN1
+arriba => always0.IN1
+abajo => always0.IN1
+derecha => always0.IN1
+en_move => temp_x[2].ACLR
+en_move => temp_x[1].PRESET
+en_move => temp_x[0].ACLR
+en_move => temp_y[2].ACLR
+en_move => temp_y[1].PRESET
+en_move => temp_y[0].ACLR
+posicion_x[0] <= temp_x[0].DB_MAX_OUTPUT_PORT_TYPE
+posicion_x[1] <= temp_x[1].DB_MAX_OUTPUT_PORT_TYPE
+posicion_x[2] <= temp_x[2].DB_MAX_OUTPUT_PORT_TYPE
+posicion_y[0] <= temp_y[0].DB_MAX_OUTPUT_PORT_TYPE
+posicion_y[1] <= temp_y[1].DB_MAX_OUTPUT_PORT_TYPE
+posicion_y[2] <= temp_y[2].DB_MAX_OUTPUT_PORT_TYPE
 
 

@@ -85,7 +85,7 @@ module fsm (input logic clk,
 	// Assign de outputs
 	assign en_cont_seg = (estado == 3'b010 || estado == 3'b011);
 	assign en_put_barcos = (estado == 3'b001);
-	assign en_player_attack = (estado == 3'b010);
-	assign en_move = (estado == 3'b001 || estado == 3'b010);
+	assign en_player_attack = (estado == 3'b010 || estado == 3'b011);
+	assign en_move = (estado == 3'b001 || estado == 3'b010 || estado == 3'b011);
 
 endmodule

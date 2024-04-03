@@ -8,10 +8,13 @@ module battleship (input logic clk,
 						input logic derecha,
 						input logic [2:0] barcos,
 						//  outputs
-						output en
+						output logic [2:0] posicion_x,
+						output logic [2:0] posicion_y
 						);
-						
-	//FSM
+	// Clk Divider
+	logic clk_delay;
+	
+	// FSM
 	logic [2:0] barcos_put;
 	logic to;
 	logic [2:0] hp_pc;
@@ -25,6 +28,10 @@ module battleship (input logic clk,
 	
 	// Contador Segundos
 	int total_seg;
+	
+	// Movimiento
+	/*logic [2:0] posicion_x = 3'b010;
+	logic [2:0] posicion_y = 3'b010;*/
 	
 	always @(reset) begin
 		barcos_put = 0;
@@ -43,32 +50,44 @@ module battleship (input logic clk,
 								'{0,0,0,1,0},
 								'{0,0,0,0,1}};
 	end
+	
+	// Instaancia clk_divider
+	clk_divider new_clk (.clk(clk),
+								.clk_delay(clk_delay));
 
 	// Instancia FSM					
-	fsm maquina (.clk(clk),
-					.reset(reset),
-					.attack(attack),
-					.barcos_put(barcos_put),
-					.to(to),
-					.hp_pc(hp_pc),
-					.hp_player(hp_player),
-					.en_cont_seg(en_cont_seg),
-					.en_put_barcos(en_put_barcos),
-					.en_player_attack(en_player_attack),
-					.en_move(en_move)
-					);
+	fsm maquina (.clk(clk_delay),
+					 .reset(reset),
+					 .attack(!attack),
+					 .barcos_put(barcos_put),
+					 .to(to),
+					 .hp_pc(hp_pc),
+					 .hp_player(hp_player),
+					 .en_cont_seg(en_cont_seg),
+					 .en_put_barcos(en_put_barcos),
+					 .en_player_attack(en_player_attack),
+					 .en_move(en_move)
+					 );
 					
 	// Instancia Contador Segundos
-	contador_seg contador (.clk(clk),
-									.en_cont_seg(en_cont_seg),
-									.total_seg(total_seg)
-									);
+	contador_seg contador (.clk(clk_delay),
+								  .en_cont_seg(en_cont_seg),
+								  .total_seg(total_seg)
+								  );
 	
 	// Instancia Comparador
 	comparador comparar (.total_seg(total_seg),
 								.to(to)
 								);
 	
-	assign en = 1;
+	// Instancia Movimiento
+	movimiento move (.izquierda(!izquierda),
+						  .arriba(!arriba),
+						  .abajo(!abajo),
+						  .derecha(!derecha),
+						  .en_move(en_move),
+						  .posicion_x(posicion_x),
+						  .posicion_y(posicion_y)
+						  );
 						
 endmodule
