@@ -7,7 +7,9 @@ module barcos_move (input logic izquierda,
 						  input logic [2:0] barcos,
 						  input int matriz_player_begin [4:0] [4:0],
 						 output logic end_move_barcos,
-						 output int matriz_player_temp [4:0] [4:0]
+						 output int matriz_player_temp [4:0] [4:0],
+						 output logic [2:0] posicion_x_move,
+						 output logic [2:0] posicion_y_move
 						  );
 	
 	int temp [4:0] [4:0];
@@ -109,6 +111,8 @@ module barcos_move (input logic izquierda,
 	
 	assign end_move_barcos = (temp_barcos == 0);
 	assign matriz_player_temp = temp;
+	assign posicion_x_move = temp_x;
+	assign posicion_y_move = temp_y;
 	
 endmodule
 

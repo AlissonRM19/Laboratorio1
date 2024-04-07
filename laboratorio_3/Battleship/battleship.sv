@@ -9,9 +9,12 @@ module battleship (input logic clk,
 						input logic derecha,
 						input logic [2:0] barcos,
 						//  outputs
-						output logic [2:0] posicion_x,
-						output logic [2:0] posicion_y,
-						output int matriz_player_final [4:0] [4:0]
+						output logic [2:0] posicion_x_move,
+						output logic [2:0] posicion_y_move,
+						output logic [2:0] posicion_x_attack,
+						output logic [2:0] posicion_y_attack,
+						output int matriz_player_final [4:0] [4:0],
+						output int matriz_pc_final [4:0] [4:0]
 						);
 	// Clk Divider
 	logic clk_delay;
@@ -23,34 +26,30 @@ module battleship (input logic clk,
 	logic en_cont_seg;
 	logic en_put_barcos;
 	logic en_player_attack;
-	logic en_move;
+	logic en_attack;
 	logic en_pc_attack;
 	logic end_move_barcos;
 	logic end_pc_attack;
-	int matriz_pc [4:0] [4:0];
+	logic end_attack;
+	int matriz_pc_begin [4:0] [4:0];
 	int matriz_player_begin [4:0] [4:0]; // rows, columns
 	
 	// Contador Segundos
 	int total_seg;
 	
-	// Movimiento
-	/*logic [2:0] posicion_x = 3'b010;
-	logic [2:0] posicion_y = 3'b010;*/
-	
 	always @(reset) begin
 		hp_pc = 1;
 		hp_player = 1;
-		//matriz_pc = 0;
 		matriz_player_begin = '{'{0,0,0,0,0},
 										'{0,0,0,0,0},
 										'{0,0,0,0,0},
 										'{0,0,0,0,0},
 										'{0,0,0,0,0}};
-		matriz_pc = '{'{0,0,0,0,0},
-						  '{0,0,0,0,0},
-						  '{0,0,1,0,0},
-						  '{0,0,0,0,0},
-						  '{0,0,0,0,0}};
+		matriz_pc_begin = '{'{0,0,0,0,0},
+								  '{0,0,2,2,0},
+								  '{0,0,1,0,0},
+								  '{0,0,0,0,0},
+								  '{0,0,0,0,0}};
 	end
 	
 	// Instaancia clk_divider
@@ -59,9 +58,10 @@ module battleship (input logic clk,
 
 	// Instancia FSM					
 	fsm maquina (.clk(clk),
-					 .reset(reset),
+					 .reset(!reset),
 					 .attack(!attack),
 					 .to(to),
+					 .end_attack(end_attack),
 					 .end_move_barcos(end_move_barcos),
 					 .end_pc_attack(end_pc_attack),
 					 .hp_pc(hp_pc),
@@ -70,7 +70,7 @@ module battleship (input logic clk,
 					 .en_put_barcos(en_put_barcos),
 					 .en_player_attack(en_player_attack),
 					 .en_pc_attack(en_pc_attack),
-					 .en_move(en_move)
+					 .en_attack(en_attack)
 					 );
 					
 	// Instancia Contador Segundos
@@ -94,17 +94,24 @@ module battleship (input logic clk,
 										 .barcos(barcos),
 										 .matriz_player_begin(matriz_player_begin),
 										 .end_move_barcos(end_move_barcos),
-										 .matriz_player_temp(matriz_player_final)
+										 .matriz_player_temp(matriz_player_final),
+										 .posicion_x_move(posicion_x_move),
+										 .posicion_y_move(posicion_y_move)
 										 );
 	
-	// Instancia Movimiento
-	movimiento move (.izquierda(!izquierda),
-						  .arriba(!arriba),
-						  .abajo(!abajo),
-						  .derecha(!derecha),
-						  .en_move(en_move),
-						  .posicion_x(posicion_x),
-						  .posicion_y(posicion_y)
-						  );
+	// Instancia Ataque
+	ataque move (.izquierda(!izquierda),
+					 .arriba(!arriba),
+					 .abajo(!abajo),
+					 .derecha(!derecha),
+					 .attack(!attack),
+					 .reset(!reset),
+					 .en_attack(en_attack),
+					 .matriz_pc_begin(matriz_pc_begin),
+					 .end_attack(end_attack),
+					 .matriz_pc_final(matriz_pc_final),
+					 .posicion_x_attack(posicion_x_attack),
+					 .posicion_y_attack(posicion_y_attack)
+					 );
 						
 endmodule

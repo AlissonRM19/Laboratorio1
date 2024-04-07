@@ -9,12 +9,15 @@ module battleship_tb;
 	logic abajo;
 	logic derecha;
 	logic [2:0] barcos;
-	logic [2:0] posicion_x;
-	logic [2:0] posicion_y;
+	logic [2:0] posicion_x_move;
+	logic [2:0] posicion_y_move;
+	logic [2:0] posicion_x_attack;
+	logic [2:0] posicion_y_attack;
 	int matriz_player_final [4:0] [4:0];
+	int matriz_pc_final [4:0] [4:0];
 
 	battleship game (.clk(clk),
-							.reset(reset),
+							.reset(!reset),
 							.attack(!attack),
 							.poner(!poner),
 							.izquierda(!izquierda),
@@ -22,9 +25,12 @@ module battleship_tb;
 							.abajo(!abajo),
 							.derecha(!derecha),
 							.barcos(barcos),
-							.posicion_x(posicion_x),
-							.posicion_y(posicion_y),
-							.matriz_player_final(matriz_player_final)
+							.posicion_x_move(posicion_x_move),
+							.posicion_y_move(posicion_y_move),
+							.posicion_x_attack(posicion_x_attack),
+							.posicion_y_attack(posicion_y_attack),
+							.matriz_player_final(matriz_player_final),
+							.matriz_pc_final(matriz_pc_final)
 							);
 	
 	always begin
@@ -32,6 +38,7 @@ module battleship_tb;
 	end
 	
 	initial begin
+		// Inicio
 		clk = 0;
 		izquierda = 0;
 		arriba = 0;
@@ -42,8 +49,9 @@ module battleship_tb;
 		reset = 1;
 		#10
 		
+		// Seleccion de barcos
 		reset = 0;
-		barcos = 5;
+		barcos = 2;
 		#10
 		
 		attack = 1;
@@ -77,7 +85,7 @@ module battleship_tb;
 		abajo = 0;
 		poner = 1;
 		#10
-		poner = 0;
+		poner = 0;*/
 		
 		// Pone barco 2
 		derecha = 1;
@@ -88,7 +96,7 @@ module battleship_tb;
 		abajo = 0;
 		poner = 1;
 		#10
-		poner = 0;*/
+		poner = 0;
 		
 		// Pone barco 1
 		derecha = 1;
@@ -100,7 +108,15 @@ module battleship_tb;
 		poner = 1;
 		#10
 		poner = 0;
+		#10
 		
+		// Ataque
+		derecha = 1;
+		#10
+		derecha = 0;
+		attack = 1;
+		#10
+		attack = 0;
 		#10
 		
 		$stop;

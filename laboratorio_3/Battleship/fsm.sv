@@ -3,6 +3,7 @@ module fsm (input logic clk,
 				// inputs
 				input logic attack,
 				input logic to,
+				input logic end_attack,
 				input logic end_move_barcos,
 				input logic end_pc_attack,
 				input logic [2:0] hp_pc,
@@ -12,7 +13,7 @@ module fsm (input logic clk,
 				output logic en_put_barcos,
 				output logic en_player_attack,
 				output logic en_pc_attack,
-				output logic en_move
+				output logic en_attack
 				);
 	
 	// FSM
@@ -49,7 +50,7 @@ module fsm (input logic clk,
 						end
 					end
 			4'b010: begin
-						if (attack) begin
+						if (end_attack) begin
 							siguiente_estado = 4'b0100;
 						end else begin
 							siguiente_estado = 4'b0011;
@@ -91,7 +92,7 @@ module fsm (input logic clk,
 	assign en_cont_seg = (estado == 4'b0010 || estado == 4'b0011);
 	assign en_put_barcos = (estado == 4'b0001);
 	assign en_player_attack = (estado == 4'b0010 || estado == 4'b0011);
-	assign en_move = (estado == 4'b0010 || estado == 4'b0011);
+	assign en_attack = (estado == 4'b0010 || estado == 4'b0011);
 	assign en_pc_attack = (estado == 4'b1000);
 
 endmodule
