@@ -1,0 +1,34 @@
+module barcos_move (input logic izquierda,
+						  input logic arriba,
+						  input logic abajo,
+						  input logic derecha,
+						  input logic attack,
+						  input logic en_put_barcos,
+						  input logic [2:0] barcos,
+						 output int matriz_player [4:0] [4:0]
+						  );
+	
+	int temp [4:0] [4:0] = 0;
+	logic [2:0] temp_x = 3'b100;
+	logic [2:0] temp_y = 3'b100;
+	
+	always @ (izquierda, arriba, abajo, derecha, posedge en_put_barcos, barcos) begin
+		case(barcos)
+			3'b101: begin
+					end
+			3'b100: begin
+					end
+			3'b011: begin
+					end
+			3'b010: begin
+					end
+			3'b001: begin
+					end
+			default: temp = temp;
+		endcase
+	end
+	
+	assign matriz_player = temp;
+	
+endmodule
+
