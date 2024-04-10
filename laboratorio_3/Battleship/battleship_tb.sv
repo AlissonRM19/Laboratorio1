@@ -1,6 +1,7 @@
 module battleship_tb;
 
-	logic clk;
+
+	/*logic clk;
 	logic reset;
 	logic attack;
 	logic poner;
@@ -31,9 +32,9 @@ module battleship_tb;
 							.posicion_y_attack(posicion_y_attack),
 							.matriz_player_final(matriz_player_final),
 							.matriz_pc_final(matriz_pc_final)
-							);
+							);*/
 	
-	always begin
+	/*always begin
 		#10 clk = ~clk;
 	end
 	
@@ -88,7 +89,7 @@ module battleship_tb;
 		poner = 0;*/
 		
 		// Pone barco 2
-		derecha = 1;
+		/*derecha = 1;
 		#10
 		derecha = 0;
 		abajo = 1;
@@ -120,6 +121,6 @@ module battleship_tb;
 		#10
 		
 		$stop;
-	end
+	end*/
 	
 endmodule
