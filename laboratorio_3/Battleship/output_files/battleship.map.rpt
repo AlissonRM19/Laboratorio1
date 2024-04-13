@@ -1,5 +1,5 @@
 Analysis & Synthesis report for battleship
-Tue Apr 09 22:32:59 2024
+Sat Apr 13 08:13:06 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -17,7 +17,7 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   9. General Register Statistics
  10. Parameter Settings for User Entity Instance: pll:vgapll|pll_0002:pll_inst|altera_pll:altera_pll_i
  11. Parameter Settings for User Entity Instance: vgaController:vgaCont
- 12. Port Connectivity Checks: "videoGen:videoGen|rectgen:rectgen"
+ 12. Port Connectivity Checks: "videoGen:videoGen|rectgen:rectgen1"
  13. Port Connectivity Checks: "pll:vgapll"
  14. Post-Synthesis Netlist Statistics for Top Partition
  15. Elapsed Time Per Partition
@@ -48,7 +48,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Apr 09 22:32:59 2024       ;
+; Analysis & Synthesis Status     ; Successful - Sat Apr 13 08:13:06 2024       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; battleship                                  ;
 ; Top-level Entity Name           ; vga                                         ;
@@ -183,40 +183,38 @@ https://fpgasoftware.intel.com/eula.
 ; videoGen.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_3/Battleship/videoGen.sv      ;         ;
 ; pll.v                            ; yes             ; User Wizard-Generated File   ; C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_3/Battleship/pll.v            ; pll     ;
 ; pll/pll_0002.v                   ; yes             ; User Verilog HDL File        ; C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_3/Battleship/pll/pll_0002.v   ; pll     ;
-; chargenrom.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_3/Battleship/chargenrom.sv    ;         ;
-; charrom.txt                      ; yes             ; Auto-Found File              ; C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_3/Battleship/charrom.txt      ;         ;
 ; altera_pll.v                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altera_pll.v                         ;         ;
 +----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------+---------+
 
 
-+-------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                                                       ;
-+---------------------------------------------+---------------------------------------------------------------------+
-; Resource                                    ; Usage                                                               ;
-+---------------------------------------------+---------------------------------------------------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 27                                                                  ;
-;                                             ;                                                                     ;
-; Combinational ALUT usage for logic          ; 45                                                                  ;
-;     -- 7 input functions                    ; 0                                                                   ;
-;     -- 6 input functions                    ; 8                                                                   ;
-;     -- 5 input functions                    ; 8                                                                   ;
-;     -- 4 input functions                    ; 5                                                                   ;
-;     -- <=3 input functions                  ; 24                                                                  ;
-;                                             ;                                                                     ;
-; Dedicated logic registers                   ; 20                                                                  ;
-;                                             ;                                                                     ;
-; I/O pins                                    ; 30                                                                  ;
-;                                             ;                                                                     ;
-; Total DSP Blocks                            ; 0                                                                   ;
-;                                             ;                                                                     ;
-; Total PLLs                                  ; 1                                                                   ;
-;     -- PLLs                                 ; 1                                                                   ;
-;                                             ;                                                                     ;
-; Maximum fan-out node                        ; pll:vgapll|pll_0002:pll_inst|altera_pll:altera_pll_i|outclk_wire[0] ;
-; Maximum fan-out                             ; 22                                                                  ;
-; Total fan-out                               ; 287                                                                 ;
-; Average fan-out                             ; 2.28                                                                ;
-+---------------------------------------------+---------------------------------------------------------------------+
++-------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                             ;
++---------------------------------------------+---------------------------+
+; Resource                                    ; Usage                     ;
++---------------------------------------------+---------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 35                        ;
+;                                             ;                           ;
+; Combinational ALUT usage for logic          ; 57                        ;
+;     -- 7 input functions                    ; 0                         ;
+;     -- 6 input functions                    ; 13                        ;
+;     -- 5 input functions                    ; 10                        ;
+;     -- 4 input functions                    ; 5                         ;
+;     -- <=3 input functions                  ; 29                        ;
+;                                             ;                           ;
+; Dedicated logic registers                   ; 20                        ;
+;                                             ;                           ;
+; I/O pins                                    ; 30                        ;
+;                                             ;                           ;
+; Total DSP Blocks                            ; 0                         ;
+;                                             ;                           ;
+; Total PLLs                                  ; 1                         ;
+;     -- PLLs                                 ; 1                         ;
+;                                             ;                           ;
+; Maximum fan-out node                        ; videoGen:videoGen|r[0]~22 ;
+; Maximum fan-out                             ; 24                        ;
+; Total fan-out                               ; 342                       ;
+; Average fan-out                             ; 2.48                      ;
++---------------------------------------------+---------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -224,14 +222,12 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------+---------------+--------------+
 ; Compilation Hierarchy Node         ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                       ; Entity Name   ; Library Name ;
 +------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------+---------------+--------------+
-; |vga                               ; 45 (0)              ; 20 (0)                    ; 0                 ; 0          ; 30   ; 0            ; |vga                                                      ; vga           ; work         ;
+; |vga                               ; 57 (0)              ; 20 (0)                    ; 0                 ; 0          ; 30   ; 0            ; |vga                                                      ; vga           ; work         ;
 ;    |pll:vgapll|                    ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|pll:vgapll                                           ; pll           ; pll          ;
 ;       |pll_0002:pll_inst|          ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|pll:vgapll|pll_0002:pll_inst                         ; pll_0002      ; pll          ;
 ;          |altera_pll:altera_pll_i| ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|pll:vgapll|pll_0002:pll_inst|altera_pll:altera_pll_i ; altera_pll    ; work         ;
-;    |vgaController:vgaCont|         ; 30 (30)             ; 20 (20)                   ; 0                 ; 0          ; 0    ; 0            ; |vga|vgaController:vgaCont                                ; vgaController ; work         ;
-;    |videoGen:videoGen|             ; 15 (2)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen                                    ; videoGen      ; work         ;
-;       |chargenrom:chargenromb|     ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|chargenrom:chargenromb             ; chargenrom    ; work         ;
-;       |rectgen:rectgen|            ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|rectgen:rectgen                    ; rectgen       ; work         ;
+;    |vgaController:vgaCont|         ; 31 (31)             ; 20 (20)                   ; 0                 ; 0          ; 0    ; 0            ; |vga|vgaController:vgaCont                                ; vgaController ; work         ;
+;    |videoGen:videoGen|             ; 26 (26)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen                                    ; videoGen      ; work         ;
 +------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------+---------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -526,34 +522,19 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+---------------------------------------------------------------+
-; Port Connectivity Checks: "videoGen:videoGen|rectgen:rectgen" ;
-+-------------+-------+----------+------------------------------+
-; Port        ; Type  ; Severity ; Details                      ;
-+-------------+-------+----------+------------------------------+
-; left[5..4]  ; Input ; Info     ; Stuck at VCC                 ;
-; left[9..8]  ; Input ; Info     ; Stuck at GND                 ;
-; left[1..0]  ; Input ; Info     ; Stuck at GND                 ;
-; left[7]     ; Input ; Info     ; Stuck at VCC                 ;
-; left[6]     ; Input ; Info     ; Stuck at GND                 ;
-; left[3]     ; Input ; Info     ; Stuck at GND                 ;
-; left[2]     ; Input ; Info     ; Stuck at VCC                 ;
-; top[5..1]   ; Input ; Info     ; Stuck at VCC                 ;
-; top[9..8]   ; Input ; Info     ; Stuck at GND                 ;
-; top[7]      ; Input ; Info     ; Stuck at VCC                 ;
-; top[6]      ; Input ; Info     ; Stuck at GND                 ;
-; top[0]      ; Input ; Info     ; Stuck at GND                 ;
-; right[4..3] ; Input ; Info     ; Stuck at VCC                 ;
-; right[7..5] ; Input ; Info     ; Stuck at GND                 ;
-; right[2..0] ; Input ; Info     ; Stuck at GND                 ;
-; right[9]    ; Input ; Info     ; Stuck at GND                 ;
-; right[8]    ; Input ; Info     ; Stuck at VCC                 ;
-; bot[4..3]   ; Input ; Info     ; Stuck at VCC                 ;
-; bot[7..5]   ; Input ; Info     ; Stuck at GND                 ;
-; bot[2..0]   ; Input ; Info     ; Stuck at GND                 ;
-; bot[9]      ; Input ; Info     ; Stuck at GND                 ;
-; bot[8]      ; Input ; Info     ; Stuck at VCC                 ;
-+-------------+-------+----------+------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "videoGen:videoGen|rectgen:rectgen1"                                                                                                            ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                                                                      ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; x      ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (10 bits) it drives.  Extra input bit(s) "x[9..1]" will be connected to GND.   ;
+; y      ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; left   ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; top    ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; right  ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; bot    ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; inrect ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -574,21 +555,21 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; arriav_ff             ; 20                          ;
 ;     ENA SCLR          ; 10                          ;
 ;     SCLR              ; 10                          ;
-; arriav_lcell_comb     ; 46                          ;
+; arriav_lcell_comb     ; 58                          ;
 ;     arith             ; 20                          ;
 ;         1 data inputs ; 20                          ;
-;     normal            ; 26                          ;
+;     normal            ; 38                          ;
 ;         1 data inputs ; 1                           ;
 ;         2 data inputs ; 2                           ;
-;         3 data inputs ; 2                           ;
+;         3 data inputs ; 7                           ;
 ;         4 data inputs ; 5                           ;
-;         5 data inputs ; 8                           ;
-;         6 data inputs ; 8                           ;
+;         5 data inputs ; 10                          ;
+;         6 data inputs ; 13                          ;
 ; boundary_port         ; 30                          ;
 ; generic_pll           ; 1                           ;
 ;                       ;                             ;
 ; Max LUT depth         ; 3.40                        ;
-; Average LUT depth     ; 2.83                        ;
+; Average LUT depth     ; 2.93                        ;
 +-----------------------+-----------------------------+
 
 
@@ -597,7 +578,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -607,7 +588,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Tue Apr 09 22:32:46 2024
+    Info: Processing started: Sat Apr 13 08:12:35 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off battleship -c battleship
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -713,30 +694,22 @@ Info (12128): Elaborating entity "vgaController" for hierarchy "vgaController:vg
 Warning (10036): Verilog HDL or VHDL warning at vgaController.sv(16): object "hcnt" assigned a value but never read File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_3/Battleship/vgaController.sv Line: 16
 Warning (10036): Verilog HDL or VHDL warning at vgaController.sv(17): object "vcnt" assigned a value but never read File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_3/Battleship/vgaController.sv Line: 17
 Info (12128): Elaborating entity "videoGen" for hierarchy "videoGen:videoGen" File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_3/Battleship/vga.sv Line: 19
-Info (12128): Elaborating entity "chargenrom" for hierarchy "videoGen:videoGen|chargenrom:chargenromb" File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_3/Battleship/videoGen.sv Line: 7
-Warning (10850): Verilog HDL warning at chargenrom.sv(10): number of words (24) in memory file does not match the number of elements in the address range [0:2047] File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_3/Battleship/chargenrom.sv Line: 10
-Warning (10030): Net "charrom.data_a" at chargenrom.sv(5) has no driver or initial value, using a default initial value '0' File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_3/Battleship/chargenrom.sv Line: 5
-Warning (10030): Net "charrom.waddr_a" at chargenrom.sv(5) has no driver or initial value, using a default initial value '0' File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_3/Battleship/chargenrom.sv Line: 5
-Warning (10030): Net "charrom.we_a" at chargenrom.sv(5) has no driver or initial value, using a default initial value '0' File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_3/Battleship/chargenrom.sv Line: 5
-Info (12128): Elaborating entity "rectgen" for hierarchy "videoGen:videoGen|rectgen:rectgen" File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_3/Battleship/videoGen.sv Line: 10
-Info (276014): Found 1 instances of uninferred RAM logic
-    Info (276007): RAM logic "videoGen:videoGen|chargenrom:chargenromb|charrom" is uninferred due to asynchronous read logic File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_3/Battleship/chargenrom.sv Line: 5
-Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_3/Battleship/db/battleship.ram0_chargenrom_5dff6772.hdl.mif" contains "don't care" values -- overwriting them with 0s
-Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (12128): Elaborating entity "rectgen" for hierarchy "videoGen:videoGen|rectgen:rectgen1" File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_3/Battleship/videoGen.sv Line: 3
+Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 5 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
 Warning: RST port on the PLL is not properly connected on instance pll:vgapll|pll_0002:pll_inst|altera_pll:altera_pll_i|general[0].gpll. The reset port on the PLL should be connected. If the PLL loses lock for any reason, you might need to manually reset the PLL in order to re-establish lock to the reference clock. File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altera_pll.v Line: 749
     Info: Must be connected
-Info (21057): Implemented 96 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 108 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 1 input pins
     Info (21059): Implemented 29 output pins
-    Info (21061): Implemented 65 logic cells
+    Info (21061): Implemented 77 logic cells
     Info (21065): Implemented 1 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 11 warnings
-    Info: Peak virtual memory: 4818 megabytes
-    Info: Processing ended: Tue Apr 09 22:33:00 2024
-    Info: Elapsed time: 00:00:14
-    Info: Total CPU time (on all processors): 00:00:30
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 4820 megabytes
+    Info: Processing ended: Sat Apr 13 08:13:06 2024
+    Info: Elapsed time: 00:00:31
+    Info: Total CPU time (on all processors): 00:00:45
 
 
