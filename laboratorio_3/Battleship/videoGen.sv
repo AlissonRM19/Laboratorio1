@@ -1,4 +1,8 @@
-module videoGen(input logic [9:0] x, y, output logic [7:0] r, g, b);
+module videoGen(input logic [9:0] x, y,
+					 input int matriz_player_final [4:0][4:0],
+					 input int matriz_pc_final [4:0][4:0],
+					 output logic [7:0] r, g, b);
+ 
     logic pixel, inrect1, inrect2;
     rectgen rectgen1(inrect1);
 

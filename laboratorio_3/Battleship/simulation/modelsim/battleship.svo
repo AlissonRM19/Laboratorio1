@@ -17,7 +17,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition"
 
-// DATE "04/13/2024 08:15:34"
+// DATE "04/15/2024 22:39:32"
 
 // 
 // Device: Altera 5CSEMA5F31C6 Package FBGA896
@@ -39,15 +39,15 @@ module vga (
 	r,
 	g,
 	b);
-input 	clk;
-output 	vgaclk;
-output 	hsync;
-output 	vsync;
-output 	sync_b;
-output 	blank_b;
-output 	[7:0] r;
-output 	[7:0] g;
-output 	[7:0] b;
+input 	logic clk ;
+output 	logic vgaclk ;
+output 	logic hsync ;
+output 	logic vsync ;
+output 	logic sync_b ;
+output 	logic blank_b ;
+output 	logic [7:0] r ;
+output 	logic [7:0] g ;
+output 	logic [7:0] b ;
 
 // Design Ports Information
 // vgaclk	=>  Location: PIN_A11,	 I/O Standard: 2.5 V,	 Current Strength: Default

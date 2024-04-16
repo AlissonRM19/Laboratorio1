@@ -18,6 +18,7 @@ module battleship (input logic clk,
 						);
 	// Clk Divider
 	logic clk_delay;
+	
 	//VGA
 	int matriz_player_final [4:0] [4:0];
 	int matriz_pc_final [4:0] [4:0];
