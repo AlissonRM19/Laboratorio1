@@ -12,12 +12,15 @@ module battleship (input logic clk,
 						output logic [2:0] posicion_x_move,
 						output logic [2:0] posicion_y_move,
 						output logic [2:0] posicion_x_attack,
-						output logic [2:0] posicion_y_attack,
-						output int matriz_player_final [4:0] [4:0],
-						output int matriz_pc_final [4:0] [4:0]
+						output logic [2:0] posicion_y_attack
+						//output int matriz_player_final [4:0] [4:0],
+						//output int matriz_pc_final [4:0] [4:0]
 						);
 	// Clk Divider
 	logic clk_delay;
+	//VGA
+	int matriz_player_final [4:0] [4:0];
+	int matriz_pc_final [4:0] [4:0];
 	
 	// FSM
 	logic to;

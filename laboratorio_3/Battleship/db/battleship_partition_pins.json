@@ -4,115 +4,95 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "hsync",
+					"name" : "posicion_x_move[0]",
 					"strict" : false
 				},
 				{
-					"name" : "vsync",
+					"name" : "posicion_x_move[1]",
 					"strict" : false
 				},
 				{
-					"name" : "sync_b",
+					"name" : "posicion_x_move[2]",
 					"strict" : false
 				},
 				{
-					"name" : "blank_b",
+					"name" : "posicion_y_move[0]",
 					"strict" : false
 				},
 				{
-					"name" : "r[0]",
+					"name" : "posicion_y_move[1]",
 					"strict" : false
 				},
 				{
-					"name" : "r[1]",
+					"name" : "posicion_y_move[2]",
 					"strict" : false
 				},
 				{
-					"name" : "r[2]",
+					"name" : "posicion_x_attack[0]",
 					"strict" : false
 				},
 				{
-					"name" : "r[3]",
+					"name" : "posicion_x_attack[1]",
 					"strict" : false
 				},
 				{
-					"name" : "r[4]",
+					"name" : "posicion_x_attack[2]",
 					"strict" : false
 				},
 				{
-					"name" : "r[5]",
+					"name" : "posicion_y_attack[0]",
 					"strict" : false
 				},
 				{
-					"name" : "r[6]",
+					"name" : "posicion_y_attack[1]",
 					"strict" : false
 				},
 				{
-					"name" : "r[7]",
+					"name" : "posicion_y_attack[2]",
 					"strict" : false
 				},
 				{
-					"name" : "g[0]",
+					"name" : "barcos[0]",
 					"strict" : false
 				},
 				{
-					"name" : "g[1]",
+					"name" : "barcos[2]",
 					"strict" : false
 				},
 				{
-					"name" : "g[2]",
+					"name" : "barcos[1]",
 					"strict" : false
 				},
 				{
-					"name" : "g[3]",
+					"name" : "izquierda",
 					"strict" : false
 				},
 				{
-					"name" : "g[4]",
+					"name" : "derecha",
 					"strict" : false
 				},
 				{
-					"name" : "g[5]",
+					"name" : "arriba",
 					"strict" : false
 				},
 				{
-					"name" : "g[6]",
+					"name" : "abajo",
 					"strict" : false
 				},
 				{
-					"name" : "g[7]",
+					"name" : "reset",
 					"strict" : false
 				},
 				{
-					"name" : "b[0]",
+					"name" : "attack",
 					"strict" : false
 				},
 				{
-					"name" : "b[1]",
+					"name" : "clk",
 					"strict" : false
 				},
 				{
-					"name" : "b[2]",
-					"strict" : false
-				},
-				{
-					"name" : "b[3]",
-					"strict" : false
-				},
-				{
-					"name" : "b[4]",
-					"strict" : false
-				},
-				{
-					"name" : "b[5]",
-					"strict" : false
-				},
-				{
-					"name" : "b[6]",
-					"strict" : false
-				},
-				{
-					"name" : "b[7]",
+					"name" : "poner",
 					"strict" : false
 				}
 			]
