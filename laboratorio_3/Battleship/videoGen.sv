@@ -1044,6 +1044,870 @@ module videoGen(input logic [9:0] x, y,
 			end
 		end
 		
+//----------------------------------------------------------------------------------------------------------------------------
+		 //Logica para pintar la casilla 1 del tablero del jugador
+		 
+		 if(x >= 10'd346 && x <= 10'd398 && y >= 10'd101 && y <= 10'd169)begin
+			if(matriz_player_final[4][4] == 0)begin
+				r = 8'h00;
+				g = 8'h00;
+				b = 8'hFF;
+			end
+			else if(matriz_player_final[4][4] == 1||matriz_player_final[4][4] == 2 ||matriz_player_final[4][4] == 3 ||matriz_player_final[4][4] == 4 ||matriz_player_final[4][4] == 5)begin
+				r = 8'h80;
+				g = 8'h80;
+				b = 8'h80;
+			end
+			else if (matriz_player_final[4][4] == 6) begin
+				r = 8'hFF;
+				g = 8'hFF;
+				b = 8'h00;
+			end
+			else if (matriz_player_final[4][4] == 7) begin
+				r = 8'hFF;
+				g = 8'h7F;
+				b = 8'h00;
+			end
+			else if (matriz_player_final[4][4] == 8) begin
+				r = 8'hFF;
+				g = 8'h00;
+				b = 8'h00;
+			end
+			else if (matriz_player_final[4][4] == 9) begin
+				r = 8'h00;
+				g = 8'hFF;
+				b = 8'h00;
+			end
+		end
+		
+		//Logica para pintar la casilla 2 del tablero del jugador
+		 
+		 if(x >= 10'd400 && x <= 10'd452 && y >= 10'd101 && y <= 10'd169)begin
+			if(matriz_player_final[4][3] == 0)begin
+				r = 8'h00;
+				g = 8'h00;
+				b = 8'hFF;
+			end
+			else if(matriz_player_final[4][3] == 1||matriz_player_final[4][3] == 2 ||matriz_player_final[4][3] == 3 ||matriz_player_final[4][3] == 4 ||matriz_player_final[4][3] == 5)begin
+				r = 8'h80;
+				g = 8'h80;
+				b = 8'h80;
+			end
+			else if (matriz_player_final[4][3] == 6) begin
+				r = 8'hFF;
+				g = 8'hFF;
+				b = 8'h00;
+			end
+			else if (matriz_player_final[4][3] == 7) begin
+				r = 8'hFF;
+				g = 8'h7F;
+				b = 8'h00;
+			end
+			else if (matriz_player_final[4][3] == 8) begin
+				r = 8'hFF;
+				g = 8'h00;
+				b = 8'h00;
+			end
+			else if (matriz_player_final[4][3] == 9) begin
+				r = 8'h00;
+				g = 8'hFF;
+				b = 8'h00;
+			end
+		end
+		//Logica para pintar la casilla 3 del tablero del jugador
+		 
+		 if(x >= 10'd454 && x <= 10'd506 && y >= 10'd101 && y <= 10'd169)begin
+			if(matriz_player_final[4][2] == 0)begin
+				r = 8'h00;
+				g = 8'h00;
+				b = 8'hFF;
+			end
+			else if(matriz_player_final[4][2] == 1||matriz_player_final[4][2] == 2 ||matriz_player_final[4][2] == 3 ||matriz_player_final[4][2] == 4 ||matriz_player_final[4][2] == 5)begin
+				r = 8'h80;
+				g = 8'h80;
+				b = 8'h80;
+			end
+			else if (matriz_player_final[4][2] == 6) begin
+				r = 8'hFF;
+				g = 8'hFF;
+				b = 8'h00;
+			end
+			else if (matriz_player_final[4][2] == 7) begin
+				r = 8'hFF;
+				g = 8'h7F;
+				b = 8'h00;
+			end
+			else if (matriz_player_final[4][2] == 8) begin
+				r = 8'hFF;
+				g = 8'h00;
+				b = 8'h00;
+			end
+			else if (matriz_player_final[4][2] == 9) begin
+				r = 8'h00;
+				g = 8'hFF;
+				b = 8'h00;
+			end
+		end
+		 
+		 //Logica para pintar la casilla 4 del tablero del jugador
+		 
+		 if(x >= 10'd508 && x <= 10'd560 && y >= 10'd101 && y <= 10'd169)begin
+			if(matriz_player_final[4][1] == 0)begin
+				r = 8'h00;
+				g = 8'h00;
+				b = 8'hFF;
+			end
+			else if(matriz_player_final[4][1]== 1||matriz_player_final[4][1] == 2 ||matriz_player_final[4][1] == 3 ||matriz_player_final[4][1] == 4 ||matriz_player_final[4][1] == 5)begin
+				r = 8'h80;
+				g = 8'h80;
+				b = 8'h80;
+			end
+			else if (matriz_player_final[4][1] == 6) begin
+				r = 8'hFF;
+				g = 8'hFF;
+				b = 8'h00;
+			end
+			else if (matriz_player_final[4][1] == 7) begin
+				r = 8'hFF;
+				g = 8'h7F;
+				b = 8'h00;
+			end
+			else if (matriz_player_final[4][1] == 8) begin
+				r = 8'hFF;
+				g = 8'h00;
+				b = 8'h00;
+			end
+			else if (matriz_player_final[4][1] == 9) begin
+				r = 8'h00;
+				g = 8'hFF;
+				b = 8'h00;
+			end
+		end
+		//Logica para pintar la casilla 5 del tablero del jugador
+		 
+		 if(x >= 10'd562 && x <= 10'd614 && y >= 10'd101 && y <= 10'd169)begin
+			if(matriz_player_final[4][0] == 0)begin
+				r = 8'h00;
+				g = 8'h00;
+				b = 8'hFF;
+			end
+			else if(matriz_player_final[4][0] == 1||matriz_player_final[4][0] == 2 ||matriz_player_final[4][0] == 3 ||matriz_player_final[4][0] == 4 ||matriz_player_final[4][0] == 5)begin
+				r = 8'h80;
+				g = 8'h80;
+				b = 8'h80;
+			end
+			else if (matriz_player_final[4][0] == 6) begin
+				r = 8'hFF;
+				g = 8'hFF;
+				b = 8'h00;
+			end
+			else if (matriz_player_final[4][0] == 7) begin
+				r = 8'hFF;
+				g = 8'h7F;
+				b = 8'h00;
+			end
+			else if (matriz_player_final[4][0] == 8) begin
+				r = 8'hFF;
+				g = 8'h00;
+				b = 8'h00;
+			end
+			else if (matriz_player_final[4][0] == 9) begin
+				r = 8'h00;
+				g = 8'hFF;
+				b = 8'h00;
+			end
+		end
+		
+		
+		//Logica para pintar la casilla 6 del tablero del jugador
+		 
+		 if(x >= 10'd346 && x <= 10'd398 && y >= 10'd171 && y <= 10'd239)begin
+			if(matriz_player_final[3][4] == 0)begin
+				r = 8'h00;
+				g = 8'h00;
+				b = 8'hFF;
+			end
+			else if(matriz_player_final[3][4] == 1||matriz_player_final[3][4] == 2 ||matriz_player_final[3][4] == 3 ||matriz_player_final[3][4] == 4 ||matriz_player_final[3][4] == 5)begin
+				r = 8'h80;
+				g = 8'h80;
+				b = 8'h80;
+			end
+			else if (matriz_player_final[3][4] == 6) begin
+				r = 8'hFF;
+				g = 8'hFF;
+				b = 8'h00;
+			end
+			else if (matriz_player_final[3][4]== 7) begin
+				r = 8'hFF;
+				g = 8'h7F;
+				b = 8'h00;
+			end
+			else if (matriz_player_final[3][4] == 8) begin
+				r = 8'hFF;
+				g = 8'h00;
+				b = 8'h00;
+			end
+			else if (matriz_player_final[3][4] == 9) begin
+				r = 8'h00;
+				g = 8'hFF;
+				b = 8'h00;
+			end
+		end
+		
+		//Logica para pintar la casilla 7 del tablero del jugador
+		 
+		 if(x >= 10'd400 && x <= 10'd452 && y >= 10'd171 && y <= 10'd239)begin
+			if(matriz_player_final[3][3] == 0)begin
+				r = 8'h00;
+				g = 8'h00;
+				b = 8'hFF;
+			end
+			else if(matriz_player_final[3][3] == 1||matriz_player_final[3][3] == 2 ||matriz_player_final[3][3] == 3 ||matriz_player_final[3][3] == 4 ||matriz_player_final[3][3] == 5)begin
+				r = 8'h80;
+				g = 8'h80;
+				b = 8'h80;
+			end
+			else if (matriz_player_final[3][3] == 6) begin
+				r = 8'hFF;
+				g = 8'hFF;
+				b = 8'h00;
+			end
+			else if (matriz_player_final[3][3] == 7) begin
+				r = 8'hFF;
+				g = 8'h7F;
+				b = 8'h00;
+			end
+			else if (matriz_player_final[3][3] == 8) begin
+				r = 8'hFF;
+				g = 8'h00;
+				b = 8'h00;
+			end
+			else if (matriz_player_final[3][3] == 9) begin
+				r = 8'h00;
+				g = 8'hFF;
+				b = 8'h00;
+			end
+		end
+		//Logica para pintar la casilla 8 del tablero del jugador
+		 
+		 if(x >= 10'd454 && x <= 10'd506  && y >= 10'd171 && y <= 10'd239)begin
+			if(matriz_player_final[3][2] == 0)begin
+				r = 8'h00;
+				g = 8'h00;
+				b = 8'hFF;
+			end
+			else if(matriz_player_final[3][2] == 1||matriz_player_final[3][2] == 2 ||matriz_player_final[3][2] == 3 ||matriz_player_final[3][2] == 4 ||matriz_player_final[3][2] == 5)begin
+				r = 8'h80;
+				g = 8'h80;
+				b = 8'h80;
+			end
+			else if (matriz_player_final[3][2] == 6) begin
+				r = 8'hFF;
+				g = 8'hFF;
+				b = 8'h00;
+			end
+			else if (matriz_player_final[3][2]== 7) begin
+				r = 8'hFF;
+				g = 8'h7F;
+				b = 8'h00;
+			end
+			else if (matriz_player_final[3][2] == 8) begin
+				r = 8'hFF;
+				g = 8'h00;
+				b = 8'h00;
+			end
+			else if (matriz_player_final[3][2] == 9) begin
+				r = 8'h00;
+				g = 8'hFF;
+				b = 8'h00;
+			end
+		end
+		 
+		 //Logica para pintar la casilla 9 del tablero del jugador
+		 
+		 if(x >= 10'd508 && x <= 10'd560 && y >= 10'd171 && y <= 10'd239)begin
+			if(matriz_player_final[3][1] == 0)begin
+				r = 8'h00;
+				g = 8'h00;
+				b = 8'hFF;
+			end
+			else if(matriz_player_final[3][1] == 1||matriz_player_final[3][1] == 2 ||matriz_player_final[3][1] == 3 ||matriz_player_final[3][1] == 4 ||matriz_player_final[3][1] == 5)begin
+				r = 8'h80;
+				g = 8'h80;
+				b = 8'h80;
+			end
+			else if (matriz_player_final[3][1] == 6) begin
+				r = 8'hFF;
+				g = 8'hFF;
+				b = 8'h00;
+			end
+			else if (matriz_player_final[3][1] == 7) begin
+				r = 8'hFF;
+				g = 8'h7F;
+				b = 8'h00;
+			end
+			else if (matriz_player_final[3][1] == 8) begin
+				r = 8'hFF;
+				g = 8'h00;
+				b = 8'h00;
+			end
+			else if (matriz_player_final[3][1] == 9) begin
+				r = 8'h00;
+				g = 8'hFF;
+				b = 8'h00;
+			end
+		end
+		//Logica para pintar la casilla 10 del tablero del jugador
+		 
+		 if(x >= 10'd562 && x <= 10'd614 && y >= 10'd171 && y <= 10'd239)begin
+			if(matriz_player_final[3][0] == 0)begin
+				r = 8'h00;
+				g = 8'h00;
+				b = 8'hFF;
+			end
+			else if(matriz_player_final[3][0] == 1||matriz_player_final[3][0] == 2 ||matriz_player_final[3][0]== 3 ||matriz_player_final[3][0] == 4 ||matriz_player_final[3][0] == 5)begin
+				r = 8'h80;
+				g = 8'h80;
+				b = 8'h80;
+			end
+			else if (matriz_player_final[3][0] == 6) begin
+				r = 8'hFF;
+				g = 8'hFF;
+				b = 8'h00;
+			end
+			else if (matriz_player_final[3][0] == 7) begin
+				r = 8'hFF;
+				g = 8'h7F;
+				b = 8'h00;
+			end
+			else if (matriz_player_final[3][0] == 8) begin
+				r = 8'hFF;
+				g = 8'h00;
+				b = 8'h00;
+			end
+			else if (matriz_player_final[3][0] == 9) begin
+				r = 8'h00;
+				g = 8'hFF;
+				b = 8'h00;
+			end
+		end
+		//Logica para pintar la casilla 11 del tablero del jugador
+		 
+		 if(x >= 10'd346 && x <= 10'd398 && y >= 10'd241 && y <= 10'd309)begin
+			if(matriz_player_final[2][4] == 0)begin
+				r = 8'h00;
+				g = 8'h00;
+				b = 8'hFF;
+			end
+			else if(matriz_player_final[2][4] == 1||matriz_player_final[2][4] == 2 ||matriz_player_final[2][4] == 3 ||matriz_player_final[2][4] == 4 ||matriz_player_final[2][4] == 5)begin
+				r = 8'h80;
+				g = 8'h80;
+				b = 8'h80;
+			end
+			else if (matriz_player_final[2][4] == 6) begin
+				r = 8'hFF;
+				g = 8'hFF;
+				b = 8'h00;
+			end
+			else if (matriz_player_final[2][4] == 7) begin
+				r = 8'hFF;
+				g = 8'h7F;
+				b = 8'h00;
+			end
+			else if (matriz_player_final[2][4] == 8) begin
+				r = 8'hFF;
+				g = 8'h00;
+				b = 8'h00;
+			end
+			else if (matriz_player_final[2][4] == 9) begin
+				r = 8'h00;
+				g = 8'hFF;
+				b = 8'h00;
+			end
+		end
+		
+		//Logica para pintar la casilla 12 del tablero del jugador
+		 
+		 if(x >= 10'd400 && x <= 10'd452 && y >= 10'd241 && y <= 10'd309)begin
+			if(matriz_player_final[2][3] == 0)begin
+				r = 8'h00;
+				g = 8'h00;
+				b = 8'hFF;
+			end
+			else if(matriz_player_final[2][3] == 1||matriz_player_final[2][3] == 2 ||matriz_player_final[2][3] == 3 ||matriz_player_final[2][3] == 4 ||matriz_player_final[2][3] == 5)begin
+				r = 8'h80;
+				g = 8'h80;
+				b = 8'h80;
+			end
+			else if (matriz_player_final[2][3] == 6) begin
+				r = 8'hFF;
+				g = 8'hFF;
+				b = 8'h00;
+			end
+			else if (matriz_player_final[2][3] == 7) begin
+				r = 8'hFF;
+				g = 8'h7F;
+				b = 8'h00;
+			end
+			else if (matriz_player_final[2][3] == 8) begin
+				r = 8'hFF;
+				g = 8'h00;
+				b = 8'h00;
+			end
+			else if (matriz_player_final[2][3] == 9) begin
+				r = 8'h00;
+				g = 8'hFF;
+				b = 8'h00;
+			end
+		end
+		//Logica para pintar la casilla 13 del tablero del jugador
+		 
+		 if(x >= 10'd454 && x <= 10'd506  && y >= 10'd241 && y <= 10'd309)begin
+			if(matriz_player_final[2][2] == 0)begin
+				r = 8'h00;
+				g = 8'h00;
+				b = 8'hFF;
+			end
+			else if(matriz_player_final[2][2] == 1||matriz_player_final[2][2] == 2 ||matriz_player_final[2][2] == 3 ||matriz_player_final[2][2] == 4 ||matriz_player_final[2][2] == 5)begin
+				r = 8'h80;
+				g = 8'h80;
+				b = 8'h80;
+			end
+			else if (matriz_player_final[2][2] == 6) begin
+				r = 8'hFF;
+				g = 8'hFF;
+				b = 8'h00;
+			end
+			else if (matriz_player_final[2][2] == 7) begin
+				r = 8'hFF;
+				g = 8'h7F;
+				b = 8'h00;
+			end
+			else if (matriz_player_final[2][2] == 8) begin
+				r = 8'hFF;
+				g = 8'h00;
+				b = 8'h00;
+			end
+			else if (matriz_player_final[2][2] == 9) begin
+				r = 8'h00;
+				g = 8'hFF;
+				b = 8'h00;
+			end
+		end
+		 
+		 //Logica para pintar la casilla 14 del tablero del jugador
+		 
+		 if(x >= 10'd508 && x <= 10'd560 && y >= 10'd241 && y <= 10'd309)begin
+			if(matriz_player_final[2][1] == 0)begin
+				r = 8'h00;
+				g = 8'h00;
+				b = 8'hFF;
+			end
+			else if(matriz_player_final[2][1] == 1||matriz_player_final[2][1] == 2 ||matriz_player_final[2][1] == 3 ||matriz_player_final[2][1] == 4 ||matriz_player_final[2][1] == 5)begin
+				r = 8'h80;
+				g = 8'h80;
+				b = 8'h80;
+			end
+			else if (matriz_player_final[2][1] == 6) begin
+				r = 8'hFF;
+				g = 8'hFF;
+				b = 8'h00;
+			end
+			else if (matriz_player_final[2][1] == 7) begin
+				r = 8'hFF;
+				g = 8'h7F;
+				b = 8'h00;
+			end
+			else if (matriz_player_final[2][1] == 8) begin
+				r = 8'hFF;
+				g = 8'h00;
+				b = 8'h00;
+			end
+			else if (matriz_player_final[2][1] == 9) begin
+				r = 8'h00;
+				g = 8'hFF;
+				b = 8'h00;
+			end
+		end
+		//Logica para pintar la casilla 15 del tablero del jugador
+		 
+		 if(x >= 10'd562 && x <= 10'd614 && y >= 10'd241 && y <= 10'd309)begin
+			if(matriz_player_final[2][0] == 0)begin
+				r = 8'h00;
+				g = 8'h00;
+				b = 8'hFF;
+			end
+			else if(matriz_player_final[2][0] == 1||matriz_player_final[2][0] == 2 ||matriz_player_final[2][0] == 3 ||matriz_player_final[2][0] == 4 ||matriz_player_final[2][0] == 5)begin
+				r = 8'h80;
+				g = 8'h80;
+				b = 8'h80;
+			end
+			else if (matriz_player_final[2][0] == 6) begin
+				r = 8'hFF;
+				g = 8'hFF;
+				b = 8'h00;
+			end
+			else if (matriz_player_final[2][0]== 7) begin
+				r = 8'hFF;
+				g = 8'h7F;
+				b = 8'h00;
+			end
+			else if (matriz_player_final[2][0]== 8) begin
+				r = 8'hFF;
+				g = 8'h00;
+				b = 8'h00;
+			end
+			else if (matriz_player_final[2][0] == 9) begin
+				r = 8'h00;
+				g = 8'hFF;
+				b = 8'h00;
+			end
+		end
+		
+		//Logica para pintar la casilla 16 del tablero del jugador
+		 
+		 if(x >= 10'd346 && x <= 10'd398 && y >= 10'd311 && y <= 10'd379)begin
+			if(matriz_player_final[1][4] == 0)begin
+				r = 8'h00;
+				g = 8'h00;
+				b = 8'hFF;
+			end
+			else if(matriz_player_final[1][4] == 1||matriz_player_final[1][4] == 2 ||matriz_player_final[1][4] == 3 ||matriz_player_final[1][4] == 4 ||matriz_player_final[1][4] == 5)begin
+				r = 8'h80;
+				g = 8'h80;
+				b = 8'h80;
+			end
+			else if (matriz_player_final[1][4] == 6) begin
+				r = 8'hFF;
+				g = 8'hFF;
+				b = 8'h00;
+			end
+			else if (matriz_player_final[1][4]== 7) begin
+				r = 8'hFF;
+				g = 8'h7F;
+				b = 8'h00;
+			end
+			else if (matriz_player_final[1][4] == 8) begin
+				r = 8'hFF;
+				g = 8'h00;
+				b = 8'h00;
+			end
+			else if (matriz_player_final[1][4] == 9) begin
+				r = 8'h00;
+				g = 8'hFF;
+				b = 8'h00;
+			end
+		end
+		
+		//Logica para pintar la casilla 17 del tablero del jugador
+		 
+		 if(x >= 10'd400 && x <= 10'd452 && y >= 10'd311 && y <= 10'd379)begin
+			if(matriz_player_final[1][3] == 0)begin
+				r = 8'h00;
+				g = 8'h00;
+				b = 8'hFF;
+			end
+			else if(matriz_player_final[1][3] == 1||matriz_player_final[1][3] == 2 ||matriz_player_final[1][3] == 3 ||matriz_player_final[1][3] == 4 ||matriz_player_final[1][3] == 5)begin
+				r = 8'h80;
+				g = 8'h80;
+				b = 8'h80;
+			end
+			else if (matriz_player_final[1][3] == 6) begin
+				r = 8'hFF;
+				g = 8'hFF;
+				b = 8'h00;
+			end
+			else if (matriz_player_final[1][3]== 7) begin
+				r = 8'hFF;
+				g = 8'h7F;
+				b = 8'h00;
+			end
+			else if (matriz_player_final[1][3] == 8) begin
+				r = 8'hFF;
+				g = 8'h00;
+				b = 8'h00;
+			end
+			else if (matriz_player_final[1][3] == 9) begin
+				r = 8'h00;
+				g = 8'hFF;
+				b = 8'h00;
+			end
+		end
+		//Logica para pintar la casilla 18 del tablero del jugador
+		 
+		 if(x >= 10'd454 && x <= 10'd506  && y >= 10'd311 && y <= 10'd379)begin
+			if(matriz_player_final[1][2] == 0)begin
+				r = 8'h00;
+				g = 8'h00;
+				b = 8'hFF;
+			end
+			else if(matriz_player_final[1][2] == 1||matriz_player_final[1][2] == 2 ||matriz_player_final[1][2] == 3 ||matriz_player_final[1][2] == 4 ||matriz_player_final[1][2] == 5)begin
+				r = 8'h80;
+				g = 8'h80;
+				b = 8'h80;
+			end
+			else if (matriz_player_final[1][2] == 6) begin
+				r = 8'hFF;
+				g = 8'hFF;
+				b = 8'h00;
+			end
+			else if (matriz_player_final[1][2]== 7) begin
+				r = 8'hFF;
+				g = 8'h7F;
+				b = 8'h00;
+			end
+			else if (matriz_player_final[1][2] == 8) begin
+				r = 8'hFF;
+				g = 8'h00;
+				b = 8'h00;
+			end
+			else if (matriz_player_final[1][2] == 9) begin
+				r = 8'h00;
+				g = 8'hFF;
+				b = 8'h00;
+			end
+		end
+		 
+		 //Logica para pintar la casilla 19 del tablero del jugador
+		 
+		 if(x >= 10'd508 && x <= 10'd560 && y >= 10'd311 && y <= 10'd379)begin
+			if(matriz_player_final[1][1] == 0)begin
+				r = 8'h00;
+				g = 8'h00;
+				b = 8'hFF;
+			end
+			else if(matriz_player_final[1][1] == 1||matriz_player_final[1][1] == 2 ||matriz_player_final[1][1] == 3 ||matriz_player_final[1][1] == 4 ||matriz_player_final[1][1] == 5)begin
+				r = 8'h80;
+				g = 8'h80;
+				b = 8'h80;
+			end
+			else if (matriz_player_final[1][1] == 6) begin
+				r = 8'hFF;
+				g = 8'hFF;
+				b = 8'h00;
+			end
+			else if (matriz_player_final[1][1]== 7) begin
+				r = 8'hFF;
+				g = 8'h7F;
+				b = 8'h00;
+			end
+			else if (matriz_player_final[1][1] == 8) begin
+				r = 8'hFF;
+				g = 8'h00;
+				b = 8'h00;
+			end
+			else if (matriz_player_final[1][1] == 9) begin
+				r = 8'h00;
+				g = 8'hFF;
+				b = 8'h00;
+			end
+		end
+		//Logica para pintar la casilla 20 del tablero del jugador
+		 
+		 if(x >= 10'd562 && x <= 10'd614 && y >= 10'd311 && y <= 10'd379)begin
+			if(matriz_player_final[1][0] == 0)begin
+				r = 8'h00;
+				g = 8'h00;
+				b = 8'hFF;
+			end
+			else if(matriz_player_final[1][0] == 1||matriz_player_final[1][0] == 2 ||matriz_player_final[1][0] == 3 ||matriz_player_final[1][0] == 4 ||matriz_player_final[1][0] == 5)begin
+				r = 8'h80;
+				g = 8'h80;
+				b = 8'h80;
+			end
+			else if (matriz_player_final[1][0] == 6) begin
+				r = 8'hFF;
+				g = 8'hFF;
+				b = 8'h00;
+			end
+			else if (matriz_player_final[1][0]== 7) begin
+				r = 8'hFF;
+				g = 8'h7F;
+				b = 8'h00;
+			end
+			else if (matriz_player_final[1][0] == 8) begin
+				r = 8'hFF;
+				g = 8'h00;
+				b = 8'h00;
+			end
+			else if (matriz_player_final[1][0] == 9) begin
+				r = 8'h00;
+				g = 8'hFF;
+				b = 8'h00;
+			end
+		end
+		//Logica para pintar la casilla 21 del tablero del jugador
+		 
+		 if(x >= 10'd346 && x <= 10'd398 && y >= 10'd381 && y <= 10'd449)begin
+			if(matriz_player_final[0][4] == 0)begin
+					r = 8'h00;
+					g = 8'h00;
+					b = 8'hFF;
+				end
+				else if(matriz_player_final[0][4] == 1||matriz_player_final[0][4] == 2 ||matriz_player_final[0][4] == 3 ||matriz_player_final[0][4] == 4 ||matriz_player_final[0][4] == 5)begin
+					r = 8'h80;
+					g = 8'h80;
+					b = 8'h80;
+				end
+				else if (matriz_player_final[0][4] == 6) begin
+					r = 8'hFF;
+					g = 8'hFF;
+					b = 8'h00;
+				end
+				else if (matriz_player_final[0][4]== 7) begin
+					r = 8'hFF;
+					g = 8'h7F;
+					b = 8'h00;
+				end
+				else if (matriz_player_final[0][4] == 8) begin
+					r = 8'hFF;
+					g = 8'h00;
+					b = 8'h00;
+				end
+				else if (matriz_player_final[0][4] == 9) begin
+					r = 8'h00;
+					g = 8'hFF;
+					b = 8'h00;
+				end
+			end
+		
+		//Logica para pintar la casilla 22 del tablero del jugador
+		 
+		 if(x >= 10'd400 && x <= 10'd452 && y >= 10'd381 && y <= 10'd449)begin
+			if(matriz_player_final[0][3] == 0)begin
+				r = 8'h00;
+				g = 8'h00;
+				b = 8'hFF;
+			end
+			else if(matriz_player_final[0][3]== 1||matriz_player_final[0][3] == 2 ||matriz_player_final[0][3] == 3 ||matriz_player_final[0][3] == 4 ||matriz_player_final[0][3] == 5)begin
+				r = 8'h80;
+				g = 8'h80;
+				b = 8'h80;
+			end
+			else if (matriz_player_final[0][3] == 6) begin
+				r = 8'hFF;
+				g = 8'hFF;
+				b = 8'h00;
+			end
+			else if (matriz_player_final[0][3]== 7) begin
+				r = 8'hFF;
+				g = 8'h7F;
+				b = 8'h00;
+			end
+			else if (matriz_player_final[0][3] == 8) begin
+				r = 8'hFF;
+				g = 8'h00;
+				b = 8'h00;
+			end
+			else if (matriz_player_final[0][3] == 9) begin
+				r = 8'h00;
+				g = 8'hFF;
+				b = 8'h00;
+			end
+		end
+		//Logica para pintar la casilla 23 del tablero del jugador
+		 
+		 if(x >= 10'd454 && x <= 10'd506  && y >= 10'd381 && y <= 10'd449)begin
+			if(matriz_player_final[0][2] == 0)begin
+				r = 8'h00;
+				g = 8'h00;
+				b = 8'hFF;
+			end
+			else if(matriz_player_final[0][2] == 1||matriz_player_final[0][2] == 2 ||matriz_player_final[0][2] == 3 ||matriz_player_final[0][2] == 4 ||matriz_player_final[0][2] == 5)begin
+				r = 8'h80;
+				g = 8'h80;
+				b = 8'h80;
+			end
+			else if (matriz_player_final[0][2] == 6) begin
+				r = 8'hFF;
+				g = 8'hFF;
+				b = 8'h00;
+			end
+			else if (matriz_player_final[0][2]== 7) begin
+				r = 8'hFF;
+				g = 8'h7F;
+				b = 8'h00;
+			end
+			else if (matriz_player_final[0][2] == 8) begin
+				r = 8'hFF;
+				g = 8'h00;
+				b = 8'h00;
+			end
+			else if (matriz_player_final[0][2] == 9) begin
+				r = 8'h00;
+				g = 8'hFF;
+				b = 8'h00;
+			end
+		end
+		 
+		 //Logica para pintar la casilla 24 del tablero del jugador
+		 
+		 if(x >= 10'd508 && x <= 10'd560 && y >= 10'd381 && y <= 10'd449)begin
+			if(matriz_player_final[0][1] == 0)begin
+				r = 8'h00;
+				g = 8'h00;
+				b = 8'hFF;
+			end
+			else if(matriz_player_final[0][1] == 1||matriz_player_final[0][1] == 2 ||matriz_player_final[0][1] == 3 ||matriz_player_final[0][1] == 4 ||matriz_player_final[0][1] == 5)begin
+				r = 8'h80;
+				g = 8'h80;
+				b = 8'h80;
+			end
+			else if (matriz_player_final[0][1] == 6) begin
+				r = 8'hFF;
+				g = 8'hFF;
+				b = 8'h00;
+			end
+			else if (matriz_player_final[0][1]==7) begin
+				r = 8'hFF;
+				g = 8'h7F;
+				b = 8'h00;
+			end
+			else if (matriz_player_final[0][1] == 8) begin
+				r = 8'hFF;
+				g = 8'h00;
+				b = 8'h00;
+			end
+			else if (matriz_player_final[0][1] == 9) begin
+				r = 8'h00;
+				g = 8'hFF;
+				b = 8'h00;
+			end
+		end
+		//Logica para pintar la casilla 25 del tablero del jugador
+		 
+		 if(x >= 10'd562 && x <= 10'd614 && y >= 10'd381 && y <= 10'd449)begin
+			if(matriz_player_final[0][0] == 0)begin
+				r = 8'h00;
+				g = 8'h00;
+				b = 8'hFF;
+			end
+			else if(matriz_player_final[0][0] == 1||matriz_player_final[0][0] == 2 ||matriz_player_final[0][0] == 3 ||matriz_player_final[0][0] == 4 ||matriz_player_final[0][0] == 5)begin
+				r = 8'h80;
+				g = 8'h80;
+				b = 8'h80;
+			end
+			else if (matriz_player_final[0][0] == 6) begin
+				r = 8'hFF;
+				g = 8'hFF;
+				b = 8'h00;
+			end
+			else if (matriz_player_final[0][0]==7) begin
+				r = 8'hFF;
+				g = 8'h7F;
+				b = 8'h00;
+			end
+			else if (matriz_player_final[0][0] == 8) begin
+				r = 8'hFF;
+				g = 8'h00;
+				b = 8'h00;
+			end
+			else if (matriz_player_final[0][0] == 9) begin
+				r = 8'h00;
+				g = 8'hFF;
+				b = 8'h00;
+			end
+		end
 		  
 	end
 
