@@ -1,5 +1,5 @@
 Analysis & Synthesis report for battleship
-Mon Apr 15 22:37:28 2024
+Wed Apr 17 09:25:05 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -15,14 +15,15 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Analysis & Synthesis IP Cores Summary
   9. General Register Statistics
- 10. Parameter Settings for User Entity Instance: pll:vgapll|pll_0002:pll_inst|altera_pll:altera_pll_i
- 11. Parameter Settings for User Entity Instance: vgaController:vgaCont
- 12. Port Connectivity Checks: "videoGen:videoGen|rectgen:rectgen1"
- 13. Port Connectivity Checks: "videoGen:videoGen"
- 14. Port Connectivity Checks: "pll:vgapll"
- 15. Post-Synthesis Netlist Statistics for Top Partition
- 16. Elapsed Time Per Partition
- 17. Analysis & Synthesis Messages
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Parameter Settings for User Entity Instance: pll:vgapll|pll_0002:pll_inst|altera_pll:altera_pll_i
+ 12. Parameter Settings for User Entity Instance: vgaController:vgaCont
+ 13. Port Connectivity Checks: "videoGen:videoGen|rectgen:rectgen1"
+ 14. Port Connectivity Checks: "videoGen:videoGen"
+ 15. Port Connectivity Checks: "pll:vgapll"
+ 16. Post-Synthesis Netlist Statistics for Top Partition
+ 17. Elapsed Time Per Partition
+ 18. Analysis & Synthesis Messages
 
 
 
@@ -49,7 +50,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Apr 15 22:37:28 2024       ;
+; Analysis & Synthesis Status     ; Successful - Wed Apr 17 09:25:05 2024       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; battleship                                  ;
 ; Top-level Entity Name           ; vga                                         ;
@@ -188,34 +189,34 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------+---------+
 
 
-+-------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                             ;
-+---------------------------------------------+---------------------------+
-; Resource                                    ; Usage                     ;
-+---------------------------------------------+---------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 35                        ;
-;                                             ;                           ;
-; Combinational ALUT usage for logic          ; 57                        ;
-;     -- 7 input functions                    ; 0                         ;
-;     -- 6 input functions                    ; 13                        ;
-;     -- 5 input functions                    ; 10                        ;
-;     -- 4 input functions                    ; 5                         ;
-;     -- <=3 input functions                  ; 29                        ;
-;                                             ;                           ;
-; Dedicated logic registers                   ; 20                        ;
-;                                             ;                           ;
-; I/O pins                                    ; 30                        ;
-;                                             ;                           ;
-; Total DSP Blocks                            ; 0                         ;
-;                                             ;                           ;
-; Total PLLs                                  ; 1                         ;
-;     -- PLLs                                 ; 1                         ;
-;                                             ;                           ;
-; Maximum fan-out node                        ; videoGen:videoGen|r[0]~22 ;
-; Maximum fan-out                             ; 24                        ;
-; Total fan-out                               ; 342                       ;
-; Average fan-out                             ; 2.48                      ;
-+---------------------------------------------+---------------------------+
++-------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                                                       ;
++---------------------------------------------+---------------------------------------------------------------------+
+; Resource                                    ; Usage                                                               ;
++---------------------------------------------+---------------------------------------------------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 89                                                                  ;
+;                                             ;                                                                     ;
+; Combinational ALUT usage for logic          ; 142                                                                 ;
+;     -- 7 input functions                    ; 3                                                                   ;
+;     -- 6 input functions                    ; 32                                                                  ;
+;     -- 5 input functions                    ; 34                                                                  ;
+;     -- 4 input functions                    ; 23                                                                  ;
+;     -- <=3 input functions                  ; 50                                                                  ;
+;                                             ;                                                                     ;
+; Dedicated logic registers                   ; 20                                                                  ;
+;                                             ;                                                                     ;
+; I/O pins                                    ; 30                                                                  ;
+;                                             ;                                                                     ;
+; Total DSP Blocks                            ; 0                                                                   ;
+;                                             ;                                                                     ;
+; Total PLLs                                  ; 1                                                                   ;
+;     -- PLLs                                 ; 1                                                                   ;
+;                                             ;                                                                     ;
+; Maximum fan-out node                        ; pll:vgapll|pll_0002:pll_inst|altera_pll:altera_pll_i|outclk_wire[0] ;
+; Maximum fan-out                             ; 22                                                                  ;
+; Total fan-out                               ; 719                                                                 ;
+; Average fan-out                             ; 3.22                                                                ;
++---------------------------------------------+---------------------------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -223,12 +224,12 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------+---------------+--------------+
 ; Compilation Hierarchy Node         ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                       ; Entity Name   ; Library Name ;
 +------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------+---------------+--------------+
-; |vga                               ; 57 (0)              ; 20 (0)                    ; 0                 ; 0          ; 30   ; 0            ; |vga                                                      ; vga           ; work         ;
+; |vga                               ; 142 (0)             ; 20 (0)                    ; 0                 ; 0          ; 30   ; 0            ; |vga                                                      ; vga           ; work         ;
 ;    |pll:vgapll|                    ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|pll:vgapll                                           ; pll           ; pll          ;
 ;       |pll_0002:pll_inst|          ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|pll:vgapll|pll_0002:pll_inst                         ; pll_0002      ; pll          ;
 ;          |altera_pll:altera_pll_i| ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|pll:vgapll|pll_0002:pll_inst|altera_pll:altera_pll_i ; altera_pll    ; work         ;
-;    |vgaController:vgaCont|         ; 31 (31)             ; 20 (20)                   ; 0                 ; 0          ; 0    ; 0            ; |vga|vgaController:vgaCont                                ; vgaController ; work         ;
-;    |videoGen:videoGen|             ; 26 (26)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen                                    ; videoGen      ; work         ;
+;    |vgaController:vgaCont|         ; 32 (32)             ; 20 (20)                   ; 0                 ; 0          ; 0    ; 0            ; |vga|vgaController:vgaCont                                ; vgaController ; work         ;
+;    |videoGen:videoGen|             ; 110 (110)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen                                    ; videoGen      ; work         ;
 +------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------+---------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -255,6 +256,18 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Number of registers using Clock Enable       ; 10    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                            ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------+
+; 8:1                ; 2 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |vga|videoGen:videoGen|b    ;
+; 10:1               ; 2 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |vga|videoGen:videoGen|r[0] ;
+; 15:1               ; 2 bits    ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |vga|videoGen:videoGen|r[7] ;
+; 19:1               ; 2 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |vga|videoGen:videoGen|b[0] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------+
 
 
 +---------------------------------------------------------------------------------------------------+
@@ -543,7 +556,10 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------------------------+-------+----------+--------------+
 ; Port                             ; Type  ; Severity ; Details      ;
 +----------------------------------+-------+----------+--------------+
-; matriz_player_final[4]           ; Input ; Info     ; Stuck at GND ;
+; matriz_player_final[4][3..0]     ; Input ; Info     ; Stuck at GND ;
+; matriz_player_final[4][4][2..1]  ; Input ; Info     ; Stuck at VCC ;
+; matriz_player_final[4][4][31..3] ; Input ; Info     ; Stuck at GND ;
+; matriz_player_final[4][4][0]     ; Input ; Info     ; Stuck at GND ;
 ; matriz_player_final[3][1..0]     ; Input ; Info     ; Stuck at GND ;
 ; matriz_player_final[3][4]        ; Input ; Info     ; Stuck at GND ;
 ; matriz_player_final[3][3][31..2] ; Input ; Info     ; Stuck at GND ;
@@ -557,9 +573,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; matriz_player_final[1][1..0]     ; Input ; Info     ; Stuck at GND ;
 ; matriz_player_final[1][2][31..1] ; Input ; Info     ; Stuck at GND ;
 ; matriz_player_final[1][2][0]     ; Input ; Info     ; Stuck at VCC ;
-; matriz_player_final[0]           ; Input ; Info     ; Stuck at GND ;
-; matriz_pc_final[1..0]            ; Input ; Info     ; Stuck at GND ;
-; matriz_pc_final[4]               ; Input ; Info     ; Stuck at GND ;
+; matriz_player_final[0][4..1]     ; Input ; Info     ; Stuck at GND ;
+; matriz_player_final[0][0][1..0]  ; Input ; Info     ; Stuck at VCC ;
+; matriz_player_final[0][0][31..2] ; Input ; Info     ; Stuck at GND ;
+; matriz_pc_final[4][3..0]         ; Input ; Info     ; Stuck at GND ;
+; matriz_pc_final[4][4][2..1]      ; Input ; Info     ; Stuck at VCC ;
+; matriz_pc_final[4][4][31..3]     ; Input ; Info     ; Stuck at GND ;
+; matriz_pc_final[4][4][0]         ; Input ; Info     ; Stuck at GND ;
 ; matriz_pc_final[3][4..3]         ; Input ; Info     ; Stuck at GND ;
 ; matriz_pc_final[3][2][31..2]     ; Input ; Info     ; Stuck at GND ;
 ; matriz_pc_final[3][2][1]         ; Input ; Info     ; Stuck at VCC ;
@@ -567,11 +587,37 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; matriz_pc_final[3][1][31..2]     ; Input ; Info     ; Stuck at GND ;
 ; matriz_pc_final[3][1][1]         ; Input ; Info     ; Stuck at VCC ;
 ; matriz_pc_final[3][1][0]         ; Input ; Info     ; Stuck at GND ;
-; matriz_pc_final[3][0]            ; Input ; Info     ; Stuck at GND ;
-; matriz_pc_final[2][4..3]         ; Input ; Info     ; Stuck at GND ;
-; matriz_pc_final[2][1..0]         ; Input ; Info     ; Stuck at GND ;
+; matriz_pc_final[3][0][31..3]     ; Input ; Info     ; Stuck at GND ;
+; matriz_pc_final[3][0][1..0]      ; Input ; Info     ; Stuck at GND ;
+; matriz_pc_final[3][0][2]         ; Input ; Info     ; Stuck at VCC ;
+; matriz_pc_final[2][4]            ; Input ; Info     ; Stuck at GND ;
+; matriz_pc_final[2][3][2..0]      ; Input ; Info     ; Stuck at VCC ;
+; matriz_pc_final[2][3][31..3]     ; Input ; Info     ; Stuck at GND ;
 ; matriz_pc_final[2][2][31..1]     ; Input ; Info     ; Stuck at GND ;
 ; matriz_pc_final[2][2][0]         ; Input ; Info     ; Stuck at VCC ;
+; matriz_pc_final[2][1]            ; Input ; Info     ; Stuck at GND ;
+; matriz_pc_final[2][0][31..3]     ; Input ; Info     ; Stuck at GND ;
+; matriz_pc_final[2][0][2]         ; Input ; Info     ; Stuck at VCC ;
+; matriz_pc_final[2][0][1]         ; Input ; Info     ; Stuck at GND ;
+; matriz_pc_final[2][0][0]         ; Input ; Info     ; Stuck at VCC ;
+; matriz_pc_final[1][1..0]         ; Input ; Info     ; Stuck at GND ;
+; matriz_pc_final[1][4]            ; Input ; Info     ; Stuck at GND ;
+; matriz_pc_final[1][3][31..4]     ; Input ; Info     ; Stuck at GND ;
+; matriz_pc_final[1][3][2..0]      ; Input ; Info     ; Stuck at GND ;
+; matriz_pc_final[1][3][3]         ; Input ; Info     ; Stuck at VCC ;
+; matriz_pc_final[1][2][31..3]     ; Input ; Info     ; Stuck at GND ;
+; matriz_pc_final[1][2][1..0]      ; Input ; Info     ; Stuck at GND ;
+; matriz_pc_final[1][2][2]         ; Input ; Info     ; Stuck at VCC ;
+; matriz_pc_final[0][4][31..1]     ; Input ; Info     ; Stuck at GND ;
+; matriz_pc_final[0][4][0]         ; Input ; Info     ; Stuck at VCC ;
+; matriz_pc_final[0][3]            ; Input ; Info     ; Stuck at GND ;
+; matriz_pc_final[0][2][31..4]     ; Input ; Info     ; Stuck at GND ;
+; matriz_pc_final[0][2][2..1]      ; Input ; Info     ; Stuck at GND ;
+; matriz_pc_final[0][2][3]         ; Input ; Info     ; Stuck at VCC ;
+; matriz_pc_final[0][2][0]         ; Input ; Info     ; Stuck at VCC ;
+; matriz_pc_final[0][1]            ; Input ; Info     ; Stuck at GND ;
+; matriz_pc_final[0][0][1..0]      ; Input ; Info     ; Stuck at VCC ;
+; matriz_pc_final[0][0][31..2]     ; Input ; Info     ; Stuck at GND ;
 +----------------------------------+-------+----------+--------------+
 
 
@@ -593,21 +639,23 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; arriav_ff             ; 20                          ;
 ;     ENA SCLR          ; 10                          ;
 ;     SCLR              ; 10                          ;
-; arriav_lcell_comb     ; 58                          ;
+; arriav_lcell_comb     ; 143                         ;
 ;     arith             ; 20                          ;
 ;         1 data inputs ; 20                          ;
-;     normal            ; 38                          ;
+;     extend            ; 3                           ;
+;         7 data inputs ; 3                           ;
+;     normal            ; 120                         ;
 ;         1 data inputs ; 1                           ;
-;         2 data inputs ; 2                           ;
-;         3 data inputs ; 7                           ;
-;         4 data inputs ; 5                           ;
-;         5 data inputs ; 10                          ;
-;         6 data inputs ; 13                          ;
+;         2 data inputs ; 15                          ;
+;         3 data inputs ; 15                          ;
+;         4 data inputs ; 23                          ;
+;         5 data inputs ; 34                          ;
+;         6 data inputs ; 32                          ;
 ; boundary_port         ; 30                          ;
 ; generic_pll           ; 1                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 3.40                        ;
-; Average LUT depth     ; 2.93                        ;
+; Max LUT depth         ; 5.00                        ;
+; Average LUT depth     ; 4.38                        ;
 +-----------------------+-----------------------------+
 
 
@@ -626,10 +674,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Mon Apr 15 22:37:04 2024
+    Info: Processing started: Wed Apr 17 09:24:48 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off battleship -c battleship
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Warning (10229): Verilog HDL Expression warning at LFSR.sv(7): truncated literal to match 3 bits File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_3/Battleship/LFSR.sv Line: 7
+Info (12021): Found 1 design units, including 1 entities, in source file lfsr.sv
+    Info (12023): Found entity 1: LFSR File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_3/Battleship/LFSR.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file battleship.sv
     Info (12023): Found entity 1: battleship File: C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_3/Battleship/battleship.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file fsm.sv
@@ -745,15 +796,15 @@ Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 5 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
 Warning: RST port on the PLL is not properly connected on instance pll:vgapll|pll_0002:pll_inst|altera_pll:altera_pll_i|general[0].gpll. The reset port on the PLL should be connected. If the PLL loses lock for any reason, you might need to manually reset the PLL in order to re-establish lock to the reference clock. File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altera_pll.v Line: 749
     Info: Must be connected
-Info (21057): Implemented 108 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 193 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 1 input pins
     Info (21059): Implemented 29 output pins
-    Info (21061): Implemented 77 logic cells
+    Info (21061): Implemented 162 logic cells
     Info (21065): Implemented 1 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 4818 megabytes
-    Info: Processing ended: Mon Apr 15 22:37:28 2024
-    Info: Elapsed time: 00:00:24
-    Info: Total CPU time (on all processors): 00:00:42
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
+    Info: Peak virtual memory: 4820 megabytes
+    Info: Processing ended: Wed Apr 17 09:25:05 2024
+    Info: Elapsed time: 00:00:17
+    Info: Total CPU time (on all processors): 00:00:36
 
 
