@@ -5,17 +5,18 @@ module fsm (input logic clk,
 				input logic to,
 				input logic end_attack,
 				input logic end_move_barcos,
+				input logic end_move_pc_barcos,
 				input logic end_pc_attack,
-				input logic [2:0] hp_pc,
-				input logic [2:0] hp_player,
+				input logic dead_pc,
+				input logic dead_player,
 				//  outputs
-				output logic en_cont_seg,
 				output logic en_put_barcos,
-				output logic en_player_attack,
 				output logic en_pc_attack,
-				output logic en_attack
+				output logic en_check_pc_life,
+				output logic en_attack,
+				output logic en_check_player_life
 				);
-	
+				
 	// FSM
 	logic [3:0] estado;
 	logic [3:0] siguiente_estado;
@@ -43,7 +44,7 @@ module fsm (input logic clk,
 						end
 					end
 			4'b0001: begin
-						if (end_move_barcos) begin
+						if (end_move_barcos && end_move_pc_barcos) begin
 							siguiente_estado = 4'b0010;
 						end else begin
 							siguiente_estado = 4'b0001;
@@ -64,35 +65,35 @@ module fsm (input logic clk,
 						end
 					end
 			4'b0100: begin
-						if (!hp_pc) begin
+						if (dead_pc) begin
 							siguiente_estado = 4'b0111;
 						end else begin
 							siguiente_estado = 4'b0101;
 						end
 					end
-			4'b0101: siguiente_estado = 4'b1000;
+			4'b0101: if (end_pc_attack) begin
+							siguiente_estado = 4'b0110;
+						end else begin
+							siguiente_estado = 4'b0101;
+						end
 			4'b0110: begin
-						if (!hp_player) begin
+						if (dead_player) begin
 							siguiente_estado = 4'b0111;
 						end else begin
 							siguiente_estado = 4'b0010;
 						end
 					end
 			4'b0111: siguiente_estado = 4'b0111;
-			4'b1000: if (end_pc_attack) begin
-							siguiente_estado = 4'b0110;
-						end else begin
-							siguiente_estado = 4'b0101;
-						end
 			default: siguiente_estado = 4'b0000;
 		endcase
 	end
 
 	// Assign de outputs
-	assign en_cont_seg = (estado == 4'b0010 || estado == 4'b0011);
 	assign en_put_barcos = (estado == 4'b0001);
-	assign en_player_attack = (estado == 4'b0010 || estado == 4'b0011);
 	assign en_attack = (estado == 4'b0010 || estado == 4'b0011);
-	assign en_pc_attack = (estado == 4'b1000);
+	assign en_check_pc_life = (estado == 4'b0100);
+	assign en_pc_attack = (estado == 4'b0101);
+	assign en_check_player_life = (estado == 4'b0110);
+	
 
 endmodule

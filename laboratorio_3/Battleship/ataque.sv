@@ -5,13 +5,15 @@ module ataque (input logic izquierda,
 					input logic reset,
 					input logic attack,
 					input logic en_attack,
-					input int matriz_pc_begin [4:0] [4:0],
+					input logic [2:0] hp_pc [4:0],
+					input logic [3:0] matriz_pc_temp [4:0] [4:0],
 				  output logic end_attack,
-				  output int matriz_pc_final [4:0] [4:0],
+				  output logic [2:0] impact_ship,
+				  output logic [3:0] matriz_pc_final [4:0] [4:0],
 			     output logic [2:0] posicion_x_attack,
 				  output logic [2:0] posicion_y_attack);
 
-	int temp [4:0] [4:0];
+	logic [3:0] temp [4:0] [4:0];
 	logic cont = 0;
 	logic temp_end = 0;
 	logic [2:0] temp_x = 3'b010;
@@ -20,7 +22,11 @@ module ataque (input logic izquierda,
 	always @ (izquierda, arriba, abajo, derecha, en_attack, attack, reset) begin
 		if (en_attack) begin
 			if (!cont) begin
-				temp = matriz_pc_begin;
+				temp = '{'{0,0,0,0,0},
+							'{0,0,0,0,0},
+							'{0,0,0,0,0},
+							'{0,0,0,0,0},
+							'{0,0,0,0,0}};
 				cont = 1;
 			end
 			if (izquierda && temp_x != 3'b100) begin
@@ -31,12 +37,49 @@ module ataque (input logic izquierda,
 				temp_y = temp_y + 1;
 			end else if (abajo && temp_y != 0) begin
 				temp_y = temp_y - 1;
-			end else if (attack && temp[temp_y][temp_x] < 6) begin
-				if (temp[temp_y][temp_x] == 0) begin
-					temp[temp_y][temp_x] = 7;
-				end else begin
-					temp[temp_y][temp_x] = 6;
-				end
+			end else if (attack && temp[temp_y][temp_x] == 0) begin
+				case (matriz_pc_temp[temp_y][temp_x])
+					4'b0000: begin
+									temp[temp_y][temp_x] = 6;
+									impact_ship = 0;
+								end
+					4'b0001: begin
+									temp[temp_y][temp_x] = 8;
+									impact_ship = 1;
+								end
+					4'b0010: begin
+									if (hp_pc[1] == 1) begin
+										temp[temp_y][temp_x] = 8;
+									end else begin
+										temp[temp_y][temp_x] = 7;
+									end
+									impact_ship = 2;
+								end
+					4'b0011: begin
+									if (hp_pc[2] == 1) begin
+										temp[temp_y][temp_x] = 8;
+									end else begin
+										temp[temp_y][temp_x] = 7;
+									end
+									impact_ship = 3;
+								end
+					4'b0100: begin
+									if (hp_pc[3] == 1) begin
+										temp[temp_y][temp_x] = 8;
+									end else begin
+										temp[temp_y][temp_x] = 7;
+									end
+									impact_ship = 4;
+								end
+					4'b0101: begin
+									if (hp_pc[4] == 1) begin
+										temp[temp_y][temp_x] = 8;
+									end else begin
+										temp[temp_y][temp_x] = 7;
+									end
+									impact_ship = 5;
+								end
+				endcase
 				temp_end = 1;
 			end
 		end else if (reset) begin

@@ -1,8 +1,8 @@
 module contador_seg (input logic clk,
 							input logic en_cont_seg,
-							output int total_seg);
+							output logic [3:0] total_seg);
 	
-	int temp_seg = 0;
+	logic [3:0] temp_seg = 0;
 							
 	always_ff @ (posedge clk) begin
 		if (!en_cont_seg) begin

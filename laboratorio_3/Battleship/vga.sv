@@ -1,26 +1,16 @@
 module vga(input logic clk,
-	output logic vgaclk, // 25.175 MHz VGA clock
-	output logic hsync, vsync,
-	output logic sync_b, blank_b, // To monitor & DAC
-	output logic [7:0] r, g, b); // To video DAC
+			input logic [3:0] matriz_pc_final [4:0] [4:0],
+			input logic [3:0] matriz_player_final [4:0] [4:0],
+			output logic vgaclk, // 25.175 MHz VGA clock
+			output logic hsync, vsync,
+			output logic sync_b, blank_b, // To monitor & DAC
+			output logic [7:0] r, g, b); // To video DAC
 	
 	
 	//Temporales de conexion
-	int matriz_player_final [4:0] [4:0];
-	int matriz_pc_final [4:0] [4:0];
-	
-	initial begin 
-		matriz_player_final = '{'{6,0,0,0,0},
-											'{0,2,2,0,0},
-											'{0,0,0,0,0},
-											'{0,0,1,0,0},
-											'{0,0,0,0,3}};
-		matriz_pc_final = '{'{6,0,0,0,0},
-									  '{0,0,2,2,4},
-									  '{0,7,1,0,5},
-									  '{0,8,4,0,0},
-									  '{1,0,9,0,3}};
-	end 
+	//int matriz_player_final [4:0] [4:0];
+	//int matriz_pc_final [4:0] [4:0];
+	 
 	
 	logic [9:0] x, y;
 	

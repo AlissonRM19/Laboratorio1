@@ -8,212 +8,471 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_3/Battleship/simulation/modelsim
+Z0 dC:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/simulation/modelsim
 vataque
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1712721898
+Z2 !s110 1713398362
 !i10b 1
-!s100 CH:3NenVMh?[BPMzXUzEa0
+!s100 9TMmch0WD;Xc1mi=?X6B<3
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-I;nKWfnj0cl5CAzVe>H1d`3
+Io:<CL6GML_Ri>_eXB7_bd2
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-Z5 w1712708081
-8C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_3/Battleship/ataque.sv
-FC:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_3/Battleship/ataque.sv
-!i122 6
-L0 1 56
-Z6 OV;L;2020.1;71
+Z5 w1713382210
+8C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/ataque.sv
+FC:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/ataque.sv
+!i122 12
+Z6 L0 1 99
+Z7 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z7 !s108 1712721898.000000
-!s107 C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_3/Battleship/ataque.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_3/Battleship|C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_3/Battleship/ataque.sv|
+Z8 !s108 1713398362.000000
+!s107 C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/ataque.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship|C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/ataque.sv|
 !i113 1
-Z8 o-sv -work work
-Z9 !s92 -sv -work work {+incdir+C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_3/Battleship}
-Z10 tCvgOpt 0
+Z9 o-sv -work work
+Z10 !s92 -sv -work work +incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship
+Z11 tCvgOpt 0
+vataque_pc
+R1
+Z12 !s110 1713398361
+!i10b 1
+!s100 Tj:C>2N_JUEAK0THN_2dW0
+R3
+IO8XD16CQCM>g8J9dUS8;82
+R4
+S1
+R0
+w1713395885
+8C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/ataque_pc.sv
+FC:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/ataque_pc.sv
+!i122 4
+L0 1 76
+R7
+r1
+!s85 0
+31
+Z13 !s108 1713398361.000000
+!s107 C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/ataque_pc.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship|C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/ataque_pc.sv|
+!i113 1
+R9
+R10
+R11
 vbarcos_move
 R1
 R2
 !i10b 1
-!s100 <4;jPZNkZ;O?OoeVZ33B?1
+!s100 hN:oV18ZzlYMNi>QA?4VJ0
 R3
-I:EQlFQ>fk=XVbMUfVLJ>`1
+IdX_]Q`0@k<YD:06XYnkCi2
 R4
 S1
 R0
 R5
-8C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_3/Battleship/barcos_move.sv
-FC:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_3/Battleship/barcos_move.sv
-!i122 5
-Z11 L0 1 117
-R6
+8C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/barcos_move.sv
+FC:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/barcos_move.sv
+!i122 11
+L0 1 117
+R7
 r1
 !s85 0
 31
-R7
-!s107 C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_3/Battleship/barcos_move.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_3/Battleship|C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_3/Battleship/barcos_move.sv|
-!i113 1
 R8
+!s107 C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/barcos_move.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship|C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/barcos_move.sv|
+!i113 1
 R9
 R10
-vbattleship
+R11
+vbarcos_move_pc
 R1
-Z12 !s110 1712721897
+R12
 !i10b 1
-!s100 o?o:C6MhlNgF@iVJ>XobE2
+!s100 DM8ji6WCGj3]@IPO1XGgl3
 R3
-Io3<Q1PDBIljT=EQizKYzA3
+I;]Yc1U2TT@eWNZV4FBON=3
 R4
 S1
 R0
-Z13 w1712720816
-8C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_3/Battleship/battleship.sv
-FC:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_3/Battleship/battleship.sv
-!i122 0
-R11
-R6
+R5
+8C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/barcos_move_pc.sv
+FC:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/barcos_move_pc.sv
+!i122 3
+L0 1 72
+R7
 r1
 !s85 0
 31
-!s108 1712721896.000000
-!s107 C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_3/Battleship/battleship.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_3/Battleship|C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_3/Battleship/battleship.sv|
+R13
+!s107 C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/barcos_move_pc.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship|C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/barcos_move_pc.sv|
 !i113 1
-R8
 R9
 R10
+R11
+vbattleship
+R1
+R12
+!i10b 1
+!s100 5@2Nm3`lOkz42amdj[G[Y3
+R3
+IC1z@9bhFzf1OG;Ma`OJdD0
+R4
+S1
+R0
+w1713398332
+8C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/battleship.sv
+FC:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/battleship.sv
+!i122 6
+L0 1 248
+R7
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/battleship.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship|C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/battleship.sv|
+!i113 1
+R9
+R10
+R11
 vbattleship_tb
 R1
 R2
 !i10b 1
-!s100 KT1g2f:k0Q9];JIZ`z2jo3
+!s100 JWHFH:KWI6IiZ[3dWV1G[0
 R3
-I51_]7BANe<`5Zn101g;W42
+IbMIK0n[G[g3d:B]XgXaA<1
 R4
 S1
 R0
-R13
-8C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_3/Battleship/battleship_tb.sv
-FC:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_3/Battleship/battleship_tb.sv
-!i122 7
-L0 1 125
-R6
+w1713395943
+8C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/battleship_tb.sv
+FC:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/battleship_tb.sv
+!i122 17
+L0 4 133
+R7
 r1
 !s85 0
 31
-R7
-!s107 C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_3/Battleship/battleship_tb.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_3/Battleship|C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_3/Battleship/battleship_tb.sv|
-!i113 1
 R8
+!s107 C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/battleship_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship|C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/battleship_tb.sv|
+!i113 1
 R9
 R10
+R11
 vclk_divider
 R1
 R2
 !i10b 1
-!s100 j4LoCGF61KM5iUPBU8=Tb0
+!s100 SPLE[LEKQYTW:=Xlz08kS2
 R3
-IcO;a56zPlaadSaHFafACW2
+IoeG>HeEAc263<OC]nQXFT3
 R4
 S1
 R0
-R5
-8C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_3/Battleship/clk_divider.sv
-FC:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_3/Battleship/clk_divider.sv
-!i122 4
-L0 1 19
-R6
+w1713394116
+8C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/clk_divider.sv
+FC:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/clk_divider.sv
+!i122 10
+L0 1 36
+R7
 r1
 !s85 0
 31
-R7
-!s107 C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_3/Battleship/clk_divider.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_3/Battleship|C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_3/Battleship/clk_divider.sv|
+R13
+!s107 C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/clk_divider.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship|C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/clk_divider.sv|
 !i113 1
-R8
 R9
 R10
+R11
 vcomparador
 R1
 R12
 !i10b 1
-!s100 [RVdGZPnomT>A]jjl:;3V0
+!s100 0UI]JW@@m4KTaZ7Z;D:[A2
 R3
-IBO>?EKE=]KE[1:<ibmg@e0
+IG0k<52c;51WKP<<^11<X>0
 R4
 S1
 R0
 R5
-8C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_3/Battleship/comparador.sv
-FC:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_3/Battleship/comparador.sv
-!i122 3
+8C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/comparador.sv
+FC:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/comparador.sv
+!i122 9
 L0 1 6
-R6
+R7
 r1
 !s85 0
 31
-Z14 !s108 1712721897.000000
-!s107 C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_3/Battleship/comparador.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_3/Battleship|C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_3/Battleship/comparador.sv|
+R13
+!s107 C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/comparador.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship|C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/comparador.sv|
 !i113 1
-R8
 R9
 R10
+R11
+vconexion_vga
+R1
+R12
+!i10b 1
+!s100 2c^eX9;V2XRNI;<QPQMW51
+R3
+I_5loeGLkK:WEAg@O^]n:70
+R4
+S1
+R0
+w1713396110
+8C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/conexion_vga.sv
+FC:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/conexion_vga.sv
+!i122 2
+L0 1 49
+R7
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/conexion_vga.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship|C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/conexion_vga.sv|
+!i113 1
+R9
+R10
+R11
 vcontador_seg
 R1
 R12
 !i10b 1
-!s100 m?lG7BQO=EbmkkOoFdJkO0
+!s100 7i@SWKNR`PGD9EObSbTJk2
 R3
-I<::`kO<Sfe0<ZIlM1Ua5W3
+IefnRg28do^li1DAciI[iL3
 R4
 S1
 R0
 R5
-8C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_3/Battleship/contador_seg.sv
-FC:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_3/Battleship/contador_seg.sv
-!i122 2
+8C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/contador_seg.sv
+FC:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/contador_seg.sv
+!i122 8
 L0 1 17
-R6
+R7
 r1
 !s85 0
 31
-R14
-!s107 C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_3/Battleship/contador_seg.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_3/Battleship|C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_3/Battleship/contador_seg.sv|
+R13
+!s107 C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/contador_seg.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship|C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/contador_seg.sv|
 !i113 1
-R8
 R9
 R10
+R11
 vfsm
 R1
 R12
 !i10b 1
-!s100 0HRHKf>faWSib5DU@SU?c2
+!s100 Rf6@gl8^]o=Qdh?OHObJ_1
 R3
-I;f8P@M<ViDFEoKdO8YQE@1
+IBj0neZa6Y]dTIUaHM3]e@1
 R4
 S1
 R0
-w1712708082
-8C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_3/Battleship/fsm.sv
-FC:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_3/Battleship/fsm.sv
-!i122 1
-L0 1 98
+R5
+8C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/fsm.sv
+FC:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/fsm.sv
+!i122 7
 R6
+R7
 r1
 !s85 0
 31
-R14
-!s107 C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_3/Battleship/fsm.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_3/Battleship|C:/Users/Alisson RM/Documents/GitHub/Laboratorio1/laboratorio_3/Battleship/fsm.sv|
+R13
+!s107 C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/fsm.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship|C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/fsm.sv|
 !i113 1
-R8
 R9
 R10
+R11
+vLFSR
+R1
+R12
+!i10b 1
+!s100 RoHb?c_CJ2kkSoN4_aNnG1
+R3
+IMWE]1]KQ>im@[U7R@IA`X0
+R4
+S1
+R0
+w1713316136
+8C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/LFSR.sv
+FC:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/LFSR.sv
+!i122 5
+L0 1 11
+R7
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/LFSR.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship|C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/LFSR.sv|
+!i113 1
+R9
+R10
+R11
+n@l@f@s@r
+vmanage_life
+R1
+R12
+!i10b 1
+!s100 bhL`J?km5K[O=Jk>OIn<62
+R3
+IPBL@3z3?0gIIF4_7mc9Z62
+R4
+S1
+R0
+w1713393521
+8C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/manage_life.sv
+FC:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/manage_life.sv
+!i122 1
+L0 1 106
+R7
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/manage_life.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship|C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/manage_life.sv|
+!i113 1
+R9
+R10
+R11
+vpll
+R12
+!i10b 1
+!s100 YFTHO?`59Oh<F>5k;ieg]2
+R3
+IDd8XZSWEEF:k6YdV:9FfP2
+R4
+R0
+R5
+8C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/pll_sim/pll.vo
+FC:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/pll_sim/pll.vo
+!i122 0
+L0 32 264
+R7
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/pll_sim/pll.vo|
+!s90 -reportprogress|300|C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/pll_sim/pll.vo|
+!i113 1
+R11
+vrectgen
+R1
+R2
+!i10b 1
+!s100 YJCZKF@o6k1NAM^OnJgzF1
+R3
+I>3WfCNk4]zc5MOzbL[6]_1
+R4
+S1
+R0
+Z14 w1713234982
+8C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/rectgen.sv
+FC:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/rectgen.sv
+!i122 14
+L0 1 5
+R7
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/rectgen.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship|C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/rectgen.sv|
+!i113 1
+R9
+R10
+R11
+vvga
+R1
+R2
+!i10b 1
+!s100 gIG5Eb7]WE2FlE=ELUPOe3
+R3
+Ii`zYBI9FRm<[U0?3FlF@B2
+R4
+S1
+R0
+w1713385998
+8C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/vga.sv
+FC:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/vga.sv
+!i122 13
+L0 1 28
+R7
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/vga.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship|C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/vga.sv|
+!i113 1
+R9
+R10
+R11
+vvgaController
+R1
+R2
+!i10b 1
+!s100 H0kPj1mDj`Rie`X6ZmR:B1
+R3
+IIgh8AmV=eLBEzgO?V=3MC1
+R4
+S1
+R0
+R14
+8C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/vgaController.sv
+FC:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/vgaController.sv
+!i122 15
+L0 1 42
+R7
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/vgaController.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship|C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/vgaController.sv|
+!i113 1
+R9
+R10
+R11
+nvga@controller
+vvideoGen
+R1
+R2
+!i10b 1
+!s100 `0Fi7^0Ha78@Ba3X_m:ZS3
+R3
+IaG[HMZ6PLRgN9VfAJ?cB00
+R4
+S1
+R0
+w1713384230
+8C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/videoGen.sv
+FC:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/videoGen.sv
+!i122 16
+L0 1 1914
+R7
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/videoGen.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship|C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/videoGen.sv|
+!i113 1
+R9
+R10
+R11
+nvideo@gen

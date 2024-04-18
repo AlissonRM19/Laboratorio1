@@ -1,6 +1,6 @@
 module videoGen(input logic [9:0] x, y,
-					 input int matriz_player_final [4:0] [4:0],
-					 input int matriz_pc_final [4:0] [4:0],
+					 input logic [3:0] matriz_player_final [4:0] [4:0],
+					 input logic [3:0] matriz_pc_final [4:0] [4:0],
 					 output logic [7:0] r, g, b);
  
     logic pixel, inrect1, inrect2;
@@ -199,8 +199,8 @@ module videoGen(input logic [9:0] x, y,
 				b = 8'h00;
 			end
 			else if (matriz_pc_final[4][4] == 7) begin
-				r = 8'hFF;
-				g = 8'h7F;
+				r = 8'h00;
+				g = 8'h00;
 				b = 8'h00;
 			end
 			else if (matriz_pc_final[4][4] == 8) begin
@@ -234,8 +234,8 @@ module videoGen(input logic [9:0] x, y,
 				b = 8'h00;
 			end
 			else if (matriz_pc_final[4][3] == 7) begin
-				r = 8'hFF;
-				g = 8'h7F;
+				r = 8'h00;
+				g = 8'h00;
 				b = 8'h00;
 			end
 			else if (matriz_pc_final[4][3] == 8) begin
@@ -268,8 +268,8 @@ module videoGen(input logic [9:0] x, y,
 				b = 8'h00;
 			end
 			else if (matriz_pc_final[4][2] == 7) begin
-				r = 8'hFF;
-				g = 8'h7F;
+				r = 8'h00;
+				g = 8'h00;
 				b = 8'h00;
 			end
 			else if (matriz_pc_final[4][2] == 8) begin
@@ -303,8 +303,8 @@ module videoGen(input logic [9:0] x, y,
 				b = 8'h00;
 			end
 			else if (matriz_pc_final[4][1] == 7) begin
-				r = 8'hFF;
-				g = 8'h7F;
+				r = 8'h00;
+				g = 8'h00;
 				b = 8'h00;
 			end
 			else if (matriz_pc_final[4][1] == 8) begin
@@ -337,8 +337,8 @@ module videoGen(input logic [9:0] x, y,
 				b = 8'h00;
 			end
 			else if (matriz_pc_final[4][0] == 7) begin
-				r = 8'hFF;
-				g = 8'h7F;
+				r = 8'h00;
+				g = 8'h00;
 				b = 8'h00;
 			end
 			else if (matriz_pc_final[4][0] == 8) begin
@@ -373,8 +373,8 @@ module videoGen(input logic [9:0] x, y,
 				b = 8'h00;
 			end
 			else if (matriz_pc_final[3][4]== 7) begin
-				r = 8'hFF;
-				g = 8'h7F;
+				r = 8'h00;
+				g = 8'h00;
 				b = 8'h00;
 			end
 			else if (matriz_pc_final[3][4] == 8) begin
@@ -408,8 +408,8 @@ module videoGen(input logic [9:0] x, y,
 				b = 8'h00;
 			end
 			else if (matriz_pc_final[3][3] == 7) begin
-				r = 8'hFF;
-				g = 8'h7F;
+				r = 8'h00;
+				g = 8'h00;
 				b = 8'h00;
 			end
 			else if (matriz_pc_final[3][3] == 8) begin
@@ -442,8 +442,8 @@ module videoGen(input logic [9:0] x, y,
 				b = 8'h00;
 			end
 			else if (matriz_pc_final[3][2]== 7) begin
-				r = 8'hFF;
-				g = 8'h7F;
+				r = 8'h00;
+				g = 8'h00;
 				b = 8'h00;
 			end
 			else if (matriz_pc_final[3][2] == 8) begin
@@ -477,8 +477,8 @@ module videoGen(input logic [9:0] x, y,
 				b = 8'h00;
 			end
 			else if (matriz_pc_final[3][1] == 7) begin
-				r = 8'hFF;
-				g = 8'h7F;
+				r = 8'h00;
+				g = 8'h00;
 				b = 8'h00;
 			end
 			else if (matriz_pc_final[3][1] == 8) begin
@@ -508,11 +508,11 @@ module videoGen(input logic [9:0] x, y,
 			else if (matriz_pc_final[3][0] == 6) begin
 				r = 8'hFF;
 				g = 8'hFF;
-				b = 8'h00;
+				b = 8'h0F;
 			end
 			else if (matriz_pc_final[3][0] == 7) begin
-				r = 8'hFF;
-				g = 8'h7F;
+				r = 8'h00;
+				g = 8'h00;
 				b = 8'h00;
 			end
 			else if (matriz_pc_final[3][0] == 8) begin
@@ -545,8 +545,8 @@ module videoGen(input logic [9:0] x, y,
 				b = 8'h00;
 			end
 			else if (matriz_pc_final[2][4] == 7) begin
-				r = 8'hFF;
-				g = 8'h7F;
+				r = 8'h00;
+				g = 8'h00;
 				b = 8'h00;
 			end
 			else if (matriz_pc_final[2][4] == 8) begin
@@ -580,8 +580,8 @@ module videoGen(input logic [9:0] x, y,
 				b = 8'h00;
 			end
 			else if (matriz_pc_final[2][3] == 7) begin
-				r = 8'hFF;
-				g = 8'h7F;
+				r = 8'h00;
+				g = 8'h00;
 				b = 8'h00;
 			end
 			else if (matriz_pc_final[2][3] == 8) begin
@@ -614,8 +614,8 @@ module videoGen(input logic [9:0] x, y,
 				b = 8'h00;
 			end
 			else if (matriz_pc_final[2][2] == 7) begin
-				r = 8'hFF;
-				g = 8'h7F;
+				r = 8'h00;
+				g = 8'h00;
 				b = 8'h00;
 			end
 			else if (matriz_pc_final[2][2] == 8) begin
@@ -649,8 +649,8 @@ module videoGen(input logic [9:0] x, y,
 				b = 8'h00;
 			end
 			else if (matriz_pc_final[2][1] == 7) begin
-				r = 8'hFF;
-				g = 8'h7F;
+				r = 8'h00;
+				g = 8'h00;
 				b = 8'h00;
 			end
 			else if (matriz_pc_final[2][1] == 8) begin
@@ -683,8 +683,8 @@ module videoGen(input logic [9:0] x, y,
 				b = 8'h00;
 			end
 			else if (matriz_pc_final[2][0]== 7) begin
-				r = 8'hFF;
-				g = 8'h7F;
+				r = 8'h00;
+				g = 8'h00;
 				b = 8'h00;
 			end
 			else if (matriz_pc_final[2][0]== 8) begin
@@ -718,8 +718,8 @@ module videoGen(input logic [9:0] x, y,
 				b = 8'h00;
 			end
 			else if (matriz_pc_final[1][4]== 7) begin
-				r = 8'hFF;
-				g = 8'h7F;
+				r = 8'h00;
+				g = 8'h00;
 				b = 8'h00;
 			end
 			else if (matriz_pc_final[1][4] == 8) begin
@@ -753,8 +753,8 @@ module videoGen(input logic [9:0] x, y,
 				b = 8'h00;
 			end
 			else if (matriz_pc_final[1][3]== 7) begin
-				r = 8'hFF;
-				g = 8'h7F;
+				r = 8'h00;
+				g = 8'h00;
 				b = 8'h00;
 			end
 			else if (matriz_pc_final[1][3] == 8) begin
@@ -787,8 +787,8 @@ module videoGen(input logic [9:0] x, y,
 				b = 8'h00;
 			end
 			else if (matriz_pc_final[1][2]== 7) begin
-				r = 8'hFF;
-				g = 8'h7F;
+				r = 8'h00;
+				g = 8'h00;
 				b = 8'h00;
 			end
 			else if (matriz_pc_final[1][2] == 8) begin
@@ -822,8 +822,8 @@ module videoGen(input logic [9:0] x, y,
 				b = 8'h00;
 			end
 			else if (matriz_pc_final[1][1]== 7) begin
-				r = 8'hFF;
-				g = 8'h7F;
+				r = 8'h00;
+				g = 8'h00;
 				b = 8'h00;
 			end
 			else if (matriz_pc_final[1][1] == 8) begin
@@ -856,8 +856,8 @@ module videoGen(input logic [9:0] x, y,
 				b = 8'h00;
 			end
 			else if (matriz_pc_final[1][0]== 7) begin
-				r = 8'hFF;
-				g = 8'h7F;
+				r = 8'h00;
+				g = 8'h00;
 				b = 8'h00;
 			end
 			else if (matriz_pc_final[1][0] == 8) begin
@@ -890,8 +890,8 @@ module videoGen(input logic [9:0] x, y,
 					b = 8'h00;
 				end
 				else if (matriz_pc_final[0][4]== 7) begin
-					r = 8'hFF;
-					g = 8'h7F;
+					r = 8'h00;
+					g = 8'h00;
 					b = 8'h00;
 				end
 				else if (matriz_pc_final[0][4] == 8) begin
@@ -925,8 +925,8 @@ module videoGen(input logic [9:0] x, y,
 				b = 8'h00;
 			end
 			else if (matriz_pc_final[0][3]== 7) begin
-				r = 8'hFF;
-				g = 8'h7F;
+				r = 8'h00;
+				g = 8'h00;
 				b = 8'h00;
 			end
 			else if (matriz_pc_final[0][3] == 8) begin
@@ -959,8 +959,8 @@ module videoGen(input logic [9:0] x, y,
 				b = 8'h00;
 			end
 			else if (matriz_pc_final[0][2]== 7) begin
-				r = 8'hFF;
-				g = 8'h7F;
+				r = 8'h00;
+				g = 8'h00;
 				b = 8'h00;
 			end
 			else if (matriz_pc_final[0][2] == 8) begin
@@ -994,8 +994,8 @@ module videoGen(input logic [9:0] x, y,
 				b = 8'h00;
 			end
 			else if (matriz_pc_final[0][1]==7) begin
-				r = 8'hFF;
-				g = 8'h7F;
+				r = 8'h00;
+				g = 8'h00;
 				b = 8'h00;
 			end
 			else if (matriz_pc_final[0][1] == 8) begin
@@ -1028,8 +1028,8 @@ module videoGen(input logic [9:0] x, y,
 				b = 8'h00;
 			end
 			else if (matriz_pc_final[0][0]==7) begin
-				r = 8'hFF;
-				g = 8'h7F;
+				r = 8'h00;
+				g = 8'h00;
 				b = 8'h00;
 			end
 			else if (matriz_pc_final[0][0] == 8) begin

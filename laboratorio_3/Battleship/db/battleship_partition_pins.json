@@ -4,6 +4,62 @@
 			"name" : "Top",
 			"pins" : [
 				{
+					"name" : "life_pc[0]",
+					"strict" : false
+				},
+				{
+					"name" : "life_pc[1]",
+					"strict" : false
+				},
+				{
+					"name" : "life_pc[2]",
+					"strict" : false
+				},
+				{
+					"name" : "life_pc[3]",
+					"strict" : false
+				},
+				{
+					"name" : "life_pc[4]",
+					"strict" : false
+				},
+				{
+					"name" : "life_pc[5]",
+					"strict" : false
+				},
+				{
+					"name" : "life_pc[6]",
+					"strict" : false
+				},
+				{
+					"name" : "life_player[0]",
+					"strict" : false
+				},
+				{
+					"name" : "life_player[1]",
+					"strict" : false
+				},
+				{
+					"name" : "life_player[2]",
+					"strict" : false
+				},
+				{
+					"name" : "life_player[3]",
+					"strict" : false
+				},
+				{
+					"name" : "life_player[4]",
+					"strict" : false
+				},
+				{
+					"name" : "life_player[5]",
+					"strict" : false
+				},
+				{
+					"name" : "life_player[6]",
+					"strict" : false
+				},
+				{
 					"name" : "hsync",
 					"strict" : false
 				},
@@ -113,6 +169,50 @@
 				},
 				{
 					"name" : "b[7]",
+					"strict" : false
+				},
+				{
+					"name" : "attack",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "barcos[0]",
+					"strict" : false
+				},
+				{
+					"name" : "barcos[1]",
+					"strict" : false
+				},
+				{
+					"name" : "barcos[2]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "izquierda",
+					"strict" : false
+				},
+				{
+					"name" : "abajo",
+					"strict" : false
+				},
+				{
+					"name" : "arriba",
+					"strict" : false
+				},
+				{
+					"name" : "derecha",
+					"strict" : false
+				},
+				{
+					"name" : "poner",
 					"strict" : false
 				}
 			]
