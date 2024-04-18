@@ -24,5 +24,5 @@ module vga(input logic clk,
 	// Generate monitor timing signals
 	vgaController vgaCont(vgaclk, hsync, vsync, sync_b, blank_b, x, y);
 	// User-defined module to determine pixel color
-	videoGen videoGen(x, y, matriz_player_final, matriz_pc_final, r, g, b);
+	videoGen videoGen(x, y, matriz_player_final, matriz_pc_final,clk, r, g, b);
 endmodule

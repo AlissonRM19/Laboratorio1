@@ -29,9 +29,11 @@ module barcos_move (input logic izquierda,
 				3'b101: begin
 							if (arriba && temp_y != 3'b100) begin
 								temp_y = temp_y + 1;
-							end else if (abajo && temp_y != 0) begin
+							end
+							if (abajo && temp_y != 0) begin
 								temp_y = temp_y - 1;
-							end else if (poner) begin
+							end
+							if (poner) begin
 								temp[temp_y][temp_x] = 5;
 								temp[temp_y][temp_x - 1] = 5;
 								temp[temp_y][temp_x - 2] = 5;
@@ -43,13 +45,17 @@ module barcos_move (input logic izquierda,
 				3'b100: begin
 							if (arriba && temp_y != 3'b100) begin
 								temp_y = temp_y + 1;
-							end else if (abajo && temp_y != 0) begin
+							end
+							if (abajo && temp_y != 0) begin
 								temp_y = temp_y - 1;
-							end else if (izquierda && temp_x != 3'b100) begin
+							end
+							if (izquierda && temp_x != 3'b100) begin
 								temp_x = temp_x + 1;
-							end else if (derecha && temp_x != 3'b011) begin
+							end
+							if (derecha && temp_x != 3'b011) begin
 								temp_x = temp_x - 1;
-							end else if (poner && temp[temp_y][temp_x] == 0) begin
+							end
+							if (poner && temp[temp_y][temp_x] == 0) begin
 								temp[temp_y][temp_x] = 4;
 								temp[temp_y][temp_x - 1] = 4;
 								temp[temp_y][temp_x - 2] = 4;
@@ -60,13 +66,17 @@ module barcos_move (input logic izquierda,
 				3'b011: begin
 							if (arriba && temp_y != 3'b100) begin
 								temp_y = temp_y + 1;
-							end else if (abajo && temp_y != 0) begin
+							end
+							if (abajo && temp_y != 0) begin
 								temp_y = temp_y - 1;
-							end else if (izquierda && temp_x != 3'b100) begin
+							end
+							if (izquierda && temp_x != 3'b100) begin
 								temp_x = temp_x + 1;
-							end else if (derecha && temp_x != 3'b010) begin
+							end
+							if (derecha && temp_x != 3'b010) begin
 								temp_x = temp_x - 1;
-							end else if (poner && temp[temp_y][temp_x] == 0 && temp[temp_y][temp_x - 1] == 0) begin
+							end
+							if (poner && temp[temp_y][temp_x] == 0 && temp[temp_y][temp_x - 1] == 0) begin
 								temp[temp_y][temp_x] = 3;
 								temp[temp_y][temp_x - 1] = 3;
 								temp[temp_y][temp_x - 2] = 3;
@@ -76,13 +86,17 @@ module barcos_move (input logic izquierda,
 				3'b010: begin
 							if (arriba && temp_y != 3'b100) begin
 								temp_y = temp_y + 1;
-							end else if (abajo && temp_y != 0) begin
+							end
+							if (abajo && temp_y != 0) begin
 								temp_y = temp_y - 1;
-							end else if (izquierda && temp_x != 3'b100) begin
+							end
+							if (izquierda && temp_x != 3'b100) begin
 								temp_x = temp_x + 1;
-							end else if (derecha && temp_x != 3'b001) begin
+							end
+							if (derecha && temp_x != 3'b001) begin
 								temp_x = temp_x - 1;
-							end else if (poner && temp[temp_y][temp_x] == 0 && temp[temp_y][temp_x - 1] == 0) begin
+							end
+							if (poner && temp[temp_y][temp_x] == 0 && temp[temp_y][temp_x - 1] == 0) begin
 								temp[temp_y][temp_x] = 2;
 								temp[temp_y][temp_x - 1] = 2;
 								temp_barcos = temp_barcos - 1;
@@ -91,13 +105,17 @@ module barcos_move (input logic izquierda,
 				3'b001: begin
 							if (arriba && temp_y != 3'b100) begin
 								temp_y = temp_y + 1;
-							end else if (abajo && temp_y != 0) begin
+							end
+							if (abajo && temp_y != 0) begin
 								temp_y = temp_y - 1;
-							end else if (izquierda && temp_x != 3'b100) begin
+							end
+							if (izquierda && temp_x != 3'b100) begin
 								temp_x = temp_x + 1;
-							end else if (derecha && temp_x != 0) begin
+							end
+							if (derecha && temp_x != 0) begin
 								temp_x = temp_x - 1;
-							end else if (poner && temp[temp_y][temp_x] == 0) begin
+							end
+							if (poner && temp[temp_y][temp_x] == 0) begin
 								temp[temp_y][temp_x] = 1;
 								temp_barcos = temp_barcos - 1;
 							end

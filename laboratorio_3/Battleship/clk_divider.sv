@@ -3,26 +3,27 @@ module clk_divider (	input logic clk,
 							output logic clk_delay
 							);
 
-	logic [9:0] count = 0;
+	logic [25:0] count = 0;
 	logic temp = 0;
 	
 	always@(posedge clk) begin
 		if (tipo == 0) begin
-			if (count == 10'b1111101000) begin
+			if (count == 25'b10111110101111000010000000) begin
+			//if (count == 25'b00000000000000001111101000) begin
 				count = 0;
 				temp = ~temp;
 			end else begin
 				count = count + 1;
 			end  
 		end else if (tipo == 1) begin
-			if (count == 10'b0001000110) begin
+			if (count == 25'b00000000000000000001000110) begin
 				count = 0;
 				temp = ~temp;
 			end else begin
 				count = count + 1;
 			end 
 		end else begin
-			if (count == 10'b0000011110) begin
+			if (count == 25'b00000000000000000000011110) begin
 				count = 0;
 				temp = ~temp;
 			end else begin

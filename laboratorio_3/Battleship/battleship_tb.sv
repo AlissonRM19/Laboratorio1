@@ -15,6 +15,10 @@ module battleship_tb;
 	logic [2:0] barcos;
 	logic [6:0] life_pc;
 	logic [6:0] life_player;
+	logic vgaclk;
+	logic hsync, vsync;
+	logic sync_b, blank_b;
+	logic [7:0] r, g, b;
 	
 	//
 	logic [6:0] lugar;
@@ -36,6 +40,15 @@ module battleship_tb;
 							.barcos(barcos),
 							.life_pc(life_pc),
 							.life_player(life_player),
+							.vgaclk(vgaclk),
+							.hsync(hsync),
+							.vsync(vsync),
+							.sync_b(sync_b),
+							.blank_b(blank_b),
+							.r(r),
+							.g(g),
+							.b(b),
+							//
 							.lugar(lugar)
 							//
 							/*.posicion_x_move(posicion_x_move),

@@ -2,6 +2,7 @@ module manage_life (	input logic en_put_barcos,
 							input logic en_check_life,
 							input logic [2:0] barcos,
 							input logic [2:0] impact_ship,
+							input logic reset,
 							output logic [6:0] display_life,
 							output logic [2:0] array_life [4:0],
 							output logic dead
@@ -46,6 +47,9 @@ module manage_life (	input logic en_put_barcos,
 								 temp_life = 1;
 							end
 			endcase
+		end else if (reset) begin
+			temp_life = 1;
+			temp_display_life = 7'b0010010;
 		end else begin
 			case(impact_ship)
 				3'b101: 	begin

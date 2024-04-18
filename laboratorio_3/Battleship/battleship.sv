@@ -16,7 +16,16 @@ module battleship (input logic clk,
 						output logic sync_b, blank_b,
 						output logic [7:0] r, g, b,
 						//
-						output logic  [6:0] lugar
+						output logic  [6:0] lugar,
+						output logic led_u,
+						output logic led_d,
+						output logic led_r,
+						output logic led_l,
+						output logic led_a,
+						output logic led_s,
+						output logic led_c,
+						output logic led_e,
+						output logic led_ee
 						//output logic [2:0] posicion_x_move,
 						//output logic [2:0] posicion_y_move,
 						//output logic [2:0] posicion_x_attack,
@@ -28,7 +37,7 @@ module battleship (input logic clk,
 	logic clk_delay;
 	logic clk_delay_x;
 	logic clk_delay_y;
-	
+	logic [1:0] led_cc;
 	//VGA
 	logic [3:0] matriz_player_final [4:0] [4:0];
 	logic [3:0] matriz_pc_final [4:0] [4:0];
@@ -149,6 +158,7 @@ module battleship (input logic clk,
 										.en_check_life(en_check_player_life),
 										.barcos(barcos),
 										.impact_ship(impact_ship_player),
+										.reset(reset),
 										.display_life(life_player),
 										.array_life(hp_player),
 										.dead(dead_player)
@@ -157,6 +167,7 @@ module battleship (input logic clk,
 								.en_check_life(en_check_pc_life),
 								.barcos(barcos),
 								.impact_ship(impact_ship_pc),
+								.reset(reset),
 								.display_life(life_pc),
 								.array_life(hp_pc),
 								.dead(dead_pc)
@@ -203,12 +214,14 @@ module battleship (input logic clk,
 								
 								
 	//VGA
-	conexion_vga conex(.clk(clk),
+	conexion_vga conex(.clk(clk_delay),
 							.en_put_barcos(en_put_barcos),
 							.en_attack(en_attack),
 							.en_pc_attack(en_pc_attack),
 							.en_check_pc_life(en_check_pc_life),
 							.en_check_player_life(en_check_player_life),
+							.dead_pc(dead_pc),
+							.dead_player(dead_player),
 							.matriz_pc(matriz_pc_final),
 							.matriz_player(matriz_player_final),
 							.posicion_x_move(posicion_x_move),
@@ -218,7 +231,8 @@ module battleship (input logic clk,
 							//extras
 							.matriz_player_temp(matriz_player_temp),
 							.matriz_pc_final(matriz_pc_vga_b),
-							.matriz_player_final(matriz_player_vga_b)
+							.matriz_player_final(matriz_player_vga_b),
+							.led_cc(led_cc)
 							);
 							
 	vga vv(.clk(clk),
@@ -248,5 +262,15 @@ module battleship (input logic clk,
 	LFSR pos_y (.clk(clk_delay_y),
 					.rst(reset),
 					.random(random_y));
+					
+	assign led_u = !arriba;
+	assign led_d = !abajo;
+	assign led_r = !derecha;
+	assign led_l = !izquierda;
+	assign led_a = attack;
+	assign led_s = poner;
+	assign led_c = clk_delay;
+	assign led_e = end_move_barcos;
+	assign led_ee = end_move_pc_barcos;
 						
 endmodule

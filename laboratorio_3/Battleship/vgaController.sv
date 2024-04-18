@@ -13,21 +13,14 @@ module vgaController #(parameter HACTIVE = 10'd640,
 							output logic hsync, vsync, sync_b, blank_b,
 							output logic [9:0] x, y);
 							
-							int hcnt = 0;
-							int vcnt = 0;
-							
 		// counters for horizontal and vertical positions
 		always @(posedge vgaclk) begin
 			x++;
-			hcnt++;
 			if (x == HMAX) begin
 				x = 0;
-				hcnt = 0;
 				y++;
-				vcnt++;
 				if (y == VMAX) begin 
 					y = 0;
-					vcnt = 0;	
 				end
 			end
 		end

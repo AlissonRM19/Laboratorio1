@@ -200,7 +200,63 @@
 					"strict" : false
 				},
 				{
+					"name" : "led_u",
+					"strict" : false
+				},
+				{
+					"name" : "led_d",
+					"strict" : false
+				},
+				{
+					"name" : "led_r",
+					"strict" : false
+				},
+				{
+					"name" : "led_l",
+					"strict" : false
+				},
+				{
+					"name" : "led_a",
+					"strict" : false
+				},
+				{
+					"name" : "led_s",
+					"strict" : false
+				},
+				{
+					"name" : "led_c",
+					"strict" : false
+				},
+				{
+					"name" : "led_e",
+					"strict" : false
+				},
+				{
+					"name" : "led_ee",
+					"strict" : false
+				},
+				{
+					"name" : "arriba",
+					"strict" : false
+				},
+				{
+					"name" : "abajo",
+					"strict" : false
+				},
+				{
+					"name" : "derecha",
+					"strict" : false
+				},
+				{
+					"name" : "izquierda",
+					"strict" : false
+				},
+				{
 					"name" : "attack",
+					"strict" : false
+				},
+				{
+					"name" : "poner",
 					"strict" : false
 				},
 				{
@@ -221,26 +277,6 @@
 				},
 				{
 					"name" : "clk",
-					"strict" : false
-				},
-				{
-					"name" : "izquierda",
-					"strict" : false
-				},
-				{
-					"name" : "derecha",
-					"strict" : false
-				},
-				{
-					"name" : "arriba",
-					"strict" : false
-				},
-				{
-					"name" : "abajo",
-					"strict" : false
-				},
-				{
-					"name" : "poner",
 					"strict" : false
 				}
 			]
