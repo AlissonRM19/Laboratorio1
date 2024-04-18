@@ -1,5 +1,5 @@
 Analysis & Elaboration report for battleship
-Wed Apr 17 19:22:51 2024
+Wed Apr 17 20:44:37 2024
 Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
@@ -47,7 +47,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                                 ;
 +-------------------------------+------------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Wed Apr 17 19:22:51 2024          ;
+; Analysis & Elaboration Status ; Successful - Wed Apr 17 20:44:37 2024          ;
 ; Quartus Prime Version         ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
 ; Revision Name                 ; battleship                                     ;
 ; Top-level Entity Name         ; battleship                                     ;
@@ -521,7 +521,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
-    Info: Processing started: Wed Apr 17 19:22:44 2024
+    Info: Processing started: Wed Apr 17 20:44:30 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off battleship -c battleship --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -575,15 +575,15 @@ Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "matriz_player_begin" into its bus
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "matriz_player_temp" into its bus
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "matriz_pc_temp" into its bus
-Info (12128): Elaborating entity "clk_divider" for hierarchy "clk_divider:new_clk" File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/battleship.sv Line: 99
+Info (12128): Elaborating entity "clk_divider" for hierarchy "clk_divider:new_clk" File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/battleship.sv Line: 100
 Warning (10230): Verilog HDL assignment warning at clk_divider.sv(15): truncated value with size 32 to match size of target (10) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/clk_divider.sv Line: 15
 Warning (10230): Verilog HDL assignment warning at clk_divider.sv(22): truncated value with size 32 to match size of target (10) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/clk_divider.sv Line: 22
 Warning (10230): Verilog HDL assignment warning at clk_divider.sv(29): truncated value with size 32 to match size of target (10) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/clk_divider.sv Line: 29
-Info (12128): Elaborating entity "fsm" for hierarchy "fsm:maquina" File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/battleship.sv Line: 117
-Info (12128): Elaborating entity "contador_seg" for hierarchy "contador_seg:contador" File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/battleship.sv Line: 123
+Info (12128): Elaborating entity "fsm" for hierarchy "fsm:maquina" File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/battleship.sv Line: 119
+Info (12128): Elaborating entity "contador_seg" for hierarchy "contador_seg:contador" File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/battleship.sv Line: 125
 Warning (10230): Verilog HDL assignment warning at contador_seg.sv(11): truncated value with size 32 to match size of target (4) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/contador_seg.sv Line: 11
-Info (12128): Elaborating entity "comparador" for hierarchy "comparador:comparar" File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/battleship.sv Line: 128
-Info (12128): Elaborating entity "barcos_move" for hierarchy "barcos_move:ordenar_barcos" File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/battleship.sv Line: 143
+Info (12128): Elaborating entity "comparador" for hierarchy "comparador:comparar" File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/battleship.sv Line: 130
+Info (12128): Elaborating entity "barcos_move" for hierarchy "barcos_move:ordenar_barcos" File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/battleship.sv Line: 145
 Warning (10235): Verilog HDL Always Construct warning at barcos_move.sv(23): variable "cont" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/barcos_move.sv Line: 23
 Warning (10235): Verilog HDL Always Construct warning at barcos_move.sv(25): variable "barcos" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/barcos_move.sv Line: 25
 Warning (10235): Verilog HDL Always Construct warning at barcos_move.sv(30): variable "temp_y" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/barcos_move.sv Line: 30
@@ -802,7 +802,7 @@ Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "temp" into its bus
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "matriz_player_begin" into its bus
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "matriz_player_temp" into its bus
-Info (12128): Elaborating entity "manage_life" for hierarchy "manage_life:m_life_player" File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/battleship.sv Line: 153
+Info (12128): Elaborating entity "manage_life" for hierarchy "manage_life:m_life_player" File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/battleship.sv Line: 155
 Warning (10230): Verilog HDL assignment warning at manage_life.sv(53): truncated value with size 32 to match size of target (3) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/manage_life.sv Line: 53
 Warning (10230): Verilog HDL assignment warning at manage_life.sv(56): truncated value with size 32 to match size of target (3) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/manage_life.sv Line: 56
 Warning (10230): Verilog HDL assignment warning at manage_life.sv(61): truncated value with size 32 to match size of target (3) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/manage_life.sv Line: 61
@@ -812,7 +812,7 @@ Warning (10230): Verilog HDL assignment warning at manage_life.sv(72): truncated
 Warning (10230): Verilog HDL assignment warning at manage_life.sv(77): truncated value with size 32 to match size of target (3) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/manage_life.sv Line: 77
 Warning (10230): Verilog HDL assignment warning at manage_life.sv(80): truncated value with size 32 to match size of target (3) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/manage_life.sv Line: 80
 Warning (10230): Verilog HDL assignment warning at manage_life.sv(84): truncated value with size 32 to match size of target (3) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/manage_life.sv Line: 84
-Info (12128): Elaborating entity "ataque" for hierarchy "ataque:move" File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/battleship.sv Line: 178
+Info (12128): Elaborating entity "ataque" for hierarchy "ataque:move" File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/battleship.sv Line: 180
 Warning (10235): Verilog HDL Always Construct warning at ataque.sv(24): variable "cont" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/ataque.sv Line: 24
 Warning (10235): Verilog HDL Always Construct warning at ataque.sv(32): variable "temp_x" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/ataque.sv Line: 32
 Warning (10235): Verilog HDL Always Construct warning at ataque.sv(33): variable "temp_x" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/ataque.sv Line: 33
@@ -973,7 +973,7 @@ Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "temp" into its bus
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "matriz_pc_temp" into its bus
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "matriz_pc_final" into its bus
-Info (12128): Elaborating entity "barcos_move_pc" for hierarchy "barcos_move_pc:ordenar_barcos_pc" File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/battleship.sv Line: 188
+Info (12128): Elaborating entity "barcos_move_pc" for hierarchy "barcos_move_pc:ordenar_barcos_pc" File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/battleship.sv Line: 190
 Warning (10235): Verilog HDL Always Construct warning at barcos_move_pc.sv(16): variable "cont" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/barcos_move_pc.sv Line: 16
 Warning (10235): Verilog HDL Always Construct warning at barcos_move_pc.sv(18): variable "barcos" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/barcos_move_pc.sv Line: 18
 Warning (10230): Verilog HDL assignment warning at barcos_move_pc.sv(29): truncated value with size 32 to match size of target (3) File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/barcos_move_pc.sv Line: 29
@@ -1092,7 +1092,7 @@ Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "temp" into its bus
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "matriz_pc_begin" into its bus
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "matriz_pc_temp" into its bus
-Info (12128): Elaborating entity "ataque_pc" for hierarchy "ataque_pc:move_pc" File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/battleship.sv Line: 200
+Info (12128): Elaborating entity "ataque_pc" for hierarchy "ataque_pc:move_pc" File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/battleship.sv Line: 202
 Warning (10235): Verilog HDL Always Construct warning at ataque_pc.sv(17): variable "cont" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/ataque_pc.sv Line: 17
 Warning (10235): Verilog HDL Always Construct warning at ataque_pc.sv(21): variable "temp_end" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/ataque_pc.sv Line: 21
 Warning (10270): Verilog HDL Case Statement warning at ataque_pc.sv(22): incomplete case statement has no default case item File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/ataque_pc.sv Line: 22
@@ -1210,7 +1210,7 @@ Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "temp" into its bus
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "matriz_player_temp" into its bus
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "matriz_player_final" into its bus
-Info (12128): Elaborating entity "conexion_vga" for hierarchy "conexion_vga:conex" File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/battleship.sv Line: 220
+Info (12128): Elaborating entity "conexion_vga" for hierarchy "conexion_vga:conex" File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/battleship.sv Line: 222
 Warning (10235): Verilog HDL Always Construct warning at conexion_vga.sv(25): variable "posicion_y_move" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/conexion_vga.sv Line: 25
 Warning (10235): Verilog HDL Always Construct warning at conexion_vga.sv(25): variable "posicion_x_move" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/conexion_vga.sv Line: 25
 Warning (10235): Verilog HDL Always Construct warning at conexion_vga.sv(26): variable "en_check_pc_life" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/conexion_vga.sv Line: 26
@@ -1329,7 +1329,7 @@ Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "matriz_player_temp" into its bus
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "matriz_pc_final" into its bus
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "matriz_player_final" into its bus
-Info (12128): Elaborating entity "vga" for hierarchy "vga:vv" File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/battleship.sv Line: 232
+Info (12128): Elaborating entity "vga" for hierarchy "vga:vv" File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/battleship.sv Line: 234
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "matriz_pc_final" into its bus
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "matriz_player_final" into its bus
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "matriz_pc_final" into its bus
@@ -1409,12 +1409,12 @@ Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "matriz_player_final" into its bus
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "matriz_pc_final" into its bus
 Info (12128): Elaborating entity "rectgen" for hierarchy "vga:vv|videoGen:videoGen|rectgen:rectgen1" File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/videoGen.sv Line: 7
-Info (12128): Elaborating entity "LFSR" for hierarchy "LFSR:pos_x" File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/battleship.sv Line: 245
+Info (12128): Elaborating entity "LFSR" for hierarchy "LFSR:pos_x" File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/battleship.sv Line: 247
 Warning (12241): 5 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 187 warnings
-    Info: Peak virtual memory: 4800 megabytes
-    Info: Processing ended: Wed Apr 17 19:22:51 2024
+    Info: Peak virtual memory: 4816 megabytes
+    Info: Processing ended: Wed Apr 17 20:44:37 2024
     Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:17
+    Info: Total CPU time (on all processors): 00:00:16
 
 

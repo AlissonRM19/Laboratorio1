@@ -14,8 +14,9 @@ module battleship (input logic clk,
 						output logic vgaclk,
 						output logic hsync, vsync,
 						output logic sync_b, blank_b,
-						output logic [7:0] r, g, b
+						output logic [7:0] r, g, b,
 						//
+						output logic  [6:0] lugar
 						//output logic [2:0] posicion_x_move,
 						//output logic [2:0] posicion_y_move,
 						//output logic [2:0] posicion_x_attack,
@@ -113,7 +114,8 @@ module battleship (input logic clk,
 					 .en_pc_attack(en_pc_attack),
 					 .en_check_pc_life(en_check_pc_life),
 					 .en_attack(en_attack),
-					 .en_check_player_life(en_check_player_life)
+					 .en_check_player_life(en_check_player_life),
+					 .lugar(lugar)
 					 );
 					
 	// Instancia Contador Segundos

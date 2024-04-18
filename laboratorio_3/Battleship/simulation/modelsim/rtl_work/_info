@@ -11,7 +11,7 @@ cModel Technology
 Z0 dC:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/simulation/modelsim
 vataque
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1713403439
+Z2 !s110 1713408369
 !i10b 1
 !s100 FZmUP3QC]8SJ@g6n4T@OU0
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -28,7 +28,7 @@ Z6 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z7 !s108 1713403439.000000
+Z7 !s108 1713408369.000000
 !s107 C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/ataque.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship|C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/ataque.sv|
 !i113 1
@@ -54,7 +54,7 @@ R6
 r1
 !s85 0
 31
-Z11 !s108 1713403438.000000
+R7
 !s107 C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/ataque_pc.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship|C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/ataque_pc.sv|
 !i113 1
@@ -71,7 +71,7 @@ IdX_]Q`0@k<YD:06XYnkCi2
 R4
 S1
 R0
-Z12 w1713382210
+Z11 w1713382210
 8C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/barcos_move.sv
 FC:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/barcos_move.sv
 !i122 11
@@ -89,7 +89,7 @@ R9
 R10
 vbarcos_move_pc
 R1
-Z13 !s110 1713403438
+R2
 !i10b 1
 !s100 DM8ji6WCGj3]@IPO1XGgl3
 R3
@@ -97,7 +97,7 @@ I;]Yc1U2TT@eWNZV4FBON=3
 R4
 S1
 R0
-R12
+R11
 8C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/barcos_move_pc.sv
 FC:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/barcos_move_pc.sv
 !i122 3
@@ -106,7 +106,7 @@ R6
 r1
 !s85 0
 31
-R11
+R7
 !s107 C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/barcos_move_pc.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship|C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/barcos_move_pc.sv|
 !i113 1
@@ -117,17 +117,17 @@ vbattleship
 R1
 R2
 !i10b 1
-!s100 Y>[h579?I4=><e@=>QTeT3
+!s100 2EzIKc^K6EDcWLGNDMX@a0
 R3
-IHf3BiE[>YO?0>GSk>e`3a0
+Icbe@he?bRT`j61SKcI@Ub3
 R4
 S1
 R0
-w1713403263
+w1713408060
 8C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/battleship.sv
 FC:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/battleship.sv
 !i122 6
-L0 1 250
+L0 1 252
 R6
 r1
 !s85 0
@@ -141,24 +141,24 @@ R9
 R10
 vbattleship_tb
 R1
-Z14 !s110 1713403440
+Z12 !s110 1713408370
 !i10b 1
-!s100 JWHFH:KWI6IiZ[3dWV1G[0
+!s100 YhmZI;Lm12o8]LRF:BX=92
 R3
-IbMIK0n[G[g3d:B]XgXaA<1
+IN8?Z_^5^h[SVcV::3[LYU1
 R4
 S1
 R0
-w1713395943
+w1713408088
 8C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/battleship_tb.sv
 FC:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/battleship_tb.sv
 !i122 17
-L0 4 133
+L0 4 135
 R6
 r1
 !s85 0
 31
-!s108 1713403440.000000
+Z13 !s108 1713408370.000000
 !s107 C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/battleship_tb.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship|C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/battleship_tb.sv|
 !i113 1
@@ -201,7 +201,7 @@ IG0k<52c;51WKP<<^11<X>0
 R4
 S1
 R0
-R12
+R11
 8C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/comparador.sv
 FC:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/comparador.sv
 !i122 9
@@ -219,7 +219,7 @@ R9
 R10
 vconexion_vga
 R1
-R13
+R2
 !i10b 1
 !s100 OTkJcN^h4NHb2]P43M@GI1
 R3
@@ -236,7 +236,7 @@ R6
 r1
 !s85 0
 31
-R11
+R7
 !s107 C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/conexion_vga.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship|C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/conexion_vga.sv|
 !i113 1
@@ -253,7 +253,7 @@ IefnRg28do^li1DAciI[iL3
 R4
 S1
 R0
-R12
+R11
 8C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/contador_seg.sv
 FC:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/contador_seg.sv
 !i122 8
@@ -273,17 +273,17 @@ vfsm
 R1
 R2
 !i10b 1
-!s100 Rf6@gl8^]o=Qdh?OHObJ_1
+!s100 8A@XF^iWGbF=SI9WbahB>0
 R3
-IBj0neZa6Y]dTIUaHM3]e@1
+I_1AlSgb1^hZO9Qm^;<0az2
 R4
 S1
 R0
-R12
+w1713408266
 8C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/fsm.sv
 FC:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/fsm.sv
 !i122 7
-L0 1 99
+L0 1 132
 R6
 r1
 !s85 0
@@ -324,7 +324,7 @@ R10
 n@l@f@s@r
 vmanage_life
 R1
-R13
+R2
 !i10b 1
 !s100 bhL`J?km5K[O=Jk>OIn<62
 R3
@@ -341,7 +341,7 @@ R6
 r1
 !s85 0
 31
-R11
+Z14 !s108 1713408368.000000
 !s107 C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/manage_life.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship|C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/manage_life.sv|
 !i113 1
@@ -349,14 +349,14 @@ R8
 R9
 R10
 vpll
-R13
+!s110 1713408368
 !i10b 1
 !s100 YFTHO?`59Oh<F>5k;ieg]2
 R3
 IDd8XZSWEEF:k6YdV:9FfP2
 R4
 R0
-R12
+R11
 8C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/pll_sim/pll.vo
 FC:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/pll_sim/pll.vo
 !i122 0
@@ -365,14 +365,14 @@ R6
 r1
 !s85 0
 31
-R11
+R14
 !s107 C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/pll_sim/pll.vo|
 !s90 -reportprogress|300|C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/pll_sim/pll.vo|
 !i113 1
 R10
 vrectgen
 R1
-R2
+R12
 !i10b 1
 !s100 YJCZKF@o6k1NAM^OnJgzF1
 R3
@@ -389,7 +389,7 @@ R6
 r1
 !s85 0
 31
-R7
+R13
 !s107 C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/rectgen.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship|C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/rectgen.sv|
 !i113 1
@@ -424,7 +424,7 @@ R9
 R10
 vvgaController
 R1
-R2
+R12
 !i10b 1
 !s100 H0kPj1mDj`Rie`X6ZmR:B1
 R3
@@ -441,7 +441,7 @@ R6
 r1
 !s85 0
 31
-R7
+R13
 !s107 C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/vgaController.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship|C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/vgaController.sv|
 !i113 1
@@ -451,7 +451,7 @@ R10
 nvga@controller
 vvideoGen
 R1
-R14
+R12
 !i10b 1
 !s100 `0Fi7^0Ha78@Ba3X_m:ZS3
 R3
@@ -468,7 +468,7 @@ R6
 r1
 !s85 0
 31
-R7
+R13
 !s107 C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/videoGen.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship|C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/videoGen.sv|
 !i113 1

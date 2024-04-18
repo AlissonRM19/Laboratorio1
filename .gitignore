@@ -20,3 +20,4 @@ laboratorio_3/Battleship/simulation/modelsim/verilog_libs/altera_lnsim_ver/_info
 *.wlf
 *.db_info
 *.qws
+*.flock

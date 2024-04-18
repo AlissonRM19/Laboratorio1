@@ -17,6 +17,7 @@ module battleship_tb;
 	logic [6:0] life_player;
 	
 	//
+	logic [6:0] lugar;
 	/*logic [2:0] posicion_x_move;
 	logic [2:0] posicion_y_move;
 	logic [2:0] posicion_x_attack;
@@ -34,7 +35,8 @@ module battleship_tb;
 							.derecha(!derecha),
 							.barcos(barcos),
 							.life_pc(life_pc),
-							.life_player(life_player)
+							.life_player(life_player),
+							.lugar(lugar)
 							//
 							/*.posicion_x_move(posicion_x_move),
 							.posicion_y_move(posicion_y_move),
