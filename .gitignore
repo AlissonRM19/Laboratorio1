@@ -18,3 +18,5 @@ laboratorio_3/Battleship/simulation/modelsim/rtl_work/_info
 laboratorio_3/Battleship/simulation/modelsim/verilog_libs/altera_lnsim_ver/_info
 *.qpg
 *.wlf
+*.db_info
+*.qws
