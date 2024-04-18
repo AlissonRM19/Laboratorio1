@@ -172,6 +172,34 @@
 					"strict" : false
 				},
 				{
+					"name" : "lugar[0]",
+					"strict" : false
+				},
+				{
+					"name" : "lugar[1]",
+					"strict" : false
+				},
+				{
+					"name" : "lugar[2]",
+					"strict" : false
+				},
+				{
+					"name" : "lugar[3]",
+					"strict" : false
+				},
+				{
+					"name" : "lugar[4]",
+					"strict" : false
+				},
+				{
+					"name" : "lugar[5]",
+					"strict" : false
+				},
+				{
+					"name" : "lugar[6]",
+					"strict" : false
+				},
+				{
 					"name" : "attack",
 					"strict" : false
 				},
@@ -200,7 +228,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "abajo",
+					"name" : "derecha",
 					"strict" : false
 				},
 				{
@@ -208,7 +236,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "derecha",
+					"name" : "abajo",
 					"strict" : false
 				},
 				{

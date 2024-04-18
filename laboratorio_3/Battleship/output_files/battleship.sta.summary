@@ -3,635 +3,527 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1100mV 85C Model Setup 'fsm:maquina|estado.0001'
-Slack : -27.853
-TNS   : -3307.607
+Slack : -33.448
+TNS   : -4097.475
 
 Type  : Slow 1100mV 85C Model Setup 'LFSR:pos_x|random[0]'
-Slack : -26.787
-TNS   : -3718.865
-
-Type  : Slow 1100mV 85C Model Setup 'barcos[1]'
-Slack : -24.798
-TNS   : -2782.688
+Slack : -27.910
+TNS   : -3619.056
 
 Type  : Slow 1100mV 85C Model Setup 'abajo'
-Slack : -24.248
-TNS   : -2570.530
-
-Type  : Slow 1100mV 85C Model Setup 'arriba'
-Slack : -22.611
-TNS   : -2352.897
-
-Type  : Slow 1100mV 85C Model Setup 'barcos[0]'
-Slack : -20.664
-TNS   : -2105.095
-
-Type  : Slow 1100mV 85C Model Setup 'clk_divider:new_clk|temp'
-Slack : -19.339
-TNS   : -77.520
-
-Type  : Slow 1100mV 85C Model Setup 'fsm:maquina|estado.0110'
-Slack : -10.319
-TNS   : -171.380
-
-Type  : Slow 1100mV 85C Model Setup 'fsm:maquina|estado.0100'
-Slack : -9.617
-TNS   : -170.529
+Slack : -26.890
+TNS   : -2238.229
 
 Type  : Slow 1100mV 85C Model Setup 'reset'
-Slack : -6.330
-TNS   : -22.909
+Slack : -26.512
+TNS   : -3519.039
 
-Type  : Slow 1100mV 85C Model Setup 'clk_divider:new_clk_y|temp'
-Slack : -1.631
-TNS   : -2.920
+Type  : Slow 1100mV 85C Model Setup 'clk_divider:new_clk|temp'
+Slack : -19.573
+TNS   : -194.422
 
-Type  : Slow 1100mV 85C Model Setup 'clk_divider:new_clk_x|temp'
-Slack : -1.303
-TNS   : -2.431
+Type  : Slow 1100mV 85C Model Setup 'fsm:maquina|estado.0100'
+Slack : -11.560
+TNS   : -206.128
+
+Type  : Slow 1100mV 85C Model Setup 'fsm:maquina|estado.0110'
+Slack : -7.880
+TNS   : -139.594
 
 Type  : Slow 1100mV 85C Model Setup 'clk'
-Slack : 0.980
-TNS   : 0.000
+Slack : -1.494
+TNS   : -2.736
+
+Type  : Slow 1100mV 85C Model Setup 'clk_divider:new_clk_y|temp'
+Slack : -1.087
+TNS   : -2.423
+
+Type  : Slow 1100mV 85C Model Setup 'clk_divider:new_clk_x|temp'
+Slack : -1.012
+TNS   : -2.001
 
 Type  : Slow 1100mV 85C Model Setup 'vv|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 35.674
+Slack : 35.470
 TNS   : 0.000
 
-Type  : Slow 1100mV 85C Model Hold 'barcos[0]'
-Slack : -18.339
-TNS   : -1983.552
-
-Type  : Slow 1100mV 85C Model Hold 'arriba'
-Slack : -16.429
-TNS   : -1505.281
-
-Type  : Slow 1100mV 85C Model Hold 'barcos[1]'
-Slack : -14.993
-TNS   : -1494.863
-
 Type  : Slow 1100mV 85C Model Hold 'abajo'
-Slack : -14.565
-TNS   : -1276.678
+Slack : -18.097
+TNS   : -1764.931
 
 Type  : Slow 1100mV 85C Model Hold 'fsm:maquina|estado.0001'
-Slack : -12.760
-TNS   : -1466.504
+Slack : -16.016
+TNS   : -1678.476
 
 Type  : Slow 1100mV 85C Model Hold 'LFSR:pos_x|random[0]'
-Slack : -8.426
-TNS   : -1024.703
+Slack : -8.270
+TNS   : -958.894
 
 Type  : Slow 1100mV 85C Model Hold 'reset'
-Slack : -3.586
-TNS   : -21.491
+Slack : -3.778
+TNS   : -416.845
 
 Type  : Slow 1100mV 85C Model Hold 'clk'
-Slack : -2.819
-TNS   : -7.979
+Slack : -2.100
+TNS   : -3.312
 
 Type  : Slow 1100mV 85C Model Hold 'clk_divider:new_clk|temp'
-Slack : -1.418
-TNS   : -2.762
+Slack : -1.432
+TNS   : -7.378
 
 Type  : Slow 1100mV 85C Model Hold 'clk_divider:new_clk_x|temp'
-Slack : -0.818
-TNS   : -0.818
+Slack : -1.301
+TNS   : -1.301
 
 Type  : Slow 1100mV 85C Model Hold 'fsm:maquina|estado.0110'
-Slack : -0.400
-TNS   : -0.779
+Slack : -0.428
+TNS   : -0.843
 
 Type  : Slow 1100mV 85C Model Hold 'fsm:maquina|estado.0100'
-Slack : -0.372
-TNS   : -0.448
+Slack : -0.290
+TNS   : -0.747
 
 Type  : Slow 1100mV 85C Model Hold 'clk_divider:new_clk_y|temp'
-Slack : 0.350
+Slack : 0.360
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Hold 'vv|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 0.677
+Slack : 0.675
 TNS   : 0.000
-
-Type  : Slow 1100mV 85C Model Recovery 'clk_divider:new_clk_y|temp'
-Slack : -2.906
-TNS   : -8.064
-
-Type  : Slow 1100mV 85C Model Recovery 'clk_divider:new_clk_x|temp'
-Slack : -2.777
-TNS   : -8.326
 
 Type  : Slow 1100mV 85C Model Recovery 'clk_divider:new_clk|temp'
-Slack : -2.699
-TNS   : -18.375
+Slack : -2.586
+TNS   : -37.023
 
-Type  : Slow 1100mV 85C Model Recovery 'fsm:maquina|estado.0100'
-Slack : -1.167
-TNS   : -3.578
+Type  : Slow 1100mV 85C Model Recovery 'clk_divider:new_clk_y|temp'
+Slack : -2.484
+TNS   : -7.447
+
+Type  : Slow 1100mV 85C Model Recovery 'clk_divider:new_clk_x|temp'
+Slack : -2.451
+TNS   : -7.348
 
 Type  : Slow 1100mV 85C Model Recovery 'fsm:maquina|estado.0110'
-Slack : -1.031
-TNS   : -3.048
+Slack : -1.207
+TNS   : -7.996
+
+Type  : Slow 1100mV 85C Model Recovery 'fsm:maquina|estado.0100'
+Slack : -0.406
+TNS   : -3.583
 
 Type  : Slow 1100mV 85C Model Removal 'fsm:maquina|estado.0110'
-Slack : -0.737
-TNS   : -10.541
+Slack : -0.815
+TNS   : -7.146
 
 Type  : Slow 1100mV 85C Model Removal 'fsm:maquina|estado.0100'
-Slack : -0.533
-TNS   : -8.061
-
-Type  : Slow 1100mV 85C Model Removal 'clk_divider:new_clk|temp'
-Slack : 1.605
-TNS   : 0.000
+Slack : -0.768
+TNS   : -9.587
 
 Type  : Slow 1100mV 85C Model Removal 'clk_divider:new_clk_y|temp'
-Slack : 1.758
+Slack : 1.456
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Removal 'clk_divider:new_clk|temp'
+Slack : 1.457
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Removal 'clk_divider:new_clk_x|temp'
-Slack : 1.886
+Slack : 1.498
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'fsm:maquina|estado.0001'
-Slack : -11.619
-TNS   : -20429.222
-
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'barcos[0]'
-Slack : -9.643
-TNS   : -11792.042
+Slack : -14.913
+TNS   : -36987.265
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'abajo'
-Slack : -9.575
-TNS   : -8527.322
-
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'barcos[1]'
-Slack : -9.512
-TNS   : -11324.461
-
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'arriba'
-Slack : -9.422
-TNS   : -8598.587
+Slack : -11.208
+TNS   : -13247.111
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'LFSR:pos_x|random[0]'
-Slack : -6.380
-TNS   : -8684.439
-
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'fsm:maquina|estado.0110'
-Slack : -0.394
-TNS   : -10.739
-
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'fsm:maquina|estado.0100'
-Slack : -0.394
-TNS   : -10.162
+Slack : -6.962
+TNS   : -8519.923
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk_divider:new_clk|temp'
 Slack : -0.394
-TNS   : -8.398
+TNS   : -13.295
 
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk_divider:new_clk_x|temp'
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'fsm:maquina|estado.0100'
 Slack : -0.394
-TNS   : -1.605
+TNS   : -11.508
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'fsm:maquina|estado.0110'
+Slack : -0.394
+TNS   : -11.311
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk_divider:new_clk_y|temp'
 Slack : -0.394
-TNS   : -1.579
+TNS   : -1.994
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk_divider:new_clk_x|temp'
+Slack : -0.394
+TNS   : -1.859
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'reset'
-Slack : -0.201
-TNS   : -0.507
+Slack : -0.069
+TNS   : -0.070
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'vv|vgapll|pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'
 Slack : 0.325
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk'
-Slack : 8.987
+Slack : 9.066
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'vv|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 19.170
+Slack : 19.171
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Setup 'fsm:maquina|estado.0001'
-Slack : -26.842
-TNS   : -3194.261
+Slack : -32.084
+TNS   : -3960.307
 
 Type  : Slow 1100mV 0C Model Setup 'LFSR:pos_x|random[0]'
-Slack : -25.933
-TNS   : -3592.156
-
-Type  : Slow 1100mV 0C Model Setup 'barcos[1]'
-Slack : -23.960
-TNS   : -2684.282
+Slack : -27.104
+TNS   : -3531.480
 
 Type  : Slow 1100mV 0C Model Setup 'abajo'
-Slack : -23.390
-TNS   : -2481.454
-
-Type  : Slow 1100mV 0C Model Setup 'arriba'
-Slack : -21.964
-TNS   : -2291.548
-
-Type  : Slow 1100mV 0C Model Setup 'barcos[0]'
-Slack : -20.222
-TNS   : -2094.639
-
-Type  : Slow 1100mV 0C Model Setup 'clk_divider:new_clk|temp'
-Slack : -18.708
-TNS   : -75.259
-
-Type  : Slow 1100mV 0C Model Setup 'fsm:maquina|estado.0110'
-Slack : -9.851
-TNS   : -165.924
-
-Type  : Slow 1100mV 0C Model Setup 'fsm:maquina|estado.0100'
-Slack : -9.313
-TNS   : -163.219
+Slack : -25.973
+TNS   : -2209.375
 
 Type  : Slow 1100mV 0C Model Setup 'reset'
-Slack : -6.069
-TNS   : -22.097
+Slack : -25.832
+TNS   : -3439.804
 
-Type  : Slow 1100mV 0C Model Setup 'clk_divider:new_clk_y|temp'
-Slack : -1.613
-TNS   : -2.876
+Type  : Slow 1100mV 0C Model Setup 'clk_divider:new_clk|temp'
+Slack : -19.014
+TNS   : -189.266
 
-Type  : Slow 1100mV 0C Model Setup 'clk_divider:new_clk_x|temp'
-Slack : -1.262
-TNS   : -2.396
+Type  : Slow 1100mV 0C Model Setup 'fsm:maquina|estado.0100'
+Slack : -11.200
+TNS   : -196.997
+
+Type  : Slow 1100mV 0C Model Setup 'fsm:maquina|estado.0110'
+Slack : -7.771
+TNS   : -137.910
 
 Type  : Slow 1100mV 0C Model Setup 'clk'
-Slack : 0.931
-TNS   : 0.000
+Slack : -1.421
+TNS   : -2.629
+
+Type  : Slow 1100mV 0C Model Setup 'clk_divider:new_clk_y|temp'
+Slack : -1.047
+TNS   : -2.372
+
+Type  : Slow 1100mV 0C Model Setup 'clk_divider:new_clk_x|temp'
+Slack : -1.008
+TNS   : -1.978
 
 Type  : Slow 1100mV 0C Model Setup 'vv|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 35.609
+Slack : 35.444
 TNS   : 0.000
 
-Type  : Slow 1100mV 0C Model Hold 'barcos[0]'
-Slack : -17.670
-TNS   : -1892.813
-
-Type  : Slow 1100mV 0C Model Hold 'arriba'
-Slack : -15.923
-TNS   : -1447.472
-
-Type  : Slow 1100mV 0C Model Hold 'barcos[1]'
-Slack : -14.721
-TNS   : -1464.868
-
 Type  : Slow 1100mV 0C Model Hold 'abajo'
-Slack : -14.280
-TNS   : -1250.517
+Slack : -17.582
+TNS   : -1695.644
 
 Type  : Slow 1100mV 0C Model Hold 'fsm:maquina|estado.0001'
-Slack : -12.554
-TNS   : -1441.391
+Slack : -15.700
+TNS   : -1644.870
 
 Type  : Slow 1100mV 0C Model Hold 'LFSR:pos_x|random[0]'
-Slack : -8.300
-TNS   : -1010.263
+Slack : -8.145
+TNS   : -960.093
 
 Type  : Slow 1100mV 0C Model Hold 'reset'
-Slack : -3.501
-TNS   : -21.375
+Slack : -3.729
+TNS   : -412.931
 
 Type  : Slow 1100mV 0C Model Hold 'clk'
-Slack : -2.724
-TNS   : -7.731
+Slack : -2.057
+TNS   : -3.375
 
 Type  : Slow 1100mV 0C Model Hold 'clk_divider:new_clk|temp'
-Slack : -1.327
-TNS   : -2.528
+Slack : -1.361
+TNS   : -6.876
 
 Type  : Slow 1100mV 0C Model Hold 'clk_divider:new_clk_x|temp'
-Slack : -0.715
-TNS   : -0.715
+Slack : -1.184
+TNS   : -1.184
 
 Type  : Slow 1100mV 0C Model Hold 'fsm:maquina|estado.0110'
-Slack : -0.358
+Slack : -0.357
 TNS   : -0.591
 
 Type  : Slow 1100mV 0C Model Hold 'fsm:maquina|estado.0100'
-Slack : -0.295
-TNS   : -0.295
+Slack : -0.205
+TNS   : -0.432
 
 Type  : Slow 1100mV 0C Model Hold 'clk_divider:new_clk_y|temp'
-Slack : 0.355
+Slack : 0.356
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Hold 'vv|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 0.714
+Slack : 0.713
 TNS   : 0.000
 
+Type  : Slow 1100mV 0C Model Recovery 'clk_divider:new_clk|temp'
+Slack : -2.544
+TNS   : -36.469
+
 Type  : Slow 1100mV 0C Model Recovery 'clk_divider:new_clk_y|temp'
-Slack : -2.851
-TNS   : -7.936
+Slack : -2.485
+TNS   : -7.450
 
 Type  : Slow 1100mV 0C Model Recovery 'clk_divider:new_clk_x|temp'
-Slack : -2.734
-TNS   : -8.197
-
-Type  : Slow 1100mV 0C Model Recovery 'clk_divider:new_clk|temp'
-Slack : -2.657
-TNS   : -18.135
-
-Type  : Slow 1100mV 0C Model Recovery 'fsm:maquina|estado.0100'
-Slack : -1.145
-TNS   : -3.989
+Slack : -2.418
+TNS   : -7.249
 
 Type  : Slow 1100mV 0C Model Recovery 'fsm:maquina|estado.0110'
-Slack : -1.056
-TNS   : -3.314
+Slack : -1.195
+TNS   : -8.250
+
+Type  : Slow 1100mV 0C Model Recovery 'fsm:maquina|estado.0100'
+Slack : -0.435
+TNS   : -4.093
 
 Type  : Slow 1100mV 0C Model Removal 'fsm:maquina|estado.0110'
-Slack : -0.680
-TNS   : -9.741
+Slack : -0.742
+TNS   : -6.380
 
 Type  : Slow 1100mV 0C Model Removal 'fsm:maquina|estado.0100'
-Slack : -0.504
-TNS   : -7.475
+Slack : -0.716
+TNS   : -8.672
 
 Type  : Slow 1100mV 0C Model Removal 'clk_divider:new_clk|temp'
-Slack : 1.581
+Slack : 1.402
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Removal 'clk_divider:new_clk_y|temp'
-Slack : 1.731
+Slack : 1.442
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Removal 'clk_divider:new_clk_x|temp'
-Slack : 1.854
+Slack : 1.459
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'fsm:maquina|estado.0001'
-Slack : -11.341
-TNS   : -20031.141
-
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'barcos[0]'
-Slack : -9.518
-TNS   : -11579.949
+Slack : -14.480
+TNS   : -36015.826
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'abajo'
-Slack : -9.426
-TNS   : -8357.329
-
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'arriba'
-Slack : -9.282
-TNS   : -8438.406
-
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'barcos[1]'
-Slack : -9.270
-TNS   : -11085.212
+Slack : -11.213
+TNS   : -13149.469
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'LFSR:pos_x|random[0]'
-Slack : -6.338
-TNS   : -8618.318
-
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'fsm:maquina|estado.0110'
-Slack : -0.394
-TNS   : -10.533
-
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'fsm:maquina|estado.0100'
-Slack : -0.394
-TNS   : -10.020
+Slack : -6.823
+TNS   : -8479.733
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk_divider:new_clk|temp'
 Slack : -0.394
-TNS   : -8.504
+TNS   : -12.880
 
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk_divider:new_clk_x|temp'
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'fsm:maquina|estado.0100'
 Slack : -0.394
-TNS   : -1.599
+TNS   : -11.434
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'fsm:maquina|estado.0110'
+Slack : -0.394
+TNS   : -11.169
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk_divider:new_clk_y|temp'
 Slack : -0.394
-TNS   : -1.577
+TNS   : -1.945
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk_divider:new_clk_x|temp'
+Slack : -0.394
+TNS   : -1.771
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'reset'
-Slack : -0.166
-TNS   : -0.500
+Slack : -0.080
+TNS   : -0.102
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'vv|vgapll|pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'
 Slack : 0.325
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk'
-Slack : 9.001
+Slack : 9.087
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'vv|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 19.116
+Slack : 19.117
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Setup 'fsm:maquina|estado.0001'
-Slack : -16.265
-TNS   : -1908.687
-
-Type  : Fast 1100mV 85C Model Setup 'LFSR:pos_x|random[0]'
-Slack : -15.917
-TNS   : -2189.490
-
-Type  : Fast 1100mV 85C Model Setup 'barcos[1]'
-Slack : -14.513
-TNS   : -1617.418
+Slack : -20.332
+TNS   : -2314.923
 
 Type  : Fast 1100mV 85C Model Setup 'abajo'
-Slack : -14.272
-TNS   : -1463.909
+Slack : -16.423
+TNS   : -1273.649
 
-Type  : Fast 1100mV 85C Model Setup 'arriba'
-Slack : -13.370
-TNS   : -1347.561
-
-Type  : Fast 1100mV 85C Model Setup 'barcos[0]'
-Slack : -12.296
-TNS   : -1197.490
-
-Type  : Fast 1100mV 85C Model Setup 'clk_divider:new_clk|temp'
-Slack : -11.475
-TNS   : -45.447
-
-Type  : Fast 1100mV 85C Model Setup 'fsm:maquina|estado.0110'
-Slack : -6.074
-TNS   : -100.439
-
-Type  : Fast 1100mV 85C Model Setup 'fsm:maquina|estado.0100'
-Slack : -5.818
-TNS   : -102.884
+Type  : Fast 1100mV 85C Model Setup 'LFSR:pos_x|random[0]'
+Slack : -16.026
+TNS   : -2082.958
 
 Type  : Fast 1100mV 85C Model Setup 'reset'
-Slack : -2.999
-TNS   : -9.926
+Slack : -15.570
+TNS   : -2071.874
 
-Type  : Fast 1100mV 85C Model Setup 'clk_divider:new_clk_y|temp'
-Slack : -0.757
-TNS   : -1.040
+Type  : Fast 1100mV 85C Model Setup 'clk_divider:new_clk|temp'
+Slack : -11.444
+TNS   : -111.595
 
-Type  : Fast 1100mV 85C Model Setup 'clk_divider:new_clk_x|temp'
-Slack : -0.618
-TNS   : -1.158
+Type  : Fast 1100mV 85C Model Setup 'fsm:maquina|estado.0100'
+Slack : -6.775
+TNS   : -122.219
+
+Type  : Fast 1100mV 85C Model Setup 'fsm:maquina|estado.0110'
+Slack : -4.506
+TNS   : -77.945
 
 Type  : Fast 1100mV 85C Model Setup 'clk'
-Slack : 0.360
-TNS   : 0.000
+Slack : -1.381
+TNS   : -2.582
+
+Type  : Fast 1100mV 85C Model Setup 'clk_divider:new_clk_y|temp'
+Slack : -0.520
+TNS   : -0.900
+
+Type  : Fast 1100mV 85C Model Setup 'clk_divider:new_clk_x|temp'
+Slack : -0.379
+TNS   : -0.747
 
 Type  : Fast 1100mV 85C Model Setup 'vv|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 37.546
+Slack : 37.403
 TNS   : 0.000
 
-Type  : Fast 1100mV 85C Model Hold 'barcos[0]'
-Slack : -11.019
-TNS   : -1196.579
-
-Type  : Fast 1100mV 85C Model Hold 'arriba'
-Slack : -9.977
-TNS   : -916.891
-
-Type  : Fast 1100mV 85C Model Hold 'barcos[1]'
-Slack : -9.139
-TNS   : -920.545
-
 Type  : Fast 1100mV 85C Model Hold 'abajo'
-Slack : -8.995
-TNS   : -799.560
+Slack : -10.749
+TNS   : -1047.098
 
 Type  : Fast 1100mV 85C Model Hold 'fsm:maquina|estado.0001'
-Slack : -7.559
-TNS   : -863.559
+Slack : -9.624
+TNS   : -1005.079
 
 Type  : Fast 1100mV 85C Model Hold 'LFSR:pos_x|random[0]'
-Slack : -5.198
-TNS   : -617.928
+Slack : -5.122
+TNS   : -561.662
 
 Type  : Fast 1100mV 85C Model Hold 'reset'
-Slack : -2.506
-TNS   : -15.263
+Slack : -2.156
+TNS   : -236.657
 
 Type  : Fast 1100mV 85C Model Hold 'clk'
-Slack : -1.679
-TNS   : -4.750
+Slack : -1.210
+TNS   : -1.694
 
 Type  : Fast 1100mV 85C Model Hold 'clk_divider:new_clk|temp'
-Slack : -0.970
-TNS   : -1.938
+Slack : -0.981
+TNS   : -5.685
 
 Type  : Fast 1100mV 85C Model Hold 'clk_divider:new_clk_x|temp'
-Slack : -0.556
-TNS   : -0.556
-
-Type  : Fast 1100mV 85C Model Hold 'fsm:maquina|estado.0100'
-Slack : -0.384
-TNS   : -0.987
+Slack : -0.916
+TNS   : -0.916
 
 Type  : Fast 1100mV 85C Model Hold 'fsm:maquina|estado.0110'
-Slack : -0.353
-TNS   : -0.859
+Slack : -0.398
+TNS   : -1.043
+
+Type  : Fast 1100mV 85C Model Hold 'fsm:maquina|estado.0100'
+Slack : -0.334
+TNS   : -1.163
 
 Type  : Fast 1100mV 85C Model Hold 'clk_divider:new_clk_y|temp'
-Slack : 0.158
+Slack : 0.177
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Hold 'vv|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
 Slack : 0.302
 TNS   : 0.000
 
-Type  : Fast 1100mV 85C Model Recovery 'clk_divider:new_clk_y|temp'
-Slack : -1.925
-TNS   : -5.334
+Type  : Fast 1100mV 85C Model Recovery 'clk_divider:new_clk|temp'
+Slack : -1.718
+TNS   : -24.381
 
 Type  : Fast 1100mV 85C Model Recovery 'clk_divider:new_clk_x|temp'
-Slack : -1.846
-TNS   : -5.536
+Slack : -1.604
+TNS   : -4.810
 
-Type  : Fast 1100mV 85C Model Recovery 'clk_divider:new_clk|temp'
-Slack : -1.823
-TNS   : -12.285
-
-Type  : Fast 1100mV 85C Model Recovery 'fsm:maquina|estado.0100'
-Slack : -0.786
-TNS   : -2.280
+Type  : Fast 1100mV 85C Model Recovery 'clk_divider:new_clk_y|temp'
+Slack : -1.604
+TNS   : -4.810
 
 Type  : Fast 1100mV 85C Model Recovery 'fsm:maquina|estado.0110'
-Slack : -0.649
-TNS   : -2.306
+Slack : -0.873
+TNS   : -6.024
+
+Type  : Fast 1100mV 85C Model Recovery 'fsm:maquina|estado.0100'
+Slack : -0.292
+TNS   : -2.550
 
 Type  : Fast 1100mV 85C Model Removal 'fsm:maquina|estado.0110'
-Slack : -0.570
-TNS   : -8.771
+Slack : -0.643
+TNS   : -6.117
 
 Type  : Fast 1100mV 85C Model Removal 'fsm:maquina|estado.0100'
-Slack : -0.463
-TNS   : -7.417
-
-Type  : Fast 1100mV 85C Model Removal 'clk_divider:new_clk|temp'
-Slack : 0.740
-TNS   : 0.000
+Slack : -0.581
+TNS   : -8.296
 
 Type  : Fast 1100mV 85C Model Removal 'clk_divider:new_clk_y|temp'
-Slack : 0.816
+Slack : 0.564
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Removal 'clk_divider:new_clk|temp'
+Slack : 0.586
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Removal 'clk_divider:new_clk_x|temp'
-Slack : 0.903
+Slack : 0.608
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'fsm:maquina|estado.0001'
-Slack : -6.720
-TNS   : -10829.395
+Slack : -8.802
+TNS   : -20711.205
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'abajo'
-Slack : -5.951
-TNS   : -4887.598
-
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'barcos[0]'
-Slack : -5.837
-TNS   : -6430.548
-
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'arriba'
-Slack : -5.819
-TNS   : -4902.141
-
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'barcos[1]'
-Slack : -5.783
-TNS   : -6283.772
+Slack : -6.590
+TNS   : -7274.873
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'LFSR:pos_x|random[0]'
-Slack : -3.645
-TNS   : -4405.633
+Slack : -4.075
+TNS   : -4336.744
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'reset'
-Slack : -0.402
-TNS   : -3.935
-
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk_divider:new_clk|temp'
-Slack : -0.040
-TNS   : -0.170
+Slack : -0.256
+TNS   : -18.349
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'fsm:maquina|estado.0110'
-Slack : 0.010
-TNS   : 0.000
+Slack : -0.085
+TNS   : -0.465
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'fsm:maquina|estado.0100'
-Slack : 0.065
-TNS   : 0.000
+Slack : -0.057
+TNS   : -0.226
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk_divider:new_clk_y|temp'
-Slack : 0.082
-TNS   : 0.000
+Slack : -0.050
+TNS   : -0.148
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk_divider:new_clk|temp'
+Slack : -0.043
+TNS   : -0.102
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk_divider:new_clk_x|temp'
-Slack : 0.101
-TNS   : 0.000
+Slack : -0.001
+TNS   : -0.002
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'vv|vgapll|pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'
 Slack : 0.325
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk'
-Slack : 9.005
+Slack : 9.080
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'vv|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
@@ -639,203 +531,167 @@ Slack : 19.418
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Setup 'fsm:maquina|estado.0001'
-Slack : -14.911
-TNS   : -1768.425
+Slack : -18.311
+TNS   : -2119.295
 
 Type  : Fast 1100mV 0C Model Setup 'LFSR:pos_x|random[0]'
-Slack : -14.578
-TNS   : -2020.439
-
-Type  : Fast 1100mV 0C Model Setup 'barcos[1]'
-Slack : -13.304
-TNS   : -1492.307
+Slack : -14.705
+TNS   : -1904.997
 
 Type  : Fast 1100mV 0C Model Setup 'abajo'
-Slack : -13.059
-TNS   : -1344.262
-
-Type  : Fast 1100mV 0C Model Setup 'arriba'
-Slack : -12.171
-TNS   : -1227.016
-
-Type  : Fast 1100mV 0C Model Setup 'barcos[0]'
-Slack : -11.106
-TNS   : -1079.336
-
-Type  : Fast 1100mV 0C Model Setup 'clk_divider:new_clk|temp'
-Slack : -10.643
-TNS   : -41.744
-
-Type  : Fast 1100mV 0C Model Setup 'fsm:maquina|estado.0110'
-Slack : -5.808
-TNS   : -94.432
-
-Type  : Fast 1100mV 0C Model Setup 'fsm:maquina|estado.0100'
-Slack : -5.500
-TNS   : -97.251
+Slack : -14.460
+TNS   : -1129.234
 
 Type  : Fast 1100mV 0C Model Setup 'reset'
-Slack : -2.756
-TNS   : -8.922
+Slack : -14.246
+TNS   : -1880.484
 
-Type  : Fast 1100mV 0C Model Setup 'clk_divider:new_clk_y|temp'
-Slack : -0.639
-TNS   : -0.823
+Type  : Fast 1100mV 0C Model Setup 'clk_divider:new_clk|temp'
+Slack : -10.675
+TNS   : -103.960
 
-Type  : Fast 1100mV 0C Model Setup 'clk_divider:new_clk_x|temp'
-Slack : -0.505
-TNS   : -0.947
+Type  : Fast 1100mV 0C Model Setup 'fsm:maquina|estado.0100'
+Slack : -6.444
+TNS   : -116.286
+
+Type  : Fast 1100mV 0C Model Setup 'fsm:maquina|estado.0110'
+Slack : -4.059
+TNS   : -70.424
 
 Type  : Fast 1100mV 0C Model Setup 'clk'
-Slack : 0.425
-TNS   : 0.000
+Slack : -1.089
+TNS   : -2.027
+
+Type  : Fast 1100mV 0C Model Setup 'clk_divider:new_clk_y|temp'
+Slack : -0.405
+TNS   : -0.704
+
+Type  : Fast 1100mV 0C Model Setup 'clk_divider:new_clk_x|temp'
+Slack : -0.297
+TNS   : -0.590
 
 Type  : Fast 1100mV 0C Model Setup 'vv|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 37.651
+Slack : 37.542
 TNS   : 0.000
 
-Type  : Fast 1100mV 0C Model Hold 'barcos[0]'
-Slack : -10.249
-TNS   : -1128.133
-
-Type  : Fast 1100mV 0C Model Hold 'arriba'
-Slack : -9.235
-TNS   : -862.631
-
-Type  : Fast 1100mV 0C Model Hold 'barcos[1]'
-Slack : -8.410
-TNS   : -855.827
-
 Type  : Fast 1100mV 0C Model Hold 'abajo'
-Slack : -8.266
-TNS   : -743.852
+Slack : -10.040
+TNS   : -997.815
 
 Type  : Fast 1100mV 0C Model Hold 'fsm:maquina|estado.0001'
-Slack : -6.812
-TNS   : -779.709
+Slack : -8.613
+TNS   : -905.562
 
 Type  : Fast 1100mV 0C Model Hold 'LFSR:pos_x|random[0]'
-Slack : -4.702
-TNS   : -556.972
+Slack : -4.568
+TNS   : -513.987
 
 Type  : Fast 1100mV 0C Model Hold 'reset'
-Slack : -2.351
-TNS   : -14.955
+Slack : -2.029
+TNS   : -234.188
 
 Type  : Fast 1100mV 0C Model Hold 'clk'
-Slack : -1.632
-TNS   : -4.639
+Slack : -1.211
+TNS   : -1.973
 
 Type  : Fast 1100mV 0C Model Hold 'clk_divider:new_clk|temp'
-Slack : -0.889
-TNS   : -1.800
+Slack : -0.914
+TNS   : -5.337
 
 Type  : Fast 1100mV 0C Model Hold 'clk_divider:new_clk_x|temp'
-Slack : -0.507
-TNS   : -0.507
-
-Type  : Fast 1100mV 0C Model Hold 'fsm:maquina|estado.0100'
-Slack : -0.350
-TNS   : -1.137
+Slack : -0.835
+TNS   : -0.835
 
 Type  : Fast 1100mV 0C Model Hold 'fsm:maquina|estado.0110'
-Slack : -0.340
-TNS   : -0.825
+Slack : -0.378
+TNS   : -1.012
+
+Type  : Fast 1100mV 0C Model Hold 'fsm:maquina|estado.0100'
+Slack : -0.302
+TNS   : -1.069
 
 Type  : Fast 1100mV 0C Model Hold 'clk_divider:new_clk_y|temp'
-Slack : 0.150
+Slack : 0.158
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Hold 'vv|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
 Slack : 0.295
 TNS   : 0.000
 
+Type  : Fast 1100mV 0C Model Recovery 'clk_divider:new_clk|temp'
+Slack : -1.673
+TNS   : -23.941
+
 Type  : Fast 1100mV 0C Model Recovery 'clk_divider:new_clk_y|temp'
-Slack : -1.866
-TNS   : -5.211
+Slack : -1.584
+TNS   : -4.751
 
 Type  : Fast 1100mV 0C Model Recovery 'clk_divider:new_clk_x|temp'
-Slack : -1.798
-TNS   : -5.393
-
-Type  : Fast 1100mV 0C Model Recovery 'clk_divider:new_clk|temp'
-Slack : -1.780
-TNS   : -12.016
-
-Type  : Fast 1100mV 0C Model Recovery 'fsm:maquina|estado.0100'
-Slack : -0.682
-TNS   : -1.890
+Slack : -1.574
+TNS   : -4.721
 
 Type  : Fast 1100mV 0C Model Recovery 'fsm:maquina|estado.0110'
-Slack : -0.565
-TNS   : -1.789
+Slack : -0.746
+TNS   : -5.108
+
+Type  : Fast 1100mV 0C Model Recovery 'fsm:maquina|estado.0100'
+Slack : -0.246
+TNS   : -2.090
 
 Type  : Fast 1100mV 0C Model Removal 'fsm:maquina|estado.0110'
-Slack : -0.534
-TNS   : -8.302
+Slack : -0.599
+TNS   : -5.878
 
 Type  : Fast 1100mV 0C Model Removal 'fsm:maquina|estado.0100'
-Slack : -0.442
-TNS   : -7.125
-
-Type  : Fast 1100mV 0C Model Removal 'clk_divider:new_clk|temp'
-Slack : 0.727
-TNS   : 0.000
+Slack : -0.547
+TNS   : -7.874
 
 Type  : Fast 1100mV 0C Model Removal 'clk_divider:new_clk_y|temp'
-Slack : 0.792
+Slack : 0.564
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Removal 'clk_divider:new_clk|temp'
+Slack : 0.574
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Removal 'clk_divider:new_clk_x|temp'
-Slack : 0.875
+Slack : 0.598
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'fsm:maquina|estado.0001'
-Slack : -5.977
-TNS   : -9586.628
+Slack : -7.795
+TNS   : -18373.865
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'abajo'
-Slack : -5.368
-TNS   : -4343.857
-
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'arriba'
-Slack : -5.253
-TNS   : -4361.737
-
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'barcos[0]'
-Slack : -5.240
-TNS   : -5705.646
-
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'barcos[1]'
-Slack : -5.207
-TNS   : -5591.671
+Slack : -5.957
+TNS   : -6507.147
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'LFSR:pos_x|random[0]'
-Slack : -3.174
-TNS   : -3828.994
+Slack : -3.555
+TNS   : -3780.465
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'reset'
-Slack : -0.319
-TNS   : -3.649
-
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk_divider:new_clk|temp'
-Slack : -0.008
-TNS   : -0.013
+Slack : -0.224
+TNS   : -16.003
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'fsm:maquina|estado.0110'
-Slack : 0.047
-TNS   : 0.000
+Slack : -0.029
+TNS   : -0.141
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'fsm:maquina|estado.0100'
-Slack : 0.087
-TNS   : 0.000
+Slack : -0.015
+TNS   : -0.056
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk_divider:new_clk_y|temp'
-Slack : 0.096
+Slack : 0.001
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk_divider:new_clk|temp'
+Slack : 0.010
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk_divider:new_clk_x|temp'
-Slack : 0.110
+Slack : 0.042
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'vv|vgapll|pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'
@@ -843,11 +699,11 @@ Slack : 0.325
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk'
-Slack : 9.037
+Slack : 9.085
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'vv|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 19.405
+Slack : 19.406
 TNS   : 0.000
 
 ------------------------------------------------------------
