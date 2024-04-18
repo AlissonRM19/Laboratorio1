@@ -21,7 +21,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work altera_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_primitives.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:59:08 on Apr 17,2024
+# Start time: 19:23:46 on Apr 17,2024
 # vlog -reportprogress 300 -vlog01compat -work altera_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_primitives.v 
 # -- Compiling module global
 # -- Compiling module carry
@@ -103,7 +103,7 @@
 # 	alt_iobuf_diff
 # 	alt_bidir_diff
 # 	alt_bidir_buf
-# End time: 17:59:09 on Apr 17,2024, Elapsed time: 0:00:01
+# End time: 19:23:47 on Apr 17,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/lpm_ver
@@ -114,7 +114,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work lpm_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/220model.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:59:09 on Apr 17,2024
+# Start time: 19:23:47 on Apr 17,2024
 # vlog -reportprogress 300 -vlog01compat -work lpm_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/220model.v 
 # -- Compiling module LPM_MEMORY_INITIALIZATION
 # -- Compiling module LPM_HINT_EVALUATION
@@ -178,7 +178,7 @@
 # 	lpm_inpad
 # 	lpm_outpad
 # 	lpm_bipad
-# End time: 17:59:09 on Apr 17,2024, Elapsed time: 0:00:00
+# End time: 19:23:47 on Apr 17,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/sgate_ver
@@ -189,7 +189,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work sgate_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/sgate.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:59:09 on Apr 17,2024
+# Start time: 19:23:47 on Apr 17,2024
 # vlog -reportprogress 300 -vlog01compat -work sgate_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/sgate.v 
 # -- Compiling module oper_add
 # -- Compiling module oper_addsub
@@ -231,7 +231,7 @@
 # 	oper_decoder
 # 	oper_bus_mux
 # 	oper_latch
-# End time: 17:59:09 on Apr 17,2024, Elapsed time: 0:00:00
+# End time: 19:23:47 on Apr 17,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_mf_ver
@@ -242,7 +242,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work altera_mf_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_mf.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:59:10 on Apr 17,2024
+# Start time: 19:23:48 on Apr 17,2024
 # vlog -reportprogress 300 -vlog01compat -work altera_mf_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_mf.v 
 # -- Compiling module lcell
 # -- Compiling module ALTERA_MF_MEMORY_INITIALIZATION
@@ -372,7 +372,7 @@
 # 	alt_fault_injection
 # 	sld_virtual_jtag_basic
 # 	altsource_probe
-# End time: 17:59:11 on Apr 17,2024, Elapsed time: 0:00:01
+# End time: 19:23:49 on Apr 17,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_lnsim_ver
@@ -383,7 +383,7 @@
 # Modifying modelsim.ini
 # vlog -sv -work altera_lnsim_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_lnsim.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:59:11 on Apr 17,2024
+# Start time: 19:23:49 on Apr 17,2024
 # vlog -reportprogress 300 -sv -work altera_lnsim_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_lnsim.sv 
 # -- Compiling package altera_lnsim_functions
 # -- Compiling package altera_generic_pll_functions
@@ -466,7 +466,7 @@
 # 	altera_iopll
 # 	fourteennm_altera_iopll
 # 	fourteennm_simple_iopll
-# End time: 17:59:11 on Apr 17,2024, Elapsed time: 0:00:00
+# End time: 19:23:49 on Apr 17,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/cyclonev_ver
@@ -477,7 +477,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work cyclonev_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:59:11 on Apr 17,2024
+# Start time: 19:23:49 on Apr 17,2024
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_atoms_ncrypt.v 
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
@@ -491,19 +491,19 @@
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
 # 
 # Top level modules:
-# End time: 17:59:14 on Apr 17,2024, Elapsed time: 0:00:03
+# End time: 19:23:51 on Apr 17,2024, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 10
 # vlog -vlog01compat -work cyclonev_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_hmi_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:59:14 on Apr 17,2024
+# Start time: 19:23:52 on Apr 17,2024
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_hmi_atoms_ncrypt.v 
 # 
 # Top level modules:
-# End time: 17:59:15 on Apr 17,2024, Elapsed time: 0:00:01
+# End time: 19:23:53 on Apr 17,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work cyclonev_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_atoms.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:59:15 on Apr 17,2024
+# Start time: 19:23:53 on Apr 17,2024
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_atoms.v 
 # -- Compiling UDP CYCLONEV_PRIM_DFFE
 # -- Compiling UDP CYCLONEV_PRIM_DFFEAS
@@ -643,7 +643,7 @@
 # 	cyclonev_mem_phy
 # 	cyclonev_oscillator
 # 	cyclonev_hps_interface_fpga2sdram
-# End time: 17:59:16 on Apr 17,2024, Elapsed time: 0:00:01
+# End time: 19:23:53 on Apr 17,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/cyclonev_hssi_ver
@@ -654,15 +654,15 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work cyclonev_hssi_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_hssi_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:59:16 on Apr 17,2024
+# Start time: 19:23:54 on Apr 17,2024
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_hssi_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_hssi_atoms_ncrypt.v 
 # 
 # Top level modules:
-# End time: 17:59:17 on Apr 17,2024, Elapsed time: 0:00:01
+# End time: 19:23:55 on Apr 17,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work cyclonev_hssi_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_hssi_atoms.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:59:17 on Apr 17,2024
+# Start time: 19:23:55 on Apr 17,2024
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_hssi_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_hssi_atoms.v 
 # -- Compiling module cyclonev_hssi_8g_pcs_aggregate
 # -- Compiling module cyclonev_hssi_8g_rx_pcs
@@ -762,7 +762,7 @@
 # 	arriav_hssi_avmm_interface
 # 	arriav_hssi_pma_hi_pmaif
 # 	arriav_hssi_pma_hi_xcvrif
-# End time: 17:59:18 on Apr 17,2024, Elapsed time: 0:00:01
+# End time: 19:23:55 on Apr 17,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/cyclonev_pcie_hip_ver
@@ -773,7 +773,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work cyclonev_pcie_hip_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_pcie_hip_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:59:18 on Apr 17,2024
+# Start time: 19:23:56 on Apr 17,2024
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_pcie_hip_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_pcie_hip_atoms_ncrypt.v 
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
@@ -783,18 +783,18 @@
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
 # 
 # Top level modules:
-# End time: 17:59:20 on Apr 17,2024, Elapsed time: 0:00:02
+# End time: 19:23:58 on Apr 17,2024, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 6
 # vlog -vlog01compat -work cyclonev_pcie_hip_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_pcie_hip_atoms.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:59:20 on Apr 17,2024
+# Start time: 19:23:58 on Apr 17,2024
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_pcie_hip_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_pcie_hip_atoms.v 
 # -- Compiling module cyclonev_hd_altpe2_hip_top
 # -- Compiling module arriav_hd_altpe2_hip_top
 # 
 # Top level modules:
 # 	cyclonev_hd_altpe2_hip_top
-# End time: 17:59:20 on Apr 17,2024, Elapsed time: 0:00:00
+# End time: 19:23:58 on Apr 17,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # if {[file exists rtl_work]} {
@@ -813,52 +813,52 @@
 # 
 # vlog "C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/pll_sim/pll.vo"
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:59:21 on Apr 17,2024
+# Start time: 19:23:58 on Apr 17,2024
 # vlog -reportprogress 300 C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/pll_sim/pll.vo 
 # -- Compiling module pll
 # 
 # Top level modules:
 # 	pll
-# End time: 17:59:21 on Apr 17,2024, Elapsed time: 0:00:00
+# End time: 19:23:58 on Apr 17,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -sv -work work +incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship {C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/manage_life.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:59:21 on Apr 17,2024
+# Start time: 19:23:58 on Apr 17,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship" C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/manage_life.sv 
 # -- Compiling module manage_life
 # 
 # Top level modules:
 # 	manage_life
-# End time: 17:59:21 on Apr 17,2024, Elapsed time: 0:00:00
+# End time: 19:23:58 on Apr 17,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship {C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/conexion_vga.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:59:21 on Apr 17,2024
+# Start time: 19:23:58 on Apr 17,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship" C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/conexion_vga.sv 
 # -- Compiling module conexion_vga
-# ** Warning: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/conexion_vga.sv(5): (vlog-13314) Defaulting port 'matriz_pc' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
-# ** Warning: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/conexion_vga.sv(6): (vlog-13314) Defaulting port 'matriz_player' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
-# ** Warning: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/conexion_vga.sv(12): (vlog-13314) Defaulting port 'matriz_player_temp' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/conexion_vga.sv(7): (vlog-13314) Defaulting port 'matriz_pc' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/conexion_vga.sv(8): (vlog-13314) Defaulting port 'matriz_player' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/conexion_vga.sv(14): (vlog-13314) Defaulting port 'matriz_player_temp' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
 # 
 # Top level modules:
 # 	conexion_vga
-# End time: 17:59:21 on Apr 17,2024, Elapsed time: 0:00:00
+# End time: 19:23:58 on Apr 17,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 3
 # vlog -sv -work work +incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship {C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/barcos_move_pc.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:59:21 on Apr 17,2024
+# Start time: 19:23:58 on Apr 17,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship" C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/barcos_move_pc.sv 
 # -- Compiling module barcos_move_pc
 # ** Warning: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/barcos_move_pc.sv(5): (vlog-13314) Defaulting port 'matriz_pc_begin' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
 # 
 # Top level modules:
 # 	barcos_move_pc
-# End time: 17:59:21 on Apr 17,2024, Elapsed time: 0:00:00
+# End time: 19:23:58 on Apr 17,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
 # vlog -sv -work work +incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship {C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/ataque_pc.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:59:21 on Apr 17,2024
+# Start time: 19:23:58 on Apr 17,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship" C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/ataque_pc.sv 
 # -- Compiling module ataque_pc
 # ** Warning: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/ataque_pc.sv(5): (vlog-13314) Defaulting port 'hp_player' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
@@ -866,82 +866,82 @@
 # 
 # Top level modules:
 # 	ataque_pc
-# End time: 17:59:21 on Apr 17,2024, Elapsed time: 0:00:00
+# End time: 19:23:59 on Apr 17,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 2
 # vlog -sv -work work +incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship {C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/LFSR.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:59:21 on Apr 17,2024
+# Start time: 19:23:59 on Apr 17,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship" C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/LFSR.sv 
 # -- Compiling module LFSR
 # 
 # Top level modules:
 # 	LFSR
-# End time: 17:59:21 on Apr 17,2024, Elapsed time: 0:00:00
+# End time: 19:23:59 on Apr 17,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship {C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/battleship.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:59:21 on Apr 17,2024
+# Start time: 19:23:59 on Apr 17,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship" C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/battleship.sv 
 # -- Compiling module battleship
 # 
 # Top level modules:
 # 	battleship
-# End time: 17:59:21 on Apr 17,2024, Elapsed time: 0:00:00
+# End time: 19:23:59 on Apr 17,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship {C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/fsm.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:59:21 on Apr 17,2024
+# Start time: 19:23:59 on Apr 17,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship" C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/fsm.sv 
 # -- Compiling module fsm
 # 
 # Top level modules:
 # 	fsm
-# End time: 17:59:21 on Apr 17,2024, Elapsed time: 0:00:00
+# End time: 19:23:59 on Apr 17,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship {C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/contador_seg.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:59:21 on Apr 17,2024
+# Start time: 19:23:59 on Apr 17,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship" C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/contador_seg.sv 
 # -- Compiling module contador_seg
 # 
 # Top level modules:
 # 	contador_seg
-# End time: 17:59:21 on Apr 17,2024, Elapsed time: 0:00:00
+# End time: 19:23:59 on Apr 17,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship {C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/comparador.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:59:21 on Apr 17,2024
+# Start time: 19:23:59 on Apr 17,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship" C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/comparador.sv 
 # -- Compiling module comparador
 # 
 # Top level modules:
 # 	comparador
-# End time: 17:59:21 on Apr 17,2024, Elapsed time: 0:00:00
+# End time: 19:23:59 on Apr 17,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship {C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/clk_divider.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:59:21 on Apr 17,2024
+# Start time: 19:23:59 on Apr 17,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship" C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/clk_divider.sv 
 # -- Compiling module clk_divider
 # 
 # Top level modules:
 # 	clk_divider
-# End time: 17:59:22 on Apr 17,2024, Elapsed time: 0:00:01
+# End time: 19:23:59 on Apr 17,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship {C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/barcos_move.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:59:22 on Apr 17,2024
+# Start time: 19:23:59 on Apr 17,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship" C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/barcos_move.sv 
 # -- Compiling module barcos_move
 # ** Warning: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/barcos_move.sv(8): (vlog-13314) Defaulting port 'matriz_player_begin' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
 # 
 # Top level modules:
 # 	barcos_move
-# End time: 17:59:22 on Apr 17,2024, Elapsed time: 0:00:00
+# End time: 19:23:59 on Apr 17,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
 # vlog -sv -work work +incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship {C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/ataque.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:59:22 on Apr 17,2024
+# Start time: 19:23:59 on Apr 17,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship" C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/ataque.sv 
 # -- Compiling module ataque
 # ** Warning: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/ataque.sv(8): (vlog-13314) Defaulting port 'hp_pc' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
@@ -949,11 +949,11 @@
 # 
 # Top level modules:
 # 	ataque
-# End time: 17:59:22 on Apr 17,2024, Elapsed time: 0:00:00
+# End time: 19:23:59 on Apr 17,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 2
 # vlog -sv -work work +incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship {C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/vga.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:59:22 on Apr 17,2024
+# Start time: 19:23:59 on Apr 17,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship" C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/vga.sv 
 # -- Compiling module vga
 # ** Warning: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/vga.sv(2): (vlog-13314) Defaulting port 'matriz_pc_final' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
@@ -961,31 +961,31 @@
 # 
 # Top level modules:
 # 	vga
-# End time: 17:59:22 on Apr 17,2024, Elapsed time: 0:00:00
+# End time: 19:23:59 on Apr 17,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 2
 # vlog -sv -work work +incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship {C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/rectgen.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:59:22 on Apr 17,2024
+# Start time: 19:23:59 on Apr 17,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship" C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/rectgen.sv 
 # -- Compiling module rectgen
 # 
 # Top level modules:
 # 	rectgen
-# End time: 17:59:22 on Apr 17,2024, Elapsed time: 0:00:00
+# End time: 19:23:59 on Apr 17,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship {C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/vgaController.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:59:22 on Apr 17,2024
+# Start time: 19:23:59 on Apr 17,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship" C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/vgaController.sv 
 # -- Compiling module vgaController
 # 
 # Top level modules:
 # 	vgaController
-# End time: 17:59:22 on Apr 17,2024, Elapsed time: 0:00:00
+# End time: 19:23:59 on Apr 17,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship {C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/videoGen.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:59:22 on Apr 17,2024
+# Start time: 19:23:59 on Apr 17,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship" C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/videoGen.sv 
 # -- Compiling module videoGen
 # ** Warning: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/videoGen.sv(2): (vlog-13314) Defaulting port 'matriz_player_final' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
@@ -993,23 +993,23 @@
 # 
 # Top level modules:
 # 	videoGen
-# End time: 17:59:22 on Apr 17,2024, Elapsed time: 0:00:00
+# End time: 19:24:00 on Apr 17,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 2
 # 
 # vlog -sv -work work +incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship {C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/battleship_tb.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:59:22 on Apr 17,2024
+# Start time: 19:24:00 on Apr 17,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship" C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/battleship_tb.sv 
 # -- Compiling module battleship_tb
 # 
 # Top level modules:
 # 	battleship_tb
-# End time: 17:59:22 on Apr 17,2024, Elapsed time: 0:00:00
+# End time: 19:24:00 on Apr 17,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  battleship_tb
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" battleship_tb 
-# Start time: 17:59:22 on Apr 17,2024
+# Start time: 19:24:00 on Apr 17,2024
 # Loading sv_std.std
 # Loading work.battleship_tb
 # Loading work.battleship
@@ -1093,9 +1093,9 @@
 # ** Warning: (vsim-3722) C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/videoGen.sv(7): [TFMPC] - Missing connection for port 'bot'.
 # ** Warning: (vsim-3722) C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/videoGen.sv(7): [TFMPC] - Missing connection for port 'inrect'.
 # ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (32) for port 'tipo'. The port definition is at: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/clk_divider.sv(2).
-#    Time: 0 ps  Iteration: 0  Instance: /battleship_tb/game/new_clk_x File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/battleship.sv Line: 234
+#    Time: 0 ps  Iteration: 0  Instance: /battleship_tb/game/new_clk_x File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/battleship.sv Line: 236
 # ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (32) for port 'tipo'. The port definition is at: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/clk_divider.sv(2).
-#    Time: 0 ps  Iteration: 0  Instance: /battleship_tb/game/new_clk_y File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/battleship.sv Line: 237
+#    Time: 0 ps  Iteration: 0  Instance: /battleship_tb/game/new_clk_y File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/battleship.sv Line: 239
 # 
 # add wave *
 # view structure
@@ -1122,8 +1122,14 @@
 # ** Note: $stop    : C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/battleship_tb.sv(133)
 #    Time: 220 ns  Iteration: 0  Instance: /battleship_tb
 # Break in Module battleship_tb at C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/battleship_tb.sv line 133
-add wave -position end  sim:/battleship_tb/game/matriz_pc_vga_b
-add wave -position end  sim:/battleship_tb/game/matriz_player_vga_b
+add wave -position end  sim:/battleship_tb/game/conex/clk
+add wave -position end  sim:/battleship_tb/game/conex/en_put_barcos
+add wave -position end  sim:/battleship_tb/game/conex/en_attack
+add wave -position end  sim:/battleship_tb/game/conex/en_check_pc_life
+add wave -position end  sim:/battleship_tb/game/conex/en_pc_attack
+add wave -position end  sim:/battleship_tb/game/conex/en_check_player_life
+add wave -position end  sim:/battleship_tb/game/conex/matriz_player_final
+add wave -position end  sim:/battleship_tb/game/conex/matriz_pc_final
 restart -f
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
 # ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'game'.  Expected 19, found 11.
@@ -1184,9 +1190,9 @@ restart -f
 # ** Warning: (vsim-3722) C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/videoGen.sv(7): [TFMPC] - Missing connection for port 'bot'.
 # ** Warning: (vsim-3722) C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/videoGen.sv(7): [TFMPC] - Missing connection for port 'inrect'.
 # ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (32) for port 'tipo'. The port definition is at: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/clk_divider.sv(2).
-#    Time: 0 ps  Iteration: 0  Instance: /battleship_tb/game/new_clk_x File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/battleship.sv Line: 234
+#    Time: 0 ps  Iteration: 0  Instance: /battleship_tb/game/new_clk_x File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/battleship.sv Line: 236
 # ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (32) for port 'tipo'. The port definition is at: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/clk_divider.sv(2).
-#    Time: 0 ps  Iteration: 0  Instance: /battleship_tb/game/new_clk_y File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/battleship.sv Line: 237
+#    Time: 0 ps  Iteration: 0  Instance: /battleship_tb/game/new_clk_y File: C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/battleship.sv Line: 239
 run -all
 # Info: hierarchical_name = battleship_tb.game.vv.vgapll.pll_altera_pll_altera_pll_i_639.new_model.gpll.no_need_to_gen
 # Adjusting output period from 39721.946375 to 40000.000000
@@ -1207,5 +1213,6 @@ run -all
 # ** Note: $stop    : C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/battleship_tb.sv(133)
 #    Time: 220 ns  Iteration: 0  Instance: /battleship_tb
 # Break in Module battleship_tb at C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/battleship_tb.sv line 133
-# End time: 18:00:35 on Apr 17,2024, Elapsed time: 0:01:13
+run 1000000
+# End time: 19:25:52 on Apr 17,2024, Elapsed time: 0:01:52
 # Errors: 0, Warnings: 49

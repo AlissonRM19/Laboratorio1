@@ -201,10 +201,12 @@ module battleship (input logic clk,
 								
 								
 	//VGA
-	conexion_vga conex(.clk(clk_delay),
+	conexion_vga conex(.clk(clk),
 							.en_put_barcos(en_put_barcos),
 							.en_attack(en_attack),
 							.en_pc_attack(en_pc_attack),
+							.en_check_pc_life(en_check_pc_life),
+							.en_check_player_life(en_check_player_life),
 							.matriz_pc(matriz_pc_final),
 							.matriz_player(matriz_player_final),
 							.posicion_x_move(posicion_x_move),

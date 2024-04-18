@@ -1,5 +1,5 @@
 Flow report for battleship
-Wed Apr 17 17:59:01 2024
+Wed Apr 17 19:22:51 2024
 Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------------------+
 ; Flow Summary                                                                 ;
 +-----------------------------+------------------------------------------------+
-; Flow Status                 ; Successful - Wed Apr 17 17:59:01 2024          ;
+; Flow Status                 ; Successful - Wed Apr 17 19:22:51 2024          ;
 ; Quartus Prime Version       ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
 ; Revision Name               ; battleship                                     ;
 ; Top-level Entity Name       ; battleship                                     ;
@@ -63,7 +63,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/17/2024 17:58:54 ;
+; Start date & time ; 04/17/2024 19:22:45 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; battleship          ;
 +-------------------+---------------------+
@@ -74,7 +74,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID                ; 4863412388747.171339833412604          ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID                ; 4863412388747.171340336413020          ; --            ; --          ; --                                ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; battleship_tb                     ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
@@ -108,7 +108,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Elaboration ; 00:00:07     ; 1.0                     ; 4807 MB             ; 00:00:17                           ;
+; Analysis & Elaboration ; 00:00:07     ; 1.0                     ; 4800 MB             ; 00:00:17                           ;
 ; Total                  ; 00:00:07     ; --                      ; --                  ; 00:00:17                           ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 

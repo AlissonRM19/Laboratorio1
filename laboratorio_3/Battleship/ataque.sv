@@ -88,6 +88,13 @@ module ataque (input logic izquierda,
 			temp_end = 0;
 			temp_x = 3'b010;
 			temp_y = 3'b010;
+			if (!cont) begin
+				temp = '{'{0,0,0,0,0},
+							'{0,0,0,0,0},
+							'{0,0,0,0,0},
+							'{0,0,0,0,0},
+							'{0,0,0,0,0}};
+			end
 		end
 	end
 	
