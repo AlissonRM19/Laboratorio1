@@ -83,7 +83,10 @@ module ataque (input logic izquierda,
 				temp_end = 1;
 			end
 		end else if (reset) begin
+			temp_x = 3'b010;
+			temp_y = 3'b010;
 			cont = 0;
+			temp_end = 0;
 		end else begin
 			temp_end = 0;
 			temp_x = 3'b010;

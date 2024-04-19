@@ -65,6 +65,7 @@ module ataque_pc (input logic [2:0] random_x,
 			end
 		end else if (reset) begin
 			cont = 0;
+			temp_end = 0;
 		end else begin
 			temp_end = 0;
 			if (!cont) begin

@@ -73,18 +73,18 @@ module battleship_tb;
 		attack = 0;
 		poner = 0;
 		reset = 1;
-		#10000
+		#500000000
 		
 		// Seleccion de barcos
 		reset = 0;
 		barcos = 2;
-		#10000
+		#500000000
 		
 		attack = 1;
-		#15000
+		#750000000
 		
 		attack = 0;
-		#5000
+		#250000000
 		
 		// Pone barco 5
 		/*poner = 1;
@@ -115,35 +115,35 @@ module battleship_tb;
 		
 		// Pone barco 2
 		derecha = 1;
-		#10000
+		#500000000
 		derecha = 0;
 		abajo = 1;
-		#10000
+		#500000000
 		abajo = 0;
 		poner = 1;
-		#10000
+		#500000000
 		poner = 0;
 		
 		// Pone barco 1
 		derecha = 1;
-		#10000
+		#500000000
 		derecha = 0;
 		abajo = 1;
-		#10000
+		#500000000
 		abajo = 0;
 		poner = 1;
-		#10000
+		#500000000
 		poner = 0;
-		#10000
+		#500000000
 		
 		// Ataque
 		/*derecha = 1;
 		#100
 		derecha = 0;*/
 		attack = 1;
-		#10000
+		#500000000
 		attack = 0;
-		#100000
+		#500000000
 		
 		$stop;
 	end

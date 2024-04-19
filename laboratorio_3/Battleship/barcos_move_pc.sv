@@ -1,5 +1,6 @@
 module barcos_move_pc (	input logic [2:0] random_x,
 								input logic [2:0] random_y,
+								input logic reset,
 								input logic en_put_barcos,
 								input logic [2:0] barcos,
 								input logic [3:0] matriz_pc_begin [4:0] [4:0],
@@ -11,7 +12,7 @@ module barcos_move_pc (	input logic [2:0] random_x,
 	logic cont = 0;
 	logic [2:0] temp_barcos;
 	
-	always @ (random_x, random_y, en_put_barcos) begin
+	always @ (random_x, random_y, en_put_barcos, reset) begin
 		if (en_put_barcos) begin
 			if (!cont) begin
 				temp = matriz_pc_begin;
@@ -61,6 +62,9 @@ module barcos_move_pc (	input logic [2:0] random_x,
 						end
 				default: temp = temp;
 			endcase
+		end else if (reset) begin
+			cont = 0;
+			temp_barcos = 1;
 		end else begin
 			cont = 0;
 		end

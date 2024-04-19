@@ -4,6 +4,7 @@ module barcos_move (input logic izquierda,
 						  input logic derecha,
 						  input logic poner,
 						  input logic en_put_barcos,
+						  input logic reset,
 						  input logic [2:0] barcos,
 						  input logic [3:0] matriz_player_begin [4:0] [4:0],
 						 output logic end_move_barcos,
@@ -18,7 +19,7 @@ module barcos_move (input logic izquierda,
 	logic [2:0] temp_x = 3'b100;
 	logic [2:0] temp_y = 3'b100;
 	
-	always @ (izquierda, arriba, abajo, derecha, en_put_barcos, poner) begin
+	always @ (izquierda, arriba, abajo, derecha, en_put_barcos, poner,reset) begin
 		if (en_put_barcos) begin
 			if (!cont) begin
 				temp = matriz_player_begin;
@@ -122,6 +123,9 @@ module barcos_move (input logic izquierda,
 						end
 				default: temp = temp;
 			endcase
+		end else if (reset) begin
+			cont = 0;
+			temp_barcos = 1;
 		end else begin
 			cont = 0;
 		end

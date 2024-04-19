@@ -4,7 +4,8 @@ module vga(input logic clk,
 			output logic vgaclk, // 25.175 MHz VGA clock
 			output logic hsync, vsync,
 			output logic sync_b, blank_b, // To monitor & DAC
-			output logic [7:0] r, g, b); // To video DAC
+			output logic [7:0] r, g, b,  // To video DAC
+			output logic [3:0] prueba);
 	
 	
 	//Temporales de conexion
@@ -25,4 +26,7 @@ module vga(input logic clk,
 	vgaController vgaCont(vgaclk, hsync, vsync, sync_b, blank_b, x, y);
 	// User-defined module to determine pixel color
 	videoGen videoGen(x, y, matriz_player_final, matriz_pc_final,clk, r, g, b);
+	
+	assign prueba = matriz_pc_final[2][2];
+	
 endmodule
