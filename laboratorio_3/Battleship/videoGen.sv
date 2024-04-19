@@ -1909,6 +1909,34 @@ module videoGen(input logic [9:0] x, y,
 				b = 8'h00;
 			end
 		end
+		
+	//--------------------------------------------------------------------------------------------------------------------
+		//Mensajes del juego
+		 
+		
+		// Declaración de la variable ganar
+	//logic [31:0] ganar = 32'h0; // Usando 'logic' para representar un entero de 32 bits inicializado en 0
+
+	// Mensajes del juego
+
+	// El jugador Pierde
+	if (x >= 10'd79 && x <= 10'd149 && y >= 10'd15 && y <= 10'd30) begin
+		//if (ganar == 32'h0) begin // Comparación con el valor correcto de ganar
+			r = 8'hFF;
+			g = 8'h00;
+			b = 8'h00;
+		//end
+	end
+
+	// El jugador Gana
+	if (x >= 10'd400 && x <= 10'd470 && y >= 10'd15 && y <= 10'd30) begin
+		//if (ganar == 32'h1) begin // Comparación con el valor correcto de ganar
+			r = 8'h00;
+			g = 8'hFF;
+			b = 8'h00;
+		//end
+	end
+		
 		  
 	end
 
