@@ -1,0 +1,6 @@
+module conexion_vga ();
+
+	always @() begin
+	end
+
+endmodule
