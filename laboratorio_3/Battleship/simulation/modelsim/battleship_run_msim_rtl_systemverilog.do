@@ -73,7 +73,6 @@ vlog -sv -work work +incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laborator
 vlog -sv -work work +incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship {C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/barcos_move.sv}
 vlog -sv -work work +incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship {C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/ataque.sv}
 vlog -sv -work work +incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship {C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/vga.sv}
-vlog -sv -work work +incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship {C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/rectgen.sv}
 vlog -sv -work work +incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship {C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/vgaController.sv}
 vlog -sv -work work +incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship {C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/laboratorio_3/Battleship/videoGen.sv}
 

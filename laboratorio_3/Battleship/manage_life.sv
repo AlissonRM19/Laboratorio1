@@ -10,7 +10,7 @@ module manage_life (	input logic en_put_barcos,
 
 			
 	logic [2:0] temp [4:0];
-	logic [6:0] temp_display_life = 7'b0010010;
+	logic [6:0] temp_display_life = 7'b1111001;
 	logic [2:0] temp_life = 1;
 	
 	always @(posedge en_put_barcos, posedge en_check_life, posedge reset) begin
@@ -53,7 +53,7 @@ module manage_life (	input logic en_put_barcos,
 		end else begin
 			case(impact_ship)
 				3'b101: 	begin
-								if (temp[4]) begin
+								if (temp[4]==1) begin
 									temp_life = temp_life - 1;
 									temp[4] = 0;
 								end else begin
@@ -61,7 +61,7 @@ module manage_life (	input logic en_put_barcos,
 								end
 							end
 				3'b100: 	begin
-								if (temp[3]) begin
+								if (temp[3]==1) begin
 									temp_life = temp_life - 1;
 									temp[3] = 0;
 								end else begin
@@ -69,7 +69,7 @@ module manage_life (	input logic en_put_barcos,
 								end
 							end
 				3'b011: 	begin
-								if (temp[2]) begin
+								if (temp[2]==1) begin
 									temp_life = temp_life - 1;
 									temp[2] = 0;
 								end else begin
@@ -77,7 +77,7 @@ module manage_life (	input logic en_put_barcos,
 								end
 							end
 				3'b010: 	begin
-								if (temp[1]) begin
+								if (temp[1]==1) begin
 									temp_life = temp_life - 1;
 									temp[1] = 0;
 								end else begin

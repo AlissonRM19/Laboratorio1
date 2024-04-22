@@ -1,4 +1,6 @@
 module vga(input logic clk,
+			 input logic dead_pc,
+			 input logic dead_player,
 			input logic [3:0] matriz_pc_final [4:0] [4:0],
 			input logic [3:0] matriz_player_final [4:0] [4:0],
 			output logic vgaclk, // 25.175 MHz VGA clock
@@ -25,8 +27,8 @@ module vga(input logic clk,
 	// Generate monitor timing signals
 	vgaController vgaCont(vgaclk, hsync, vsync, sync_b, blank_b, x, y);
 	// User-defined module to determine pixel color
-	videoGen videoGen(x, y, matriz_player_final, matriz_pc_final,clk, r, g, b);
+	videoGen videoGen(x, y, matriz_player_final, matriz_pc_final,dead_pc,dead_player, r, g, b);
 	
-	assign prueba = matriz_pc_final[2][2];
+	assign prueba = matriz_player_final[4][4];
 	
 endmodule

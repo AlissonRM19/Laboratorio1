@@ -14,21 +14,12 @@ module ataque (input logic izquierda,
 				  output logic [2:0] posicion_y_attack);
 
 	logic [3:0] temp [4:0] [4:0];
-	logic cont = 0;
 	logic temp_end = 0;
 	logic [2:0] temp_x = 3'b010;
 	logic [2:0] temp_y = 3'b010;
 	
 	always @ (izquierda, arriba, abajo, derecha, en_attack, attack, reset) begin
 		if (en_attack) begin
-			if (!cont) begin
-				temp = '{'{0,0,0,0,0},
-							'{0,0,0,0,0},
-							'{0,0,0,0,0},
-							'{0,0,0,0,0},
-							'{0,0,0,0,0}};
-				cont = 1;
-			end
 			if (izquierda && temp_x != 3'b100) begin
 				temp_x = temp_x + 1;
 			end else if (derecha && temp_x != 0) begin
@@ -50,6 +41,7 @@ module ataque (input logic izquierda,
 					4'b0010: begin
 									if (hp_pc[1] == 1) begin
 										temp[temp_y][temp_x] = 8;
+										temp[temp_y][temp_x-1] = 8;
 									end else begin
 										temp[temp_y][temp_x] = 7;
 									end
@@ -58,6 +50,8 @@ module ataque (input logic izquierda,
 					4'b0011: begin
 									if (hp_pc[2] == 1) begin
 										temp[temp_y][temp_x] = 8;
+										temp[temp_y][temp_x-1] = 8;
+										temp[temp_y][temp_x-2] = 8;
 									end else begin
 										temp[temp_y][temp_x] = 7;
 									end
@@ -66,6 +60,9 @@ module ataque (input logic izquierda,
 					4'b0100: begin
 									if (hp_pc[3] == 1) begin
 										temp[temp_y][temp_x] = 8;
+										temp[temp_y][temp_x-1] = 8;
+										temp[temp_y][temp_x-2] = 8;
+										temp[temp_y][temp_x-3] = 8;
 									end else begin
 										temp[temp_y][temp_x] = 7;
 									end
@@ -74,6 +71,10 @@ module ataque (input logic izquierda,
 					4'b0101: begin
 									if (hp_pc[4] == 1) begin
 										temp[temp_y][temp_x] = 8;
+										temp[temp_y][temp_x-1] = 8;
+										temp[temp_y][temp_x-2] = 8;
+										temp[temp_y][temp_x-3] = 8;
+										temp[temp_y][temp_x-4] = 8;
 									end else begin
 										temp[temp_y][temp_x] = 7;
 									end
@@ -85,19 +86,16 @@ module ataque (input logic izquierda,
 		end else if (reset) begin
 			temp_x = 3'b010;
 			temp_y = 3'b010;
-			cont = 0;
 			temp_end = 0;
+			temp = '{'{0,0,0,0,0},
+						'{0,0,0,0,0},
+						'{0,0,0,0,0},
+						'{0,0,0,0,0},
+						'{0,0,0,0,0}};
 		end else begin
 			temp_end = 0;
 			temp_x = 3'b010;
 			temp_y = 3'b010;
-			if (!cont) begin
-				temp = '{'{0,0,0,0,0},
-							'{0,0,0,0,0},
-							'{0,0,0,0,0},
-							'{0,0,0,0,0},
-							'{0,0,0,0,0}};
-			end
 		end
 	end
 	

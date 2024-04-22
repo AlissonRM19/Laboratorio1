@@ -14,18 +14,15 @@ module conexion_vga (input logic clk,
 							input logic [2:0] posicion_y_attack,
 							//extras
 							input logic [3:0] matriz_player_temp [4:0] [4:0],
-							input logic [3:0] matriz_pc_temp [4:0] [4:0],
 							output logic [3:0] matriz_pc_final [4:0] [4:0],
 							output logic [3:0] matriz_player_final [4:0] [4:0]
 							);
 
 	logic [3:0] temp_pc [4:0] [4:0];
 	logic [3:0] temp_player [4:0] [4:0];
-	logic [1:0] cont=0;
 							
 	always @(clk,en_put_barcos,en_attack,en_pc_attack) begin
-		/*if (en_put_barcos) begin
-			temp_pc=matriz_pc_temp;
+		if (en_put_barcos) begin
 			temp_player = matriz_player_temp;
 			temp_player[posicion_y_move][posicion_x_move] = 9;
 		end else if (en_attack || en_check_pc_life) begin
@@ -46,8 +43,8 @@ module conexion_vga (input logic clk,
 								 '{0,0,0,0,0},
 								 '{0,0,0,0,0},
 								 '{0,0,0,0,0}};
-		end*/
-		if (cont==1) begin
+		end
+		/*if (cont==1) begin
 			temp_pc = '{'{0,0,0,0,0},
 						   '{0,0,0,0,0},
 							'{0,0,1,0,0},
@@ -95,7 +92,7 @@ module conexion_vga (input logic clk,
 								 '{0,0,0,0,0},
 								 '{0,0,0,0,0}};
 			cont=1;
-		end
+		end*/
 		/*
 		temp_pc = '{'{8,0,0,0,0},
 						'{0,6,9,6,0},

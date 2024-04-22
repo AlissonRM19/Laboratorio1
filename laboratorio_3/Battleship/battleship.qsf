@@ -42,7 +42,7 @@ set_global_assignment -name DEVICE 5CSEMA5F31C6
 set_global_assignment -name TOP_LEVEL_ENTITY battleship
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 22.1STD.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "09:40:48  MARCH 20, 2024"
-set_global_assignment -name LAST_QUARTUS_VERSION "20.1.1 Lite Edition"
+set_global_assignment -name LAST_QUARTUS_VERSION "22.1std.0 Lite Edition"
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name BOARD "DE1-SoC Board"
 set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim (SystemVerilog)"
@@ -113,9 +113,6 @@ set_global_assignment -name SYSTEMVERILOG_FILE videoGen.sv
 set_global_assignment -name QIP_FILE pll.qip
 set_global_assignment -name SIP_FILE pll.sip
 set_global_assignment -name SYSTEMVERILOG_FILE chargenrom.sv
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_location_assignment PIN_AB12 -to barcos[0]
 set_location_assignment PIN_AC12 -to barcos[1]
 set_location_assignment PIN_AF9 -to barcos[2]
@@ -157,4 +154,27 @@ set_location_assignment PIN_W17 -to led_4
 set_location_assignment PIN_V18 -to led_3
 set_location_assignment PIN_V17 -to led_2
 set_location_assignment PIN_W16 -to led_1
+set_location_assignment PIN_AB23 -to time_s[0]
+set_location_assignment PIN_AE29 -to time_s[1]
+set_location_assignment PIN_AD29 -to time_s[2]
+set_location_assignment PIN_AC28 -to time_s[3]
+set_location_assignment PIN_AD30 -to time_s[4]
+set_location_assignment PIN_AC29 -to time_s[5]
+set_location_assignment PIN_AC30 -to time_s[6]
+set_location_assignment PIN_AA24 -to impacto[0]
+set_location_assignment PIN_Y23 -to impacto[1]
+set_location_assignment PIN_Y24 -to impacto[2]
+set_location_assignment PIN_W22 -to impacto[3]
+set_location_assignment PIN_W24 -to impacto[4]
+set_location_assignment PIN_V23 -to impacto[5]
+set_location_assignment PIN_W25 -to impacto[6]
+set_location_assignment PIN_AJ29 -to x_0
+set_location_assignment PIN_AH29 -to x_1
+set_location_assignment PIN_AH30 -to x_2
+set_location_assignment PIN_AG30 -to y_0
+set_location_assignment PIN_AF29 -to y_1
+set_location_assignment PIN_AF30 -to y_2
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

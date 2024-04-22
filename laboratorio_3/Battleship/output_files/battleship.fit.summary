@@ -1,13 +1,13 @@
-Fitter Status : Successful - Thu Apr 18 20:09:22 2024
-Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Fitter Status : Successful - Fri Apr 19 13:41:17 2024
+Quartus Prime Version : 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 Revision Name : battleship
 Top-level Entity Name : battleship
 Family : Cyclone V
 Device : 5CSEMA5F31C6
 Timing Models : Final
-Logic utilization (in ALMs) : 1,257 / 32,070 ( 4 % )
-Total registers : 174
-Total pins : 71 / 457 ( 16 % )
+Logic utilization (in ALMs) : 1,988 / 32,070 ( 6 % )
+Total registers : 185
+Total pins : 91 / 457 ( 20 % )
 Total virtual pins : 0
 Total block memory bits : 0 / 4,065,280 ( 0 % )
 Total RAM Blocks : 0 / 397 ( 0 % )

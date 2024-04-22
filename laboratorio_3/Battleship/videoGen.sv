@@ -1,14 +1,15 @@
 module videoGen(input logic [9:0] x, y,
 					 input logic [3:0] matriz_player_final [4:0] [4:0],
 					 input logic [3:0] matriz_pc_final [4:0] [4:0],
-					 input logic vgaclk,
+					 input logic dead_pc,
+					 input logic dead_player,
 					 output logic [7:0] r, g, b);
  
     /*logic pixel, inrect1, inrect2;
     rectgen rectgen1(inrect1);*/
 	 
 
-	 always @(vgaclk,x,y) begin
+	 always @(*) begin
 	  // Asignación de color negro por defecto
         r = 8'h00;
         g = 8'h00;
@@ -1920,7 +1921,7 @@ module videoGen(input logic [9:0] x, y,
 	// Mensajes del juego
 
 	// El jugador Pierde
-	if (x >= 10'd79 && x <= 10'd149 && y >= 10'd15 && y <= 10'd30) begin
+	if (x >= 10'd79 && x <= 10'd149 && y >= 10'd15 && y <= 10'd30 && dead_player) begin
 		//if (ganar == 32'h0) begin // Comparación con el valor correcto de ganar
 			r = 8'hFF;
 			g = 8'h00;
@@ -1929,7 +1930,7 @@ module videoGen(input logic [9:0] x, y,
 	end
 
 	// El jugador Gana
-	if (x >= 10'd400 && x <= 10'd470 && y >= 10'd15 && y <= 10'd30) begin
+	if (x >= 10'd400 && x <= 10'd470 && y >= 10'd15 && y <= 10'd30 && dead_pc) begin
 		//if (ganar == 32'h1) begin // Comparación con el valor correcto de ganar
 			r = 8'h00;
 			g = 8'hFF;

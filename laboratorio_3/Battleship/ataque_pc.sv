@@ -6,7 +6,8 @@ module ataque_pc (input logic [2:0] random_x,
 						input logic [3:0] matriz_player_temp [4:0] [4:0],
 					  output logic end_pc_attack,
 					  output logic [2:0] impact_ship_player,
-				     output logic [3:0] matriz_player_final [4:0] [4:0]);
+				     output logic [3:0] matriz_player_final [4:0] [4:0],
+					  output logic [6:0] impacto);
 
 	logic [3:0] temp [4:0] [4:0];
 	logic cont = 0;
@@ -61,11 +62,21 @@ module ataque_pc (input logic [2:0] random_x,
 									impact_ship_player = 5;
 								end
 				endcase
+				case(impact_ship_player)
+					4'b0000: impacto = 7'b1000000;  //	Representa 0
+					4'b0001: impacto = 7'b1111001;  //	Representa 1
+					4'b0010: impacto = 7'b0100100;  //	Representa 2
+					4'b0011: impacto = 7'b0110000;  //	Representa 3
+					4'b0100: impacto = 7'b0011001;  //	Representa 4
+					4'b0101: impacto = 7'b0010010;  //	Representa 5
+					default: impacto = 7'b0000000;  //  Representa otro valor
+				endcase
 				temp_end = 1;
 			end
 		end else if (reset) begin
-			cont = 0;
+			cont=0;
 			temp_end = 0;
+			temp = matriz_player_temp;
 		end else begin
 			temp_end = 0;
 			if (!cont) begin

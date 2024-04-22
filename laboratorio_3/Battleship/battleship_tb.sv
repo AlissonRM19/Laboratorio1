@@ -1,6 +1,4 @@
-`timescale 1ps/1ps
-`default_nettype none
-`define TESTING
+`timescale 1ps / 1ps
 module battleship_tb;
 
 
@@ -15,13 +13,13 @@ module battleship_tb;
 	logic [2:0] barcos;
 	logic [6:0] life_pc;
 	logic [6:0] life_player;
-	logic vgaclk;
-	logic hsync, vsync;
-	logic sync_b, blank_b;
-	logic [7:0] r, g, b;
-	
+	//logic vgaclk;
+	//logic hsync, vsync;
+	//logic sync_b, blank_b;
+	//logic [7:0] r, g, b;
 	//
 	logic [6:0] lugar;
+	logic [6:0] time_s;
 	/*logic [2:0] posicion_x_move;
 	logic [2:0] posicion_y_move;
 	logic [2:0] posicion_x_attack;
@@ -40,16 +38,17 @@ module battleship_tb;
 							.barcos(barcos),
 							.life_pc(life_pc),
 							.life_player(life_player),
-							.vgaclk(vgaclk),
+							/*.vgaclk(vgaclk),
 							.hsync(hsync),
 							.vsync(vsync),
 							.sync_b(sync_b),
 							.blank_b(blank_b),
 							.r(r),
 							.g(g),
-							.b(b),
+							.b(b),*/
 							//
-							.lugar(lugar)
+							.lugar(lugar),
+							.time_s(time_s)
 							//
 							/*.posicion_x_move(posicion_x_move),
 							.posicion_y_move(posicion_y_move),
@@ -73,18 +72,18 @@ module battleship_tb;
 		attack = 0;
 		poner = 0;
 		reset = 1;
-		#500000000
+		#10000
 		
 		// Seleccion de barcos
 		reset = 0;
 		barcos = 2;
-		#500000000
+		#10000
 		
 		attack = 1;
-		#750000000
+		#15000
 		
 		attack = 0;
-		#250000000
+		#5000
 		
 		// Pone barco 5
 		/*poner = 1;
@@ -115,35 +114,69 @@ module battleship_tb;
 		
 		// Pone barco 2
 		derecha = 1;
-		#500000000
+		#10000
 		derecha = 0;
 		abajo = 1;
-		#500000000
+		#10000
 		abajo = 0;
 		poner = 1;
-		#500000000
+		#10000
 		poner = 0;
 		
 		// Pone barco 1
 		derecha = 1;
-		#500000000
+		#10000
 		derecha = 0;
 		abajo = 1;
-		#500000000
+		#10000
 		abajo = 0;
 		poner = 1;
-		#500000000
+		#10000
 		poner = 0;
-		#500000000
+		#10000
 		
-		// Ataque
-		/*derecha = 1;
-		#100
-		derecha = 0;*/
+		// Ataque a 1,0
+		derecha = 1;
+		#10000
+		derecha = 0;
+		abajo = 1;
+		#10000
+		abajo = 0;
+		#10
+		abajo = 1;
+		#9990
+		abajo = 0;
 		attack = 1;
-		#500000000
+		#10000
 		attack = 0;
-		#500000000
+		#840000
+		
+		// Ataque a 0,3
+		derecha = 1;
+		#10000
+		derecha = 0;
+		arriba = 1;
+		#10000
+		arriba = 0;
+		derecha = 1;
+		#10000
+		derecha = 0;
+		attack = 1;
+		#10000
+		attack = 0;
+		#120000
+		
+		// Ataque a 1,3
+		derecha = 1;
+		#10000
+		derecha = 0;
+		arriba = 1;
+		#10000
+		arriba = 0;
+		attack = 1;
+		#10000
+		attack = 0;
+		#50000
 		
 		$stop;
 	end

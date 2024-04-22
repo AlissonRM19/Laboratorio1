@@ -200,7 +200,47 @@
 					"strict" : false
 				},
 				{
+					"name" : "time_s[0]",
+					"strict" : false
+				},
+				{
+					"name" : "time_s[1]",
+					"strict" : false
+				},
+				{
+					"name" : "time_s[2]",
+					"strict" : false
+				},
+				{
+					"name" : "time_s[3]",
+					"strict" : false
+				},
+				{
+					"name" : "time_s[4]",
+					"strict" : false
+				},
+				{
+					"name" : "time_s[5]",
+					"strict" : false
+				},
+				{
+					"name" : "time_s[6]",
+					"strict" : false
+				},
+				{
 					"name" : "led_0",
+					"strict" : false
+				},
+				{
+					"name" : "led_1",
+					"strict" : false
+				},
+				{
+					"name" : "led_2",
+					"strict" : false
+				},
+				{
+					"name" : "led_3",
 					"strict" : false
 				},
 				{
@@ -228,6 +268,58 @@
 					"strict" : false
 				},
 				{
+					"name" : "impacto[0]",
+					"strict" : false
+				},
+				{
+					"name" : "impacto[1]",
+					"strict" : false
+				},
+				{
+					"name" : "impacto[2]",
+					"strict" : false
+				},
+				{
+					"name" : "impacto[3]",
+					"strict" : false
+				},
+				{
+					"name" : "impacto[4]",
+					"strict" : false
+				},
+				{
+					"name" : "impacto[5]",
+					"strict" : false
+				},
+				{
+					"name" : "impacto[6]",
+					"strict" : false
+				},
+				{
+					"name" : "x_0",
+					"strict" : false
+				},
+				{
+					"name" : "x_1",
+					"strict" : false
+				},
+				{
+					"name" : "x_2",
+					"strict" : false
+				},
+				{
+					"name" : "y_0",
+					"strict" : false
+				},
+				{
+					"name" : "y_1",
+					"strict" : false
+				},
+				{
+					"name" : "y_2",
+					"strict" : false
+				},
+				{
 					"name" : "attack",
 					"strict" : false
 				},
@@ -252,11 +344,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "poner",
+					"name" : "abajo",
 					"strict" : false
 				},
 				{
-					"name" : "derecha",
+					"name" : "arriba",
 					"strict" : false
 				},
 				{
@@ -264,11 +356,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "abajo",
+					"name" : "derecha",
 					"strict" : false
 				},
 				{
-					"name" : "arriba",
+					"name" : "poner",
 					"strict" : false
 				}
 			]

@@ -10,7 +10,8 @@ module barcos_move (input logic izquierda,
 						 output logic end_move_barcos,
 						 output logic [3:0] matriz_player_temp [4:0] [4:0],
 						 output logic [2:0] posicion_x_move,
-						 output logic [2:0] posicion_y_move
+						 output logic [2:0] posicion_y_move,
+						 output logic [2:0] barcos_poner
 						  );
 	
 	logic [3:0] temp [4:0] [4:0];
@@ -124,10 +125,15 @@ module barcos_move (input logic izquierda,
 				default: temp = temp;
 			endcase
 		end else if (reset) begin
-			cont = 0;
+			cont=0;
 			temp_barcos = 1;
+			temp = matriz_player_begin;
+			temp_x = 3'b100;
+			temp_y = 3'b100;
 		end else begin
-			cont = 0;
+			temp_x = 3'b100;
+			cont=0;
+			temp_y = 3'b100;
 		end
 	end
 	
@@ -135,6 +141,8 @@ module barcos_move (input logic izquierda,
 	assign matriz_player_temp = temp;
 	assign posicion_x_move = temp_x;
 	assign posicion_y_move = temp_y;
+	assign barcos_poner = temp_barcos;
+	
 	
 endmodule
 
