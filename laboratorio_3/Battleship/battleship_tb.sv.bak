@@ -1,0 +1,22 @@
+module battleship_tb;
+
+	logic clk;
+	logic reset;
+	logic attack;
+	logic [2:0] barcos;
+	logic en;
+
+	battleship game ();
+	
+	always begin
+		#10 clk = ~clk;
+	end
+	
+	initial begin
+		clk = 0;
+		reset = 1;
+		#10
+		
+	end
+	
+endmodule
