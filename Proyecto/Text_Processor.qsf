@@ -55,3 +55,8 @@ set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_
 set_global_assignment -name SYSTEMVERILOG_FILE Text_Processor.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Processor.sv
 set_global_assignment -name SYSTEMVERILOG_FILE VGA.sv
+set_global_assignment -name MIF_FILE M_ROM.mif
+set_global_assignment -name QIP_FILE Instruction_Memory.qip
+set_global_assignment -name SYSTEMVERILOG_FILE MUX.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Control_Unit.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Register_File.sv
