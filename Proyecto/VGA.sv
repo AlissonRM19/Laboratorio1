@@ -8,6 +8,7 @@ output logic [7:0] r, g, b); // To video DAC
 	logic [9:0] x, y;
 	logic [7:0] current_char; // Letra actual a mostrar
 
+
 	// Use a PLL to create the 25.175 MHz VGA pixel clock
 	// 25.175 MHz clk period = 39.772 ns
 	// Screen is 800 clocks wide by 525 tall, but only 640 x 480 used
@@ -21,6 +22,6 @@ output logic [7:0] r, g, b); // To video DAC
 	wordGenerator wordGen(clk, x, y, current_char); // Instancia del generador de palabras
 
 	// User-defined module to determine pixel color
-	videoGen videoGen(x, y, current_char, r, g, b);
+	videoGen videoGen(x, y, current_char,r, g, b);
 
 endmodule
