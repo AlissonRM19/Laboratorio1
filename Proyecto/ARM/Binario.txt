@@ -1,0 +1,121 @@
+
+------------------
+inicio:
+	E59F10E4
+	E59F30E4
+	E59F60E4
+
+	EBFFFFFF
+
+
+modificar_vocales:	
+	E3A04000
+	E3A05000
+	
+
+comparar_caracteres:
+	
+	comparar_fin
+		E1510006
+		AA000031
+
+	carga_byte
+		E5D30000
+		E5D17000
+
+	comparar_simbolos
+		E3570020
+		0A000010
+		E357002C
+		0A00000E
+		E357002E
+		0A00000C
+
+	comparar_vocales
+		E3570041
+		0A000023
+		E3570045
+		0A000021	
+		E3570049
+		0A00001F
+		E357004F
+		0A00001D
+		E3570055
+		0A00001B
+	
+	incrementa_contadores
+		E2811001
+		E2855001
+		
+		EAFFFFE8
+
+
+verificar_fin:	
+	E1540000
+	1A000012
+
+	E0419005
+
+
+loop_aux_cambiar_vocal:
+
+	E5D97000
+	
+	comparar_vocales_para_reemplazar:
+
+		E3570041
+		0A000008
+		E3570045
+		0A000006
+		E3570049
+		0A000006
+		E3570049
+		0A000004
+		E357004F
+		0A000002
+		E3570055
+		0A000000
+
+	EA000001
+
+
+cambiar_vocal:
+
+	E3A07026
+	E5C97000
+
+
+siguiente_caracter:
+	
+	E2899001
+	E2455001
+	E3550000
+
+	1AFFFFED
+
+
+reset:
+
+	E3A04000
+	E3A05000
+	E2811001
+
+	EAFFFFCF
+
+
+es_vocal:
+	
+	E2844001
+	E2811001
+	E2855001
+
+	EAFFFFCB
+
+
+fin:
+	EAFFFFFE
+------------------
+
+000000F8
+00000169
+0000016D
