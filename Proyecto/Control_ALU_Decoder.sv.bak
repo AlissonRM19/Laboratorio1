@@ -1,0 +1,15 @@
+module Control_ALU_Decoder (	input logic aluop,
+										input logic [5:0] funct,
+										output logic [1:0] alucontrol,
+										output logic [1:0] flagw);
+			
+				
+	always @(*) begin
+		if (aluop) begin
+			
+		end else begin
+			
+		end
+	end
+
+endmodule
