@@ -11,24 +11,24 @@ cModel Technology
 Z0 dC:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/Proyecto/simulation/modelsim
 vALU
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1717173371
+Z2 !s110 1717181521
 !i10b 1
-!s100 iW<U69>naQjm:VA@AzekS1
+!s100 XHkmS`HYQISX4`lZ=]<CI0
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-I?Yel6B]8V;2:?<n6^J>Fh1
+In[^AHalZi<Ac?K2^NM1dK1
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-w1717173202
+w1717181442
 8C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/Proyecto/ALU.sv
 FC:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/Proyecto/ALU.sv
-!i122 6
-L0 1 81
+!i122 0
+L0 1 88
 Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1717173371.000000
+Z6 !s108 1717181521.000000
 !s107 C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/Proyecto/ALU.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/Proyecto|C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/Proyecto/ALU.sv|
 !i113 1
@@ -46,7 +46,7 @@ Ia8IGJ0mMzzMY2L_KV6E1K1
 R4
 S1
 R0
-w1717173283
+w1717181020
 8C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/Proyecto/ALU_tb.sv
 FC:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/Proyecto/ALU_tb.sv
 !i122 7
@@ -76,7 +76,7 @@ R0
 Z10 w1709302877
 8C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/Proyecto/Restador_completo.sv
 FC:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/Proyecto/Restador_completo.sv
-!i122 5
+!i122 6
 L0 1 12
 R5
 r1
@@ -103,7 +103,7 @@ R0
 R10
 8C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/Proyecto/Restador_medio.sv
 FC:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/Proyecto/Restador_medio.sv
-!i122 4
+!i122 5
 Z11 L0 1 10
 R5
 r1
@@ -130,7 +130,7 @@ R0
 w1709444764
 8C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/Proyecto/restadornbits.sv
 FC:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/Proyecto/restadornbits.sv
-!i122 3
+!i122 4
 Z12 L0 1 36
 R5
 r1
@@ -145,7 +145,7 @@ R8
 R9
 vSumador_completo
 R1
-Z13 !s110 1717173370
+R2
 !i10b 1
 !s100 WhZ:A5Qij6K4MR^R[`B9[2
 R3
@@ -153,16 +153,16 @@ IAGHP2T<Zz>@KKR3DTY5EP0
 R4
 S1
 R0
-Z14 w1709233869
+Z13 w1709233869
 8C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/Proyecto/Sumador_completo.sv
 FC:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/Proyecto/Sumador_completo.sv
-!i122 2
+!i122 3
 L0 1 11
 R5
 r1
 !s85 0
 31
-Z15 !s108 1717173370.000000
+R6
 !s107 C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/Proyecto/Sumador_completo.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/Proyecto|C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/Proyecto/Sumador_completo.sv|
 !i113 1
@@ -172,7 +172,7 @@ R9
 n@sumador_completo
 vSumador_medio
 R1
-R13
+R2
 !i10b 1
 !s100 _BDhM_?Zej[2h=KX9kX123
 R3
@@ -180,16 +180,16 @@ Ijm]7X;klJRzgEXW@P]l4]3
 R4
 S1
 R0
-R14
+R13
 8C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/Proyecto/Sumador_medio.sv
 FC:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/Proyecto/Sumador_medio.sv
-!i122 1
+!i122 2
 R11
 R5
 r1
 !s85 0
 31
-R15
+R6
 !s107 C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/Proyecto/Sumador_medio.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/Proyecto|C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/Proyecto/Sumador_medio.sv|
 !i113 1
@@ -199,7 +199,7 @@ R9
 n@sumador_medio
 vsumadornbits
 R1
-R13
+R2
 !i10b 1
 !s100 IVj;4T[U0K?^Z;;4FE;1_0
 R3
@@ -210,13 +210,13 @@ R0
 w1709261498
 8C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/Proyecto/sumadornbits.sv
 FC:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/Proyecto/sumadornbits.sv
-!i122 0
+!i122 1
 R12
 R5
 r1
 !s85 0
 31
-R15
+R6
 !s107 C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/Proyecto/sumadornbits.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/Proyecto|C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/Proyecto/sumadornbits.sv|
 !i113 1

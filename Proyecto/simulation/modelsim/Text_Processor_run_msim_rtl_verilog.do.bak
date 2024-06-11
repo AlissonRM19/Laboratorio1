@@ -45,13 +45,13 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
-vlog -sv -work work +incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/Proyecto {C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/Proyecto/ALU.sv}
 vlog -sv -work work +incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/Proyecto {C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/Proyecto/sumadornbits.sv}
 vlog -sv -work work +incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/Proyecto {C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/Proyecto/Sumador_medio.sv}
 vlog -sv -work work +incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/Proyecto {C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/Proyecto/Sumador_completo.sv}
 vlog -sv -work work +incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/Proyecto {C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/Proyecto/restadornbits.sv}
 vlog -sv -work work +incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/Proyecto {C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/Proyecto/Restador_medio.sv}
 vlog -sv -work work +incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/Proyecto {C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/Proyecto/Restador_completo.sv}
+vlog -sv -work work +incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/Proyecto {C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/Proyecto/ALU.sv}
 
 vlog -sv -work work +incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/Proyecto {C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/Proyecto/ALU_tb.sv}
 

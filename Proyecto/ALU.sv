@@ -15,6 +15,11 @@ module ALU #(parameter n = 32) (	input logic [n - 1:0] src1,
 	logic [n-1:0] Resultado_res;
 	logic Cout_res;
 	
+	logic [1:0] a = 2;
+	logic d = 1;
+	logic [1:0] asd;
+	logic [1:0] asd1;
+	
 	sumadornbits #(n) UUT(
 		.Ent1(src1),
 		.Ent2(src2),
@@ -77,5 +82,7 @@ module ALU #(parameter n = 32) (	input logic [n - 1:0] src1,
 		end
 	end
 	
+	assign asd = (a&d);
+	assign asd1 = (a&&d);
 			
 endmodule

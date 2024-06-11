@@ -1,0 +1,6 @@
+module extend (input logic [1:0] immsrc,
+					input logic [23:0] imm,
+					output logic [31:0] extimm
+					);
+
+endmodule
