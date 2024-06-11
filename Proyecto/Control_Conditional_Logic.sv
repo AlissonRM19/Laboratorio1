@@ -30,7 +30,7 @@ module Control_Conditional_Logic (input logic clk,
 								);
 	
 	Control_Conditional_Check ccc(.cond(cond),
-											.flags(r_flags)
+											.flags(r_flags),
 											.condex(condex)
 											);
 	

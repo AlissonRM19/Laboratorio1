@@ -4,7 +4,7 @@ module Control_ALU_Decoder (	input logic aluop,
 										output logic [1:0] flagw);
 			
 				
-	always_comb begin
+	always @(*) begin
 		if (aluop) begin
 			case (funct[4:1])
 				4'b0100:	begin

@@ -30,6 +30,7 @@ module Control_Conditional_Check (	input logic [3:0] cond,
 			4'b1101: condex = ~(~zero & ge);
 			4'b1110: condex = 1'b1;
 			default: condex = 1'bx;
+		endcase
 	end
 
 endmodule
