@@ -13,7 +13,7 @@ module Register_File (input logic clk,
 	
 	always_ff @(posedge clk) begin
 		if (we3) begin
-			register[a3] <= wd3;
+			register[a3] = wd3;
 		end
 	end
 	

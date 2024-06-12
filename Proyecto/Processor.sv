@@ -65,12 +65,12 @@ module Processor (input logic clk,
 							);
 							
 	adder #(32) pcadd1(.a(pc), 
-							.b(32'b100), 
+							.b(32'b001), 
 							.y(pcplus4)
 							);
 							
 	adder #(32) pcadd2(.a(pcplus4), 
-							.b(32'b100), 
+							.b(32'b001), 
 							.y(pcplus8)
 							);
 	
@@ -118,7 +118,8 @@ module Processor (input logic clk,
 							
 	ALU alu(.src1(srca), 
 				.src2(srcb), 
-				.alucontrol(alucontrol), 
+				.alucontrol(alucontrol),
+				.clk(clk),
 				.num(aluresult),
 				.neg(aluflags[0]),
 				.cero(aluflags[1]),
@@ -136,7 +137,7 @@ module Processor (input logic clk,
 							.clock(clk),
 							.data_a(writedata),
 							.data_b(writedata_b),
-							.wren_a(menwrite),
+							.wren_a(memwrite),
 							.wren_b(memwrite_b),
 							.q_a(readdata),
 							.q_b(ascii));

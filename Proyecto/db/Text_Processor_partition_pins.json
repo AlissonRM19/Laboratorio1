@@ -4,115 +4,87 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "ascii[0]",
+					"name" : "hsync",
 					"strict" : false
 				},
 				{
-					"name" : "ascii[1]",
+					"name" : "vsync",
 					"strict" : false
 				},
 				{
-					"name" : "ascii[2]",
+					"name" : "sync_b",
 					"strict" : false
 				},
 				{
-					"name" : "ascii[3]",
+					"name" : "blank_b",
 					"strict" : false
 				},
 				{
-					"name" : "ascii[4]",
+					"name" : "r[0]",
 					"strict" : false
 				},
 				{
-					"name" : "ascii[5]",
+					"name" : "r[1]",
 					"strict" : false
 				},
 				{
-					"name" : "ascii[6]",
+					"name" : "r[2]",
 					"strict" : false
 				},
 				{
-					"name" : "ascii[7]",
+					"name" : "r[3]",
 					"strict" : false
 				},
 				{
-					"name" : "memwrite_b",
+					"name" : "r[4]",
+					"strict" : false
+				},
+				{
+					"name" : "r[5]",
+					"strict" : false
+				},
+				{
+					"name" : "r[6]",
+					"strict" : false
+				},
+				{
+					"name" : "r[7]",
+					"strict" : false
+				},
+				{
+					"name" : "b[0]",
+					"strict" : false
+				},
+				{
+					"name" : "b[1]",
+					"strict" : false
+				},
+				{
+					"name" : "b[2]",
+					"strict" : false
+				},
+				{
+					"name" : "b[3]",
+					"strict" : false
+				},
+				{
+					"name" : "b[4]",
+					"strict" : false
+				},
+				{
+					"name" : "b[5]",
+					"strict" : false
+				},
+				{
+					"name" : "b[6]",
+					"strict" : false
+				},
+				{
+					"name" : "b[7]",
 					"strict" : false
 				},
 				{
 					"name" : "clk",
-					"strict" : false
-				},
-				{
-					"name" : "writedata_b[0]",
-					"strict" : false
-				},
-				{
-					"name" : "dataadr_b[0]",
-					"strict" : false
-				},
-				{
-					"name" : "dataadr_b[1]",
-					"strict" : false
-				},
-				{
-					"name" : "dataadr_b[2]",
-					"strict" : false
-				},
-				{
-					"name" : "dataadr_b[3]",
-					"strict" : false
-				},
-				{
-					"name" : "dataadr_b[4]",
-					"strict" : false
-				},
-				{
-					"name" : "dataadr_b[5]",
-					"strict" : false
-				},
-				{
-					"name" : "dataadr_b[6]",
-					"strict" : false
-				},
-				{
-					"name" : "dataadr_b[7]",
-					"strict" : false
-				},
-				{
-					"name" : "dataadr_b[8]",
-					"strict" : false
-				},
-				{
-					"name" : "dataadr_b[9]",
-					"strict" : false
-				},
-				{
-					"name" : "writedata_b[1]",
-					"strict" : false
-				},
-				{
-					"name" : "writedata_b[2]",
-					"strict" : false
-				},
-				{
-					"name" : "writedata_b[3]",
-					"strict" : false
-				},
-				{
-					"name" : "writedata_b[4]",
-					"strict" : false
-				},
-				{
-					"name" : "writedata_b[5]",
-					"strict" : false
-				},
-				{
-					"name" : "writedata_b[6]",
-					"strict" : false
-				},
-				{
-					"name" : "writedata_b[7]",
 					"strict" : false
 				},
 				{

@@ -1,6 +1,7 @@
 module ALU #(parameter n = 32) (	input logic [n - 1:0] src1,
 											input logic [n - 1:0] src2,
 											input logic [1:0] alucontrol,
+											input logic clk,
 											output logic neg,
 											output logic cero,
 											output logic carry,
@@ -14,11 +15,6 @@ module ALU #(parameter n = 32) (	input logic [n - 1:0] src1,
 	// RES
 	logic [n-1:0] Resultado_res;
 	logic Cout_res;
-	
-	logic [1:0] a = 2;
-	logic d = 1;
-	logic [1:0] asd;
-	logic [1:0] asd1;
 	
 	sumadornbits #(n) UUT(
 		.Ent1(src1),
@@ -41,7 +37,7 @@ module ALU #(parameter n = 32) (	input logic [n - 1:0] src1,
 		des = 0;
 	end
 	
-	always @ (*)
+	always @ (src1,src2,alucontrol)
 	begin
 		case (alucontrol)
 			2'b00:begin // Suma
@@ -81,8 +77,5 @@ module ALU #(parameter n = 32) (	input logic [n - 1:0] src1,
 			cero = 0;
 		end
 	end
-	
-	assign asd = (a&d);
-	assign asd1 = (a&&d);
 			
 endmodule
