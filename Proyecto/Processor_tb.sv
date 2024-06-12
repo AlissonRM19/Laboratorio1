@@ -22,7 +22,7 @@ module Processor_tb ();
 	initial begin
 		memwrite_b = 0;
 		writedata_b = 0;
-		dataadr_b = 100;
+		dataadr_b = 96;
 		rst = 1; 
 		# 22; 
 		rst = 0;
@@ -35,7 +35,7 @@ module Processor_tb ();
 	end
 
 	always @(negedge clk) begin
-		if(dataadr_b === 100 & ascii === 7) begin
+		if(dataadr_b === 96 & ascii === 7) begin
 			$display("Simulation succeeded");
 			$stop; 
 		end else if (dataadr_b !== 96) begin
