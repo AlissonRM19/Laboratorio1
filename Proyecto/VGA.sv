@@ -7,6 +7,9 @@ output logic [7:0] r, g, b); // To video DAC
 
 	logic [9:0] x, y;
 	logic [7:0] current_char; // Letra actual a mostrar
+   logic [7:0] current_charM; // Letra actual a mostrar modificada
+	logic [7:0] ascii = 65;
+
 
 
 	// Use a PLL to create the 25.175 MHz VGA pixel clock
@@ -20,8 +23,10 @@ output logic [7:0] r, g, b); // To video DAC
 	// Generate monitor timing signals
 	vgaController vgaCont(vgaclk, hsync, vsync, sync_b, blank_b, x, y);
 	wordGenerator wordGen(clk, x, y, current_char); // Instancia del generador de palabras
+	conexion conexM(clk, ascii,write_enable, x, y, current_charM); // Instancia del modulo de conexion
 
 	// User-defined module to determine pixel color
-	videoGen videoGen(x, y, current_char,r, g, b);
+	videoGen videoGen(x, y, current_char,current_charM, r, g, b);
 
 endmodule
+

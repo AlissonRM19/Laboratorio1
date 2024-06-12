@@ -4,83 +4,119 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "hsync",
+					"name" : "ascii[0]",
 					"strict" : false
 				},
 				{
-					"name" : "vsync",
+					"name" : "ascii[1]",
 					"strict" : false
 				},
 				{
-					"name" : "sync_b",
+					"name" : "ascii[2]",
 					"strict" : false
 				},
 				{
-					"name" : "blank_b",
+					"name" : "ascii[3]",
 					"strict" : false
 				},
 				{
-					"name" : "r[0]",
+					"name" : "ascii[4]",
 					"strict" : false
 				},
 				{
-					"name" : "r[1]",
+					"name" : "ascii[5]",
 					"strict" : false
 				},
 				{
-					"name" : "r[2]",
+					"name" : "ascii[6]",
 					"strict" : false
 				},
 				{
-					"name" : "r[3]",
+					"name" : "ascii[7]",
 					"strict" : false
 				},
 				{
-					"name" : "r[4]",
+					"name" : "memwrite_b",
 					"strict" : false
 				},
 				{
-					"name" : "r[5]",
+					"name" : "clk",
 					"strict" : false
 				},
 				{
-					"name" : "r[6]",
+					"name" : "writedata_b[0]",
 					"strict" : false
 				},
 				{
-					"name" : "r[7]",
+					"name" : "dataadr_b[0]",
 					"strict" : false
 				},
 				{
-					"name" : "b[0]",
+					"name" : "dataadr_b[1]",
 					"strict" : false
 				},
 				{
-					"name" : "b[1]",
+					"name" : "dataadr_b[2]",
 					"strict" : false
 				},
 				{
-					"name" : "b[2]",
+					"name" : "dataadr_b[3]",
 					"strict" : false
 				},
 				{
-					"name" : "b[3]",
+					"name" : "dataadr_b[4]",
 					"strict" : false
 				},
 				{
-					"name" : "b[4]",
+					"name" : "dataadr_b[5]",
 					"strict" : false
 				},
 				{
-					"name" : "b[5]",
+					"name" : "dataadr_b[6]",
 					"strict" : false
 				},
 				{
-					"name" : "b[6]",
+					"name" : "dataadr_b[7]",
 					"strict" : false
 				},
 				{
-					"name" : "b[7]",
+					"name" : "dataadr_b[8]",
+					"strict" : false
+				},
+				{
+					"name" : "dataadr_b[9]",
+					"strict" : false
+				},
+				{
+					"name" : "writedata_b[1]",
+					"strict" : false
+				},
+				{
+					"name" : "writedata_b[2]",
+					"strict" : false
+				},
+				{
+					"name" : "writedata_b[3]",
+					"strict" : false
+				},
+				{
+					"name" : "writedata_b[4]",
+					"strict" : false
+				},
+				{
+					"name" : "writedata_b[5]",
+					"strict" : false
+				},
+				{
+					"name" : "writedata_b[6]",
+					"strict" : false
+				},
+				{
+					"name" : "writedata_b[7]",
+					"strict" : false
+				},
+				{
+					"name" : "rst",
 					"strict" : false
 				}
 			]
