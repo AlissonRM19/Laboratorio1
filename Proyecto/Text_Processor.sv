@@ -1,5 +1,6 @@
 module Text_Processor (input logic clk,
 							input logic rst,
+							input logic [2:0] cant,
 							output logic vgaclk,
 							output logic hsync, vsync,
 							output logic sync_b, blank_b,
@@ -8,13 +9,14 @@ module Text_Processor (input logic clk,
 	logic [7:0] ascii;
 	logic [7:0] cont; 
 	logic [31:0] dataadr_b;
+	logic memwrite_b;
 	logic write_enable;
 	
 	Processor pro (.clk(clk), 
 						.rst(rst),
-						.writedata_b(0), 
+						.writedata_b({5'b0, cant[2:0]}), 
 						.dataadr_b(dataadr_b), 
-						.memwrite_b(0), 
+						.memwrite_b(memwrite_b), 
 						.ascii(ascii)
 						);
 						
@@ -42,6 +44,14 @@ module Text_Processor (input logic clk,
 			write_enable=0;
 		end else begin
 			cont=cont+1;
+		end
+	end
+	
+	always @(rst) begin
+		if (rst) begin
+			memwrite_b=1'b1;
+		end else begin
+			memwrite_b=1'b0;
 		end
 	end
 							

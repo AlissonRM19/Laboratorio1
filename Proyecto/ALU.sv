@@ -1,81 +1,55 @@
 module ALU #(parameter n = 32) (	input logic [n - 1:0] src1,
 											input logic [n - 1:0] src2,
 											input logic [1:0] alucontrol,
-											input logic clk,
-											output logic neg,
-											output logic cero,
-											output logic carry,
-											output logic des,
-											output logic [n-1:0] num
+											output logic [n - 1:0] num,
+											output logic [3:0] aluflags
 											);
 
-	// SUM
-	logic [n-1:0] Resultado_sum;
-	logic Cout_sum;
-	// RES
-	logic [n-1:0] Resultado_res;
-	logic Cout_res;
+	logic[n - 1:0]	temp_result;
+	logic	flag_negative, flag_zero;
+	logic	flag_carry, flag_overflow;
 	
-	sumadornbits #(n) UUT(
-		.Ent1(src1),
-		.Ent2(src2),
-		.Resultado(Resultado_sum),
-		.Cout(Cout_sum)
-	);
-	restadornbits #(n) UUT_r (
-		.Ent1(src1),
-		.Ent2(src2),
-		.Resultado(Resultado_res),
-		.Cout(Cout_res)
-	);
 	
-	initial begin
-		num = 0;
-		neg = 0;
-		cero = 0;
-		carry = 0;
-		des = 0;
-	end
-	
-	always @ (src1,src2,alucontrol)
+	always_comb
 	begin
-		case (alucontrol)
-			2'b00:begin // Suma
-						num = Resultado_sum;
-						carry = Cout_sum;
-						neg = 0;
-					end
-			2'b01:begin // Resta
-						if (Cout_res) begin
-							num = ~Resultado_res + 1;
-						end else begin
-							num = Resultado_res;
-						end
-						carry = 0;
-						neg = Cout_res;
-					end
-			2'b10:begin // AND
-						carry = 0;
-						num = src1 & src2;
-						neg = 0;
-					end
-			2'b11:begin	// OR
-						carry = 0;
-						num = src1 | src2;
-						neg = 0;
-					end
-			default: begin // Error
-							num = 0;
-							neg = 0;
-							carry = 0;
-						end
+		case (alucontrol[1:0])
+			2'b00:	temp_result <= src1 + src2;
+			2'b01:	temp_result <= src1 - src2;
+			2'b10:	temp_result <= src1 & src2;
+			2'b11:	temp_result <= src1 | src2;
 			
+			default:	temp_result = 32'b0;
 		endcase
-		if (num == 0) begin
-			cero = 1;
-		end else begin
-			cero = 0;
-		end
 	end
+	
+	always_comb
+	begin
+		flag_negative = (temp_result[n - 1] == 1'b1) ?	1'b1 : 1'b0;
+		flag_zero = (temp_result == 0) ?							1'b1 : 1'b0;
+		case (alucontrol[1:0])
+			2'b00:
+			begin
+				flag_carry = (src1 >= src2) ?					1'b1 : 1'b0;
+				flag_overflow =	((~src1[n - 1] & ~src2[n - 1] & temp_result[n - 1]) |
+									(src1[n - 1] & src2[n - 1] & ~temp_result[n - 1]));
+			end
+			2'b01:
+			begin
+				flag_carry = (src1 < src2) ?					1'b1 : 1'b0;
+				flag_overflow =	((src1[n - 1] & ~src2[n - 1] & temp_result[n - 1]) |
+									(~src1[n - 1] & src2[n - 1] & temp_result[n - 1]));
+			end
+			
+			default:
+			begin
+				flag_carry = 1'bx;
+				flag_overflow = 1'bx;
+			end
+		endcase
+	end
+	
+	assign num =	temp_result;
+	assign aluflags =	{flag_negative, flag_zero,
+							flag_carry, flag_overflow};
 			
 endmodule

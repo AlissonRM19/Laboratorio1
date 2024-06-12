@@ -53,7 +53,7 @@ module Processor (input logic clk,
 	
 	// next PC logic 
 	MUX #(32) pcmux(.entrada1(pcplus4), 
-						.entrada2(result),
+						.entrada2(result-32'b1),
 						.selector(pcsrc), 
 						.salida(pcnext)
 						);
@@ -99,7 +99,7 @@ module Processor (input logic clk,
 						);
 						
 	MUX #(32) resmux(.entrada1(aluresult), 
-						.entrada2(readdata), 
+						.entrada2({24'b0, readdata[7:0]}), 
 						.selector(memtoreg), 
 						.salida(result)
 						);
@@ -119,12 +119,8 @@ module Processor (input logic clk,
 	ALU alu(.src1(srca), 
 				.src2(srcb), 
 				.alucontrol(alucontrol),
-				.clk(clk),
 				.num(aluresult),
-				.neg(aluflags[0]),
-				.cero(aluflags[1]),
-				.carry(aluflags[2]),
-				.des(aluflags[3])
+				.aluflags(aluflags)
 				);
 	
 	

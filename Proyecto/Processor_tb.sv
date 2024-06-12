@@ -23,10 +23,15 @@ module Processor_tb ();
 		memwrite_b = 0;
 		writedata_b = 0;
 		dataadr_b = 100;
-		rst = 1; # 22; rst = 0;
+		rst = 1; 
+		# 22; 
+		rst = 0;
 	end
 	always begin
-		clk = 1; # 10; clk = 0; # 10;
+		clk = 1; 
+		# 5; 
+		clk = 0; 
+		# 5;
 	end
 
 	always @(negedge clk) begin

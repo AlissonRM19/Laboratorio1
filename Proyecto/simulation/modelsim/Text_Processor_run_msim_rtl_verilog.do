@@ -69,12 +69,6 @@ vlog -sv -work work +incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laborator
 vlog -sv -work work +incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/Proyecto {C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/Proyecto/Register_File.sv}
 vlog -sv -work work +incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/Proyecto {C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/Proyecto/MUX.sv}
 vlog -sv -work work +incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/Proyecto {C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/Proyecto/ALU.sv}
-vlog -sv -work work +incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/Proyecto {C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/Proyecto/sumadornbits.sv}
-vlog -sv -work work +incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/Proyecto {C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/Proyecto/Sumador_medio.sv}
-vlog -sv -work work +incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/Proyecto {C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/Proyecto/Sumador_completo.sv}
-vlog -sv -work work +incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/Proyecto {C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/Proyecto/restadornbits.sv}
-vlog -sv -work work +incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/Proyecto {C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/Proyecto/Restador_medio.sv}
-vlog -sv -work work +incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/Proyecto {C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/Proyecto/Restador_completo.sv}
 vlog -sv -work work +incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/Proyecto {C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/Proyecto/extend.sv}
 vlog -sv -work work +incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/Proyecto {C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/Proyecto/flopenr.sv}
 vlog -sv -work work +incdir+C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/Proyecto {C:/Users/mende/Desktop/TEC/QuartusProyects/Laboratorio1/Proyecto/adder.sv}

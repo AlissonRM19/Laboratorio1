@@ -6,6 +6,6 @@ module flopenr #(parameter n = 8) (input logic clk,
 											);
 											
 	always_ff @(posedge clk, posedge rst)
-		if (rst) q = 0;
-		else if (en) q = d;
+		if (rst) q <= 0;
+		else if (en) q <= d;
 endmodule
